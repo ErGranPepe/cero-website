@@ -1329,6 +1329,58 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ==========================================
+    // 8.5 MARKETING CAMPAIGNS & COPYWRITING PRESETS (1000-DAY LIFECYCLE)
+    // ==========================================
+    const campaignPresets = [
+        { day: 1, title: "BUSCANDO UN GARAJE", subtitle: "Llamando en frío a dueños de locales en Móstoles.", template: "budget-ticker", color: "#ffff00", music: "techno" },
+        { day: 5, title: "EL ACUERDO DE PERMUTA", subtitle: "Trueque de publicidad en YouTube por espacio de taller.", template: "budget-ticker", color: "#39ff14", music: "synthwave" },
+        { day: 12, title: "DISEÑO DE CHASSIS 3D", subtitle: "Modelado Onshape CAD tubular completo.", template: "telemetry-hud", color: "#00e5ff", music: "techno" },
+        { day: 25, title: "EL MOCKUP DE MADERA", subtitle: "Prototipo escala 1:1 para validar ergonomía.", template: "minimal-orbit", color: "#ffffff", music: "lofi" },
+        { day: 40, title: "ENERGÍA TALLER: 5.5 kW", subtitle: "Limitación de potencia contratada para soldadura.", template: "telemetry-hud", color: "#ff007f", music: "techno" },
+        { day: 60, title: "COMPRANDO EL EMRAX 228", subtitle: "Firma de alianzas para el motor de flujo axial.", template: "budget-ticker", color: "#00e5ff", music: "synthwave" },
+        { day: 90, title: "PREPARACIÓN MESA JIG", subtitle: "Nivelado láser micrométrico de perfiles de acero.", template: "minimal-orbit", color: "#ffffff", music: "lofi" },
+        { day: 110, title: "CORTANDO CROMOLY 4130", subtitle: "Corte y biselado con notcher CNC en taller.", template: "fea-stress", color: "#ffff00", music: "techno" },
+        { day: 130, title: "PURGA INTERNA DE ARGÓN", subtitle: "Llenado de tubos para evitar óxido interno.", template: "fea-stress", color: "#39ff14", music: "techno" },
+        { day: 150, title: "SOLDADURA TIG INICIADA", subtitle: "Uniendo las juntas con varilla de aporte ER70S-6.", template: "fea-stress", color: "#ff007f", music: "techno" },
+        { day: 180, title: "ENSAMBLANDO CELDAS 18650", subtitle: "Soldadura por puntos CNC de pack acumulador.", template: "telemetry-hud", color: "#39ff14", music: "synthwave" },
+        { day: 200, title: "MONTAJE PUSH-ROD", subtitle: "Instalación de trapecios dobles y coilovers.", template: "minimal-orbit", color: "#00e5ff", music: "synthwave" },
+        { day: 220, title: "CABLEADO DE CONTROL LV", subtitle: "Mazo de cables ECU y sistema redundante Hall.", template: "telemetry-hud", color: "#ffff00", music: "lofi" },
+        { day: 240, title: "SHAKEDOWN EN PISTA", subtitle: "Pruebas de slalom dinámico en aeródromo privado.", template: "minimal-orbit", color: "#39ff14", music: "techno" },
+        { day: 260, title: "ENSAYO DE RUIDO R51", subtitle: "Sonómetro a velocidad constante en circuito.", template: "fea-stress", color: "#ffffff", music: "lofi" },
+        { day: 280, title: "PRUEBAS DE FRENO R13-H", subtitle: "Eficiencia Wilwood en mojado con IDIADA.", template: "fea-stress", color: "#ff007f", music: "techno" },
+        { day: 300, title: "OBTENCIÓN PLACAS CALLE", subtitle: "Matriculación individual (HIV) en España.", template: "minimal-orbit", color: "#39ff14", music: "synthwave" },
+        { day: 320, title: "VENTA DE FLAT-PACK KITS", subtitle: "Planos y tubos pre-cortados listos para soldar.", template: "budget-ticker", color: "#ffff00", music: "synthwave" },
+        { day: 350, title: "PATREON REVENUE MODEL", subtitle: "MRR recurrente para financiar el desarrollo de EV.", template: "budget-ticker", color: "#00e5ff", music: "lofi" },
+        { day: 365, title: "1 AÑO DE BUILDCERO", subtitle: "Resumen de operaciones, comunidad y vlogs.", template: "minimal-orbit", color: "#ff007f", music: "synthwave" }
+    ];
+
+    const campaignSelect = document.getElementById('reel-campaign-select');
+    if (campaignSelect) {
+        campaignPresets.forEach((preset, idx) => {
+            const opt = document.createElement('option');
+            opt.value = idx;
+            opt.textContent = `Día ${preset.day}: ${preset.title}`;
+            campaignSelect.appendChild(opt);
+        });
+
+        campaignSelect.addEventListener('change', () => {
+            const selectedIdx = campaignSelect.value;
+            if (selectedIdx !== "") {
+                const preset = campaignPresets[selectedIdx];
+                document.getElementById('reel-day').value = preset.day;
+                document.getElementById('reel-title').value = preset.title;
+                document.getElementById('reel-subtitle').value = preset.subtitle;
+                document.getElementById('reel-template').value = preset.template;
+                document.getElementById('reel-neon-color').value = preset.color;
+                document.getElementById('reel-music-beat').value = preset.music;
+                // Force dispatch change events
+                const evTemplate = new Event('change');
+                document.getElementById('reel-template').dispatchEvent(evTemplate);
+            }
+        });
+    }
+
+    // ==========================================
     // 9. ENGINE BOOTSTRAP
     // ==========================================
     initBOM();
