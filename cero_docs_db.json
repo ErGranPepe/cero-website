@@ -323,83 +323,109 @@
     "DOC-005": {
         "category": "01_Producto_e_Ingenieria",
         "title": "Product Requirements Document",
-        "subtitle": "Ficha de Especificaciones de Producto del Monoplaza CERO",
+        "subtitle": "Ficha de Especificaciones Técnicas del Vehículo, Dinámica de Fluidos y Homologación de Calle",
         "author": "Ingeniería CERO",
         "status": "APROBADO",
         "version": "v12.0",
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Objetivos del Vehículo",
-                "Construcción de un monoplaza ligero, de combustión, con motor de moto central-trasero, homologable para vías públicas en Europa. El peso en orden de marcha debe ser inferior a 420 kg, y la relación peso-potencia superior a 250 hp/tonelada."
+                "1. Introducción y Filosofía de Diseño Aeroespacial",
+                "El documento de requerimientos de producto (PRD) de CERO se ha estructurado bajo los estándares de ingeniería de sistemas de la NASA (NASA Systems Engineering Handbook, SP-2016-6105). El objetivo es diseñar, simular y fabricar un vehículo monoplaza de calle con un coste de adquisición inicial de 0€, optimizando al límite el peso estructural y la rigidez torsional.\n\nEl monoplaza debe combinar la agilidad en curva de un kart de competición con el cumplimiento estricto de los requisitos legales del Reglamento General de Vehículos en España y las directivas de homologación individual de la Unión Europea (Reglamento UE 2018/858)."
             ],
             [
-                "2. Requerimientos de Calle Obligatorios",
-                "• Iluminación: Faros, intermitentes, reflectantes y luz de matrícula con marca 'E'.\n• Mandos: Pedalier de doble circuito hidráulico con balanceador de frenado, y freno de estacionamiento mecánico independiente.\n• Seguridad Peatonal: Bumper delantero sin aristas cortantes (radios de curvatura > 2.5 mm).\n• Emisiones: Motor de moto con catalizador Euro 6 adaptado y sonda lambda."
+                "2. Especificaciones de Sistemas Dinámicos y Mecánicos",
+                "• Chasis Tubular: Estructura espacial triangulada (spaceframe) fabricada en tubos de acero aleado al cromo-molibdeno 4130 (normativa aeronáutica MIL-T-6736 B). El arco principal de seguridad antivuelco (Main Hoop) tendrá un diámetro de 25.4 mm y un espesor de pared mínimo de 2.0 mm. La rigidez torsional estructural de diseño objetivo es de 1.800 Nm/grado, validada por simulaciones numéricas de elementos finitos (FEA) bajo cargas estáticas axiales y de torsión de 5G.\n• Suspensión Cinemática: Configuración de doble trapecio independiente (double wishbone) delantero y trasero. Brazos fabricados en tubo 4130 de 19.0 mm x 1.5 mm, unidos mediante rótulas esféricas de competición (uniball) de rosca métrica fina grado automotriz. Amortiguación ajustable de moto de alto rendimiento (tipo Coilover) montada con sistema de bieletas push-rod para optimizar el ratio de movimiento y el control de balanceo.\n• Sistema de Frenado Independiente: Pinzas Brembo de doble pistón opuesto y discos ventilados delanteros de 240 mm. El pedalier de competición incluirá dos bombas de freno independientes Wilwood conectadas mediante una barra de equilibrio (bias bar) mecánica ajustable en cabina. Esto garantiza el doble circuito independiente exigido por ley: si ocurre una fuga en el circuito delantero, el circuito trasero retiene capacidad de frenado estática superior al 45%."
+            ],
+            [
+                "3. Tren Motriz de Combustión e Inyección Electrónica",
+                "El motor seleccionado es el bloque de cuatro cilindros en línea de la Suzuki GSX-R 600 K6-K7. Especificaciones de ingeniería:\n• Cilindrada: 599 cc, relación de compresión de 12.5:1.\n• Potencia: 125 hp a 13.500 RPM, par motor de 64 Nm a 11.500 RPM.\n• Transmisión: Caja de cambios secuencial de 6 velocidades integrada, embrague de moto multidisco en baño de aceite. Transmisión secundaria por cadena de competición paso 530 de alta resistencia al estiramiento (resistencia a la rotura por tracción > 40 kN).\n• Sistema de Escape de Calle: Colector de escape de acero inoxidable 304, convertidor catalítico de tres vías homologado Euro 6, sonda lambda para control de mezcla estequiométrica (ECU cerrada) y silenciador acústico (ONU 51) con dB-killer para mantener el nivel de presión sonora por debajo de los 74 dB(A) a 5.000 RPM."
+            ],
+            [
+                "4. Requerimientos Legales para Homologación de Calle en España (ITV)",
+                "Para la obtención de placas de matrícula ordinarias mediante el proceso de Homologación Individual de Vehículos (HIV):\n• Iluminación: Integración de luces de posición, cruce, carretera, intermitentes, emergencia, luz de marcha atrás, antiniebla trasera y luz de matrícula con código de homologación europeo 'E' grabado en las lentes.\n• Seguridad Peatonal (Radios de Curvatura): El exterior de la carrocería de composite (fibra de vidrio) debe ser completamente suave, sin salientes punzantes ni aristas. Todos los radios de curvatura exteriores en superficies expuestas deben ser superiores a 2.5 mm.\n• Retrovisores: Dos retrovisores exteriores con espejo convexo que permitan un campo de visión horizontal mínimo de 15 metros a una distancia de 10 metros detrás del coche."
             ]
         ]
     },
     "DOC-006": {
         "category": "01_Producto_e_Ingenieria",
         "title": "Bill of Materials",
-        "subtitle": "Lista de Materiales y Costes de Sourcing del Monoplaza",
+        "subtitle": "Lista de Materiales Detallada (BOM), Proveedores e Inversión de Sourcing",
         "author": "Alianzas y Sourcing CERO",
         "status": "APROBADO",
         "version": "v12.0",
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Lista de Materiales del Vehículo (BOM)",
-                "La lista de materiales está optimizada para la consecución de piezas por canje y compra financiada de componentes de seguridad. El chasis y el motor Suzuki GSX-R representar el 60% del coste de caja proyectado."
+                "1. Arquitectura de Sourcing y Logística",
+                "Esta Lista de Materiales (BOM) detalla de manera minuciosa cada elemento físico necesario para el montaje final de CERO. Para mantener el modelo estratégico de bootstrapping de 0€, el aprovisionamiento se gestiona mediante tres fuentes:\n• Sourcing por Sponsor (Canje de Branding): Metalúrgicas de acero 4130, talleres CNC de aluminio y marcas de neumáticos.\n• Caja Acumulada de Patreon (Compra Directa): Compra de motor Suzuki GSX-R usado completo, latiguillos de freno, escape de calle y tornillería grado 8.8.\n• Consumibles de Taller: Discos de corte de fibra de carbono, gas de purga argón, varillas de soldadura TIG de aporte (ER70S-6 o ER80S-D2)."
             ],
             [
-                "2. Presupuesto Físico Estimado de Materiales",
-                "A continuación se detallan los costes estimados del coche de pista y calle:"
+                "2. Lista Detallada de Componentes de Ingeniería",
+                "A continuación se presenta la base de datos de piezas del monoplaza:"
             ]
         ],
         "table": {
             "cols": [
-                120,
+                110,
                 160,
-                100,
-                124
+                90,
+                144
             ],
             "data": [
                 [
                     "Componente",
-                    "Especificación",
-                    "Coste Estimado",
-                    "Método Adquisición"
+                    "Especificación / Modelo",
+                    "Coste Caja",
+                    "Estrategia Adquisición"
                 ],
                 [
                     "Motor Suzuki GSX-R",
-                    "600cc usado, completo con ECU y cables",
+                    "Usado K6-K7, cableado y ECU",
                     "1.200 €",
                     "Compra Patreon Mes 12"
                 ],
                 [
                     "Tubos Acero 4130",
-                    "Cromoly 25.4mm x 2.0mm (50 metros)",
-                    "600 €",
-                    "Patrocinio Metalúrgica"
+                    "25.4mm x 2.0mm (50 metros)",
+                    "0 €",
+                    "Patrocinio de Metalúrgica"
                 ],
                 [
-                    "Pinzas y Discos",
-                    "Doble circuito independiente (ITV)",
-                    "1.100 €",
+                    "Doble Pinza Freno",
+                    "Brembo / Wilwood y discos",
+                    "900 €",
                     "Compra Patreon"
                 ],
                 [
-                    "Catalizador Euro 6",
-                    "Línea escape homologada con dB Killer",
+                    "Amortiguadores",
+                    "Coilovers de moto ajustables",
+                    "0 €",
+                    "Patrocinio Marca"
+                ],
+                [
+                    "Escape y Catalizador",
+                    "Convertidor Euro 6 y silenciador",
                     "1.200 €",
                     "Compra Patreon"
                 ],
                 [
-                    "Iluminación / Espejos",
-                    "Espejos y faros marcas 'E' (ITV)",
+                    "Tornillería Grado 8.8",
+                    "Tornillería métrica alta resistencia",
+                    "150 €",
+                    "Compra Patreon Consumibles"
+                ],
+                [
+                    "Kit Luces / Espejos",
+                    "Kit luces e-marked calle",
                     "800 €",
-                    "Canje Branding / Patreon"
+                    "Compra Patreon / Sponsors"
+                ],
+                [
+                    "Tasas Homologación",
+                    "IDIADA / INTA individual",
+                    "2.500 €",
+                    "Patrocinadores Corporativos"
                 ]
             ]
         }
@@ -414,16 +440,16 @@
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Tren Motriz de Combustión",
-                "Motor Suzuki GSX-R transversal detrás del cockpit. Transmisión secuencial de moto por cadena reforzada paso 530 al eje trasero. Diferencial autoblocante LSD para asegurar tracción en curva."
+                "1. Arquitectura de Sistemas de Combustión",
+                "El tren motriz de CERO utiliza un motor de moto Suzuki GSX-R transversal montado directamente en cunas antivibración soldadas al chasis trasero. Transmisión secuencial a cadena paso 530 hacia un eje trasero equipado con un diferencial Quaife ATB LSD para asegurar tracción en curva sin pérdidas de potencia.\n\nEl sistema de combustible cumple normas de seguridad de la FIA: depósito de combustible de aluminio con espuma interna deflactora para evitar el oleaje, bomba de inyección externa de alta presión (3 bar) con regulador de presión integrado, y tuberías de combustible trenzadas de teflón AN-6 con racores roscados blindados contra el calor."
             ],
             [
-                "2. Suspensión y Dirección",
-                "Doble trapecio independiente en las 4 ruedas (brazos de acero 4130). Cremallera de dirección manual rápida de kart modificada. Amortiguadores de moto (coilovers) ajustables."
+                "2. Arquitectura de Suspensión y Geometría de Dirección",
+                "Geometría de suspensión de doble trapecio independiente en las 4 ruedas. El diseño cinemático en Onshape optimiza el centro de balanceo (Roll Center) manteniéndolo a 45 mm del suelo en reposo. Manguetas (uprights) delanteras y traseras fresadas por control numérico (CNC) en aluminio aeronáutico 7075-T6 para minimizar la masa no suspendida.\n\nCremallera de dirección mecánica directa de kart modificada con 1.5 vueltas de tope a tope, garantizando una respuesta inmediata y precisa en circuito cerrado y carreteras de curvas."
             ],
             [
-                "3. Sistema Eléctrico",
-                "Cableado de moto modificado para coche. Mantenemos la ECU de moto desbloqueada original. Sensores básicos de temperatura, presión y revoluciones integrados en cuadro digital."
+                "3. Arquitectura Eléctrica y Gestión Electrónica (ECU)",
+                "Cableado original de la moto Suzuki aligerado de cables innecesarios. Mantenemos la ECU Keihin original desbloqueada (mapeo con inmovilizador HISS puenteado) para no tener que invertir en una ECU programable de competición de 2.000€.\n\nCuadro de mandos digital multifunción conectado por bus de datos K-line original para visualizar en cabina las revoluciones, temperatura del refrigerante y presión del aceite, con sistema de corte de corriente de emergencia (cortacorrientes FIA) accesible tanto por el piloto desde el interior como por los comisarios desde el exterior en el arco principal."
             ]
         ]
     },
@@ -437,12 +463,12 @@
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Construcción de la Bancada (Jig)",
-                "Es obligatorio construir una mesa de soldadura (jig) rígida atornillada al suelo antes de cortar tubos. Soldar en el aire provocará desalineaciones debido a la distorsión térmica de la soldadura TIG."
+                "1. Construcción de la Bancada de Soldadura (Jig)",
+                "Para evitar cualquier distorsión térmica o desalineación milimétrica de la estructura del chasis durante la soldadura, es obligatorio fabricar una bancada de soldadura (jig) rígida de acero.\n\nLa bancada se fabricará utilizando perfiles de acero dulce estructural de 80 mm x 40 mm x 4 mm, atornillados al suelo nivelado del taller. Se soldarán soportes ajustables para sujetar en su posición teórica exacta los nudos de suspensión delantera, soportes de motor y el arco antivuelco principal antes de realizar las soldaduras definitivas."
             ],
             [
-                "2. Proceso de Soldadura del Chasis",
-                "Se utilizará soldadura TIG con purga interna de gas argón para garantizar penetración perfecta y juntas de resistencia superior, evitando la fragilidad en juntas de cromo-molibdeno."
+                "2. Proceso de Soldadura TIG de Tubos de Cromoly 4130",
+                "El acero cromoly 4130 requiere soldadura TIG de alta precisión para evitar la formación de microfisuras debido al enfriamiento rápido:\n• Preparación de Juntas: Todos los extremos de los tubos deben biselarse con una notcher de tubo a un ajuste perfecto sin holguras (>0.5 mm de hueco invalidará la junta).\n• Purga Interna: Llenado del interior del tubo con gas argón al 99.9% durante la soldadura para evitar la oxidación interna (back-purging).\n• Parámetros de Soldadura: Corriente continua con electrodo de tungsteno al 2% de torio o lantano, varilla de aporte ER70S-6 o ER80S-D2 de 1.6 mm. Enfriamiento lento controlado mediante mantas térmicas ignífugas para evitar tensiones estructurales internas residuales."
             ]
         ]
     },
@@ -456,12 +482,12 @@
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Inspección de Soldaduras",
-                "Inspección mediante líquidos penetrantes en el 100% de las soldaduras de la jaula antivuelco. Cualquier poro o grieta detectado debe ser amolado y resoldado."
+                "1. Ensayos No Destructivos de Soldaduras (NDT)",
+                "Todas las uniones soldadas del arco de seguridad y soportes de suspensión se someterán a inspección visual y ensayos por líquidos penetrantes (norma UNE-EN ISO 3452-1) en taller. Se aplicará el limpiador, luego el penetrante de contraste rojo durante 15 minutos, y finalmente el revelador blanco. Cualquier defecto de soldadura (poros, fisuras superficiales) obligará a amolar y resoldar la junta de forma inmediata."
             ],
             [
-                "2. Ensayos Dinámicos de Seguridad",
-                "En circuito cerrado: prueba de frenado estático a 80 bar sin fugas. Prueba de detención total desde 100 km/h en menos de 4.2 segundos. Test de slalom para evaluar estabilidad lateral y balance de amortiguadores."
+                "2. Protocolo de Pruebas Dinámicas en Circuito Cerrado",
+                "Pruebas de validación en circuito privado antes de iniciar el dossier de homologación de calle:\n• Test de Slalom (ISO 7401): Slalom a 40 km/h, 60 km/h y 80 km/h con telemetría de acelerómetros para verificar balanceo lateral, transferencias de peso y rigidez cinemática de los trapecios.\n• Ensayo de Frenado de Emergencia: 5 detenciones completas consecutivas desde 80 km/h a 0 km/h. Verificación de desvanecimiento (fade) de frenos y ajuste mecánico de la bias bar del pedalier para asegurar que las ruedas delanteras bloquean ligeramente antes que las traseras, evitando trompos dinámicos.\n• Prueba de Stress de Temperatura: 30 minutos de rodaje continuo en pista controlando temperaturas de refrigerante, aceite de motor y temperatura de escape de gases en el catalizador Euro 6."
             ]
         ]
     },
@@ -475,31 +501,87 @@
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Roles Principales",
-                "• Founder / Director del Proyecto: Mario (coordinación general y medios).\n• Lead Engineer: Coordinación de CAD, FEA y soldadura.\n• Sourcing Scouts: Colaboradores que contactan con desguaces y metalúrgicas.\n• Community Moderators: Gestión de Discord e incorporación de ingenieros."
+                "1. Estructura Organizativa Abierta",
+                "CERO se gestiona como una DAO (Organización Autónoma Descentralizada) física. El Core Team de Móstoles (liderado por Mario) toma las decisiones de ejecución en taller y gestión de compras, pero el diseño CAD y las optimizaciones de ingeniería son delegadas en la comunidad internacional en abierto coordinada en GitHub y Onshape."
             ],
             [
-                "2. Estructura Meritocrática",
-                "Los roles se ganan mediante commits de Onshape o aportaciones cuantificables. Las decisiones técnicas se aprueban por consenso técnico o por el Lead Engineer."
+                "2. Matriz RACI Completa",
+                "A continuación se presenta la matriz RACI del equipo CERO:"
             ]
-        ]
+        ],
+        "table": {
+            "cols": [
+                150,
+                70,
+                70,
+                70,
+                70,
+                70
+            ],
+            "data": [
+                [
+                    "Actividad / Hito",
+                    "ENG (Ing.)",
+                    "MED (Medios)",
+                    "PART (Alian.)",
+                    "LEG (Legal)",
+                    "GOV (Gob.)"
+                ],
+                [
+                    "Requerimientos",
+                    "A",
+                    "C",
+                    "I",
+                    "C",
+                    "R"
+                ],
+                [
+                    "Diseño CAD",
+                    "R",
+                    "I",
+                    "C",
+                    "I",
+                    "A"
+                ],
+                [
+                    "Vídeos YouTube",
+                    "I",
+                    "R",
+                    "C",
+                    "I",
+                    "A"
+                ],
+                [
+                    "Contratos IP",
+                    "I",
+                    "I",
+                    "C",
+                    "R",
+                    "A"
+                ]
+            ]
+        }
     },
     "DOC-011": {
         "category": "02_Reclutamiento_y_Equipo",
         "title": "Recruitment Playbook",
-        "subtitle": "Estrategias de Reclutamiento en LinkedIn, Foros y Escuelas Técnicas",
+        "subtitle": "Playbook de Reclutamiento de Internet, Scripts de Contacto y Moderación de Discord",
         "author": "Operaciones CERO",
         "status": "APROBADO",
         "version": "v12.0",
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Canales de Reclutamiento",
-                "• LinkedIn: Búsqueda activa de estudiantes de Fórmula Student y diseñadores CAD de automoción.\n• Foros de Ingeniería (Reddit, GitHub): Hilos de simulación FEA y dinámica de karts.\n• Escuelas Técnicas: ETSII Madrid, Carlos III (Leganés), etc."
+                "1. Estrategia de Reclutamiento de Talento Abierto",
+                "Dado que operamos con 0€ de presupuesto inicial, CERO atrae talento de ingeniería y redes basándose en la visibilidad del portfolio técnico, la oportunidad de firmar el diseño de un coche físico y un reparto de equity (stock options) transparente. Buscamos ingenieros mecánicos, diseñadores CAD, simuladores FEA, y creadores de contenido técnico en LinkedIn, Reddit y foros de automoción."
             ],
             [
-                "2. Guion de Contacto en LinkedIn",
-                "\"Hola [nombre], soy Mario y estoy construyendo CERO, el primer coche de calle hecho 100% desde internet (0€ iniciales, open-source). He visto tu perfil y encaja perfectamente en nuestra comisión de diseño de suspensión. ¿Te apetece colaborar en un proyecto real? Te adjunto el Manifiesto: [link]. ¿Hablamos 15 minutos?\""
+                "2. Guiones de Contacto para LinkedIn y Mensajería Directa",
+                "• Guion para Modeladores CAD (Onshape) e Ingenieros de Chasis:\n\"Hola [Nombre], soy Mario y dirijo el proyecto CERO (buildcero.com), el primer coche open-source de calle desarrollado 100% por internet desde Móstoles. He visto tus diseños mecánicos en Onshape y encajas de forma perfecta en nuestra comisión de chasis. Buscamos colaboradores activos para cerrar el diseño del cockpit y pasar a simulación estructural FEA de colisiones. Te adjunto el Manifiesto de CERO: [link]. Ofrecemos visibilidad y equity real en la futura S.L. ¿Te apetece tener una llamada corta de 15 minutos en Discord?\"\n\n• Guion para Especialistas en Dinámica de Fluidos (CFD) o Aerodinámica:\n\"Hola [Nombre], te escribo de parte del proyecto CERO. Estamos simulando el morro y difusor de nuestro monoplaza de calle en OpenFOAM para optimizar la carga aerodinámica y reducir arrastre a alta velocidad. Buscamos un ingeniero de fluidos que se sume a la comisión de aerodinámica para liderar las simulaciones CFD del chasis. Si te apetece colaborar en un proyecto real de código abierto, avísame y te muestro el repositorio CAD en Onshape.\""
+            ],
+            [
+                "3. Estructura de Moderación y Canales de Discord",
+                "El servidor de Discord se configura en los siguientes canales y roles de acceso para garantizar el foco de trabajo:\n• #anuncios: Comunicados del Core Team y actualizaciones semanales.\n• #cad-chasis / #suspensiones / #tren-motriz: Canales técnicos exclusivos para colaboradores activos con rol verificado. Solo se discute con imágenes del CAD o simulaciones.\n• #general / #debates: Canales abiertos a la comunidad general para opiniones y sugerencias.\n• Roles de Acceso: 'Core Team' (decisión estratégica), 'Ingeniero Activo' (con commit en GitHub o challenge aprobado), 'Comunidad CERO' (lectura e interacción general)."
             ]
         ]
     },
@@ -544,42 +626,46 @@
     "DOC-020": {
         "category": "03_Finanzas_y_Legal",
         "title": "Legal Structure",
-        "subtitle": "Estructura Legal de Asociación Cultural y Pivotación a Sociedad Limitada",
+        "subtitle": "Constitución de Asociación Cultural, Canjes de Branding y Pivotación a Sociedad Limitada",
         "author": "Legal y Cumplimiento CERO",
         "status": "APROBADO",
         "version": "v12.0",
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Constitución de Asociación Inicial",
-                "Para operar legalmente con 0€ y gestionar suscripciones Patreon y donaciones, se constituye la 'Asociación de Ingeniería de Código Abierto CERO' en España. Esta forma jurídica está exenta de IVA en sus cuotas y permite la firma de contratos de canje de patrocinio de forma legal."
+                "1. Asociación Inicial de Ingeniería CERO",
+                "Para operar legalmente con 0€ de partida y poder recibir suscripciones Patreon y donaciones, se constituye la 'Asociación de Ingeniería de Código Abierto CERO' en España.\n\nEsta figura jurídica permite registrar una cuenta bancaria oficial, firmar contratos de canje de patrocinio (branding por tubos o local) exentos de IVA de forma legal, y emitir certificados de donación de cara a la deducción fiscal de empresas colaboradoras."
             ],
             [
-                "2. Pivotación Futura a Sociedad Limitada (S.L.)",
-                "En el Mes 18, de cara a la homologación final y comercialización de planos, se constituirá la S.L. aportando los activos intangibles de la asociación (CAD y marca CERO) como aportaciones no dinerarias, activando el plan de equity."
+                "2. Pivotación a Sociedad Limitada (CERO S.L.)",
+                "En el Mes 18 de la planificación temporal, de cara al montaje del motor y la preparación del dossier de homologación IDIADA/INTA, se constituirá la S.L. aportando los activos intangibles de la asociación (CAD central de Onshape y marca CERO registrada) como aportaciones no dinerarias.\n\nSe activará el plan de stock options y equity (15% reservado en el pacto de socios fundacional) para compensar a los ingenieros y mecánicos colaboradores activos de Discord y GitHub."
             ]
         ]
     },
     "DOC-021": {
         "category": "03_Finanzas_y_Legal",
         "title": "Financial Model",
-        "subtitle": "Proyecciones Financieras a 3-5 Años y Presupuestos Viales",
+        "subtitle": "Presupuesto Operativo Inicial de 0€, Vías de Recaudación y Costes de Homologación de Calle",
         "author": "Dirección Estratégica CERO",
         "status": "APROBADO",
         "version": "v12.0",
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Modelo Financiero de Caja",
-                "El proyecto asume 0€ el primer mes y acumula caja mediante Patreon (Tier Boceto 2.99€, Tier CAD 5.99€, Tier Core 19.99€). Los gastos reales de compra de motor Suzuki GSX-R (€1.200) y frenos se realizan con la caja acumulada al Mes 12."
+                "1. Flujo de Caja Basado en Suscripciones y Ventas",
+                "El proyecto opera con 0€ de bolsillo del fundador. Toda la financiación de materiales (motor de desguace, escape, catalizador, discos de freno) se sufraga con la caja acumulada de Patreon (lanzamiento Mes 4) y la venta de camisetas sin stock en impresión bajo demand (Mes 7). Se descuentan directamente los costes de pasarela Stripe (1.4% + 0.25€ por transacción) y la comisión de Patreon (8% sobre PVP de suscripción)."
             ],
             [
-                "2. Comparación Financiera Pista vs. Homologación de Calle",
-                "A continuación se muestra de manera gráfica la diferencia de coste entre el proyecto de pista y el coche homologado para calle:"
+                "2. Escenarios de Recaudación y Costes Operativos",
+                "Planteamos tres escenarios de viabilidad financiera a 12 meses:\n• Escenario Conservador (50 mecenas de media): Recaudación neta de ~150 €/mes. Permite cubrir los costes básicos de consumibles de taller (gas de soldar, electrodos, radial) y el alojamiento web, aplazando la compra del motor a base de patrocinios.\n• Escenario Base (150 mecenas de media): Recaudación neta de ~500 €/mes. Genera una reserva de 3.350€ libres de caja al Mes 12, permitiendo la adquisición directa del motor Suzuki GSX-R usado completo y los kits de seguridad de calle.\n• Escenario Optimista (350 mecenas de media): Recaudación neta de ~1.200 €/mes. Permite alquilar un garaje/taller estable (€300/mes) a partir del Mes 6 y sufragar las tasas iniciales de laboratorios acreditados de homologación."
             ],
             [
-                "3. Estimaciones Financieras a 3 Años",
-                "A continuación se detallan las proyecciones financieras de la organización:"
+                "3. Comparativa Estructural de Costes (Pista vs. Calle)",
+                "A continuación se presenta de forma gráfica la distribución de costes para un prototipo básico de circuito (€3.300) frente al coste acumulado para un monoplaza homologado de calle con catalizador Euro 6, sistema de doble circuito hidráulico y tasas IDIADA/INTA (€10.050 en total):"
+            ],
+            [
+                "4. Tabla de Costes Físicos Proyectados",
+                "Desglose de costes viales proyectados para el monoplaza:"
             ]
         ],
         "image": "financial_breakdown.png",
@@ -646,19 +732,19 @@
     "DOC-023": {
         "category": "03_Finanzas_y_Legal",
         "title": "Intellectual Property Strategy",
-        "subtitle": "Estrategia de Propiedad Intelectual y Licencia Abierta",
+        "subtitle": "Estrategia de Propiedad Intelectual y Licencia Abierta CC BY-NC 4.0",
         "author": "Legal y Cumplimiento CERO",
         "status": "APROBADO",
         "version": "v12.0",
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Estrategia de Código Abierto",
-                "Los planos y simulaciones de CERO se liberan bajo licencia Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0). Esto permite a entusiastas construir sus propios coches, pero protege comercialmente la marca CERO ante copias industriales sin convenio."
+                "1. Estrategia de Código Abierto (CC BY-NC 4.0)",
+                "Todos los archivos de diseño CAD, simulaciones de elementos finitos y planos de fabricación del monoplaza CERO se liberarán bajo la licencia Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0).\n\nEsta licencia permite que entusiastas y aficionados puedan descargar, modificar y construir de forma gratuita sus propios monoplazas CERO locales de forma privada, pero restringe su comercialización industrial por parte de terceros sin un acuerdo de licencia formal con CERO S.L., protegiendo la marca."
             ],
             [
-                "2. Contratos de Cesión de IP de Colaboradores",
-                "Todos los ingenieros colaboradores deben firmar un documento de cesión de IP en el onboarding. Esto garantiza que CERO S.L. posee los derechos de los archivos CAD para poder homologar y fabricar el monoplaza de forma física."
+                "2. Cesión de Propiedad Intelectual de Colaboradores",
+                "Durante el onboarding de los ingenieros y modeladores en Discord, es un requisito legal innegociable la firma digital de un contrato de cesión de IP a favor de la Asociación CERO (y posteriormente de la S.L.).\n\nEsto garantiza que CERO S.L. posee de forma limpia y exclusiva los derechos globales sobre los planos y el chasis para poder presentar el dossier oficial ante las entidades de homologación (IDIADA/INTA) sin que surjan disputas de autoría posteriores de colaboradores anónimos."
             ]
         ]
     },
@@ -680,68 +766,76 @@
     "DOC-030": {
         "category": "04_Marketing_y_Contenido",
         "title": "Content Strategy and Calendar",
-        "subtitle": "Estrategia de Contenido Semanal y Diario de Redes Sociales",
+        "subtitle": "Plan de Contenido a 12 Meses, Hooks Diarios y Frecuencia de Publicación",
         "author": "Medios y Crecimiento CERO",
         "status": "APROBADO",
         "version": "v12.0",
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Estrategia Social Media",
-                "Producción de 1 vídeo largo semanal en YouTube (avance técnico, llamadas a desguaces, soldaduras) y 3-5 clips verticales en TikTok/Reels basados en 'hooks' técnicos y debate. Esto generará tracción de seguidores para poder negociar canjes."
+                "1. Estrategia de Contenidos a 12 Meses (Fase 0-1)",
+                "La viralidad en redes es el motor de supervivencia de CERO. Si no generamos alcance orgánico masivo, no podremos convencer a ninguna metalúrgica de que nos done tubos de acero 4130 a cambio de publicidad. Nos basamos en la transparencia radical y la educación técnica (Build in Public). Documentaremos los errores de soldadura, las tolerancias mal calculadas en Onshape y las discusiones sobre la homologación de calle de la ITV."
             ],
             [
-                "2. Calendario Semanal Tipo",
-                "• Lunes: TikTok ergonomía/chasis.\n• Miércoles: Detrás de cámaras corto del taller.\n• Jueves: Debate abierto en X/LinkedIn (ej. amortiguadores coilovers vs normales).\n• Sábado: Vídeo de YouTube de 10-15 minutos.\n• Domingo: Asamblea de voz en Discord y votación de diseño."
+                "2. Formatos y Frecuencia de Publicación",
+                "• YouTube (1 Vídeo Largo/Semana, Sábados 18:00): Contenido técnico denso (8-12 min) detallando la solución a los bloqueos de diseño, llamadas de sourcing a desguaces o pruebas en taller.\n• Shorts/TikTok/Instagram Reels (3-5 Vídeos/Semana, Lunes, Miércoles, Viernes): Ganchos rápidos y polémicos (15-60s) enfocados en dinamizar la sección de comentarios.\n• LinkedIn (2 Posts/Semana, Martes, Jueves): Enfoque en gestión del proyecto descentralizado, modelo operativo de 0€ y desafíos de IP abierta.\n• Discord (Domingos 20:00 CEST): Asamblea semanal de voz para el Core Team, abierta al público general para votaciones de diseño."
             ]
         ]
     },
     "DOC-031": {
         "category": "04_Marketing_y_Contenido",
         "title": "Video Scripts Library",
-        "subtitle": "Librería de Guiones y Estructuras de Vídeo para YouTube",
+        "subtitle": "Guiones Detallados y Estructuras Narrativas para YouTube",
         "author": "Medios y Crecimiento CERO",
         "status": "APROBADO",
         "version": "v12.0",
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Estructura del Vídeo de YouTube de Lanzamiento (Episodio 1)",
-                "• 0:00 - 1:00: Gancho. 'Voy a construir un coche de carreras real para calle desde 0€ y solo con internet. No tengo taller ni dinero. Os muestro cómo.'\n• 1:00 - 3:00: El problema de la industria cerrada. El coste prohibitivo de los karts y monoplazas.\n• 3:00 - 6:00: La solución CERO. Coche open-source, de combustión (motor Suzuki GSX-R).\n• 6:00 - 8:00: Sourcing en directo de locales vacíos por Móstoles en Idealista. Negociación con el primer dueño.\n• 8:00 - 10:00: Llamada a la acción. 'Si quieres colaborar o tienes un garaje, únete a buildcero.com'. Suscríbete."
+                "1. Estructura Narrativa para YouTube",
+                "Todos los vídeos semanales de CERO siguen la regla de los tres actos para mantener la retención:\n• Acto 1 (Hype & Planteamiento, 0:00-1:30): El gancho. Mario expone un bloqueo de ingeniería crítico o un hito financiero difícil. 'No tenemos dinero para un escape de carreras, así que vamos a fabricarlo con tubos de moto de desguace'.\n• Acto 2 (Acción y Taller, 1:30-8:00): Desarrollo técnico. Grabación en el taller o CAD de Onshape, tomas rápidas de chispas, errores de montaje y correcciones.\n• Acto 3 (Resultado & CTA, 8:00-10:00): El resultado del día. Votación sobre el siguiente paso y llamada a unirse en Discord/Patreon."
+            ],
+            [
+                "2. Guiones Detallados (Primeros 3 Episodios)",
+                "• Episodio 1: 'Voy a construir un coche de calle real con 0€ y solo internet. Día 1.'\n  - Gancho: Mario frente a la pizarra. Presentación del reto CERO.\n  - Estructura: Explicación del manifiesto de CERO, muestra de la landing buildcero.com, y primeras reacciones de ingenieros en el Discord recién abierto.\n\n• Episodio 2: '¿Elegimos motor Suzuki GSX-R 600 o GSX-R 1000? Debate técnico.'\n  - Gancho: Imagen lado a lado de ambos motores de moto. 'El de 1000 tiene 180hp, el de 600 tiene 120hp. ¿Por qué elegir el pequeño si queremos velocidad?'\n  - Estructura: Explicación técnica de la relación peso-potencia, la cota de peso del chasis tubular (FSAE min) y la viabilidad del motor K6-K7 de desguace. Voto de Discord.\n\n• Episodio 3: 'Llamando a desguaces de motos en directo: ¿conseguiremos el motor Suzuki?'\n  - Gancho: Pantalla dividida con Mario al teléfono y un desguace de motos local. 'Hola, buscaba un motor de GSX-R 600 del 2006. ¿Tenéis alguno que nos podáis ceder a cambio de publicidad en YouTube?'\n  - Estructura: Negociaciones reales al teléfono, desmentido del bucle de 0€, y la propuesta del canje de branding de CERO frente a dueños de desguaces."
             ]
         ]
     },
     "DOC-032": {
         "category": "04_Marketing_y_Contenido",
         "title": "Social Media Playbook",
-        "subtitle": "Manual de Publicación, Hashtags, Formatos y Respuestas",
+        "subtitle": "Manual de Publicación, Hashtags, Formatos y Respuestas en Redes",
         "author": "Medios y Crecimiento CERO",
         "status": "APROBADO",
         "version": "v12.0",
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Directrices de Publicación",
-                "• Estética: Fondo de vídeo limpio, luz natural, renders CAD en alta definición.\n• Tono: Crudo y técnico. Responder siempre en la sección de comentarios de forma de diario de un loco con una idea, no de corporación.\n• Hashtags a utilizar: #CERO #buildinpublic #open-source #ingenieria #Mostoles #garaje #startup"
+                "1. Voz de la Cuenta: Vulnerabilidad Honesta",
+                "La voz de CERO debe ser cruda, real y técnica. Hablamos en primera persona. Nunca simulamos tener un presupuesto que no existe o una nave industrial que aún no hemos conseguido. Si estamos atascados buscando un garaje en Móstoles, lo grabamos de forma transparente.\n• Si un seguidor dice 'eso se va a doblar', no borramos el comentario. Respondemos: 'Es posible. Pásate por el Discord canal #suspensiones y ayúdanos a meter las fuerzas en Onshape para comprobarlo'. Esto convierte el escepticismo en colaboración activa."
+            ],
+            [
+                "2. Hashtags Oficiales y Directrices Estéticas",
+                "• Hashtags a utilizar: #CERO #buildinpublic #open-source #ingenieria #SuzukiGSXR #tubularchassis #ITV #Mostoles\n• Estética: Iluminación de taller cruda, renders de Onshape de alta definición sobre fondo oscuro, capturas reales de código y hojas de cálculo."
             ]
         ]
     },
     "DOC-033": {
         "category": "04_Marketing_y_Contenido",
         "title": "Merch and Crowdfunding Plan",
-        "subtitle": "Plan de Lanzamiento de Productos Físicos y Cuotas de Patreon",
+        "subtitle": "Estrategia de Lanzamiento de Productos de 0€, Impresión bajo Demanda y Patreon",
         "author": "Medios y Crecimiento CERO",
         "status": "APROBADO",
         "version": "v12.0",
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Merchandising sin Stock (Mes 7+)",
-                "Lanzamiento de camisetas con el plano explotado del chasis mediante impresión bajo demanda (Print-on-Demand). Esto garantiza stock de 0€ y un margen del 40-50% por camiseta soldada en internet."
+                "1. Lanzamiento de Merchandising sin Stock (Print-on-Demand)",
+                "Para evitar cualquier inversión inicial, la tienda de merchandising de CERO (lanzada en el Mes 7) utilizará un modelo de impresión bajo demanda (Print-on-Demand) mediante pasarelas gratuitas (ej: Ko-fi / Printful). Las camisetas se fabrican y envían directamente por el proveedor solo cuando el comprador final realiza el pago completo en la web, garantizando stock de 0€.\n• Camiseta Blueprint V1 (Plano del chasis tubular en espalda): PVP 25€ / Coste de producción 11€ (Margen: 14€ por unidad).\n• Póster Chapa de Aluminio Grabado (Geometría de suspensión): PVP 35€ / Coste de producción 14€ (Margen: 21€ por unidad)."
             ],
             [
-                "2. Tiers de Patreon (Mes 4+)",
-                "Patreon se activa en el Mes 4 para acumular el fondo de caja con el que compraremos el motor Suzuki GSX-R usado en el Mes 12:\n• Tier 1: Acceso a Discord debates.\n• Tier 2: Planos CAD Onshape en tiempo real.\n• Tier 3: Grabado láser de tu nombre en el chasis físico del monoplaza."
+                "2. Campaña de Crowdfunding y Patreon (Mes 4+)",
+                "Lanzamiento de las membresías recurrentes de Patreon en el Mes 4 para financiar la compra de las piezas del motor de desguace y los kits de seguridad de calle:\n• Tier 1 (2,99 €/mes): Acceso al canal de Discord de debates técnicos privados.\n• Tier 2 (5,99 €/mes): Acceso anticipado de 48 horas a los planos de Onshape actualizados y commits de GitHub.\n• Tier 3 (19,99 €/mes): Grabado láser de tu nombre o logotipo de internet en las placas del chasis del coche real de calle."
             ]
         ]
     },
@@ -763,19 +857,19 @@
     "DOC-040": {
         "category": "05_Sourcing_y_Logistica",
         "title": "Sourcing and Logistics Guide",
-        "subtitle": "Guía Práctica de Adquisición de Tren Motriz, Chasis y Componentes de Moto",
+        "subtitle": "Guía Práctica de Adquisición de Motores Suzuki GSX-R, Drenado y Transporte Seguro",
         "author": "Alianzas y Sourcing CERO",
         "status": "APROBADO",
         "version": "v12.0",
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Sourcing del Motor Suzuki GSX-R 600 K6-K7",
-                "• Dónde: Desguaces de moto en España.\n• Comprobación física: Girar el cigüeñal suavemente por el tornillo del alternador para asegurar que no está gripado.\n• Requisito obligatorio: Debe venir con centralita ECU original y mazo de cables intacto para evitar costes de inyección prohibitivos."
+                "1. Inspección y Selección de Motor Suzuki GSX-R 600cc en Desguace",
+                "El motor seleccionado es el bloque de la Suzuki GSX-R 600cc (años 2004 a 2008, códigos K4 a K8). Para evitar adquirir un bloque motor dañado o inservible, es obligatorio aplicar los siguientes pasos de inspección física en las instalaciones del desguace:\n• Prueba de Rotación Directa del Cigüeñal: Retirar la tapa lateral derecha del motor e insertar una llave de vaso métrica en la tuerca del alternador. Intentar girar manualmente el cigüeñal 360 grados en el sentido de las agujas del reloj. Si el cigüeñal gira con resistencia de compresión uniforme pero libremente, se confirma que el motor no está gripado ni tiene válvulas dobladas.\n• Inspección con Endoscopio (Borescope): Retirar las bujías e introducir una cámara endoscópica flexible de 5 mm en cada cilindro. Verificar la ausencia de marcas de impacto en la cabeza de los pistones y que las paredes de los cilindros de nikasil conservan el bruñido original sin arañazos axiales profundos.\n• Adquisición Conjunta Obligatoria: Exigir de forma innegociable al desguace la entrega del motor junto a la centralita (ECU) original del mismo chasis, el cuerpo de mariposas de inyección y el ramal de cableado completo del motor. Comprar estos elementos por separado triplica los costes de inyección y añade problemas electrónicos críticos de inmovilizadores."
             ],
             [
-                "2. Logística y Transporte Seguro",
-                "Drenar aceite del cárter en garrafa antes de cargar. Alojar motor de 65 kg en caja de fruta rígida de plástico sobre cartón y mantas para no volcar ni verter en el maletero. Sujetar con cinchas de trinquete."
+                "2. Logística de Drenaje, Carga y Transporte Seguro",
+                "El motor de moto pesa aproximadamente 65 kg. Su manejo y transporte deben realizarse bajo estrictas medidas de seguridad para evitar lesiones físicas y derrames de fluidos químicos en el vehículo de transporte:\n• Drenaje Total de Aceite: Antes de cargarlo en el maletero, retirar el tapón de drenaje inferior del cárter de aceite (tornillo de 17 mm) y dejar escurrir todo el aceite usado en una bandeja colectora durante 10 minutos. Cerrar y apretar el tapón a 23 Nm.\n• Caja de Transporte Antivuelco: El cárter inferior del motor Suzuki no es plano; el motor es inestable por sí mismo. Debe alojarse obligatoriamente dentro de una caja de fruta de plástico reforzado o sobre un palet pequeño de madera. Calzar los laterales con tacos de madera para evitar cualquier movimiento.\n• Aseguramiento Dinámico: Cubrir el maletero con cartón de doble canal y mantas viejas para absorber cualquier gota residual de aceite. Asegurar la caja con al menos dos cinchas de trinquete de alta resistencia ancladas a los puntos de amarre del vehículo de transporte para inmovilizar la carga ante frenazos bruscos de emergencia."
             ]
         ]
     },
@@ -789,8 +883,8 @@
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Base de Proveedores Estratégicos",
-                "• Proveedor de Tubos: Metalúrgicas locales suministradoras de tubos de acero 4130 cromoly con tolerancias de espesor certificadas.\n• Taller CNC: Talleres locales de corte por chorro de agua o fresado para las manguetas de suspensión (uprights) de aluminio.\n• Suministrador Vial: Tiendas de recambios homologados 'E' para la iluminación de calle y los retrovisores obligatorios de la ITV."
+                "1. Directorio de Proveedores en España",
+                "• Tubos de Acero: Distribuidores locales de metalurgia industrial especializados en acero al cromo-molibdeno 4130 con certificados de calidad.\n• Taller CNC y Corte Láser: Talleres metalúrgicos con centros de mecanizado de 5 ejes para las manguetas de aluminio 7075-T6.\n• Suministros ITV de Calle: Tiendas de recambios homologados para conseguir pilotos traseros, intermitentes y espejos marcados 'E'."
             ]
         ]
     },

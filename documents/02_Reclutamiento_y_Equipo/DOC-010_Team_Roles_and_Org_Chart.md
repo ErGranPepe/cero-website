@@ -8,13 +8,20 @@
 
 ---
 
-## 1. Roles Principales
+## 1. Estructura Organizativa Abierta
 
-• Founder / Director del Proyecto: Mario (coordinación general y medios).
-• Lead Engineer: Coordinación de CAD, FEA y soldadura.
-• Sourcing Scouts: Colaboradores que contactan con desguaces y metalúrgicas.
-• Community Moderators: Gestión de Discord e incorporación de ingenieros.
+CERO se gestiona como una DAO (Organización Autónoma Descentralizada) física. El Core Team de Móstoles (liderado por Mario) toma las decisiones de ejecución en taller y gestión de compras, pero el diseño CAD y las optimizaciones de ingeniería son delegadas en la comunidad internacional en abierto coordinada en GitHub y Onshape.
 
-## 2. Estructura Meritocrática
+## 2. Matriz RACI Completa
 
-Los roles se ganan mediante commits de Onshape o aportaciones cuantificables. Las decisiones técnicas se aprueban por consenso técnico o por el Lead Engineer.
+A continuación se presenta la matriz RACI del equipo CERO:
+
+### Tabla de Referencia
+
+| Actividad / Hito | ENG (Ing.) | MED (Medios) | PART (Alian.) | LEG (Legal) | GOV (Gob.) |
+| --- | --- | --- | --- | --- | --- |
+| Requerimientos | A | C | I | C | R |
+| Diseño CAD | R | I | C | I | A |
+| Vídeos YouTube | I | R | C | I | A |
+| Contratos IP | I | I | C | R | A |
+
