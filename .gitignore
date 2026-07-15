@@ -1,0 +1,14 @@
+.vercel
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+*.bak
+*.swp
+.env
+.env.local
+.vercel-build-cache/
+.venv/
+__pycache__/
+*.pyc
+

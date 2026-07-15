@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Panel de Control de Ingeniería PLM y Generador de Videos CERO — Gestión técnica y marketing de contenidos en tiempo real.">
+    <title>CERO | Centro de Control y PLM Técnico</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/main.css?v=8">
+    <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+<body class="dashboard-body">
+    <!-- Subtle animated grid and grain in the background -->
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="noise-grain" aria-hidden="true"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="cero-logo-symbol"></div>
+                <span class="logo-text">CERO</span>
+            </a>
+            <div class="nav-dashboard-title">
+                <span class="title-tag">SISTEMA PLM v1.0</span>
+                <h2>SALA DE MÁQUINAS</h2>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Volver a la Web</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Dashboard Main Wrapper -->
+    <main class="dashboard-wrapper container">
+        <!-- Dashboard Tabs Navigation -->
+        <div class="dashboard-tabs">
+            <button class="tab-btn active" data-tab="tab-telemetry"><i class="fas fa-chart-network"></i> Telemetría & 3D CoG</button>
+            <button class="tab-btn" data-tab="tab-bom"><i class="fas fa-sitemap"></i> Inventario BOM</button>
+            <button class="tab-btn" data-tab="tab-calculators"><i class="fas fa-calculator"></i> Calculadoras</button>
+            <button class="tab-btn" data-tab="tab-reels"><i class="fab fa-instagram"></i> Estudio de Reels</button>
+        </div>
+
+        <!-- TAB: TELEMETRIA & 3D CoG -->
+        <section class="tab-content active" id="tab-telemetry">
+            <div class="dashboard-grid">
+                <!-- Left: KPIs of Engineering -->
+                <div class="panel kpi-panel">
+                    <h3 class="panel-title"><i class="fas fa-tachometer-alt"></i> Estado del Monoplaza</h3>
+                    <div class="kpi-grid">
+                        <div class="kpi-card">
+                            <span class="kpi-label">Masa Calculada</span>
+                            <span class="kpi-val" id="kpi-mass">0 kg</span>
+                            <span class="kpi-sub">Objetivo: &lt; 230 kg</span>
+                        </div>
+                        <div class="kpi-card">
+                            <span class="kpi-label">Presupuesto</span>
+                            <span class="kpi-val" id="kpi-cost">0 €</span>
+                            <span class="kpi-sub">Meta: 0 € (Patrocinios)</span>
+                        </div>
+                        <div class="kpi-card">
+                            <span class="kpi-label">Altura del CoG</span>
+                            <span class="kpi-val" id="kpi-cog-z">0 mm</span>
+                            <span class="kpi-sub">Desde el suelo (Z)</span>
+                        </div>
+                        <div class="kpi-card">
+                            <span class="kpi-label">Reparto Del/Tras</span>
+                            <span class="kpi-val" id="kpi-weight-dist">50% / 50%</span>
+                            <span class="kpi-sub">Buscado: 45 / 55 %</span>
+                        </div>
+                        <div class="kpi-card">
+                            <span class="kpi-label">Piezas en CAD</span>
+                            <span class="kpi-val" id="kpi-cad-prog">0%</span>
+                            <span class="kpi-sub" id="kpi-cad-count">0 de 0 piezas</span>
+                        </div>
+                        <div class="kpi-card">
+                            <span class="kpi-label">Piezas Fabricadas</span>
+                            <span class="kpi-val" id="kpi-fab-prog">0%</span>
+                            <span class="kpi-sub" id="kpi-fab-count">0 de 0 piezas</span>
+                        </div>
+                    </div>
+
+                    <!-- CoG Coordinates Panel -->
+                    <div class="cog-coordinates-box">
+                        <h4>Posición Exacta CoG:</h4>
+                        <div class="coord-display">
+                            <div><span>X (Longitudinal):</span> <strong id="cog-coord-x">0 mm</strong></div>
+                            <div><span>Y (Transversal):</span> <strong id="cog-coord-y">0 mm</strong></div>
+                            <div><span>Z (Vertical):</span> <strong id="cog-coord-z">0 mm</strong></div>
+                        </div>
+                        <p class="cog-warning" id="cog-warning-text"><i class="fas fa-circle-info"></i> Reparto equilibrado y óptimo.</p>
+                    </div>
+                </div>
+
+                <!-- Right: 3D Chassis Canvas Viewer -->
+                <div class="panel canvas-3d-panel">
+                    <div class="panel-header-actions">
+                        <h3 class="panel-title"><i class="fas fa-cube"></i> Gemelo Digital 3D (CoG Estimador)</h3>
+                        <span class="instruction-badge"><i class="fas fa-hand-pointer"></i> Rota y haz zoom con el ratón</span>
+                    </div>
+                    <div class="canvas-3d-container">
+                        <!-- ThreeJS Canvas -->
+                        <div id="threejs-canvas-wrapper"></div>
+                        
+                        <!-- 3D Overlay Telemetry Legend -->
+                        <div class="three-legend">
+                            <div class="legend-item"><span class="legend-dot color-chassis"></span> Chasis Tubular</div>
+                            <div class="legend-item"><span class="legend-dot color-parts"></span> Componentes BOM</div>
+                            <div class="legend-item"><span class="legend-dot color-cog"></span> Centro de Gravedad (CoG)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB: INVENTARIO BOM -->
+        <section class="tab-content" id="tab-bom">
+            <div class="panel bom-panel">
+                <div class="bom-header">
+                    <div class="bom-title-block">
+                        <h3 class="panel-title"><i class="fas fa-list-ol"></i> Bill of Materials (BOM)</h3>
+                        <p class="bom-subtitle">Registro de componentes reales, posiciones geométricas y pesos para homologación.</p>
+                    </div>
+                    <div class="bom-actions">
+                        <button class="btn btn-secondary" id="btn-load-base"><i class="fas fa-database"></i> Partir de una Base</button>
+                        <button class="btn btn-secondary" id="btn-export-bom"><i class="fas fa-file-export"></i> Exportar JSON</button>
+                        <button class="btn btn-secondary" id="btn-import-bom-trigger"><i class="fas fa-file-import"></i> Importar JSON</button>
+                        <input type="file" id="input-import-bom" style="display: none;" accept=".json">
+                        <button class="btn btn-primary" id="btn-add-part"><i class="fas fa-plus"></i> Añadir Pieza</button>
+                    </div>
+                </div>
+
+                <!-- Filters Row -->
+                <div class="bom-filters">
+                    <div class="filter-group">
+                        <label for="filter-dept">Departamento:</label>
+                        <select id="filter-dept">
+                            <option value="all">Todos</option>
+                            <option value="chassis">Chasis y Estructura</option>
+                            <option value="suspension">Suspensiones y Frenos</option>
+                            <option value="powertrain">Powertrain (Motor/Trans.)</option>
+                            <option value="battery">Acumulador (Batería)</option>
+                            <option value="electronics">Electrónica y Cableado</option>
+                            <option value="aerodynamics">Aerodinámica</option>
+                            <option value="ergonomics">Ergonomía y Cockpit</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-status">Estado:</label>
+                        <select id="filter-status">
+                            <option value="all">Todos</option>
+                            <option value="concepto">Concepto</option>
+                            <option value="diseño">Diseño CAD</option>
+                            <option value="fea">Validación FEA</option>
+                            <option value="fabricacion">En Fabricación</option>
+                            <option value="terminado">Terminado / Montado</option>
+                            <option value="comprado">Adquirido (COTS)</option>
+                        </select>
+                    </div>
+                    <div class="filter-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="search-bom" placeholder="Buscar por nombre, código o material...">
+                    </div>
+                </div>
+
+                <!-- BOM Table -->
+                <div class="table-scroll-container">
+                    <table class="bom-table">
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Pieza / Componente</th>
+                                <th>Dpto.</th>
+                                <th>Estado</th>
+                                <th>Material</th>
+                                <th>Masa (g)</th>
+                                <th>Posición (X, Y, Z) mm</th>
+                                <th>Coste (€)</th>
+                                <th>FEA</th>
+                                <th>Patrocinador</th>
+                                <th style="width: 100px;">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bom-table-body">
+                            <!-- Injected dynamically by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB: CALCULADORAS -->
+        <section class="tab-content" id="tab-calculators">
+            <div class="calculators-grid">
+                <!-- Calculator 1: Battery Accumulator -->
+                <div class="panel calc-card">
+                    <h3 class="panel-title"><i class="fas fa-battery-three-quarters"></i> Dimensionador de Batería</h3>
+                    <p class="calc-desc">Calcula el voltaje, capacidad de energía total y corriente límite del pack de baterías a partir del conexionado S/P.</p>
+                    <form class="calc-form" id="form-calc-battery">
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="cell-v">Voltaje Celda (V):</label>
+                                <input type="number" step="0.01" id="cell-v" value="3.6" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cell-cap">Capacidad Celda (Ah):</label>
+                                <input type="number" step="0.1" id="cell-cap" value="3.0" required>
+                            </div>
+                        </div>
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="cells-s">Celdas en Serie (S):</label>
+                                <input type="number" id="cells-s" value="80" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cells-p">Celdas en Paralelo (P):</label>
+                                <input type="number" id="cells-p" value="6" required>
+                            </div>
+                        </div>
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="cell-dis">Descarga Máx Celda (A):</label>
+                                <input type="number" id="cell-dis" value="30" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cell-w">Masa por Celda (g):</label>
+                                <input type="number" id="cell-w" value="48" required>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary" id="btn-calc-battery">Calcular Pack</button>
+                    </form>
+                    <div class="calc-results" id="results-battery" style="display: none;">
+                        <h5>Resultados del Acumulador:</h5>
+                        <ul>
+                            <li>Voltaje Nominal: <strong id="res-bat-volt">0 V</strong></li>
+                            <li>Capacidad Total: <strong id="res-bat-cap">0 Ah</strong></li>
+                            <li>Energía del Pack: <strong id="res-bat-energy">0 kWh</strong></li>
+                            <li>Corriente Límite: <strong id="res-bat-curr">0 A</strong></li>
+                            <li>Potencia Límite: <strong id="res-bat-power">0 kW</strong></li>
+                            <li>Masa de Celdas: <strong id="res-bat-mass">0 kg</strong> (sin contar contenedor/BMS)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Calculator 2: Transmission and Speed -->
+                <div class="panel calc-card">
+                    <h3 class="panel-title"><i class="fas fa-cog"></i> Relación de Transmisión</h3>
+                    <p class="calc-desc">Calcula la velocidad máxima del monoplaza y el par motor multiplicado a la rueda.</p>
+                    <form class="calc-form" id="form-calc-transmission">
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="motor-rpm">RPM Máximas Motor:</label>
+                                <input type="number" id="motor-rpm" value="6000" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="motor-torque">Par Motor Máx (Nm):</label>
+                                <input type="number" id="motor-torque" value="120" required>
+                            </div>
+                        </div>
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="gear-ratio">Relación de Reducción (i):</label>
+                                <input type="number" step="0.01" id="gear-ratio" value="4.5" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="tire-diam">Diámetro Neumático (in):</label>
+                                <input type="number" step="0.1" id="tire-diam" value="18" required>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary" id="btn-calc-transmission">Calcular Velocidad</button>
+                    </form>
+                    <div class="calc-results" id="results-transmission" style="display: none;">
+                        <h5>Resultados del Sistema de Tracción:</h5>
+                        <ul>
+                            <li>Par en Rueda: <strong id="res-trans-torque">0 Nm</strong></li>
+                            <li>Velocidad Lineal Máxima: <strong id="res-trans-speed">0 km/h</strong></li>
+                            <li>RPM de la Rueda: <strong id="res-trans-wheelrpm">0 RPM</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Calculator 3: Beam Stiffness for Chassis Tubes -->
+                <div class="panel calc-card">
+                    <h3 class="panel-title"><i class="fas fa-ruler-combined"></i> Resistencia de Tubos de Chasis</h3>
+                    <p class="calc-desc">Compara la rigidez flexural y resistencia de diferentes perfiles estructurales de chasis tubular (Acero 4130 vs Standard).</p>
+                    <form class="calc-form" id="form-calc-beams">
+                        <div class="form-group">
+                            <label for="beam-material">Material del Tubo:</label>
+                            <select id="beam-material">
+                                <option value="4130">Acero 4130 Chromoly (E=205 GPa, Sy=460 MPa)</option>
+                                <option value="1020">Acero Carbono 1020 (E=200 GPa, Sy=295 MPa)</option>
+                                <option value="6082">Aluminio 6082-T6 (E=70 GPa, Sy=250 MPa)</option>
+                            </select>
+                        </div>
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="beam-od">Diámetro Exterior (mm):</label>
+                                <input type="number" step="0.1" id="beam-od" value="25.4" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="beam-t">Espesor de Pared (mm):</label>
+                                <input type="number" step="0.1" id="beam-t" value="2.4" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="beam-length">Longitud del Tubo (mm):</label>
+                            <input type="number" id="beam-length" value="1000" required>
+                        </div>
+                        <button type="button" class="btn btn-primary" id="btn-calc-beam">Calcular Viga</button>
+                    </form>
+                    <div class="calc-results" id="results-beam" style="display: none;">
+                        <h5>Resultados Estructurales (Euler-Bernoulli):</h5>
+                        <ul>
+                            <li>Momento de Inercia de Área (I): <strong id="res-beam-i">0 mm⁴</strong></li>
+                            <li>Masa del Tubo: <strong id="res-beam-mass">0 kg</strong></li>
+                            <li>Rigidez Flexural ($E \cdot I$): <strong id="res-beam-ei">0 N·m²</strong></li>
+                            <li>Carga Máx a Flexión antes de Fluencia: <strong id="res-beam-load">0 N</strong> (Fuerza puntual central)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB: REELS STUDIO -->
+        <section class="tab-content" id="tab-reels">
+            <div class="reels-studio-layout">
+                <!-- Left Control Panel -->
+                <div class="panel studio-controls">
+                    <h3 class="panel-title"><i class="fas fa-sliders-h"></i> Configuración de Reel</h3>
+                    
+                    <div class="form-group">
+                        <label for="reel-part-select">Pieza de Referencia:</label>
+                        <select id="reel-part-select">
+                            <!-- Injected by JS based on current BOM -->
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reel-template">Estilo de Plantilla:</label>
+                        <select id="reel-template">
+                            <option value="telemetry-hud">Ficha Técnica & Telemetría HUD (Fuerza y Peso)</option>
+                            <option value="fea-stress">Simulación FEA Stress & Esfuerzos</option>
+                            <option value="budget-ticker">Coste CERO & Patrocinadores</option>
+                            <option value="minimal-orbit">Giro 3D Minimalista & Ficha Limpia</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reel-neon-color">Color de Neón Principal:</label>
+                        <select id="reel-neon-color">
+                            <option value="#00e5ff">Azul CERO Electric</option>
+                            <option value="#ffff00">Cyberpunk Amarillo</option>
+                            <option value="#ff007f">Fucsia Flúor</option>
+                            <option value="#39ff14">Tóxico Verde</option>
+                            <option value="#ffffff">Blanco Puro Titanio</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label for="reel-day">Día de Proyecto:</label>
+                            <input type="number" id="reel-day" value="12">
+                        </div>
+                        <div class="form-group">
+                            <label for="reel-watermark">Marca de Agua:</label>
+                            <input type="text" id="reel-watermark" value="@buildcero">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reel-title">Título del Reel:</label>
+                        <input type="text" id="reel-title" value="DISEÑO DE CHASSIS COMPLETADO">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reel-subtitle">Subtítulo / Log:</label>
+                        <input type="text" id="reel-subtitle" value="Validación estructural FEA para soldar TIG.">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reel-music-beat">Estilo de Música (Sincronización):</label>
+                        <select id="reel-music-beat">
+                            <option value="techno">Techno Industrial (Rápido, 132 BPM)</option>
+                            <option value="synthwave">Outrun Synthwave (Medio, 110 BPM)</option>
+                            <option value="lofi">Lo-Fi Lento (Bajo, 80 BPM)</option>
+                        </select>
+                    </div>
+
+                    <!-- Custom Image Upload Background -->
+                    <div class="form-group">
+                        <label for="reel-bg-image">Imagen de Fondo Propia (Opcional):</label>
+                        <input type="file" id="reel-bg-image" accept="image/*">
+                        <p class="input-hint">Si subes una foto, reemplazará al visor 3D en la animación.</p>
+                        <button class="btn btn-secondary btn-sm" id="btn-clear-bg-image" style="display:none; margin-top:5px;">
+                            <i class="fas fa-trash"></i> Eliminar Foto (Usar 3D)
+                        </button>
+                    </div>
+
+                    <!-- Export and Progress State -->
+                    <div class="studio-actions">
+                        <button class="btn btn-secondary" id="btn-reel-play"><i class="fas fa-play"></i> Previsualizar</button>
+                        <button class="btn btn-primary" id="btn-reel-export"><i class="fas fa-download"></i> Exportar Video (Reel 60FPS)</button>
+                    </div>
+
+                    <!-- Exporting Progress Bar overlay -->
+                    <div class="export-progress-bar-wrap" id="export-progress-wrap" style="display:none;">
+                        <span class="progress-lbl">Compilando e inyectando telemetría...</span>
+                        <div class="bar-outer"><div class="bar-inner" id="export-progress-fill" style="width:0%;"></div></div>
+                        <span class="progress-percent" id="export-progress-percent">0%</span>
+                    </div>
+                </div>
+
+                <!-- Right Video Canvas Preview Container -->
+                <div class="panel studio-preview">
+                    <h3 class="panel-title"><i class="fas fa-video"></i> Previsualización Reel (1080x1920 / Aspecto 9:16)</h3>
+                    
+                    <div class="vertical-phone-frame">
+                        <div class="phone-notch"></div>
+                        <div class="video-container">
+                            <!-- Real HTML Canvas used for live drawing & capture -->
+                            <canvas id="reel-canvas" width="540" height="960"></canvas>
+                        </div>
+                    </div>
+                    <div class="preview-actions">
+                        <span class="fps-counter" id="fps-display">60 FPS</span>
+                        <span>Resolución de Salida: <strong>1080 x 1920 px (Full HD)</strong></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Form: Add/Edit Part -->
+    <div class="modal-backdrop" id="part-modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title-text"><i class="fas fa-plus-circle"></i> Añadir Nueva Pieza al Monoplaza</h3>
+                <button class="btn-close-modal" id="btn-close-part-modal">&times;</button>
+            </div>
+            <form id="form-part-editor" class="part-form">
+                <input type="hidden" id="edit-part-idx">
+
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="part-code">Código Único (Ej: ING-CHA-01):</label>
+                        <input type="text" id="part-code" required placeholder="ING-CHA-01">
+                    </div>
+                    <div class="form-group">
+                        <label for="part-name">Nombre de la Pieza:</label>
+                        <input type="text" id="part-name" required placeholder="Soporte de Dirección">
+                    </div>
+                </div>
+
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="part-dept">Área / Departamento:</label>
+                        <select id="part-dept" required>
+                            <option value="chassis">Chasis y Estructura</option>
+                            <option value="suspension">Suspensiones y Frenos</option>
+                            <option value="powertrain">Powertrain (Motor/Trans.)</option>
+                            <option value="battery">Acumulador (Batería)</option>
+                            <option value="electronics">Electrónica y Cableado</option>
+                            <option value="aerodynamics">Aerodinámica</option>
+                            <option value="ergonomics">Ergonomía y Cockpit</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="part-status">Estado del Ciclo de Vida:</label>
+                        <select id="part-status" required>
+                            <option value="concepto">Concepto</option>
+                            <option value="diseño">Diseño CAD</option>
+                            <option value="fea">Validación FEA</option>
+                            <option value="fabricacion">En Fabricación</option>
+                            <option value="terminado">Terminado / Montado</option>
+                            <option value="comprado">Adquirido (COTS)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="part-material">Material Estructural:</label>
+                        <input type="text" id="part-material" placeholder="Acero 4130, Al 7075-T6, Fibra Carbono..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="part-mfg">Método de Fabricación:</label>
+                        <input type="text" id="part-mfg" placeholder="Mecanizado CNC, Impresión 3D, Soldadura..." required>
+                    </div>
+                </div>
+
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="part-mass">Masa Estimada (gramos):</label>
+                        <input type="number" id="part-mass" value="1000" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="part-cost">Coste Real (€):</label>
+                        <input type="number" id="part-cost" value="0" required>
+                    </div>
+                </div>
+
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="part-x">Posición X (mm, Longitudinal):</label>
+                        <input type="number" id="part-x" value="1200" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="part-y">Posición Y (mm, Transversal):</label>
+                        <input type="number" id="part-y" value="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="part-z">Posición Z (mm, Vertical):</label>
+                        <input type="number" id="part-z" value="250" required>
+                    </div>
+                </div>
+
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="part-fea-status">Enlace o Estado FEA:</label>
+                        <select id="part-fea-status">
+                            <option value="Aprobado">Aprobado / Certificado</option>
+                            <option value="Pendiente">Pendiente de Análisis</option>
+                            <option value="Corregir">Requiere Corrección</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="part-sponsor">Patrocinador / Proveedor:</label>
+                        <input type="text" id="part-sponsor" placeholder="Sponsor S.L., Autodescarte, etc.">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="part-cad-url">Enlace al Modelo CAD (GitHub, GrabCAD, Onshape):</label>
+                    <input type="url" id="part-cad-url" placeholder="https://github.com/buildcero/cad/blob/main/...">
+                </div>
+
+                <div class="form-group">
+                    <label for="part-notes">Notas Técnicas:</label>
+                    <textarea id="part-notes" rows="2" placeholder="Detalles de tolerancias, holguras o planos..."></textarea>
+                </div>
+
+                <div class="modal-actions">
+                    <button type="button" class="btn btn-secondary" id="btn-cancel-modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary" id="btn-save-part-modal">Guardar Componente</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- ThreeJS CDN for 3D Geometry calculations and Orbit Controls for mouse navigation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    
+    <!-- Main Dashboard Engine -->
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

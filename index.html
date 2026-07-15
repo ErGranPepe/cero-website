@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CERO (buildcero.com) — Buscamos ingenieros, diseñadores, makers y comunidad para construir un monoplaza eléctrico colaborativo desde 0 €. Postúlate al equipo.">
+    <title>CERO | buildcero.com — Construyamos un coche desde 0 €</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/main.css?v=8">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Inline favicon (CERO bracket symbol) to avoid 404 -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='8' y='4' width='16' height='24' rx='8' ry='8' fill='none' stroke='white' stroke-width='3'/></svg>">
+</head>
+<body>
+    <!-- Page Loader (entry animation) -->
+    <div id="page-loader" aria-hidden="true">
+        <div class="loader-core">
+            <div class="loader-symbol">
+                <div class="cero-logo-symbol"></div>
+            </div>
+            <div class="loader-text">CERO</div>
+            <div class="loader-bar"><span></span></div>
+            <div class="loader-status">INICIALIZANDO SISTEMA...</div>
+        </div>
+    </div>
+
+    <!-- Top scroll progress bar -->
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Cursor follower glow (desktop only) -->
+    <div id="cursor-glow" aria-hidden="true"></div>
+
+    <!-- Subtle animated grid in the background -->
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <!-- Film grain overlay -->
+    <div class="noise-grain" aria-hidden="true"></div>
+
+    <!-- Canvas de Fondo 3D y Video Fallback -->
+    <div id="bg-canvas-container">
+        <canvas id="bg-canvas"></canvas>
+        <div class="bg-overlay"></div>
+        <!-- Decorative particles layer -->
+        <div class="bg-particles" id="bg-particles" aria-hidden="true"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <div class="cero-logo-symbol"></div>
+                <span class="logo-text">CERO</span>
+            </a>
+            <nav class="nav-menu">
+                <a href="#hero" class="nav-link">Inicio</a>
+                <a href="#departments" class="nav-link">Departamentos</a>
+                <a href="#recruitment" class="nav-link">Reclutamiento</a>
+                <a href="#project-logs" class="nav-link">Bitácora</a>
+                <a href="dashboard.html" class="nav-link"><i class="fas fa-sliders-h"></i> Sala de Máquinas</a>
+                <a href="https://www.instagram.com/buildcero/" target="_blank" class="nav-link social-link-mobile">Instagram</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="https://www.instagram.com/buildcero/" target="_blank" class="btn btn-icon" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <button class="mobile-nav-toggle" aria-label="Menu de navegación">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section (Cinematic Cover with Real Project Images) -->
+    <section id="hero" class="hero-section hero-cover">
+        <div class="container hero-split-container">
+            <!-- LEFT: Text content -->
+            <div class="hero-text-side">
+                <!-- URL bar / address (buildcero.com as a browser address bar) -->
+                <div class="hero-url-bar" data-reveal="fade-up">
+                    <span class="hero-url-dots"><i></i><i></i><i></i></span>
+                    <span class="hero-url-icon"><i class="fas fa-lock"></i></span>
+                    <span class="hero-url-text">https://<strong>buildcero.com</strong></span>
+                    <span class="hero-url-status">
+                        <span class="hero-url-status-dot"></span>
+                        EN VIVO
+                    </span>
+                </div>
+
+                <div class="hero-logo-large" data-reveal="fade-up">
+                    <div class="cero-logo-symbol"></div>
+                    <span class="logo-text">CERO</span>
+                </div>
+
+                <div class="hero-story-content" data-reveal="fade-up">
+                    <p class="story-pre-title"><span class="story-line">EL PRIMER COCHE CONSTRUIDO POR INTERNET</span></p>
+                    <h1 class="story-main-title">
+                        <span class="story-word" style="--i:0">RECLUTAMOS</span>
+                        <span class="story-word" style="--i:1">AL EQUIPO</span>
+                        <span class="story-word" style="--i:2">DESDE 0 €.</span>
+                    </h1>
+                    <p class="story-date">07.07.2026 — DÍA 1</p>
+                </div>
+
+                <p class="hero-lede" data-reveal="fade-up">
+                    Una marca de coches open-source, sin fábrica, sin capital, sin permisos.
+                    Lo primero es reclutar al equipo que lo va a hacer posible.
+                </p>
+
+                <div class="hero-actions-centered" data-reveal="fade-up">
+                    <a href="#recruitment" class="btn btn-primary btn-magnetic" data-magnetic>
+                        <i class="fas fa-arrow-right"></i> Postularme al Equipo
+                    </a>
+                    <a href="#departments" class="btn btn-secondary btn-magnetic" data-magnetic>
+                        <i class="fas fa-sitemap"></i> Ver Departamentos
+                    </a>
+                </div>
+
+                <!-- Honest status widget -->
+                <div class="hero-status-grid" data-reveal="fade-up">
+                    <div class="status-cell">
+                        <span class="status-num" id="status-day">001</span>
+                        <span class="status-lbl">DÍA DEL PROYECTO</span>
+                    </div>
+                    <div class="status-sep"></div>
+                    <div class="status-cell">
+                        <span class="status-num">DESDE 0</span>
+                        <span class="status-lbl">PARTIMOS DE CERO</span>
+                    </div>
+                    <div class="status-sep"></div>
+                    <div class="status-cell">
+                        <span class="status-num">10</span>
+                        <span class="status-lbl">DEPARTAMENTOS ABIERTOS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT: Real project images with hover effects -->
+            <div class="hero-showcase" data-reveal="zoom-in">
+                <figure class="showcase-item showcase-large" data-tilt>
+                    <div class="showcase-bg"></div>
+                    <img src="assets/landscape_mountain.jpg?v=8" alt="Paisaje de montaña" loading="eager" />
+                    <div class="showcase-meta">
+                        <span class="showcase-index">01 / 03</span>
+                        <span class="showcase-pulse"></span>
+                    </div>
+                    <figcaption class="showcase-overlay">
+                        <span class="showcase-tag">COTA 0</span>
+                        <h4>El horizonte como meta</h4>
+                        <p>Una marca de coches empieza por saber a dónde se quiere llegar.</p>
+                        <a href="#recruitment" class="showcase-cta">Ver más <i class="fas fa-arrow-right"></i></a>
+                    </figcaption>
+                    <span class="showcase-corner tl"></span>
+                    <span class="showcase-corner tr"></span>
+                    <span class="showcase-corner bl"></span>
+                    <span class="showcase-corner br"></span>
+                </figure>
+                <figure class="showcase-item showcase-small" data-tilt>
+                    <div class="showcase-bg"></div>
+                    <img src="assets/landscape_road.jpg?v=8" alt="Carretera vacía" loading="lazy" />
+                    <div class="showcase-meta">
+                        <span class="showcase-index">02 / 03</span>
+                    </div>
+                    <figcaption class="showcase-overlay">
+                        <span class="showcase-tag">RUTA</span>
+                        <h4>El camino por construir</h4>
+                        <p>Cada proyecto open-source es una carretera que no existía ayer.</p>
+                        <a href="#recruitment" class="showcase-cta">Ver más <i class="fas fa-arrow-right"></i></a>
+                    </figcaption>
+                    <span class="showcase-corner tl"></span>
+                    <span class="showcase-corner tr"></span>
+                    <span class="showcase-corner bl"></span>
+                    <span class="showcase-corner br"></span>
+                </figure>
+                <figure class="showcase-item showcase-small" data-tilt>
+                    <div class="showcase-bg"></div>
+                    <img src="assets/landscape_forest.jpg?v=8" alt="Bosque de coniferas" loading="lazy" />
+                    <div class="showcase-meta">
+                        <span class="showcase-index">03 / 03</span>
+                    </div>
+                    <figcaption class="showcase-overlay">
+                        <span class="showcase-tag">COMUNIDAD</span>
+                        <h4>Cero árboles, cero bosque</h4>
+                        <p>Cada roble fue una bellota. Ven a crecer con nosotros.</p>
+                        <a href="#recruitment" class="showcase-cta">Ver más <i class="fas fa-arrow-right"></i></a>
+                    </figcaption>
+                    <span class="showcase-corner tl"></span>
+                    <span class="showcase-corner tr"></span>
+                    <span class="showcase-corner bl"></span>
+                    <span class="showcase-corner br"></span>
+                </figure>
+
+                <!-- (showcase-caption removed — no "todavía no hay coche" copy) -->
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="hero-scroll-hint" aria-hidden="true">
+            <span></span>
+            <em>SCROLL</em>
+        </div>
+    </section>
+
+    <!-- Departments Section -->
+    <section id="departments" class="departments-section">
+        <div class="container">
+            <div class="section-header" data-reveal="fade-up">
+                <span class="section-eyebrow">[ 01 ] ÁREAS TÉCNICAS</span>
+                <h2>Departamentos de Desarrollo</h2>
+                <p>Elige tu especialidad y ayuda a construir CERO en una de estas áreas.</p>
+            </div>
+            
+            <div class="departments-grid" id="departments-grid">
+                <!-- Departments rendered dynamically by JS from departmentsData -->
+            </div>
+        </div>
+    </section>
+
+    <!-- PARALLAX BANNER 1: The open road -->
+    <section class="parallax-banner parallax-banner-1">
+        <div class="parallax-bg" data-parallax="0.35" style="background-image: url('assets/landscape_road.jpg?v=8');"></div>
+        <div class="parallax-overlay"></div>
+        <div class="parallax-content">
+            <span class="parallax-eyebrow">[ MANIFIESTO ]</span>
+            <h2 class="parallax-title">El coche no es el destino.<br>Es la excusa.</h2>
+            <p class="parallax-text">Internet ya sabe fabricar cohetes, satélites y modelos de lenguaje.<br>¿Por qué no un coche? La respuesta corta: por burocracia, por dinero, por miedo. La respuesta larga la estamos escribiendo.</p>
+            <span class="parallax-tag">— <strong>buildcero.com</strong>, día 001</span>
+        </div>
+    </section>
+
+    <!-- Interactive Recruitment Wizard -->
+    <section id="recruitment" class="recruitment-section">
+        <div class="container">
+            <div class="section-header" data-reveal="fade-up">
+                <span class="section-eyebrow">[ 02 ] INCORPORACIÓN</span>
+                <h2>Asistente de Incorporación</h2>
+                <p>Postula hoy mismo y recibe tu rol oficial dentro del equipo de CERO.</p>
+            </div>
+            
+            <div class="wizard-container" data-reveal="fade-up">
+                <div class="wizard-progress">
+                    <div class="wizard-progress-bar"><span id="wizard-progress-fill"></span></div>
+                    <div class="w-step active" data-step="1"><span class="step-num">01</span><span class="step-lbl">Especialidad</span></div>
+                    <div class="w-step" data-step="2"><span class="step-num">02</span><span class="step-lbl">Habilidades</span></div>
+                    <div class="w-step" data-step="3"><span class="step-num">03</span><span class="step-lbl">Registro</span></div>
+                </div>
+
+                <div class="wizard-card">
+                    <!-- Step 1: Specialty selection -->
+                    <div class="wizard-step-pane active" id="pane-step-1">
+                        <h3>¿En cuál de estos departamentos quieres colaborar?</h3>
+                        <p class="pane-subtitle">Selecciona tu área principal para configurar tu perfil.</p>
+                        <div class="wizard-grid-select" id="wizard-grid-select">
+                            <!-- Wizard specialty boxes rendered dynamically by JS -->
+                        </div>
+                        <div class="pane-actions">
+                            <button class="btn btn-primary btn-next-step" disabled>Continuar <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Skill set checkboxes -->
+                    <div class="wizard-step-pane" id="pane-step-2">
+                        <h3>Habilidades y Herramientas</h3>
+                        <p class="pane-subtitle">Selecciona las herramientas o conocimientos que dominas.</p>
+                        <div class="wizard-skills-list" id="skills-checkboxes">
+                            <!-- Dynamic Checkboxes injected by JS -->
+                        </div>
+                        <div class="pane-actions">
+                            <button class="btn btn-secondary btn-prev-step"><i class="fas fa-arrow-left"></i> Atrás</button>
+                            <button class="btn btn-primary btn-next-step">Continuar <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Registration and Contact details -->
+                    <div class="wizard-step-pane" id="pane-step-3">
+                        <h3>Tus Datos de Contacto</h3>
+                        <p class="pane-subtitle">Necesitamos tu usuario de Instagram para agregarte a los grupos del proyecto.</p>
+                        <form class="wizard-form" id="wizard-register-form">
+                            <div class="form-group">
+                                <label for="wiz-email">Correo Electrónico</label>
+                                <input type="email" id="wiz-email" placeholder="ejemplo@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="wiz-instagram">Usuario de Instagram (@)</label>
+                                <input type="text" id="wiz-instagram" placeholder="buildcero" required>
+                            </div>
+                            <div class="pane-actions">
+                                <button type="button" class="btn btn-secondary btn-prev-step"><i class="fas fa-arrow-left"></i> Atrás</button>
+                                <button type="submit" class="btn btn-primary">Completar Registro <i class="fas fa-check"></i></button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Success Screen -->
+                    <div class="wizard-step-pane" id="pane-success">
+                        <div class="success-icon"><i class="fas fa-id-card"></i></div>
+                        <h3>¡Te has unido al Equipo CERO!</h3>
+                        <p>Tu solicitud ha sido aprobada automáticamente por la comunidad. Tu perfil es ahora público.</p>
+                        
+                        <div class="id-card-visual" id="confetti-target">
+                            <canvas id="confetti-canvas" class="confetti-canvas" aria-hidden="true"></canvas>
+                            <div class="id-card-header">
+                                <span class="card-brand">0 CERO</span>
+                                <span class="card-role-id" id="assigned-colab-id">#089</span>
+                            </div>
+                            <div class="id-card-body">
+                                <div class="id-info">
+                                    <span class="lbl">Rol Asignado:</span>
+                                    <span class="val" id="assigned-role-title">Diseñador de Chasis CAD</span>
+                                </div>
+                                <div class="id-info">
+                                    <span class="lbl">Contacto:</span>
+                                    <span class="val" id="assigned-instagram">@instagram</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pane-actions-center">
+                            <a href="https://instagram.com/buildcero" target="_blank" class="btn btn-primary">
+                                <i class="fab fa-instagram"></i> Ir al Perfil del Proyecto
+                            </a>
+                            <button class="btn btn-secondary btn-reset-wizard">Dar de Alta a otro Miembro</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Active Community Directory -->
+            <div class="community-directory">
+                <div class="directory-header">
+                    <h3>Comunidad Activa</h3>
+                    <p>Últimas incorporaciones al equipo técnico del proyecto.</p>
+                </div>
+                <div class="community-grid" id="community-grid">
+                    <!-- Dynamic Collaborator Cards rendered by JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARALLAX BANNER 2: The quiet horizon -->
+    <section class="parallax-banner parallax-banner-2">
+        <div class="parallax-bg" data-parallax="0.45" style="background-image: url('assets/landscape_valley.jpg?v=8');"></div>
+        <div class="parallax-overlay"></div>
+        <div class="parallax-content parallax-content-right">
+            <span class="parallax-eyebrow">[ FASE 0 — RECLUTAMIENTO ]</span>
+            <h2 class="parallax-title">El equipo se construye<br>antes que el coche.</h2>
+            <p class="parallax-text">Hay una idea, un dominio y una página web.<br>Lo siguiente depende de quién esté leyendo esto ahora mismo.</p>
+            <a href="#recruitment" class="btn btn-primary btn-magnetic parallax-cta" data-magnetic>
+                <i class="fas fa-arrow-right"></i> Postularme al Equipo
+            </a>
+        </div>
+    </section>
+
+    <!-- Instagram Profile (Real Embed) -->
+    <section id="project-logs" class="logs-section">
+        <div class="container">
+            <div class="section-header" data-reveal="fade-up">
+                <span class="section-eyebrow">[ 03 ] CANAL OFICIAL</span>
+                <h2><span class="scramble-text">Comunidad en Instagram</span></h2>
+                <p>El día a día del proyecto se cuenta en <a href="https://www.instagram.com/buildcero/" target="_blank" rel="noopener">@buildcero</a>. Sigue el canal para enterarte cuando publiquemos el primer movimiento.</p>
+            </div>
+
+            <div class="instagram-embed-wrap" data-reveal="zoom-in">
+                <div class="instagram-embed-frame">
+                    <blockquote class="instagram-media"
+                                data-instgrm-permalink="https://www.instagram.com/buildcero/"
+                                data-instgrm-version="14"
+                                style=" background:#000; border:0; border-radius:0; margin:0; max-width:540px; min-width:280px; padding:0; width:100%;">
+                        <a href="https://www.instagram.com/buildcero/" target="_blank" rel="noopener" style="color:#fff; text-decoration:none;">@buildcero en Instagram</a>
+                    </blockquote>
+                </div>
+                <noscript>
+                    <p style="text-align:center; color:var(--color-text-secondary); font-family:var(--font-mono); font-size:0.8rem; padding:20px;">
+                        Activa JavaScript para ver el feed de <a href="https://www.instagram.com/buildcero/" target="_blank" rel="noopener" style="color:#fff;">@buildcero</a>.
+                    </p>
+                </noscript>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <div class="cero-logo-symbol"></div>
+                    <span class="logo-text">CERO</span>
+                </a>
+                <p>Redefiniendo la automoción desde la base de la comunidad de internet.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Contacto y Redes</h4>
+                <a href="https://www.instagram.com/buildcero/" target="_blank" class="footer-social-link">
+                    <i class="fab fa-instagram"></i> @buildcero
+                </a>
+                <a href="#" class="footer-social-link" id="btn-open-ceo"><i class="fas fa-key"></i> CEO Portal</a>
+            </div>
+            <div class="footer-links">
+                <h4>Aspectos Legales</h4>
+                <a href="#" class="footer-social-link btn-open-policy" data-modal="legal-modal">Aviso Legal</a>
+                <a href="#" class="footer-social-link btn-open-policy" data-modal="privacy-modal">Privacidad (GDPR)</a>
+                <a href="#" class="footer-social-link btn-open-policy" data-modal="cookie-modal">Cookies</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 CERO | El Proyecto. Licencia Open-Source de Hardware. Hecho con ❤️ por la comunidad de internet.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CEO Console Modal (Restricted Access) -->
+    <div class="ceo-modal" id="ceo-modal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="ceo-modal-title">
+        <div class="ceo-modal-content">
+            <div class="ceo-modal-header">
+                <h3 id="ceo-modal-title"><i class="fas fa-terminal"></i> CONSOLA DEL CEO — ACCESO RESTRINGIDO</h3>
+                <button class="ceo-modal-close" id="btn-close-ceo-modal">&times;</button>
+            </div>
+            
+            <!-- Login View -->
+            <div class="ceo-login-view" id="ceo-login-view">
+                <p class="console-prompt">SISTEMA REQUIERE AUTENTICACIÓN. INGRESE SU CUENTA ADMINISTRATIVA:</p>
+                
+                <!-- Simulated Google Auth Button -->
+                <button type="button" class="btn-google-auth" id="btn-google-login">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google Logo" width="18" height="18">
+                    <span>Acceder con Google Workspace</span>
+                </button>
+                
+                <div class="login-divider">
+                    <span>O CON CLAVE LOCAL</span>
+                </div>
+                
+                <form id="ceo-login-form">
+                    <input type="password" id="ceo-password" placeholder="CLAVE DE ACCESO" required>
+                    <button type="submit" class="btn btn-primary">VERIFICAR</button>
+                </form>
+                <p id="ceo-login-error" class="console-error" style="display: none;">ACCESO RECHAZADO. CREDENCIALES INVÁLIDAS.</p>
+            </div>
+            
+            <!-- Dashboard View -->
+            <div class="ceo-dashboard-view" id="ceo-dashboard-view" style="display: none;">
+                <div class="dashboard-header">
+                    <div>
+                        <span class="lbl">CERO ADMINISTRATION SYS</span>
+                        <h4>PERFILES DE COLABORADORES</h4>
+                    </div>
+                    <div class="dashboard-actions-group">
+                        <button class="btn btn-secondary" id="btn-export-excel">
+                            <i class="fas fa-file-excel"></i> Exportar a Excel
+                        </button>
+                        <button class="btn btn-secondary" id="btn-toggle-settings">
+                            <i class="fas fa-cog"></i> Configuración
+                        </button>
+                        <button class="btn btn-secondary" id="btn-logout-ceo">CERRAR SESIÓN</button>
+                    </div>
+                </div>
+                
+                <!-- Settings Panel (Webhook and Sheets Config) -->
+                <div class="dashboard-settings-panel" id="dashboard-settings-panel" style="display: none;">
+                    <div class="settings-content">
+                        <h5>Integración con Google Sheets & Excel</h5>
+                        <p class="settings-desc">Configura un webhook (Make, Zapier, o Google Apps Script) para enviar candidatos registrados en tiempo real.</p>
+                        <div class="settings-form-row">
+                            <input type="url" id="settings-webhook-url" placeholder="https://api.make.com/webhooks/v1/..." style="flex-grow: 1;">
+                            <button class="btn btn-primary" id="btn-save-settings">Guardar</button>
+                        </div>
+                        <p class="settings-status-msg" id="settings-status-msg" style="display: none;">Configuración guardada correctamente.</p>
+                    </div>
+                </div>
+                
+                <div class="dashboard-layout">
+                    <!-- Candidates List -->
+                    <div class="dashboard-candidates">
+                        <h5>Candidatos Postulados</h5>
+                        <div class="candidates-table-container">
+                            <table class="candidates-table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Candidato</th>
+                                        <th>Departamento</th>
+                                        <th>Estado</th>
+                                        <th>Acción Pública</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="ceo-candidates-list">
+                                    <!-- Dynamic list of registered users -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <!-- Candidate Detail & Dynamic Interview Generator -->
+                    <div class="dashboard-detail" id="candidate-detail-panel">
+                        <h5>Guía de Entrevista Técnica</h5>
+                        <div id="candidate-detail-content">
+                            <p class="empty-detail-msg">Seleccione un candidato para iniciar el asistente de entrevista y generar preguntas personalizadas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-modal="false" aria-label="Aviso de cookies">
+        <div class="cookie-content">
+            <p><i class="fas fa-cookie-bite"></i> CERO utiliza cookies técnicas necesarias para el funcionamiento de la Consola del CEO. Al continuar, aceptas nuestra <a href="#" class="btn-open-policy" data-modal="cookie-modal">Política de Cookies</a>.</p>
+            <button class="btn btn-primary" id="btn-accept-cookies">Aceptar</button>
+        </div>
+    </div>
+
+    <!-- Legal Modals -->
+    <!-- 1. Aviso Legal -->
+    <div class="legal-modal" id="legal-modal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="legal-modal-title">
+        <div class="legal-modal-content">
+            <div class="legal-modal-header">
+                <h4 id="legal-modal-title">AVISO LEGAL</h4>
+                <button class="legal-modal-close" data-close="legal-modal">&times;</button>
+            </div>
+            <div class="legal-modal-body">
+                <h5>1. Datos Identificativos</h5>
+                <p>El proyecto CERO es una iniciativa colaborativa abierta y pública sin fines lucrativos inmediatos. En cumplimiento de los deberes de información, se hace constar que el dominio actual y el sitio web corresponden al canal oficial del proyecto de código abierto CERO.</p>
+                <h5>2. Propiedad Industrial y Colectiva</h5>
+                <p>Todos los diseños, códigos, esquemas e información publicados en este sitio web están bajo la Licencia Abierta de Hardware CERO o equivalentes (CERN OHL / GPL). Los colaboradores conservan su autoría intelectual original, cediendo su uso público bajo dicha licencia para el desarrollo del primer monoplaza colaborativo de automoción.</p>
+                <h5>3. Exclusión de Responsabilidad</h5>
+                <p>La información técnica facilitada es orientativa. El proyecto no se hace responsable de daños causados por el uso incorrecto de planos o de información compartida en la comunidad.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Política de Privacidad -->
+    <div class="legal-modal" id="privacy-modal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="privacy-modal-title">
+        <div class="legal-modal-content">
+            <div class="legal-modal-header">
+                <h4 id="privacy-modal-title">POLÍTICA DE PRIVACIDAD (GDPR)</h4>
+                <button class="legal-modal-close" data-close="privacy-modal">&times;</button>
+            </div>
+            <div class="legal-modal-body">
+                <h5>1. Responsable del Tratamiento</h5>
+                <p>Los datos suministrados por los aspirantes son gestionados exclusivamente por la administración del proyecto CERO en local (LocalStorage) y mediante webhooks de hoja de cálculo autorizados por la dirección.</p>
+                <h5>2. Finalidad del Tratamiento de Datos</h5>
+                <p>La recogida de datos (correo electrónico e Instagram) tiene como única finalidad verificar la identidad técnica del aspirante y permitir que el CEO/Coordinador le contacte para añadirle a los grupos oficiales de trabajo.</p>
+                <h5>3. Consentimiento y Visibilidad</h5>
+                <p>Al registrarse en el Asistente, consiente el tratamiento de sus datos. Por defecto, su perfil es PRIVADO y solo el CEO puede verlo. Si el CEO aprueba su perfil, se publicará en la web únicamente su alias e Instagram.</p>
+                <h5>4. Derechos ARCO</h5>
+                <p>Tiene derecho a acceder, rectificar o suprimir sus datos en cualquier momento. Para ejercerlos, por favor contacte mediante mensaje directo a nuestra cuenta oficial de Instagram <strong>@buildcero</strong>.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Política de Cookies -->
+    <div class="legal-modal" id="cookie-modal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="cookie-modal-title">
+        <div class="legal-modal-content">
+            <div class="legal-modal-header">
+                <h4 id="cookie-modal-title">POLÍTICA DE COOKIES</h4>
+                <button class="legal-modal-close" data-close="cookie-modal">&times;</button>
+            </div>
+            <div class="legal-modal-body">
+                <h5>¿Qué cookies utilizamos?</h5>
+                <p>Este sitio web utiliza únicamente cookies técnicas de sesión y almacenamiento en el navegador (LocalStorage / SessionStorage) para permitir:</p>
+                <ul>
+                    <li>Mantener abierta la sesión del administrador (CEO) de forma segura.</li>
+                    <li>Persistir el estado del Asistente de Reclutamiento de candidatos.</li>
+                    <li>Recordar si has aceptado este aviso de cookies.</li>
+                </ul>
+                <p>Al tratarse de cookies estrictamente necesarias de carácter técnico y sin fines comerciales o publicitarios, no es obligatorio recabar consentimiento expreso según el Artículo 22.2 de la LSSI, pero se facilita esta información por transparencia absoluta.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/app.js?v=8"></script>
+    <!-- Official Instagram embed (loads the real @buildcero feed widget) -->
+    <script async src="https://www.instagram.com/embed.js"></script>
+</body>
+</html>
