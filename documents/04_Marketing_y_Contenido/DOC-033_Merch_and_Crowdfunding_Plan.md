@@ -1,21 +1,26 @@
 # DOC-033: Merch and Crowdfunding Plan
-**Plan de Lanzamiento de Productos Físicos y Cuotas Comunitarias**
+**Estrategia de Lanzamiento de Productos de 0€, Impresión bajo Demanda y Patreon**
 
 - **Autor**: Medios y Crecimiento CERO
 - **Estado**: APROBADO
-- **Versión**: v1.0
+- **Versión**: v11.0
 - **Fecha**: 15.07.2026
 
 ---
 
-## 1. Fase 1 de Cero Gasto (Mes 1-3)
+## 1. Lanzamiento de Merchandising sin Stock (Print-on-Demand)
 
-Queda prohibido gastar en stock de camisetas o contratar pasarelas de pago costosas. El enfoque es puramente de crecimiento y CAD virtual en Onshape.
+Para evitar cualquier inversión inicial, la tienda de merchandising de CERO (lanzada en el Mes 7) utilizará un modelo de impresión bajo demanda (Print-on-Demand) mediante pasarelas gratuitas (ej: Ko-fi / Printful). Las camisetas se fabrican y envían directamente por el proveedor solo cuando el comprador final realiza el pago completo en la web, garantizando stock de 0€.
+• Camiseta Blueprint V1 (Plano del chasis tubular en espalda): PVP 25€ / Coste de producción 11€ (Margen: 14€ por unidad).
+• Póster Chapa de Aluminio Grabado (Geometría de suspensión): PVP 35€ / Coste de producción 14€ (Margen: 21€ por unidad).
 
-## 2. Lanzamiento de Merchandising sin Stock (Mes 7+)
+## 2. Campaña de Crowdfunding y Patreon (Mes 4+)
 
-Lanzamiento de camisetas con el plano explotado del chasis mediante impresión bajo demanda (Print-on-Demand). Esto garantiza stock de 0€ y un margen del 40-50% por camiseta soldada en internet.
+Lanzamiento de las membresías recurrentes de Patreon en el Mes 4 para financiar la compra de las piezas del motor de desguace y los kits de seguridad de calle:
+• Tier 1 (2,99 €/mes): Acceso al canal de Discord de debates técnicos privados.
+• Tier 2 (5,99 €/mes): Acceso anticipado de 48 horas a los planos de Onshape actualizados y commits de GitHub.
+• Tier 3 (19,99 €/mes): Grabado láser de tu nombre o logotipo de internet en las placas del chasis del coche real de calle.
 
-## 3. Tiers de Patreon (Mes 4+)
+## 3. Criterios de Aceptación y Conversión de Backers
 
-Patreon se activa en el Mes 4 para acumular el fondo de caja con el que compraremos el motor Suzuki GSX-R usado en el Mes 12.
+Monitoreamos semanalmente el embudo de conversión de seguidores de redes a patrocinadores de Patreon. La meta es alcanzar un ratio de conversión del 1.5% sobre la base de usuarios de Discord activos, asegurando la caja necesaria para la compra de materiales en el Mes 12.

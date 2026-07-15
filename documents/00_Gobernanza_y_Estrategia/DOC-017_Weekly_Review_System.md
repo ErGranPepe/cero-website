@@ -3,18 +3,15 @@
 
 - **Autor**: Operaciones CERO
 - **Estado**: APROBADO
-- **Versión**: v1.0
+- **Versión**: v11.0
 - **Fecha**: 15.07.2026
 
 ---
 
-## 1. Reunión Semanal de Sincronización
+## 1. Ritmo Semanal
 
-Celebrada todos los domingos a las 20:00 CEST en el canal de voz de Discord. Estrictamente limitada a 45 minutos. Cada coordinador dispone de 3 minutos para reportar su estado, bloqueos y planes.
+Reunión dominical a las 20:00 CEST. Límite de 45 minutos. Cada área expone sus logros, bloqueos y planes. Se registran las actas en GitHub.
 
-## 2. Plantilla de Reporte de Estado
+## 2. Semáforo de Riesgo
 
-• KPIs Generales (followers, Discord, Patreon).
-• Tareas en progreso (CAD, alianzas).
-• Semáforo de Riesgo (Rojo/Amarillo/Verde).
-• Bloqueos identificados que requieran soporte multidisciplinar.
+Cada hito se clasifica como: Verde (en tiempo), Amarillo (con riesgo, requiere atención) o Rojo (retrasado, requiere intervención).

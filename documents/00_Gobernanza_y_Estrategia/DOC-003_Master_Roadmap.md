@@ -3,22 +3,22 @@
 
 - **Autor**: Gestión de Proyectos CERO
 - **Estado**: APROBADO
-- **Versión**: v1.1
+- **Versión**: v11.0
 - **Fecha**: 15.07.2026
 
 ---
 
-## 1. Cronograma de Hitos (Master Gantt)
+## 1. Secuencia Lógica de Construcción
 
-El desarrollo del vehículo se organiza en un cronograma lineal de 28 meses. Las dependencias críticas son el escaneo 3D del motor de moto antes de cerrar el CAD trasero del chasis, y el diseño de aristas según normativa peatonal para el dossier IDIADA/INTA.
+El desarrollo del vehículo sigue una ruta crítica lineal. No se puede encargar el corte de tubos de acero 4130 cromoly antes de congelar las dimensiones del chasis (Fase 3), y no se puede cerrar el CAD trasero del chasis sin haber escaneado físicamente el motor Suzuki GSX-R de desguace para verificar la alineación del piñón de transmisión con el eje trasero.
 
 ## 2. Gráfico del Gantt de Desarrollo
 
-A continuación se ilustra gráficamente la planificación temporal y fases del proyecto:
+A continuación se ilustra la planificación temporal de 28 meses:
 
-## 3. Tabla de Puertas de Control (Gates)
+## 3. Tabla de Hitos y Puertas de Control (Gates)
 
-A continuación se detallan los entregables obligatorios por fase:
+Checklist obligatorio para avanzar de fase:
 
 ### Tabla de Referencia / Calendario
 

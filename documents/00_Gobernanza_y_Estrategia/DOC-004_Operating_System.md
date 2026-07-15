@@ -3,7 +3,7 @@
 
 - **Autor**: Operaciones CERO
 - **Estado**: APROBADO
-- **Versión**: v1.1
+- **Versión**: v11.0
 - **Fecha**: 15.07.2026
 
 ---
@@ -23,17 +23,17 @@
 
 ## 1. Estructura de Trabajo Abierta
 
-El proyecto opera mediante un núcleo (Core Team) y comisiones de voluntarios coordinadas en Discord y GitHub. No existen rangos jerárquicos corporativos clásicos; las aportaciones técnicas registradas en el repositorio otorgan el estatus de colaborador activo.
+El proyecto se divide en comisiones técnicas autogestionadas (Ingeniería, Alianzas, Medios, Legal, Gobernanza). Las aportaciones al repositorio otorgan el estatus de colaborador activo. Toda decisión que afecte a la estructura se registra en actas públicas en el canal #gobernanza de Discord.
 
 ## 2. Canales Oficiales
 
-• Discord: Debates rápidos y reuniones de voz dominicales.
-• GitHub: Control de versiones de planos Onshape (enlaces y archivos CAD) e informes técnicos.
-• Web (buildcero.com): Landing de captación y data room.
+• Discord: Sincronización diaria, resolución rápida de dudas.
+• GitHub: Control de versiones de planos y simulaciones.
+• Google Drive: Documentos financieros y contratos.
 
 ## 3. Embudo de Crecimiento y Conversión Comunitaria
 
-A continuación se muestra gráficamente cómo convertimos espectadores casuales en colaboradores del proyecto:
+Esquema de conversión de espectadores de redes a miembros activos del Core Team:
 
 ## 4. Matriz RACI Básica
 

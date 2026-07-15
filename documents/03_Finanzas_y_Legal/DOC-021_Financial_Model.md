@@ -1,24 +1,31 @@
 # DOC-021: Financial Model
-**Proyecciones Financieras a 3-5 Años y Presupuestos Viales**
+**Presupuesto Operativo Inicial de 0€, Vías de Recaudación y Costes de Homologación de Calle**
 
 - **Autor**: Dirección Estratégica CERO
 - **Estado**: APROBADO
-- **Versión**: v1.1
+- **Versión**: v11.0
 - **Fecha**: 15.07.2026
 
 ---
 
-## 1. Modelo Financiero de Caja
+## 1. Flujo de Caja Basado en Suscripciones y Ventas
 
-El proyecto asume 0€ el primer mes y acumula caja mediante Patreon (Tier Boceto 2.99€, Tier CAD 5.99€, Tier Core 19.99€). Los gastos reales de compra de motor Suzuki GSX-R (€1.200) y frenos se realizan con la caja acumulada al Mes 12.
+El proyecto opera con 0€ de bolsillo del fundador. Toda la financiación de materiales (motor de desguace, escape, catalizador, discos de freno) se sufraga con la caja acumulada de Patreon (lanzamiento Mes 4) y la venta de camisetas sin stock en impresión bajo demand (Mes 7). Se descuentan directamente los costes de pasarela Stripe (1.4% + 0.25€ por transacción) y la comisión de Patreon (8% sobre PVP de suscripción).
 
-## 2. Comparación Financiera Pista vs. Homologación de Calle
+## 2. Escenarios de Recaudación y Costes Operativos
 
-A continuación se muestra de manera gráfica la diferencia de coste entre el proyecto de pista y el coche homologado para calle:
+Planteamos tres escenarios de viabilidad financiera a 12 meses:
+• Escenario Conservador (50 mecenas de media): Recaudación neta de ~150 €/mes. Permite cubrir los costes básicos de consumibles de taller (gas de soldar, electrodos, radial) y el alojamiento web, aplazando la compra del motor a base de patrocinios.
+• Escenario Base (150 mecenas de media): Recaudación neta de ~500 €/mes. Genera una reserva de 3.350€ libres de caja al Mes 12, permitiendo la adquisición directa del motor Suzuki GSX-R usado completo y los kits de seguridad de calle.
+• Escenario Optimista (350 mecenas de media): Recaudación neta de ~1.200 €/mes. Permite alquilar un garaje/taller estable (€300/mes) a partir del Mes 6 y sufragar las tasas iniciales de laboratorios acreditados de homologación.
 
-## 3. Estimaciones Financieras a 3 Años
+## 3. Comparativa Estructural de Costes (Pista vs. Calle)
 
-A continuación se detallan las proyecciones financieras de la organización:
+A continuación se presenta de forma gráfica la distribución de costes para un prototipo básico de circuito (€3.300) frente al coste acumulado para un monoplaza homologado de calle con catalizador Euro 6, sistema de doble circuito hidráulico y tasas IDIADA/INTA (€10.050 en total):
+
+## 4. Tabla de Costes Físicos Proyectados
+
+Desglose de costes viales proyectados para el monoplaza:
 
 ### Tabla de Referencia / Calendario
 

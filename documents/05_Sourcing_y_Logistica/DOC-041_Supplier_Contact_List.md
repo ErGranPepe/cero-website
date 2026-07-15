@@ -1,15 +1,15 @@
 # DOC-041: Supplier Contact List
-**Lista de Proveedores de Acero 4130, Mecanizados CNC y Componentes Viales**
+**Lista de Proveedores de Acero, Mecanizados CNC y Canjes**
 
 - **Autor**: Alianzas y Sourcing CERO
 - **Estado**: APROBADO
-- **Versión**: v1.0
+- **Versión**: v11.0
 - **Fecha**: 15.07.2026
 
 ---
 
-## 1. Base de Proveedores Estratégicos
+## 1. Directorio de Proveedores en España
 
-• Proveedor de Tubos: Metalúrgicas locales suministradoras de tubos de acero 4130 cromoly con tolerancias de espesor certificadas.
-• Taller CNC: Talleres locales de corte por chorro de agua o fresado para las manguetas de suspensión (uprights) de aluminio.
-• Suministrador Vial: Tiendas de recambios homologados 'E' para la iluminación de calle y los retrovisores obligatorios de la ITV.
+• Tubos de Acero: Distribuidores locales de metalurgia industrial especializados en acero al cromo-molibdeno 4130 con certificados de calidad.
+• Taller CNC y Corte Láser: Talleres metalúrgicos con centros de mecanizado de 5 ejes para las manguetas de aluminio 7075-T6.
+• Suministros ITV de Calle: Tiendas de recambios homologados para conseguir pilotos traseros, intermitentes y espejos marcados 'E'.

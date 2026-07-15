@@ -3,15 +3,15 @@
 
 - **Autor**: Legal y Cumplimiento CERO
 - **Estado**: APROBADO
-- **Versión**: v1.0
+- **Versión**: v11.0
 - **Fecha**: 15.07.2026
 
 ---
 
-## 1. Estrategia de Código Abierto
+## 1. Licencia Abierta
 
-Los planos y simulaciones de CERO se liberan bajo licencia Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0). Esto permite a entusiastas construir sus propios coches, pero protege comercialmente la marca CERO ante copias industriales sin convenio.
+Uso de la licencia Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0). Cualquiera puede descargar y replicar los diseños, pero se restringe su explotación comercial por terceros sin un acuerdo específico con CERO.
 
-## 2. Contratos de Cesión de IP de Colaboradores
+## 2. Registro de Patentes de Utilidad
 
-Todos los ingenieros colaboradores deben firmar un documento de cesión de IP en el onboarding. Esto garantiza que CERO S.L. posee los derechos de los archivos CAD para poder homologar y fabricar el monoplaza de forma física.
+Ciertos utillajes desarrollados por el Core Team (ej. el sistema de acoplamiento de la cadena del motor de moto al chasis del monoplaza) podrán ser registrados como modelos de utilidad por la S.L. para generar valor de activo ante inversores.
