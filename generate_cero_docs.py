@@ -299,22 +299,8 @@ def create_pdf(doc_id, doc_info, output_dir, assets_dir):
             story.append(Image(img_path, width=400, height=220))
             story.append(Spacer(1, 10))
             
-        # Additional mapped images for illustrated NASA documents
-        if doc_id == "DOC-005":
-            extra_imgs = ["brake_force_distribution.png"]
-            for img in extra_imgs:
-                ex_path = os.path.join(assets_dir, img)
-                if os.path.exists(ex_path):
-                    story.append(Spacer(1, 10))
-                    story.append(Image(ex_path, width=400, height=220))
-                    story.append(Spacer(1, 10))
-        elif doc_id == "DOC-007":
-            ex_path = os.path.join(assets_dir, "suspension_spring_rate.png")
-            if os.path.exists(ex_path):
-                story.append(Spacer(1, 10))
-                story.append(Image(ex_path, width=400, height=220))
-                story.append(Spacer(1, 10))
-        elif doc_id == "DOC-021":
+        # Additional mapped images for illustrated functional documents
+        if doc_id == "DOC-021":
             ex_path = os.path.join(assets_dir, "funding_burn_rate.png")
             if os.path.exists(ex_path):
                 story.append(Spacer(1, 10))
@@ -529,122 +515,164 @@ def generate_diagrams(assets_dir):
     ax.spines['left'].set_color('#8E8E93')
     ax.spines['bottom'].set_color('#8E8E93')
     ax.grid(axis='x', linestyle='--', alpha=0.5)
-    ax.set_title("COMPARATIVA DE RESISTENCIA ESTRUCTURAL DE MATERIALES", fontsize=10, fontweight="bold", pad=15)
+    ax.set_title("EMBUDO DE CONVERSIÓN EN CANALES DE PARTICIPACIÓN", fontsize=10, fontweight="bold", pad=15)
     plt.tight_layout()
     plt.savefig(fsae_path, bbox_inches='tight')
     plt.close()
-    print("Generado Diagrama: fsae_structural_equivalency.png")
+    print("Generado Diagrama: growth_funnel.png")
 
-    # 6. chasis_aerodynamics_lift_drag.png
-    aero_path = os.path.join(assets_dir, "chasis_aerodynamics_lift_drag.png")
-    fig, ax1 = plt.subplots(figsize=(7, 3.8), dpi=150)
-    angles = np.linspace(0, 20, 50)
-    drag = 50 + 2.5 * angles**1.5
-    downforce = 100 + 35 * angles - 0.5 * angles**2
-    ax1.plot(angles, drag, color="#1C1C1E", label="Fuerza de Arrastre (D, N)", linewidth=2)
-    ax1.set_xlabel("Ángulo de Ataque del Alerón Trasero (grados)", fontsize=8, fontweight="bold", labelpad=10)
-    ax1.set_ylabel("Arrastre Drag Force D (N)", color="#1C1C1E", fontsize=8, fontweight="bold", labelpad=10)
-    ax1.tick_params(axis='y', labelcolor="#1C1C1E")
-    ax2 = ax1.twinx()
-    ax2.plot(angles, downforce, color="#FF3B30", label="Downforce (L, N)", linewidth=2, linestyle="--")
-    ax2.set_ylabel("Carga de Sustentación Downforce L (N)", color="#FF3B30", fontsize=8, fontweight="bold", labelpad=10)
-    ax2.tick_params(axis='y', labelcolor="#FF3B30")
-    ax1.grid(True, linestyle=":", alpha=0.6)
-    plt.title("AERODINÁMICA CFD: ARRASTRE VS DOWNFORCE A 120 KM/H", fontsize=9, fontweight="bold", pad=15)
-    plt.tight_layout()
-    plt.savefig(aero_path, bbox_inches='tight')
-    plt.close()
-    print("Generado Diagrama: chasis_aerodynamics_lift_drag.png")
-
-    # 7. steering_geometry_ackermann.png
-    ack_path = os.path.join(assets_dir, "steering_geometry_ackermann.png")
+    # 5. volunteer_onboarding_pipeline.png
+    onb_path = os.path.join(assets_dir, "volunteer_onboarding_pipeline.png")
     fig, ax = plt.subplots(figsize=(7, 3.5), dpi=150)
-    inner_angles = np.linspace(0, 35, 50)
-    ack_100 = inner_angles * 0.82
-    parallel = inner_angles
-    cero_steer = inner_angles * 0.85
-    ax.plot(inner_angles, parallel, color="#8E8E93", linestyle=":", label="Dirección Paralela (0% Ackermann)")
-    ax.plot(inner_angles, ack_100, color="#1C1C1E", linestyle="-.", label="Ackermann Geométrico Puro (100%)")
-    ax.plot(inner_angles, cero_steer, color="#FF3B30", linewidth=2.2, label="Diseño CERO (85% Ackermann)")
-    ax.set_xlabel("Ángulo de Rueda Interior (grados)", fontsize=8, fontweight="bold", labelpad=10)
-    ax.set_ylabel("Ángulo de Rueda Exterior (grados)", fontsize=8, fontweight="bold", labelpad=10)
-    ax.grid(True, linestyle="--", alpha=0.5)
-    ax.spines['top'].set_visible(False)
-    ax.spines['right'].set_visible(False)
-    ax.spines['left'].set_color('#8E8E93')
-    ax.spines['bottom'].set_color('#8E8E93')
-    ax.legend(loc="upper left", fontsize=8)
-    plt.title("GEOMETRÍA DE DIRECCIÓN CERO VS MODELOS ACKERMANN", fontsize=9, fontweight="bold", pad=15)
+    ax.axis('off')
+    steps_onb = [
+        ("1. Discord", "Unión vía Link\nen Redes"),
+        ("2. Asignar Rol", "Elección de Perfil\n#roles (CAD/Mkt)"),
+        ("3. Micro-Reto", "Reto de 2 horas\n(Filtro de Interés)"),
+        ("4. Core Review", "Aprobación y\nFusión en GitHub"),
+        ("5. Contrato", "Devengo de Equity\nvesting de 12m")
+    ]
+    x_pos_onb = [0.1, 0.3, 0.5, 0.7, 0.9]
+    for i, (title, desc) in enumerate(steps_onb):
+        ax.text(x_pos_onb[i], 0.5, f"{title}\n\n{desc}",
+                ha='center', va='center', fontsize=7,
+                bbox=dict(boxstyle="round,pad=0.7", fc="#F2F2F7" if i < 4 else "#FF3B30", ec="#E5E5EA", lw=1),
+                color="#1C1C1E" if i < 4 else "#FFFFFF")
+        if i < 4:
+            ax.annotate('', xy=(x_pos_onb[i+1] - 0.07, 0.5), xytext=(x_pos_onb[i] + 0.07, 0.5),
+                        arrowprops=dict(arrowstyle="-|>", color="#FF3B30", lw=1.2))
+    ax.set_xlim(0, 1.0)
+    ax.set_ylim(0, 1.0)
+    plt.title("FLUJO DE RECLUTAMIENTO Y ONBOARDING DE VOLUNTARIOS CERO", fontsize=9, fontweight="bold", pad=15)
     plt.tight_layout()
-    plt.savefig(ack_path, bbox_inches='tight')
+    plt.savefig(onb_path, bbox_inches='tight')
     plt.close()
-    print("Generado Diagrama: steering_geometry_ackermann.png")
+    print("Generado Diagrama: volunteer_onboarding_pipeline.png")
 
-    # 8. engine_power_torque_curve.png
-    power_path = os.path.join(assets_dir, "engine_power_torque_curve.png")
-    fig, ax1 = plt.subplots(figsize=(7, 3.8), dpi=150)
-    rpm = np.linspace(1000, 6000, 50)
-    power = 10 + 124 * (rpm / 6000)**1.8
-    torque = 180 + 60 * np.sin((rpm - 1000) / 5000 * np.pi)
-    ax1.plot(rpm, power, color="#FF3B30", linewidth=2.5, label="Potencia (hp)")
-    ax1.set_xlabel("Velocidad de Motor Eléctrico (RPM)", fontsize=8, fontweight="bold", labelpad=10)
-    ax1.set_ylabel("Potencia del Motor Emrax (hp)", color="#FF3B30", fontsize=8, fontweight="bold", labelpad=10)
-    ax1.tick_params(axis='y', labelcolor="#FF3B30")
-    ax2 = ax1.twinx()
-    ax2.plot(rpm, torque, color="#1C1C1E", linewidth=2, linestyle="-.", label="Par Motor (Nm)")
-    ax2.set_ylabel("Par Motor Eléctrico (Nm)", color="#1C1C1E", fontsize=8, fontweight="bold", labelpad=10)
-    ax2.tick_params(axis='y', labelcolor="#1C1C1E")
-    ax1.grid(True, linestyle=":", alpha=0.6)
-    plt.title("CURVAS DE RENDIMIENTO MOTOR ELÉCTRICO EMRAX 228 (HV)", fontsize=9, fontweight="bold", pad=15)
-    plt.tight_layout()
-    plt.savefig(power_path, bbox_inches='tight')
-    plt.close()
-    print("Generado Diagrama: engine_power_torque_curve.png")
-
-    # 9. brake_force_distribution.png
-    brake_path = os.path.join(assets_dir, "brake_force_distribution.png")
+    # 6. weekly_operational_cycle.png
+    cycle_path = os.path.join(assets_dir, "weekly_operational_cycle.png")
     fig, ax = plt.subplots(figsize=(7, 3.5), dpi=150)
-    front_p = np.linspace(0, 100, 50)
-    rear_p_50 = front_p
-    rear_p_opt = 0.78 * front_p - 0.002 * front_p**2
-    ax.plot(front_p, rear_p_50, color="#8E8E93", linestyle=":", label="Distribución Uniforme (50/50)")
-    ax.plot(front_p, rear_p_opt, color="#FF3B30", linewidth=2.2, label="Balance Wilwood CERO (60/40)")
-    ax.fill_between(front_p, rear_p_opt, rear_p_50, color="#FF3B30", alpha=0.1, label="Zona de Bloqueo Eje Trasero")
-    ax.set_xlabel("Presión Hidráulica Eje Delantero (bar)", fontsize=8, fontweight="bold", labelpad=10)
-    ax.set_ylabel("Presión Hidráulica Eje Trasero (bar)", fontsize=8, fontweight="bold", labelpad=10)
-    ax.grid(True, linestyle="--", alpha=0.5)
-    ax.spines['top'].set_visible(False)
-    ax.spines['right'].set_visible(False)
-    ax.spines['left'].set_color('#8E8E93')
-    ax.spines['bottom'].set_color('#8E8E93')
-    ax.legend(loc="upper left", fontsize=8)
-    plt.title("DISTRIBUCIÓN DE FRENADO Y EQUILIBRIO DE ADHERENCIA (EV)", fontsize=9, fontweight="bold", pad=15)
+    ax.axis('off')
+    days = [
+        ("Lunes", "TikTok/Reels\nLanzamiento teaser"),
+        ("Miércoles", "Filmar Vlog\nGrabación en garaje"),
+        ("Jueves", "Hilo X/LinkedIn\nExplicación operacional"),
+        ("Sábado", "YouTube Vlog\nVídeo largo semanal"),
+        ("Domingo", "Asamblea General\nDiscord 20:00 CEST")
+    ]
+    x_pos_cycle = [0.1, 0.3, 0.5, 0.7, 0.9]
+    for i, (day, action) in enumerate(days):
+        ax.text(x_pos_cycle[i], 0.5, f"{day}\n\n{action}",
+                ha='center', va='center', fontsize=7,
+                bbox=dict(boxstyle="round,pad=0.7", fc="#FFFFFF", ec="#1C1C1E" if i == 4 else "#8E8E93", lw=1.2),
+                color="#1C1C1E")
+        if i < 4:
+            ax.annotate('', xy=(x_pos_cycle[i+1] - 0.07, 0.5), xytext=(x_pos_cycle[i] + 0.07, 0.5),
+                        arrowprops=dict(arrowstyle="-|>", color="#FF3B30", lw=1.2))
+    ax.set_xlim(0, 1.0)
+    ax.set_ylim(0, 1.0)
+    plt.title("CICLO EDITORIAL Y OPERATIVO SEMANAL CERO", fontsize=9, fontweight="bold", pad=15)
     plt.tight_layout()
-    plt.savefig(brake_path, bbox_inches='tight')
+    plt.savefig(cycle_path, bbox_inches='tight')
     plt.close()
-    print("Generado Diagrama: brake_force_distribution.png")
+    print("Generado Diagrama: weekly_operational_cycle.png")
 
-    # 10. suspension_spring_rate.png
-    spring_path = os.path.join(assets_dir, "suspension_spring_rate.png")
+    # 7. garage_sourcing_flow.png
+    gar_path = os.path.join(assets_dir, "garage_sourcing_flow.png")
     fig, ax = plt.subplots(figsize=(7, 3.5), dpi=150)
-    travel = np.linspace(-50, 50, 50)
-    linear_f = 20 * travel + 1000
-    progressive_f = 20 * travel + 0.1 * travel**3 + 1000
-    ax.plot(travel, linear_f, color="#8E8E93", linestyle="--", label="Muelle Lineal Estándar")
-    ax.plot(travel, progressive_f, color="#FF3B30", linewidth=2.2, label="Bieletas Push-Rod Progresivas CERO")
-    ax.set_xlabel("Recorrido de Rueda en Compresión (mm)", fontsize=8, fontweight="bold", labelpad=10)
-    ax.set_ylabel("Fuerza Vertical Soportada (N)", fontsize=8, fontweight="bold", labelpad=10)
-    ax.grid(True, linestyle="--", alpha=0.5)
-    ax.spines['top'].set_visible(False)
-    ax.spines['right'].set_visible(False)
-    ax.spines['left'].set_color('#8E8E93')
-    ax.spines['bottom'].set_color('#8E8E93')
-    ax.legend(loc="upper left", fontsize=8)
-    plt.title("RIGIDEZ DE SUSPENSIÓN: COMPORTAMIENTO DINÁMICO", fontsize=9, fontweight="bold", pad=15)
+    ax.axis('off')
+    nodes = [
+        ("Búsqueda", "Móstoles/Alcorcón\nNaves industriales"),
+        ("Contacto", "Llamada fría\nAgencias y dueños"),
+        ("Propuesta", "Permuta publicitaria\nEspacio por vlogs"),
+        ("Negociación", "Fijar consumo luz\nLímite TIG welding"),
+        ("Cierre", "Firma contrato\nBorrador Permuta")
+    ]
+    x_pos_gar = [0.1, 0.3, 0.5, 0.7, 0.9]
+    for i, (node, desc) in enumerate(nodes):
+        ax.text(x_pos_gar[i], 0.5, f"{node}\n\n{desc}",
+                ha='center', va='center', fontsize=7,
+                bbox=dict(boxstyle="round,pad=0.7", fc="#FFFFFF", ec="#FF3B30", lw=1.2),
+                color="#1C1C1E")
+        if i < 4:
+            ax.annotate('', xy=(x_pos_gar[i+1] - 0.07, 0.5), xytext=(x_pos_gar[i] + 0.07, 0.5),
+                        arrowprops=dict(arrowstyle="-|>", color="#8E8E93", lw=1.2))
+    ax.set_xlim(0, 1.0)
+    ax.set_ylim(0, 1.0)
+    plt.title("PROCESO DE PROSPECCIÓN Y NEGOCIACIÓN DEL GARAJE CERO", fontsize=9, fontweight="bold", pad=15)
     plt.tight_layout()
-    plt.savefig(spring_path, bbox_inches='tight')
+    plt.savefig(gar_path, bbox_inches='tight')
     plt.close()
-    print("Generado Diagrama: suspension_spring_rate.png")
+    print("Generado Diagrama: garage_sourcing_flow.png")
+
+    # 8. patreon_revenue_distribution.png
+    pat_path = os.path.join(assets_dir, "patreon_revenue_distribution.png")
+    fig, ax = plt.subplots(figsize=(7, 3.5), dpi=150)
+    labels = ['Baterías (Litio)', 'Herramientas/CO2', 'Tasas Homologación', 'Consumibles (Argón)', 'Stripe/Patreon']
+    sizes = [35, 20, 25, 15, 5]
+    colors_list = ['#FF3B30', '#1C1C1E', '#8E8E93', '#AEAEB2', '#E5E5EA']
+    ax.pie(sizes, labels=labels, autopct='%1.0f%%', startangle=90, colors=colors_list, 
+           textprops={'fontsize': 8, 'weight': 'bold'}, wedgeprops={'edgecolor': 'black', 'linewidth': 0.8})
+    ax.axis('equal')
+    plt.title("DISTRIBUCIÓN FUNCIONAL DE FONDOS DE PATREON / CROWDFUNDING", fontsize=9, fontweight="bold", pad=15)
+    plt.tight_layout()
+    plt.savefig(pat_path, bbox_inches='tight')
+    plt.close()
+    print("Generado Diagrama: patreon_revenue_distribution.png")
+
+    # 9. legal_ip_transfer_map.png
+    ip_path = os.path.join(assets_dir, "legal_ip_transfer_map.png")
+    fig, ax = plt.subplots(figsize=(7, 3.5), dpi=150)
+    ax.axis('off')
+    ax.text(0.15, 0.5, "Colaboradores\n(Cesión de IP)", ha='center', va='center', fontsize=7.5,
+            bbox=dict(boxstyle="square,pad=0.5", fc="#F8F9FA", ec="#8E8E93"), color="#1C1C1E")
+    ax.annotate('', xy=(0.32, 0.5), xytext=(0.25, 0.5),
+                arrowprops=dict(arrowstyle="-|>", color="#FF3B30", lw=1.2))
+    ax.text(0.5, 0.5, "Asociación Cultural CERO\n(Entidad Abierta sin Ánimo de Lucro)", ha='center', va='center', fontsize=7.5,
+            bbox=dict(boxstyle="square,pad=0.5", fc="#E5E5EA", ec="#1C1C1E"), color="#1C1C1E")
+    ax.annotate('', xy=(0.7, 0.5), xytext=(0.63, 0.5),
+                arrowprops=dict(arrowstyle="-|>", color="#FF3B30", lw=1.2))
+    ax.text(0.85, 0.5, "CERO S.L.\n(Sociedad Comercial\ny Producción)", ha='center', va='center', fontsize=7.5,
+            bbox=dict(boxstyle="square,pad=0.5", fc="#FF3B30", ec="#FF3B30"), color="#FFFFFF")
+    ax.text(0.85, 0.8, "Ronda Semilla\nInversores (€)", ha='center', va='center', fontsize=7,
+            bbox=dict(boxstyle="round,pad=0.4", fc="#1C1C1E", ec="#1C1C1E"), color="#FFFFFF")
+    ax.annotate('', xy=(0.85, 0.6), xytext=(0.85, 0.72),
+                arrowprops=dict(arrowstyle="-|>", color="#1C1C1E", lw=1.0))
+    ax.set_xlim(0, 1.0)
+    ax.set_ylim(0, 1.0)
+    plt.title("MAPA ESTRUCTURAL DE TRANSFERENCIA DE PROPIEDAD INTELECTUAL (IP)", fontsize=9, fontweight="bold", pad=15)
+    plt.tight_layout()
+    plt.savefig(ip_path, bbox_inches='tight')
+    plt.close()
+    print("Generado Diagrama: legal_ip_transfer_map.png")
+
+    # 10. itv_homologation_steps.png
+    itv_path = os.path.join(assets_dir, "itv_homologation_steps.png")
+    fig, ax = plt.subplots(figsize=(7, 3.5), dpi=150)
+    ax.axis('off')
+    steps_itv = [
+        ("1. Ficha\nReducida", "Firma Ingeniero\nColegiado"),
+        ("2. Informe\nConformidad", "IDIADA / INTA\nFEA Crash exemption"),
+        ("3. Ensayos\nPista", "Pruebas de freno\ny nivel de ruido"),
+        ("4. ITV\nEstación", "Inspección física\ny pesaje oficial"),
+        ("5. Placas\nCalle", "Obtención de matrícula\nordinaria de calle")
+    ]
+    x_pos_itv = [0.1, 0.3, 0.5, 0.7, 0.9]
+    for i, (step, desc) in enumerate(steps_itv):
+        ax.text(x_pos_itv[i], 0.5, f"{step}\n\n{desc}",
+                ha='center', va='center', fontsize=7,
+                bbox=dict(boxstyle="round,pad=0.7", fc="#F2F2F7", ec="#8E8E93", lw=1),
+                color="#1C1C1E")
+        if i < 4:
+            ax.annotate('', xy=(x_pos_itv[i+1] - 0.07, 0.5), xytext=(x_pos_itv[i] + 0.07, 0.5),
+                        arrowprops=dict(arrowstyle="-|>", color="#FF3B30", lw=1.2))
+    ax.set_xlim(0, 1.0)
+    ax.set_ylim(0, 1.0)
+    plt.title("FLUJO ADMINISTRATIVO EN ESPAÑA: HOMOLOGACIÓN INDIVIDUAL (HIV)", fontsize=9, fontweight="bold", pad=15)
+    plt.tight_layout()
+    plt.savefig(itv_path, bbox_inches='tight')
+    plt.close()
+    print("Generado Diagrama: itv_homologation_steps.png")
 
     # 11. funding_burn_rate.png
     burn_path = os.path.join(assets_dir, "funding_burn_rate.png")

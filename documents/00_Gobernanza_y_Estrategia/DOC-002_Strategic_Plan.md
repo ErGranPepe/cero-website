@@ -20,9 +20,9 @@ El proyecto se extiende a 28 meses para incorporar de forma segura la fase de ho
 • Fase 6 (Mes 22-24): Fabricación de la carrocería final de composite y pruebas dinámicas de slalom y frenado en pista privada o aeródromo cerrado.
 • Fase 7 (Mes 25-28): Pruebas en laboratorios oficiales IDIADA/INTA y matriculación ordinaria para vías públicas de España.
 
-## 2. Ilustración de la Maqueta de Madera a Escala 1:1 (Mockup)
+## 2. Maqueta de Madera a Escala 1:1 (Prototipo Ergonómico)
 
-A continuación se ilustra visualmente el montaje conceptual del chasis de madera cortado por láser para validar el espacio del habitáculo (cockpit) antes de encargar el acero:
+A continuación se presenta el modelo conceptual de la maqueta de madera laser-cut, utilizada para verificar el cockpit y la colocación de pedales:
 
 ## 3. Modelo de Financiación Mixto
 

@@ -250,9 +250,8 @@ def get_db():
              "• Par y Potencia de Diseño: Potencia máxima objetivo de 80-100 kW, par máximo de 240 Nm.\n"
              "• Inversor: Controlador trifásico de alta tensión controlado por bus CAN a 500 kbps.\n"
              "• Sistema de Batería: Acumulador de iones de litio encapsulado en un contenedor ignífugo de fibra de carbono y Nomex."],
-            ["4. Curva de Potencia y Par del Motor Eléctrico (Conceptual)", "A continuación se ilustra la curva de potencia (hp) y par motor (Nm) en función de las revoluciones por minuto (RPM) proyectada para el bloque motor:"],
-            ["5. Distribución de Fuerzas de Frenado Frontal y Trasera", "A continuación se muestra el análisis de distribución de fuerzas hidráulicas de frenado y la línea de adherencia óptima calculada para evitar el bloqueo del eje trasero:"],
-            ["6. Requerimientos Legales para Homologación de Calle en España (ITV)",
+            ["4. Flujo de Homologación Individual de Vehículos (HIV)", "A continuación se ilustra de forma visual el flujo administrativo del proceso de Homologación Individual de Vehículos (HIV) en España, detallando cada paso desde la ficha reducida hasta la obtención de las placas viales ordinarias:"],
+            ["5. Requerimientos Legales para Homologación de Calle en España (ITV)",
              "Para la obtención de placas de matrícula ordinarias mediante el proceso de Homologación Individual de Vehículos (HIV):\n\n"
              "• Ficha Reducida: Documento técnico detallado firmado por ingeniero colegiado que describe la geometría, masas y elementos de seguridad activa/pasiva.\n"
              "• Informe de Conformidad: Emitido por un Servicio Técnico de Homologación oficial (como IDIADA o INTA), certificando que el diseño del chasis modular cumple con el Reglamento UE 2018/858. Se buscarán exenciones de crash-test destructivos mediante validaciones numéricas avanzadas por FEA.\n"
@@ -260,7 +259,7 @@ def get_db():
              "• Inspección en Estación ITV: Verificación física final de los marcados de homologación 'E' en vidrios, ópticas, retrovisores convexos y radios de curvatura exteriores de carrocería superiores a 2.5 mm.\n"
              "• Auditoría ex-ante: Se firmará un acuerdo con un laboratorio oficial (como IDIADA o el INTA) para realizar una revisión preliminar de los planos CAD antes de iniciar la fabricación física."]
         ],
-        "image": "engine_power_torque_curve.png"
+        "image": "itv_homologation_steps.png"
     }
     
     db["DOC-006"] = {
@@ -310,14 +309,13 @@ def get_db():
         "sections": [
             ["1. Arquitectura de Sistemas de Tracción Eléctrica (General)", 
              "El tren motriz de CERO utiliza un motor síncrono de imanes permanentes montado en el subchasis trasero. Transmisión directa mediante acoplamiento hacia un diferencial autoblocante, transmitiendo el par a los palieres traseros de acero. El sistema de acumulador de alta tensión (HV) utiliza celdas de litio encapsuladas en un contenedor estructural ignífugo. Un sistema de gestión de baterías (BMS) monitorea constantemente el voltaje de cada celda y su temperatura, comunicándose por bus CAN con el inversor de tracción para limitar la corriente en caso de sobretemperatura. La especificación final de marcas comerciales se cerrará junto con los ingenieros y patrocinadores definitivos."],
-            ["2. Geometría de Dirección y Comportamiento Dinámico Ackerman", "A continuación se muestra el análisis geométrico de la dirección Ackerman y su porcentaje de desviación (85% Ackerman) para el comportamiento óptimo de guiado en curva del eje delantero:"],
-            ["3. Rigidez de Amortiguación y Ratio de Fuerza de Rueda", "A continuación se ilustra la curva de rigidez de los coilovers en función del recorrido de rueda (mm) y la fuerza aplicada (N):"],
-            ["4. Arquitectura de Suspensión y Geometría de Dirección", 
+            ["2. Estructura y Flujo Legal de Propiedad Intelectual", "A continuación se ilustra de forma gráfica el flujo legal de cesión de aportaciones técnicas por parte de los colaboradores a la Asociación Cultural CERO y su posterior aportación en la constitución de CERO S.L.:"],
+            ["3. Arquitectura de Suspensión y Geometría de Dirección", 
              "Geometría de suspensión de doble trapecio independiente en las 4 ruedas. El diseño cinemático en Onshape optimiza el centro de balanceo (Roll Center) manteniéndolo a 45 mm del suelo en reposo. Manguetas (uprights) delanteras y traseras fresadas por control numérico (CNC) en aluminio aeronáutico para minimizar la masa no suspendida. Brazos de suspensión diseñados con perfiles elípticos aerodinámicos para reducir la resistencia al avance. Cremallera de dirección mecánica directa de kart modificada con 1.5 vueltas de tope a tope, garantizando una respuesta inmediata y precisa. El brazo de dirección incorpora un diseño de Ackerman al 85% para reducir el arrastre de neumáticos en curvas cerradas."],
-            ["5. Arquitectura Eléctrica y Gestión Electrónica (ECU)", 
+            ["4. Arquitectura Eléctrica y Gestión Electrónica (ECU)", 
              "Mazo de cables de baja tensión (LV) aligerado de cables innecesarios. La ECU principal de diseño propio gestiona la adquisición de datos, lectura de aceleradores Hall duales redundantes y comunicación con el inversor. Se integra un dispositivo de monitoreo de aislamiento (IMD) que corta la línea de seguridad (Shutdown loop) si detecta una fuga de corriente entre el sistema de alta tensión (HV) y el chasis de baja tensión (LV)."]
         ],
-        "image": "steering_geometry_ackermann.png"
+        "image": "legal_ip_transfer_map.png"
     }
     
     db["DOC-008"] = {
@@ -426,7 +424,8 @@ def get_db():
              "• GitHub: Clona el repositorio maestro `ErGranPepe/cero-website` para tener acceso a los scripts y documentos Markdown del proyecto. Configura tus credenciales Git locales."],
             ["3. Primer Challenge del Colaborador (Micro-Retos de 2 Horas)", 
              "Para evitar la inactividad y dar feedback inmediato, el onboarding se gestiona mediante 'Micro-Retos' técnicos de menos de 2 horas. Un micro-reto típico para diseño CAD consiste en modelar en Onshape el soporte del sensor de velocidad del buje delantero respetando los radios de aristas de 2.5 mm de la ITV, o para análisis estructural realizar el cálculo estático de un nudo del subchasis trasero. Una vez finalizado, abre una pull request en GitHub o comparte el enlace Onshape en el canal #micro-retos para su validación rápida."]
-        ]
+        ],
+        "image": "volunteer_onboarding_pipeline.png"
     }
     
     db["DOC-013"] = {
@@ -574,7 +573,7 @@ def get_db():
             ["1. Estrategia Social Media y Crecimiento Orgánico", 
              "Producción de 1 vídeo largo semanal en YouTube (avance de operaciones, llamadas a desguaces, soldaduras) y 3-5 clips verticales en TikTok/Reels basados en 'hooks' de taller y debate. Esto generará tracción de seguidores para poder negociar canjes viales y locales comerciales. La narrativa debe enfocarse en el 'Build in Public', mostrando tanto las victorias como los fallos estrepitosos de la búsqueda del garaje y del montaje físico.\n\n"
              "El objetivo de marketing es acumular una base de 10.000 seguidores activos antes del Mes 4, permitiendo que el lanzamiento de Patreon tenga una tasa de conversión de suscripción del 1.5%, generando los primeros ingresos recurrentes para consumibles de taller."],
-            ["2. Optimización Aerodinámica Conceptual del Chasis", "A continuación se ilustra la relación aerodinámica de arrastre (Drag) y sustentación negativa (Downforce) simulada a lo largo del chasis del vehículo a alta velocidad:"],
+            ["2. Flujo del Ciclo de Publicación y Operación Semanal", "A continuación se ilustra de forma gráfica la secuencia semanal de creación de contenido y asambleas Discord del proyecto:"],
             ["3. Calendario Semanal de Publicación Tipo", 
              "• Lunes: TikTok corto sobre la ergonomía del cockpit o renders conceptuales de Onshape.\n"
              "• Miércoles: Detrás de cámaras en Reels sobre las llamadas de negociación para conseguir el garaje.\n"
@@ -582,7 +581,7 @@ def get_db():
              "• Sábado: Vídeo largo de YouTube de 10-15 minutos detallando las llamadas en directo, visitas a locales y montaje de la bancada.\n"
              "• Domingo: Asamblea de voz en Discord y votación comunitaria de diseño."]
         ],
-        "image": "chasis_aerodynamics_lift_drag.png"
+        "image": "weekly_operational_cycle.png"
     }
     
     db["DOC-031"] = {
@@ -753,7 +752,8 @@ def get_db():
              "Le escribo para dar seguimiento a nuestra conversación de ayer. Le adjunto el dossier de patrocinio y el Manifiesto de CERO (DOC-001) where we detail the operational model and social media traction. We are very interested in working with you to set up the project's garage in your local shop.\n\n"
              "Quedamos a su entera disposición para reunirnos de forma física. Un saludo cordial, Mario.\"\n\n"
              "Este correo se enviará de inmediato para mantener viva la negociación del espacio o materiales."]
-        ]
+        ],
+        "image": "garage_sourcing_flow.png"
     }
     
     return db

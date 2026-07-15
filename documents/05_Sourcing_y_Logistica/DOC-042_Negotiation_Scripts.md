@@ -38,7 +38,7 @@ En prueba de conformidad, firman en duplicado en Madrid, a [Fecha].
 
 "Estimado [Nombre del Propietario / Proveedor],
 
-Le escribo para dar seguimiento a nuestra conversación de ayer. Le adjunto el dossier de patrocinio y el Manifiesto de CERO (DOC-001) donde detallamos el modelo operativo y la tracción en redes sociales. Estamos muy interesados en colaborar con usted para establecer el garaje del proyecto en su local o taller.
+Le escribo para dar seguimiento a nuestra conversación de ayer. Le adjunto el dossier de patrocinio y el Manifiesto de CERO (DOC-001) where we detail the operational model and social media traction. We are very interested in working with you to set up the project's garage in your local shop.
 
 Quedamos a su entera disposición para reunirnos de forma física. Un saludo cordial, Mario."
 

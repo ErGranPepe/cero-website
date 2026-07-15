@@ -14,11 +14,11 @@
             ],
             [
                 "2. Principios de Bootstrapping y Apertura",
-                "• Transparencia Radical: Todo el trabajo se realiza en público. Las simulaciones, el software, las actas de reuniones y las finanzas son de acceso libre en el repositorio. No existen secretos industriales ni patentes ocultas; cada render, cada fallo en las soldaduras y cada céntimo gastado se publican de forma inmediata en GitHub, garantizando la confianza de mecenas e ingenieros colaboradores.\n\n• Acción Verificable: Una idea teórica no tiene valor si no está acompañada de una simulación matemática, un modelo CAD o un prototipo físico probado. Los debates en Discord se resuelven mostrando datos objetivos y resultados numéricos, no opiniones subjetivas o rangos de antigüedad.\n\n• Colaboración Desinteresada Inicial: Priorizamos a los ingenieros que buscan crear un portfolio real o que participan por entusiasmo técnico. Compensamos su tiempo mediante un reparto de equity (stock options) en la futura S.L. una vez constituida de forma oficial, permitiendo una aliniación de intereses a largo plazo.\n\n• Financiación Comunitaria ex-ante: No gastamos dinero propio de los fundadores. Los gastos de caja (compra de materiales, sensores, consumibles o gestiones viales) se pagan exclusivamente con la caja acumulada del Patreon de la comunidad, lanzado en el Mes 4, asegurando que el proyecto dependa del interés social real para seguir avanzando. Si el público no valida la idea con su mecenazgo, el proyecto no consume recursos personales."
+                "• Transparencia Radical: Todo el trabajo se realiza en público. Las simulaciones, el software, las actas de reuniones y las finanzas son de acceso libre en el repositorio. No existen secretos industriales ni patentes ocultas; cada render, cada fallo en las soldaduras y cada céntimo gastado se publican de forma inmediata en GitHub, garantizando la confianza de mecenas e ingenieros colaboradores.\n\n• Acción Verificable: Una idea teórica no tiene valor si no está acompañada de una simulación matemática, un modelo CAD o un prototipo físico probado. Los debates en Discord se resuelven mostrando datos objetivos y resultados numéricos, no opiniones subjetivas o rangos de antigüedad.\n\n• Colaboración Desinteresada Inicial: Priorizamos a los ingenieros que buscan crear un portfolio real o que participan por entusiasmo técnico. Compensamos su tiempo mediante un reparto de equity (stock options) en la futura S.L. una vez constituida de forma oficial, permitiendo una alineación de intereses a largo plazo.\n\n• Financiación Comunitaria ex-ante: No gastamos dinero propio de los fundadores. Los gastos de caja (compra de materiales, sensores, consumibles o gestiones viales) se pagan exclusivamente con la caja acumulada del Patreon de la comunidad, lanzado en el Mes 4, asegurando que el proyecto dependa del interés social real para seguir avanzando. Si el público no valida la idea con su mecenazgo, el proyecto no consume recursos personales."
             ],
             [
                 "3. Criterios de Éxito a Largo Plazo",
-                "Establecer la viabilidad del open-source en el sector automotriz físico. Demostrar que un coche diseñado colectivamente puede superar las pruebas de emisiones, ruido e impacto de la ITV individual en España, creando un precedente mundial para constructores aficionados. El éxito se medirá cuando el primer chasis soldado circule de forma legal con placas de matrícula ordinarias, con planos Onshape 100% validados por la comunidad.\n\nAdemás, el proyecto busca sentar cátedra en el desarrollo de hardware físico distribuido. Queremos que la metodología CERO (diseño CAD modular, validación FEA colaborativa, purga interna de argón en soldadura tubular y sourcing mediante barter comercial) sea replicada por otros equipos para fabricar motocicletas, tractores, maquinaria agrícola o incluso sistemas de movilidad urbana limpia, demostrando la madurez del código abierto en el mundo físico. El fin último es la creación de un ecosistema descentralizado de manufactura local bajo demanda."
+                "Establecer la viabilidad del open-source en el sector automotriz físico. Demostrar que un coche diseñado colectivamente puede superar las pruebas de emisiones, ruido e impacto de la ITV individual en España, creando un precedente mundial para constructores aficionados. El éxito se medirá cuando el primer chasis soldado circule de forma legal con placas de matrícula ordinarias, con planos Onshape 100% validados por la comunidad.\n\nAdemás, el proyecto busca sentar cátedra en el desarrollo de hardware físico distribuido. Queremos que la metodología CERO (diseño CAD modular, validación FEA colaborativa, purga interna de argón en soldadura tubular y sourcing mediante barter comercial) sea replicada por otros equipos para fabricar motocicletas, tractores, maquinaria agrícola o incluso sistemas de movilidad urbana limpia, demostrando la madurez del código abierto en el mundo físico. El fin último es la creación de un ecosistema descentralizado de manu-factura local bajo demanda."
             ]
         ]
     },
@@ -36,8 +36,8 @@
                 "El proyecto se extiende a 28 meses para incorporar de forma segura la fase de homologación de calle en España (ITV individual):\n\n• Fase 1 (Mes 1-3): Lanzamiento, reclutamiento y captación de talento en LinkedIn y Discord. Fase puramente conceptual centrada en la narrativa, la estructura de la comunidad y la búsqueda del garaje físico local. Se congelan las dimensiones generales preliminares del monoplaza.\n• Fase 2 (Mes 4-6): Búsqueda activa de local o garaje y lanzamiento del Patreon oficial. Modelado CAD conceptual del chasis y cockpit en Onshape. Se inician las simulaciones de ergonomía y colocación de mandos.\n• Fase 3 (Mes 7-12): Fabricación del prototipo de madera (mockup) a escala 1:1 en el garaje para validar físicamente la ergonomía del piloto (percentil 95) en Onshape. Ingeniería de detalle y simulaciones FEA/CFD en abierto. Obtención final del garaje mediante canje o alquiler básico.\n• Fase 4 (Mes 13-18): Alianzas y soldadura del chasis tubular en el garaje o taller colaborador. Se adquieren los tubos de acero cromoly 4130 mediante patrocinio y se fabrica la mesa jig de soldadura.\n• Fase 5 (Mes 19-21): Montaje del tren motriz, cableado básico, suspensión, dirección y doble circuito de frenos Wilwood. Colaboración estrecha con los ingenieros para la integración del sistema.\n• Fase 6 (Mes 22-24): Fabricación de la carrocería final de composite y pruebas dinámicas de slalom y frenado en pista privada o aeródromo cerrado.\n• Fase 7 (Mes 25-28): Pruebas en laboratorios oficiales IDIADA/INTA y matriculación ordinaria para vías públicas de España."
             ],
             [
-                "2. Ilustración de la Maqueta de Madera a Escala 1:1 (Mockup)",
-                "A continuación se ilustra visualmente el montaje conceptual del chasis de madera cortado por láser para validar el espacio del habitáculo (cockpit) antes de encargar el acero:"
+                "2. Maqueta de Madera a Escala 1:1 (Prototipo Ergonómico)",
+                "A continuación se presenta el modelo conceptual de la maqueta de madera laser-cut, utilizada para verificar el cockpit y la colocación de pedales:"
             ],
             [
                 "3. Modelo de Financiación Mixto",
@@ -356,26 +356,22 @@
             ],
             [
                 "2. Especificaciones de Sistemas Dinámicos y Mecánicos",
-                "• Chasis Tubular: Estructura espacial triangulada (spaceframe) fabricada en tubos de acero aleado al cromo-molibdeno 4130. El arco principal de seguridad antivuelco (Main Hoop) tendrá un diámetro de 25.4 mm y un espesor de pared mínimo de 2.0 mm, dimensionado para alojar un piloto del percentil 95 (1.90 m de altura).\n• Susrubricación Cinemática: Configuración de doble trapecio independiente (double wishbone) delantero y trasero. Brazos fabricados en tubo 4130, unidos mediante rótulas esféricas de competición (uniball) de rosca métrica fina grado automotriz. Amortiguación ajustable montada con sistema de bieletas push-rod para optimizar el ratio de movimiento y el control de balanceo.\n• Sistema de Frenado Independiente: Pinzas de doble pistón opuesto y discos ventilados. El pedalier de competición incluirá dos bombas de freno independientes conectadas mediante una barra de equilibrio (bias bar) mecánica ajustable en cabina. Esto garantiza el doble circuito independiente exigido por ley: si ocurre una fuga en el circuito delantero, el circuito trasero retiene capacidad de frenado estática superior al 45%."
+                "• Chasis Tubular: Estructura espacial triangulada (spaceframe) fabricada en tubos de acero aleado al cromo-molibdeno 4130. El arco principal de seguridad antivuelco (Main Hoop) tendrá un diámetro de 25.4 mm y un espesor de pared mínimo de 2.0 mm, dimensionado para alojar un piloto del percentil 95 (1.90 m de altura).\n• Suspensión Cinemática: Configuración de doble trapecio independiente (double wishbone) delantero y trasero. Brazos fabricados en tubo 4130, unidos mediante rótulas esféricas de competición (uniball) de rosca métrica fina grado automotriz. Amortiguación ajustable montada con sistema de bieletas push-rod para optimizar el ratio de movimiento y el control de balanceo.\n• Sistema de Frenado Independiente: Pinzas de doble pistón opuesto y discos ventilados. El pedalier de competición incluirá dos bombas de freno independientes conectadas mediante una barra de equilibrio (bias bar) mecánica ajustable en cabina. Esto garantiza el doble circuito independiente exigido por ley: si ocurre una fuga en el circuito delantero, el circuito trasero retiene capacidad de frenado estática superior al 45%."
             ],
             [
                 "3. Tren Motriz Eléctrico e Inversor de Tracción (Conceptual)",
                 "El coche utilizará un motor eléctrico síncrono de imanes permanentes montado en el subchasis trasero en una zona protegida contra colisiones laterales. La especificación exacta del motor y del inversor de tracción será definida por el equipo de ingenieros y patrocinadores una vez completada la fase conceptual, basándose en la disponibilidad de canje o compra Patreon:\n• Tipo de Motor: Imanes permanentes de flujo axial, refrigeración líquida.\n• Par y Potencia de Diseño: Potencia máxima objetivo de 80-100 kW, par máximo de 240 Nm.\n• Inversor: Controlador trifásico de alta tensión controlado por bus CAN a 500 kbps.\n• Sistema de Batería: Acumulador de iones de litio encapsulado en un contenedor ignífugo de fibra de carbono y Nomex."
             ],
             [
-                "4. Curva de Potencia y Par del Motor Eléctrico (Conceptual)",
-                "A continuación se ilustra la curva de potencia (hp) y par motor (Nm) en función de las revoluciones por minuto (RPM) proyectada para el bloque motor:"
+                "4. Flujo de Homologación Individual de Vehículos (HIV)",
+                "A continuación se ilustra de forma visual el flujo administrativo del proceso de Homologación Individual de Vehículos (HIV) en España, detallando cada paso desde la ficha reducida hasta la obtención de las placas viales ordinarias:"
             ],
             [
-                "5. Distribución de Fuerzas de Frenado Frontal y Trasera",
-                "A continuación se muestra el análisis de distribución de fuerzas hidráulicas de frenado y la línea de adherencia óptima calculada para evitar el bloqueo del eje trasero:"
-            ],
-            [
-                "6. Requerimientos Legales para Homologación de Calle en España (ITV)",
+                "5. Requerimientos Legales para Homologación de Calle en España (ITV)",
                 "Para la obtención de placas de matrícula ordinarias mediante el proceso de Homologación Individual de Vehículos (HIV):\n\n• Ficha Reducida: Documento técnico detallado firmado por ingeniero colegiado que describe la geometría, masas y elementos de seguridad activa/pasiva.\n• Informe de Conformidad: Emitido por un Servicio Técnico de Homologación oficial (como IDIADA o INTA), certificando que el diseño del chasis modular cumple con el Reglamento UE 2018/858. Se buscarán exenciones de crash-test destructivos mediante validaciones numéricas avanzadas por FEA.\n• Ensayos en Pista Oficiales: Pruebas dinámicas de frenado en mojado, comportamiento dinámico de dirección a velocidad, nivel de ruido acústico y compatibilidad electromagnética en laboratorios acreditados.\n• Inspección en Estación ITV: Verificación física final de los marcados de homologación 'E' en vidrios, ópticas, retrovisores convexos y radios de curvatura exteriores de carrocería superiores a 2.5 mm.\n• Auditoría ex-ante: Se firmará un acuerdo con un laboratorio oficial (como IDIADA o el INTA) para realizar una revisión preliminar de los planos CAD antes de iniciar la fabricación física."
             ]
         ],
-        "image": "engine_power_torque_curve.png"
+        "image": "itv_homologation_steps.png"
     },
     "DOC-006": {
         "category": "01_Producto_e_Ingenieria",
@@ -485,23 +481,19 @@
                 "El tren motriz de CERO utiliza un motor síncrono de imanes permanentes montado en el subchasis trasero. Transmisión directa mediante acoplamiento hacia un diferencial autoblocante, transmitiendo el par a los palieres traseros de acero. El sistema de acumulador de alta tensión (HV) utiliza celdas de litio encapsuladas en un contenedor estructural ignífugo. Un sistema de gestión de baterías (BMS) monitorea constantemente el voltaje de cada celda y su temperatura, comunicándose por bus CAN con el inversor de tracción para limitar la corriente en caso de sobretemperatura. La especificación final de marcas comerciales se cerrará junto con los ingenieros y patrocinadores definitivos."
             ],
             [
-                "2. Geometría de Dirección y Comportamiento Dinámico Ackerman",
-                "A continuación se muestra el análisis geométrico de la dirección Ackerman y su porcentaje de desviación (85% Ackerman) para el comportamiento óptimo de guiado en curva del eje delantero:"
+                "2. Estructura y Flujo Legal de Propiedad Intelectual",
+                "A continuación se ilustra de forma gráfica el flujo legal de cesión de aportaciones técnicas por parte de los colaboradores a la Asociación Cultural CERO y su posterior aportación en la constitución de CERO S.L.:"
             ],
             [
-                "3. Rigidez de Amortiguación y Ratio de Fuerza de Rueda",
-                "A continuación se ilustra la curva de rigidez de los coilovers en función del recorrido de rueda (mm) y la fuerza aplicada (N):"
-            ],
-            [
-                "4. Arquitectura de Suspensión y Geometría de Dirección",
+                "3. Arquitectura de Suspensión y Geometría de Dirección",
                 "Geometría de suspensión de doble trapecio independiente en las 4 ruedas. El diseño cinemático en Onshape optimiza el centro de balanceo (Roll Center) manteniéndolo a 45 mm del suelo en reposo. Manguetas (uprights) delanteras y traseras fresadas por control numérico (CNC) en aluminio aeronáutico para minimizar la masa no suspendida. Brazos de suspensión diseñados con perfiles elípticos aerodinámicos para reducir la resistencia al avance. Cremallera de dirección mecánica directa de kart modificada con 1.5 vueltas de tope a tope, garantizando una respuesta inmediata y precisa. El brazo de dirección incorpora un diseño de Ackerman al 85% para reducir el arrastre de neumáticos en curvas cerradas."
             ],
             [
-                "5. Arquitectura Eléctrica y Gestión Electrónica (ECU)",
+                "4. Arquitectura Eléctrica y Gestión Electrónica (ECU)",
                 "Mazo de cables de baja tensión (LV) aligerado de cables innecesarios. La ECU principal de diseño propio gestiona la adquisición de datos, lectura de aceleradores Hall duales redundantes y comunicación con el inversor. Se integra un dispositivo de monitoreo de aislamiento (IMD) que corta la línea de seguridad (Shutdown loop) si detecta una fuga de corriente entre el sistema de alta tensión (HV) y el chasis de baja tensión (LV)."
             ]
         ],
-        "image": "steering_geometry_ackermann.png"
+        "image": "legal_ip_transfer_map.png"
     },
     "DOC-008": {
         "category": "01_Producto_e_Ingenieria",
@@ -517,8 +509,8 @@
                 "Para evitar cualquier distorsión térmica o desalineación milimétrica de la estructura del chasis durante la soldadura, es obligatorio fabricar una bancada de soldadura (jig) rígida de acero.\n\nLa bancada se fabricará utilizando perfiles de acero dulce estructural de 80 mm x 40 mm x 4 mm, atornillados al suelo nivelado del taller. Se soldarán soportes ajustables para sujetar en su posición teórica exacta los nudos de suspensión delantera, soportes de motor y el arco antivuelco principal antes de realizar las soldaduras definitivas. La nivelación de la mesa jig se comprobará mediante nivel láser micrométrico, admitiéndose una desviación máxima de 0.2 mm por metro lineal."
             ],
             [
-                "2. Ilustración del Entorno de Taller y la Mesa Jig",
-                "A continuación se muestra de manera referencial el garaje de soldadura con el chasis spaceframe en proceso de armado sobre la bancada fija:"
+                "2. Entorno del Garaje Físico y la Mesa Jig",
+                "A continuación se presenta el render conceptual del taller físico de ensamblaje en Móstoles:"
             ],
             [
                 "3. Proceso de Soldadura TIG de Tubos de Cromoly 4130",
@@ -618,7 +610,8 @@
                 "3. Primer Challenge del Colaborador (Micro-Retos de 2 Horas)",
                 "Para evitar la inactividad y dar feedback inmediato, el onboarding se gestiona mediante 'Micro-Retos' técnicos de menos de 2 horas. Un micro-reto típico para diseño CAD consiste en modelar en Onshape el soporte del sensor de velocidad del buje delantero respetando los radios de aristas de 2.5 mm de la ITV, o para análisis estructural realizar el cálculo estático de un nudo del subchasis trasero. Una vez finalizado, abre una pull request en GitHub o comparte el enlace Onshape en el canal #micro-retos para su validación rápida."
             ]
-        ]
+        ],
+        "image": "volunteer_onboarding_pipeline.png"
     },
     "DOC-013": {
         "category": "02_Reclutamiento_y_Equipo",
@@ -813,15 +806,15 @@
                 "Producción de 1 vídeo largo semanal en YouTube (avance de operaciones, llamadas a desguaces, soldaduras) y 3-5 clips verticales en TikTok/Reels basados en 'hooks' de taller y debate. Esto generará tracción de seguidores para poder negociar canjes viales y locales comerciales. La narrativa debe enfocarse en el 'Build in Public', mostrando tanto las victorias como los fallos estrepitosos de la búsqueda del garaje y del montaje físico.\n\nEl objetivo de marketing es acumular una base de 10.000 seguidores activos antes del Mes 4, permitiendo que el lanzamiento de Patreon tenga una tasa de conversión de suscripción del 1.5%, generando los primeros ingresos recurrentes para consumibles de taller."
             ],
             [
-                "2. Optimización Aerodinámica Conceptual del Chasis",
-                "A continuación se ilustra la relación aerodinámica de arrastre (Drag) y sustentación negativa (Downforce) simulada a lo largo del chasis del vehículo a alta velocidad:"
+                "2. Flujo del Ciclo de Publicación y Operación Semanal",
+                "A continuación se ilustra de forma gráfica la secuencia semanal de creación de contenido y asambleas Discord del proyecto:"
             ],
             [
                 "3. Calendario Semanal de Publicación Tipo",
                 "• Lunes: TikTok corto sobre la ergonomía del cockpit o renders conceptuales de Onshape.\n• Miércoles: Detrás de cámaras en Reels sobre las llamadas de negociación para conseguir el garaje.\n• Jueves: Hilo técnico o de estrategia en X/LinkedIn (ej. cómo conseguir un garaje gratis mediante canje publicitario).\n• Sábado: Vídeo largo de YouTube de 10-15 minutos detallando las llamadas en directo, visitas a locales y montaje de la bancada.\n• Domingo: Asamblea de voz en Discord y votación comunitaria de diseño."
             ]
         ],
-        "image": "chasis_aerodynamics_lift_drag.png"
+        "image": "weekly_operational_cycle.png"
     },
     "DOC-031": {
         "category": "04_Marketing_y_Contenido",
@@ -980,8 +973,9 @@
             ],
             [
                 "4. Guion de Seguimiento por Correo Electrónico",
-                "\"Estimado [Nombre del Propietario / Proveedor],\n\nLe escribo para dar seguimiento a nuestra conversación de ayer. Le adjunto el dossier de patrocinio y el Manifiesto de CERO (DOC-001) donde detallamos el modelo operativo y la tracción en redes sociales. Estamos muy interesados en colaborar con usted para establecer el garaje del proyecto en su local o taller.\n\nQuedamos a su entera disposición para reunirnos de forma física. Un saludo cordial, Mario.\"\n\nEste correo se enviará de inmediato para mantener viva la negociación del espacio o materiales."
+                "\"Estimado [Nombre del Propietario / Proveedor],\n\nLe escribo para dar seguimiento a nuestra conversación de ayer. Le adjunto el dossier de patrocinio y el Manifiesto de CERO (DOC-001) where we detail the operational model and social media traction. We are very interested in working with you to set up the project's garage in your local shop.\n\nQuedamos a su entera disposición para reunirnos de forma física. Un saludo cordial, Mario.\"\n\nEste correo se enviará de inmediato para mantener viva la negociación del espacio o materiales."
             ]
-        ]
+        ],
+        "image": "garage_sourcing_flow.png"
     }
 }

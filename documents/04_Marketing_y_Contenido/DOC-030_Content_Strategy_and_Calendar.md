@@ -14,9 +14,9 @@ Producción de 1 vídeo largo semanal en YouTube (avance de operaciones, llamada
 
 El objetivo de marketing es acumular una base de 10.000 seguidores activos antes del Mes 4, permitiendo que el lanzamiento de Patreon tenga una tasa de conversión de suscripción del 1.5%, generando los primeros ingresos recurrentes para consumibles de taller.
 
-## 2. Optimización Aerodinámica Conceptual del Chasis
+## 2. Flujo del Ciclo de Publicación y Operación Semanal
 
-A continuación se ilustra la relación aerodinámica de arrastre (Drag) y sustentación negativa (Downforce) simulada a lo largo del chasis del vehículo a alta velocidad:
+A continuación se ilustra de forma gráfica la secuencia semanal de creación de contenido y asambleas Discord del proyecto:
 
 ## 3. Calendario Semanal de Publicación Tipo
 

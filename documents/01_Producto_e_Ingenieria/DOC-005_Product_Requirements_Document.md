@@ -17,7 +17,7 @@ El monoplaza debe combinar la agilidad en curva de un kart de competición con e
 ## 2. Especificaciones de Sistemas Dinámicos y Mecánicos
 
 • Chasis Tubular: Estructura espacial triangulada (spaceframe) fabricada en tubos de acero aleado al cromo-molibdeno 4130. El arco principal de seguridad antivuelco (Main Hoop) tendrá un diámetro de 25.4 mm y un espesor de pared mínimo de 2.0 mm, dimensionado para alojar un piloto del percentil 95 (1.90 m de altura).
-• Susrubricación Cinemática: Configuración de doble trapecio independiente (double wishbone) delantero y trasero. Brazos fabricados en tubo 4130, unidos mediante rótulas esféricas de competición (uniball) de rosca métrica fina grado automotriz. Amortiguación ajustable montada con sistema de bieletas push-rod para optimizar el ratio de movimiento y el control de balanceo.
+• Suspensión Cinemática: Configuración de doble trapecio independiente (double wishbone) delantero y trasero. Brazos fabricados en tubo 4130, unidos mediante rótulas esféricas de competición (uniball) de rosca métrica fina grado automotriz. Amortiguación ajustable montada con sistema de bieletas push-rod para optimizar el ratio de movimiento y el control de balanceo.
 • Sistema de Frenado Independiente: Pinzas de doble pistón opuesto y discos ventilados. El pedalier de competición incluirá dos bombas de freno independientes conectadas mediante una barra de equilibrio (bias bar) mecánica ajustable en cabina. Esto garantiza el doble circuito independiente exigido por ley: si ocurre una fuga en el circuito delantero, el circuito trasero retiene capacidad de frenado estática superior al 45%.
 
 ## 3. Tren Motriz Eléctrico e Inversor de Tracción (Conceptual)
@@ -28,15 +28,11 @@ El coche utilizará un motor eléctrico síncrono de imanes permanentes montado 
 • Inversor: Controlador trifásico de alta tensión controlado por bus CAN a 500 kbps.
 • Sistema de Batería: Acumulador de iones de litio encapsulado en un contenedor ignífugo de fibra de carbono y Nomex.
 
-## 4. Curva de Potencia y Par del Motor Eléctrico (Conceptual)
+## 4. Flujo de Homologación Individual de Vehículos (HIV)
 
-A continuación se ilustra la curva de potencia (hp) y par motor (Nm) en función de las revoluciones por minuto (RPM) proyectada para el bloque motor:
+A continuación se ilustra de forma visual el flujo administrativo del proceso de Homologación Individual de Vehículos (HIV) en España, detallando cada paso desde la ficha reducida hasta la obtención de las placas viales ordinarias:
 
-## 5. Distribución de Fuerzas de Frenado Frontal y Trasera
-
-A continuación se muestra el análisis de distribución de fuerzas hidráulicas de frenado y la línea de adherencia óptima calculada para evitar el bloqueo del eje trasero:
-
-## 6. Requerimientos Legales para Homologación de Calle en España (ITV)
+## 5. Requerimientos Legales para Homologación de Calle en España (ITV)
 
 Para la obtención de placas de matrícula ordinarias mediante el proceso de Homologación Individual de Vehículos (HIV):
 

@@ -14,9 +14,9 @@ Para evitar cualquier distorsión térmica o desalineación milimétrica de la e
 
 La bancada se fabricará utilizando perfiles de acero dulce estructural de 80 mm x 40 mm x 4 mm, atornillados al suelo nivelado del taller. Se soldarán soportes ajustables para sujetar en su posición teórica exacta los nudos de suspensión delantera, soportes de motor y el arco antivuelco principal antes de realizar las soldaduras definitivas. La nivelación de la mesa jig se comprobará mediante nivel láser micrométrico, admitiéndose una desviación máxima de 0.2 mm por metro lineal.
 
-## 2. Ilustración del Entorno de Taller y la Mesa Jig
+## 2. Entorno del Garaje Físico y la Mesa Jig
 
-A continuación se muestra de manera referencial el garaje de soldadura con el chasis spaceframe en proceso de armado sobre la bancada fija:
+A continuación se presenta el render conceptual del taller físico de ensamblaje en Móstoles:
 
 ## 3. Proceso de Soldadura TIG de Tubos de Cromoly 4130
 
