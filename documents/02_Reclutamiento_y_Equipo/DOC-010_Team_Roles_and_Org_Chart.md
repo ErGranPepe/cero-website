@@ -10,7 +10,7 @@
 
 ## 1. Estructura de Roles de la Comunidad
 
-La organización de CERO se fundamenta en un equipo de coordinación local (Core Team) y comisiones de ingeniería descentralizadas. El Core Team de Móstoles gestiona las relaciones con talleres mecánicos físicos, la búsqueda del garaje y la caja del Patreon. Los colaboradores online aportan planos CAD en Onshape y simulaciones FEA. El Lead Engineer tiene la última palabra sobre el diseño del chasis tubular. Esta estructura garantiza agilidad operacional y control de calidad físico. La toma de decisiones estratégicas se realiza en asamblea de la DAO física, pero la implementación física en el taller recae exclusivamente en los miembros con firma técnica certificada.
+La organización de CERO se fundamenta en un equipo de coordinación local (Core Team) y comisiones de ingeniería descentralizadas. El Core Team de Móstoles de la asociación cultural gestiona las relaciones con talleres mecánicos físicos, la búsqueda del garaje y la caja del Patreon. Los colaboradores online aportan planos CAD en Onshape y simulaciones FEA. El Lead Engineer tiene la última palabra sobre el diseño del chasis tubular. Esta estructura garantiza agilidad operativa y control de calidad físico. La toma de decisiones estratégicas se realiza en asamblea de la DAO física, pero la implementación física en el taller recae exclusivamente en los miembros con firma técnica certificada.
 
 ## 2. Organigrama de Decisiones Técnicas y de Medios
 

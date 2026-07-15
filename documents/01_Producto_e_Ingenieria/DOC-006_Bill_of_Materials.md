@@ -14,7 +14,7 @@ Esta Lista de Materiales (BOM) detalla de manera conceptual cada elemento físic
 
 • Sourcing por Sponsor (Canje de Branding): Metalúrgicas de acero 4130, talleres CNC de aluminio y marcas de neumáticos.
 • Caja Acumulada de Patreon (Compra Directa): Compra de motor de tracción, inversor, latiguillos de freno, BMS y celdas de batería.
-• Consumibles de Taller: Discos de corte, gas de purga argón, varillas de soldadura TIG de aporte (ER70S-6 o ER80S-D2).
+• Consumibles y Adecuación: Herramientas de taller, extintores de CO2 de seguridad para litio, gases de purga argón, varillas de soldadura TIG de aporte (ER70S-6 o ER80S-D2).
 Toda adquisición se registra de forma pública en el Data Room de inversores (DOC-022) para garantizar traza contable total.
 
 ## 2. Distribución Presupuestaria Comparativa
@@ -35,7 +35,7 @@ A continuación se presenta la base de datos conceptual de piezas del monoplaza:
 | Doble Pinza Freno | Pinzas Wilwood / Brembo y discos | 900 € | Compra Patreon / Sponsor |
 | Celdas Batería | Celdas de iones de litio (pack acumulador) | 1.500 € | Compra Patreon |
 | Sistema BMS | Battery Management System, CAN | 950 € | Compra Patreon |
-| Tornillería Grado 8.8 | Tornillería métrica alta resistencia | 150 € | Compra Patreon Consumibles |
+| Extintores y Fuerza | Adecuación de seguridad e instalación garaje | 350 € | Compra Patreon Consumibles |
 | Kit Luces / Espejos | Kit luces e-marked calle | 800 € | Compra Patreon / Sponsors |
 | Tasas Homologación | IDIADA / INTA individual | 2.500 € | Patrocinadores Corporativos |
 

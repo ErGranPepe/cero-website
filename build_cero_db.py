@@ -45,7 +45,7 @@ def get_db():
              "El proyecto se extiende a 28 meses para incorporar de forma segura la fase de homologación de calle en España (ITV individual):\n\n"
              "• Fase 1 (Mes 1-3): Lanzamiento, reclutamiento y captación de talento en LinkedIn y Discord. Fase puramente conceptual centrada en la narrativa, la estructura de la comunidad y la búsqueda del garaje físico local. Se congelan las dimensiones generales preliminares del monoplaza.\n"
              "• Fase 2 (Mes 4-6): Búsqueda activa de local o garaje y lanzamiento del Patreon oficial. Modelado CAD conceptual del chasis y cockpit en Onshape. Se inician las simulaciones de ergonomía y colocación de mandos.\n"
-             "• Fase 3 (Mes 7-12): Ingeniería de detalle y simulaciones FEA/CFD en abierto. Se congelan los puntos de suspensión del monoplaza y se simulan cargas de flexión estática y torsión torsional. Obtención final del garaje mediante canje o alquiler básico.\n"
+             "• Fase 3 (Mes 7-12): Fabricación del prototipo de madera (mockup) a escala 1:1 en el garaje para validar físicamente la ergonomía del piloto (percentil 95) en Onshape. Ingeniería de detalle y simulaciones FEA/CFD en abierto. Obtención final del garaje mediante canje o alquiler básico.\n"
              "• Fase 4 (Mes 13-18): Alianzas y soldadura del chasis tubular en el garaje o taller colaborador. Se adquieren los tubos de acero cromoly 4130 mediante patrocinio y se fabrica la mesa jig de soldadura.\n"
              "• Fase 5 (Mes 19-21): Montaje del tren motriz, cableado básico, suspensión, dirección y doble circuito de frenos Wilwood. Colaboración estrecha con los ingenieros para la integración del sistema.\n"
              "• Fase 6 (Mes 22-24): Fabricación de la carrocería final de composite y pruebas dinámicas de slalom y frenado en pista privada o aeródromo cerrado.\n"
@@ -79,7 +79,7 @@ def get_db():
                 ["Hito", "Fase", "Entregable Clave", "Límite", "Estado"],
                 ["MS-0", "Fase 1", "Freeze de Requerimientos Técnicos Básicos y Búsqueda de Garaje", "Mes 3", "Completado"],
                 ["MS-1", "Fase 2", "Diseño Conceptual CAD en Onshape y Lanzamiento Patreon", "Mes 6", "En Progreso"],
-                ["MS-2", "Fase 3", "Diseño Detallado (FEA/CFD) y Cierre de Alianzas", "Mes 12", "Planificado"],
+                ["MS-2", "Fase 3", "Prototipo de Madera 1:1 (Mockup) y Cierre de Alianzas", "Mes 12", "Planificado"],
                 ["MS-3", "Fase 4", "Adquisición y Ensamblaje de Chasis Tubular en Garaje", "Mes 18", "Planificado"],
                 ["MS-4", "Fase 5", "Integración Tren Motriz y Cableado de Control V1", "Mes 21", "Planificado"],
                 ["MS-5", "Fase 6", "Lanzamiento de Prototipo y Pruebas en Pista", "Mes 24", "Planificado"],
@@ -105,7 +105,7 @@ def get_db():
              "• Web (buildcero.com): Landing de captación y data room. Acceso rápido a renders en 3D para patrocinadores e inversores.\n"
              "• Frecuencia de Reuniones: Asamblea general los domingos a las 20:00 CEST en Discord. Reuniones técnicas ad-hoc los miércoles. Todo el progreso se documenta mediante actas semanales publicadas en abierto."],
             ["3. Embudo de Crecimiento y Conversión Comunitaria", "A continuación se muestra gráficamente cómo convertimos espectadores casuales en colaboradores del proyecto:"],
-            ["4. Diagrama de Roles y Organización del Discord", "A continuación se ilustra la jerarquía de roles y responsabilidades en Discord:"],
+            ["4. Diagrama de Roles y Organización del Discord", "A continuación se ilustra la hierarquía de roles y responsabilidades en Discord:"],
             ["5. Matriz RACI Básica", "A continuación se presenta la matriz RACI del equipo CERO:"]
         ],
         "image": "growth_funnel.png",
@@ -210,6 +210,7 @@ def get_db():
              "Adopción de estándares FSAE (Formula Student):\n"
              "• Arco Principal (Main Hoop): Acero cromoly 4130, diámetro exterior de 25.4mm y espesor de pared de 2.0mm. Asegura la jaula de seguridad del piloto.\n"
              "• Diagonales y Tirantes: Acero 4130, 25.0mm x 1.2mm. Brindan rigidez estructural contra torsión torsional.\n"
+             "• Dimensionamiento Ergonómico: El cockpit se diseñará en Onshape para alojar a pilotos de hasta el percentil 95 de estatura (1.90 m), asegurando espacio holgado para el casco y las piernas.\n"
              "• El chasis debe resistir fuerzas de torsión estática de hasta 1.800 Nm por grado de flexión angular, validados por simulaciones numéricas (FEA)."],
             ["2. Control de Soldadura y Homologación de Soldadores", 
              "Todos los soldadores voluntarios deben soldar un cupón de prueba de acero 4130. Este cupón se enviará a ensayos de tracción en laboratorio. Solo los soldadores aprobados podrán soldar la jaula de seguridad del chasis físico, garantizando la integridad de las juntas bajo cargas extremas. Se realizarán inspecciones con líquidos penetrantes en taller para validar la ausencia de poros en la raíz de la soldadura."],
@@ -226,7 +227,7 @@ def get_db():
     db["DOC-005"] = {
         "category": "01_Producto_e_Ingenieria",
         "title": "Product Requirements Document",
-        "subtitle": "Ficha de Especificaciones Técnicas del Vehículo, Dinámica de Fluidos y Homologación de Calle",
+        "subtitle": "Ficha de Requerimientos ITV de Calle, Ergonomía y Homologación",
         "author": "Ingeniería CERO",
         "status": "APROBADO",
         "version": "v16.0",
@@ -236,11 +237,11 @@ def get_db():
              "El documento de requerimientos de producto (PRD) de CERO se ha estructurado bajo los estándares de ingeniería de sistemas de la NASA (NASA Systems Engineering Handbook, SP-2016-6105). El objetivo es diseñar, simular y fabricar un vehículo monoplaza de calle con un coste de adquisición inicial de 0€, optimizando al límite el peso estructural y la rigidez torsional.\n\n"
              "El monoplaza debe combinar la agilidad en curva de un kart de competición con el cumplimiento estricto de los requisitos legales del Reglamento General de Vehículos en España y las directivas de homologación individual de la Unión Europea (Reglamento UE 2018/858)."],
             ["2. Especificaciones de Sistemas Dinámicos y Mecánicos",
-             "• Chasis Tubular: Estructura espacial triangulada (spaceframe) fabricada en tubos de acero aleado al cromo-molibdeno 4130 (normativa aeronáutica MIL-T-6736 B). El arco principal de seguridad antivuelco (Main Hoop) tendrá un diámetro de 25.4 mm y un espesor de pared mínimo de 2.0 mm. La rigidez torsional estructural de diseño objetivo es de 1.800 Nm/grado, validada por simulaciones numéricas de elementos finitos (FEA) bajo cargas estáticas axiales y de torsión de 5G.\n"
+             "• Chasis Tubular: Estructura espacial triangulada (spaceframe) fabricada en tubos de acero aleado al cromo-molibdeno 4130. El arco principal de seguridad antivuelco (Main Hoop) tendrá un diámetro de 25.4 mm y un espesor de pared mínimo de 2.0 mm, dimensionado para alojar un piloto del percentil 95 (1.90 m de altura).\n"
              "• Suspensión Cinemática: Configuración de doble trapecio independiente (double wishbone) delantero y trasero. Brazos fabricados en tubo 4130, unidos mediante rótulas esféricas de competición (uniball) de rosca métrica fina grado automotriz. Amortiguación ajustable montada con sistema de bieletas push-rod para optimizar el ratio de movimiento y el control de balanceo.\n"
              "• Sistema de Frenado Independiente: Pinzas de doble pistón opuesto y discos ventilados. El pedalier de competición incluirá dos bombas de freno independientes conectadas mediante una barra de equilibrio (bias bar) mecánica ajustable en cabina. Esto garantiza el doble circuito independiente exigido por ley: si ocurre una fuga en el circuito delantero, el circuito trasero retiene capacidad de frenado estática superior al 45%."],
             ["3. Tren Motriz Eléctrico e Inversor de Tracción (Conceptual)",
-             "El coche utilizará un motor eléctrico síncrono de imanes permanentes montado en el subchasis trasero. La especificación exacta del motor y del inversor de tracción será definida por el equipo de ingenieros y patrocinadores una vez completada la fase conceptual, basándose en la disponibilidad de canje o compra Patreon:\n"
+             "El coche utilizará un motor eléctrico síncrono de imanes permanentes montado en el subchasis trasero en una zona protegida contra colisiones laterales. La especificación exacta del motor y del inversor de tracción será definida por el equipo de ingenieros y patrocinadores una vez completada la fase conceptual, basándose en la disponibilidad de canje o compra Patreon:\n"
              "• Tipo de Motor: Imanes permanentes de flujo axial, refrigeración líquida.\n"
              "• Par y Potencia de Diseño: Potencia máxima objetivo de 80-100 kW, par máximo de 240 Nm.\n"
              "• Inversor: Controlador trifásico de alta tensión controlado por bus CAN a 500 kbps.\n"
@@ -251,7 +252,8 @@ def get_db():
              "Para la obtención de placas de matrícula ordinarias mediante el proceso de Homologación Individual de Vehículos (HIV):\n\n"
              "• Secuencia de Luces: Integración de luces de posición, cruce, carretera, intermitentes, emergencia, luz de marcha atrás, antiniebla trasera y luz de matrícula con código de homologación europeo 'E' grabado en las lentes.\n"
              "• Seguridad Peatonal (Radios de Curvatura): El exterior de la carrocería de composite (fibra de vidrio) debe ser completamente suave, sin salientes punzantes ni aristas. Todos los radios de curvatura exteriores en superficies expuestas deben ser superiores a 2.5 mm.\n"
-             "• Retrovisores: Dos retrovisores exteriores con espejo convexo que permitan un campo de visión horizontal mínimo de 15 metros a una distancia de 10 metros detrás del coche."]
+             "• Retrovisores: Dos retrovisores exteriores con espejo convexo que permitan un campo de visión horizontal mínimo de 15 metros a una distancia de 10 metros detrás del coche.\n"
+             "• Auditoría ex-ante: Se firmará un acuerdo con un laboratorio oficial (como IDIADA o el INTA) para realizar una revisión preliminar de los planos CAD antes de iniciar la fabricación física."]
         ],
         "image": "engine_power_torque_curve.png"
     }
@@ -269,7 +271,7 @@ def get_db():
              "Esta Lista de Materiales (BOM) detalla de manera conceptual cada elemento físico necesario para el montaje final de CERO. Para mantener el modelo estratégico de bootstrapping de 0€, el aprovisionamiento se gestiona mediante tres fuentes:\n\n"
              "• Sourcing por Sponsor (Canje de Branding): Metalúrgicas de acero 4130, talleres CNC de aluminio y marcas de neumáticos.\n"
              "• Caja Acumulada de Patreon (Compra Directa): Compra de motor de tracción, inversor, latiguillos de freno, BMS y celdas de batería.\n"
-             "• Consumibles de Taller: Discos de corte, gas de purga argón, varillas de soldadura TIG de aporte (ER70S-6 o ER80S-D2).\n"
+             "• Consumibles y Adecuación: Herramientas de taller, extintores de CO2 de seguridad para litio, gases de purga argón, varillas de soldadura TIG de aporte (ER70S-6 o ER80S-D2).\n"
              "Toda adquisición se registra de forma pública en el Data Room de inversores (DOC-022) para garantizar traza contable total."],
             ["2. Distribución Presupuestaria Comparativa", "A continuación se muestra de forma visual la distribución de costes y el presupuesto estimado del monoplaza:"],
             ["3. Lista Detallada de Componentes de Ingeniería", "A continuación se presenta la base de datos conceptual de piezas del monoplaza:"]
@@ -285,7 +287,7 @@ def get_db():
                 ["Doble Pinza Freno", "Pinzas Wilwood / Brembo y discos", "900 €", "Compra Patreon / Sponsor"],
                 ["Celdas Batería", "Celdas de iones de litio (pack acumulador)", "1.500 €", "Compra Patreon"],
                 ["Sistema BMS", "Battery Management System, CAN", "950 €", "Compra Patreon"],
-                ["Tornillería Grado 8.8", "Tornillería métrica alta resistencia", "150 €", "Compra Patreon Consumibles"],
+                ["Extintores y Fuerza", "Adecuación de seguridad e instalación garaje", "350 €", "Compra Patreon Consumibles"],
                 ["Kit Luces / Espejos", "Kit luces e-marked calle", "800 €", "Compra Patreon / Sponsors"],
                 ["Tasas Homologación", "IDIADA / INTA individual", "2.500 €", "Patrocinadores Corporativos"]
             ]
@@ -349,7 +351,7 @@ def get_db():
             ["2. Gráfico de Física y Dinámica Lateral en Pista", "A continuación se presentan los resultados del ensayo dinámico de slalom de CERO, mostrando la trayectoria XY y el perfil de aceleración lateral en fuerzas G:"],
             ["3. Protocolo de Pruebas Dinámicas en Circuito Cerrado", 
              "Pruebas de validación en circuito privado antes de iniciar el dossier de homologación de calle:\n\n"
-             "• Test de Slalom: Slalom a 40 km/h, 60 km/h y 80 km/h con telemetría de acelerómetros para verificar balanceo lateral, transferencias de peso y rigidez cinemática de los trapecios. Se comprobará que la frecuencia natural de balanceo se mantiene dentro de los límites calculados en Onshape.\n"
+             "• Test de Slalom: Slalom a 40 km/h, 60 km/h and 80 km/h con telemetría de acelerómetros para verificar balanceo lateral, transferencias de peso y rigidez cinemática de los trapecios. Se comprobará que la frecuencia natural de balanceo se mantiene dentro de los límites calculados en Onshape.\n"
              "• Ensayo de Frenado de Emergencia: Detenciones completas consecutivas desde 80 km/h a 0 km/h. Verificación de desvanecimiento (fade) de frenos y ajuste mecánico de la bias bar del pedalier para asegurar que las ruedas delanteras bloquean ligeramente antes que las traseras, evitando trompos dinámicos.\n"
              "• Prueba de Stress de Temperatura de Baterías: Monitorear la temperatura de las celdas de litio durante 30 minutos de rodaje continuo. La temperatura de ninguna celda debe superar los 55°C, activándose el apagado de seguridad del BMS de forma automática si se rebasa dicha cota."]
         ],
@@ -370,7 +372,7 @@ def get_db():
         "date": "15.07.2026",
         "sections": [
             ["1. Estructura de Roles de la Comunidad", 
-             "La organización de CERO se fundamenta en un equipo de coordinación local (Core Team) y comisiones de ingeniería descentralizadas. El Core Team de Móstoles gestiona las relaciones con talleres mecánicos físicos, la búsqueda del garaje y la caja del Patreon. Los colaboradores online aportan planos CAD en Onshape y simulaciones FEA. El Lead Engineer tiene la última palabra sobre el diseño del chasis tubular. Esta estructura garantiza agilidad operacional y control de calidad físico. La toma de decisiones estratégicas se realiza en asamblea de la DAO física, pero la implementación física en el taller recae exclusivamente en los miembros con firma técnica certificada."],
+             "La organización de CERO se fundamenta en un equipo de coordinación local (Core Team) y comisiones de ingeniería descentralizadas. El Core Team de Móstoles de la asociación cultural gestiona las relaciones con talleres mecánicos físicos, la búsqueda del garaje y la caja del Patreon. Los colaboradores online aportan planos CAD en Onshape y simulaciones FEA. El Lead Engineer tiene la última palabra sobre el diseño del chasis tubular. Esta estructura garantiza agilidad operativa y control de calidad físico. La toma de decisiones estratégicas se realiza en asamblea de la DAO física, pero la implementación física en el taller recae exclusivamente en los miembros con firma técnica certificada."],
             ["2. Organigrama de Decisiones Técnicas y de Medios", 
              "• Founder/Mario: Coordinación estratégica, edición de vlogs en YouTube, contacto con sponsors, dueños de locales y gestión administrativa de la asociación cultural.\n"
              "• Lead Engineer: Aprobación final de archivos CAD Onshape, supervisión de rigidez estructural y diseño cinemático de suspensión. Valida los cupones de prueba de soldadura.\n"
@@ -453,7 +455,7 @@ def get_db():
              "Para operar legalmente con 0€ y gestionar suscripciones Patreon y donaciones, se constituye la 'Asociación de Ingeniería de Código Abierto CERO' en España. Esta forma jurídica está exenta de IVA en sus cuotas asociativas (Patreon) y permite la firma de contratos de canje de patrocinio (branding por material) de forma legal. La asociación actúa como paraguas legal para evitar riesgos patrimoniales personales a los fundadores durante el desarrollo virtual.\n\n"
              "La asociación abrirá una cuenta bancaria dedicada donde se depositarán todas las cuotas de Patreon y donaciones de patrocinadores, gestionándose con total transparencia pública en las auditorías contables mensuales."],
             ["2. Pivotación Futura a Sociedad Limitada (S.L.)", 
-             "En el Mes 18, de cara a la homologación final y comercialización de planos, se constituirá la S.L. aportando los activos intangibles de la asociación (CAD y marca CERO) como aportaciones no dinerarias, activando el plan de equity. La S.L. asumirá todos los derechos y obligaciones de la asociación, incluyendo los contratos de cesión de IP firmados por los ingenieros, garantizando la continuidad legal del Data Room ante inversores de capital riesgo."],
+             "En el Mes 18, de cara a la homologación final y comercialización de planos, se constituirá la S.L. aportando los activos intangibles de la asociación (CAD y marca CERO) como aportaciones no dinerarias, activando el plan de equity. La S.L. asumirá todos los derechos y obligations de la asociación, incluyendo los contratos de cesión de IP firmados por los ingenieros, garantizando la continuidad legal del Data Room ante inversores de capital riesgo."],
             ["3. Fiscalidad y Gestión de Exenciones", 
              "Se solicitará la declaración de utilidad pública para la asociación una vez cumplidos los plazos legales, permitiendo que las empresas que donen materiales o coticen como mecenas puedan desgravarse de sus aportaciones en el Impuesto de Sociedades. La gestión fiscal será externalizada a una gestoría colaboradora mediante acuerdo de canje publicitario."]
         ]
@@ -586,7 +588,7 @@ def get_db():
             ["1. Estructura del Vídeo de YouTube de Lanzamiento (Episodio 1)", 
              "• 0:00 - 1:00: Gancho de alta retención. Mario frente a la cámara en un garaje vacío. 'Voy a construir un coche de carreras real para calle desde 0€ y solo con internet. No tengo taller ni dinero. Os muestro cómo'. Renders rápidos del chasis modular.\n"
              "• 1:00 - 3:00: El problema industrial. El coste prohibitivo de los karts y monoplazas tradicionales, y las trabas burocráticas europeas. La filosofía de código abierto de CERO.\n"
-             "• 3:00 - 6:00: La búsqueda del garaje físico. Mario visita locales en Móstoles que están en alquiler. Habla con dueños y les propone un canje de publicidad: usar el local a cambio de promocionarlo semanalmente ante miles de seguidores.\n"
+             "• 3:00 - 6:00: Conflicto del espacio. Mario visita tres locales en Móstoles que están en alquiler. Dos agencias le rechazan de inmediato al proponerles un canje de publicidad. Mario comparte su frustración ante la cámara. 'Nadie cree en esto al inicio. Pero vamos a seguir llamando'.\n"
              "• 6:00 - 8:00: La llamada de sourcing. Mario llama en directo a distribuidores de acero para conseguir tubos de cromoly 4130 a coste cero.\n"
              "• 8:00 - 10:00: Llamada a la acción. 'Si eres ingeniero, soldador o tienes un local, únete a Discord en buildcero.com'. Suscríbete."],
             ["2. Episodio 2: Negociando el Garaje y Primeros Planos", 
@@ -719,15 +721,18 @@ def get_db():
         "version": "v16.0",
         "date": "15.07.2026",
         "sections": [
-            ["1. Guion Telefónico para Conseguir el Garaje (Local Físico)", 
+            ["1. Guion Telefónico para Conseguir el Garaje (Local Físico Vacío)", 
              "\"Hola, buenas tardes. Llamaba por el anuncio del local en alquiler en Móstoles. Me gustaría proponerle un trato alternativo: dirijo CERO (buildcero.com), el primer coche open-source de calle desarrollado de forma colaborativa por internet en Madrid.\n\n"
              "Tenemos una comunidad de miles de ingenieros y entusiastas siguiendo el proceso semanal en YouTube. Le proponemos cedernos el uso de su local cerrado o garaje como taller de montaje a cambio de un contrato de canje de publicidad: su local aparecerá de fondo en todos nuestros vlogs semanales y Shorts de YouTube, con enlaces de contacto y publicidad directa que llevarán visibilidad y clientes a su negocio o cartera inmobiliaria. ¿Le interesaría que nos reunamos 10 minutos en el local y le enseño los planos conceptuales del coche?\""],
-            ["2. Guion para Conseguir el Patrocinio de Tubos de Acero 4130", 
+            ["2. Guion Telefónico para Negociar Espacio en Taller Mecánico Activo (Plan B)", 
+             "\"Hola, buenas tardes. Quería hablar con el dueño del taller. Mi nombre es Mario y estoy coordinando CERO (buildcero.com), un monoplaza open-source para calle desarrollado colaborativamente por internet.\n\n"
+             "Viendo la calidad de sus instalaciones, queríamos proponerle un acuerdo de trueque comercial. Buscamos un rincón libre de su taller (de unos 15-20 m²) para soldar el chasis y ensamblar las piezas únicamente los sábados por la tarde, fuera de su horario comercial. A cambio, colocaremos un cartel gigante de su taller de fondo en todos nuestros vídeos semanales de YouTube y Shorts de taller (donde nos siguen miles de apasionados locales), ayudaremos a limpiar y ordenar el taller los fines de semana, y promocionaremos activamente sus servicios de mecánica en la zona de Móstoles. ¿Podríamos pasarnos el sábado por la tarde 10 minutos para mostrarle el diseño en Onshape?\""],
+            ["3. Guion para Conseguir el Patrocinio de Tubos de Acero 4130", 
              "\"Hola, buenas. Quería hablar con el responsable de marketing o ventas. Les proponemos una colaboración: estamos fabricando CERO, un monoplaza de código abierto para calle (buildcero.com) seguido en vlogs de YouTube por miles de estudiantes de ingeniería y mecánicos.\n\n"
              "Les proponemos patrocinarnos con 50 metros de tubo de acero cromoly 4130 a cambio de colocar el logotipo de su metalúrgica grabado por láser en el chasis físico, menciones de su empresa en los vlogs del proceso de soldadura y enlaces directos en nuestro repositorio GitHub. ¿Podríamos enviarle una propuesta de patrocinio por correo electrónico para que la valoren?\""],
-            ["3. Guion de Seguimiento por Correo Electrónico", 
+            ["4. Guion de Seguimiento por Correo Electrónico", 
              "\"Estimado [Nombre del Propietario / Proveedor],\n\n"
-             "Le escribo para dar seguimiento a nuestra conversación de ayer. Le adjunto el dossier de patrocinio y el Manifiesto de CERO (DOC-001) donde detallamos el modelo operativo y la tracción en redes sociales. Estamos muy interesados en colaborar con usted para establecer el garaje del proyecto en su local.\n\n"
+             "Le escribo para dar seguimiento a nuestra conversación de ayer. Le adjunto el dossier de patrocinio y el Manifiesto de CERO (DOC-001) donde detallamos el modelo operativo y la tracción en redes sociales. Estamos muy interesados en colaborar con usted para establecer el garaje del proyecto en su local o taller.\n\n"
              "Quedamos a su entera disposición para reunirnos de forma física. Un saludo cordial, Mario.\"\n\n"
              "Este correo se enviará de inmediato para mantener viva la negociación del espacio o materiales."]
         ]

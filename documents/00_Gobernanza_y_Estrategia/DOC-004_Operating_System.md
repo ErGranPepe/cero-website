@@ -25,7 +25,7 @@ A continuación se muestra gráficamente cómo convertimos espectadores casuales
 
 ## 4. Diagrama de Roles y Organización del Discord
 
-A continuación se ilustra la jerarquía de roles y responsabilidades en Discord:
+A continuación se ilustra la hierarquía de roles y responsabilidades en Discord:
 
 ## 5. Matriz RACI Básica
 

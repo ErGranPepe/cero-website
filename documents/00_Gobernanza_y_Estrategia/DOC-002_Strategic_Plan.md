@@ -14,7 +14,7 @@ El proyecto se extiende a 28 meses para incorporar de forma segura la fase de ho
 
 • Fase 1 (Mes 1-3): Lanzamiento, reclutamiento y captación de talento en LinkedIn y Discord. Fase puramente conceptual centrada en la narrativa, la estructura de la comunidad y la búsqueda del garaje físico local. Se congelan las dimensiones generales preliminares del monoplaza.
 • Fase 2 (Mes 4-6): Búsqueda activa de local o garaje y lanzamiento del Patreon oficial. Modelado CAD conceptual del chasis y cockpit en Onshape. Se inician las simulaciones de ergonomía y colocación de mandos.
-• Fase 3 (Mes 7-12): Ingeniería de detalle y simulaciones FEA/CFD en abierto. Se congelan los puntos de suspensión del monoplaza y se simulan cargas de flexión estática y torsión torsional. Obtención final del garaje mediante canje o alquiler básico.
+• Fase 3 (Mes 7-12): Fabricación del prototipo de madera (mockup) a escala 1:1 en el garaje para validar físicamente la ergonomía del piloto (percentil 95) en Onshape. Ingeniería de detalle y simulaciones FEA/CFD en abierto. Obtención final del garaje mediante canje o alquiler básico.
 • Fase 4 (Mes 13-18): Alianzas y soldadura del chasis tubular en el garaje o taller colaborador. Se adquieren los tubos de acero cromoly 4130 mediante patrocinio y se fabrica la mesa jig de soldadura.
 • Fase 5 (Mes 19-21): Montaje del tren motriz, cableado básico, suspensión, dirección y doble circuito de frenos Wilwood. Colaboración estrecha con los ingenieros para la integración del sistema.
 • Fase 6 (Mes 22-24): Fabricación de la carrocería final de composite y pruebas dinámicas de slalom y frenado en pista privada o aeródromo cerrado.

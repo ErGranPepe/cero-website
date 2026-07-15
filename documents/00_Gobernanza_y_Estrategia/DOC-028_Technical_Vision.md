@@ -13,6 +13,7 @@
 Adopción de estándares FSAE (Formula Student):
 • Arco Principal (Main Hoop): Acero cromoly 4130, diámetro exterior de 25.4mm y espesor de pared de 2.0mm. Asegura la jaula de seguridad del piloto.
 • Diagonales y Tirantes: Acero 4130, 25.0mm x 1.2mm. Brindan rigidez estructural contra torsión torsional.
+• Dimensionamiento Ergonómico: El cockpit se diseñará en Onshape para alojar a pilotos de hasta el percentil 95 de estatura (1.90 m), asegurando espacio holgado para el casco y las piernas.
 • El chasis debe resistir fuerzas de torsión estática de hasta 1.800 Nm por grado de flexión angular, validados por simulaciones numéricas (FEA).
 
 ## 2. Control de Soldadura y Homologación de Soldadores

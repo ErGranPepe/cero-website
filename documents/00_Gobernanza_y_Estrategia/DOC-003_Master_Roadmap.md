@@ -26,7 +26,7 @@ A continuación se dejan indicadas las fases y entregables clave del roadmap:
 | --- | --- | --- | --- | --- |
 | MS-0 | Fase 1 | Freeze de Requerimientos Técnicos Básicos y Búsqueda de Garaje | Mes 3 | Completado |
 | MS-1 | Fase 2 | Diseño Conceptual CAD en Onshape y Lanzamiento Patreon | Mes 6 | En Progreso |
-| MS-2 | Fase 3 | Diseño Detallado (FEA/CFD) y Cierre de Alianzas | Mes 12 | Planificado |
+| MS-2 | Fase 3 | Prototipo de Madera 1:1 (Mockup) y Cierre de Alianzas | Mes 12 | Planificado |
 | MS-3 | Fase 4 | Adquisición y Ensamblaje de Chasis Tubular en Garaje | Mes 18 | Planificado |
 | MS-4 | Fase 5 | Integración Tren Motriz y Cableado de Control V1 | Mes 21 | Planificado |
 | MS-5 | Fase 6 | Lanzamiento de Prototipo y Pruebas en Pista | Mes 24 | Planificado |
