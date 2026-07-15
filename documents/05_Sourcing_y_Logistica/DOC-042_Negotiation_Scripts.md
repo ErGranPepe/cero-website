@@ -3,14 +3,14 @@
 
 - **Autor**: Alianzas y Sourcing CERO
 - **Estado**: APROBADO
-- **Versión**: v13.0
+- **Versión**: v14.0
 - **Fecha**: 15.07.2026
 
 ---
 
 ## 1. Guion Telefónico para Desguaces (Sourcing de Motor Suzuki)
 
-"Hola, buenos días. Busco un motor usado de Suzuki GSX-R 600cc de los años 2004 a 2008. ¿Tenéis en stock con cableado e inyección?
+"Hola, buenas días. Busco un motor usado de Suzuki GSX-R 600cc de los años 2004 a 2008. ¿Tenéis en stock con cableado e inyección?
 
 SI TIENEN: 'Excelente. Quería proponeros una colaboración comercial. Estoy dirigiendo CERO (buildcero.com), el primer monoplaza open-source homologado de calle fabricado en España desde internet. Os proponemos entregarnos el motor bajo un contrato de patrocinio de branding: a cambio, vuestra marca aparecerá grabada por láser en el chasis físico del coche y tendréis menciones exclusivas en todos nuestros vídeos semanales de YouTube de montaje del motor, llegando a miles de apasionados del motor locales. ¿Os interesaría tener una llamada de 5 minutos para presentaros la propuesta?'"
 
@@ -25,3 +25,5 @@ Buscamos un taller partner local en Móstoles/Alcorcón para realizar la soldadu
 "Estimado [Nombre del Proveedor],
 
 Le escribo de parte del proyecto CERO (buildcero.com) para dar seguimiento a nuestra llamada del pasado martes. Le adjunto el dossier de patrocinio de marca y el Manifiesto de CERO (DOC-001) para que su equipo de marketing pueda evaluar el retorno de la donación de los tubos de acero 4130 cromoly. Quedamos a su entera disposición para cualquier aclaración técnica. Un saludo cordial, Mario."
+
+Este correo se enviará en las 24 horas posteriores al contacto telefónico para mantener vivo el interés comercial.

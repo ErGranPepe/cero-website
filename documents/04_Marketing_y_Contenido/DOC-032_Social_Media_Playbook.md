@@ -3,15 +3,15 @@
 
 - **Autor**: Medios y Crecimiento CERO
 - **Estado**: APROBADO
-- **Versión**: v13.0
+- **Versión**: v14.0
 - **Fecha**: 15.07.2026
 
 ---
 
-## 1. Directrices de Publicación
+## 1. Directrices de Publicación y Estilo Visual
 
-• Estética: Fondo de vídeo limpio, luz natural de taller, renders CAD en Onshape de alta definición.
-• Tono: Crudo y técnico, alejado del postureo corporativo. Se responderá en los comentarios como un diario personal del fundador, no como una marca fría.
+• Estética: Fondo de vídeo limpio, luz natural de taller, renders CAD en Onshape de alta definición. Tomas de primer plano de soldaduras y chispas sin filtros embellecedores artificiales.
+• Tono: Crudo, honesto y técnico. Se responderá en los comentarios como un diario personal del fundador, no como una marca fría corporativa. Si cometemos un error soldando, lo mostramos y pedimos disculpas.
 • Hashtags a utilizar: #CERO #buildinpublic #open-source #ingenieria #SuzukiGSXR #tubularchassis #Mostoles
 
 ## 2. Respuestas a Críticas Comunes en Comentarios
@@ -23,4 +23,4 @@
 
 ## 3. Criterios de Reposteo de Contenido de la Comunidad
 
-Se autoriza y fomenta que los colaboradores suban sus propios clips analizando partes del chasis de CERO o simulaciones FEA a sus canales de X/LinkedIn, etiquetando siempre la landing buildcero.com para centralizar la tracción.
+Se autoriza y fomenta que los colaboradores suban sus propios clips analizando partes del chasis de CERO o simulaciones FEA a sus canales de X/LinkedIn, etiquetando siempre la landing buildcero.com para centralizar la tracción. Esto amplifica de forma exponencial el alcance orgánico de la marca sin coste.

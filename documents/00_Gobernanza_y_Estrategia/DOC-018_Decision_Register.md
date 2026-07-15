@@ -3,19 +3,19 @@
 
 - **Autor**: Comité de Gobernanza CERO
 - **Estado**: APROBADO
-- **Versión**: v13.0
+- **Versión**: v14.0
 - **Fecha**: 15.07.2026
 
 ---
 
 ## 1. Protocolo de Registro de Decisiones de Arquitectura (ADR)
 
-Toda decisión que altere de forma permanente las dimensiones físicas, especificaciones mecánicas o distribución de costes de CERO debe documentarse formalmente como un Architecture Decision Record (ADR) en el repositorio GitHub. Esto previene la pérdida de contexto cuando se incorporen nuevos colaboradores técnicos.
+Toda decisión que altere de forma permanente las dimensiones físicas, especificaciones mecánicas o distribución de costes de CERO debe documentarse formalmente como un Architecture Decision Record (ADR) en el repositorio GitHub. Esto previene la pérdida de contexto cuando se incorporen nuevos colaboradores técnicos. Cada archivo ADR debe detallar el contexto del problema, las alternativas analizadas (con sus ventajas e inconvenientes) y la decisión final adoptada junto con la firma de los ingenieros involucrados.
 
-## 2. Proceso de Votación y Desbloqueo
+## 2. Proceso de Votación y Desbloqueo de Discrepancias
 
-El debate técnico se abre durante 72 horas en el canal de Discord correspondiente. Cada propuesta debe estar sustentada en simulaciones FEA, datos de coste o requerimientos de ITV. Si no existe consenso al cabo del plazo, el Lead Engineer ostentará el voto de calidad para desbloquear el avance técnico del chasis.
+El debate técnico se abre durante 72 horas en el canal de Discord correspondiente. Cada propuesta debe estar sustentada en simulaciones FEA, datos de coste o requerimientos de ITV. Si no existe consenso al cabo del plazo, el Lead Engineer ostentará el voto de calidad para desbloquear el avance técnico del chasis. Esto garantiza que el diseño avance de forma ágil sin entrar en bucles de discusión interminables.
 
-## 3. Criterios de Aprobación Financiera
+## 3. Criterios de Aprobación Financiera y Gestión de Caja
 
-Las decisiones de gasto de caja superiores a 50€ requieren la aprobación por mayoría del Core Team de la asociación cultural. Queda prohibida la realización de compras individuales con fondos de la comunidad sin previa publicación del acuerdo y su respectivo registro en el archivo de decisiones críticas del proyecto.
+Las decisiones de gasto de caja superiores a 50€ requieren la aprobación por mayoría del Core Team de la asociación cultural. Queda prohibida la realización de compras individuales con fondos de la comunidad sin previa publicación del acuerdo y su respectivo registro en el archivo de decisiones críticas del proyecto, manteniendo un control contable estricto ante los mecenas de Patreon.

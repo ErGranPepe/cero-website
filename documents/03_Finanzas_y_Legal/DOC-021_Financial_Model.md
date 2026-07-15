@@ -3,14 +3,14 @@
 
 - **Autor**: Dirección Estratégica CERO
 - **Estado**: APROBADO
-- **Versión**: v13.0
+- **Versión**: v14.0
 - **Fecha**: 15.07.2026
 
 ---
 
 ## 1. Modelo Financiero de Caja
 
-El proyecto asume 0€ el primer mes y acumula caja mediante Patreon (Tier Boceto 2.99€, Tier CAD 5.99€, Tier Core 19.99€). Los gastos reales de compra de motor Suzuki GSX-R (€1.200) y frenos se realizan con la caja acumulada al Mes 12.
+El proyecto asume 0€ el primer mes y acumula caja mediante Patreon (Tier Boceto 2.99€, Tier CAD 5.99€, Tier Core 19.99€). Los gastos reales de compra de motor Suzuki GSX-R (€1.200) y frenos se realizan con la caja acumulada al Mes 12. Las proyecciones contemplan un colchón financiero para cubrir comisiones bancarias y de Stripe, asegurando que el flujo neto sea suficiente para afrontar la compra de consumibles de taller.
 
 ## 2. Comparación Financiera Pista vs. Homologación de Calle
 

@@ -3,7 +3,7 @@
 
 - **Autor**: Legal y Cumplimiento CERO
 - **Estado**: APROBADO
-- **Versión**: v13.0
+- **Versión**: v14.0
 - **Fecha**: 15.07.2026
 
 ---
@@ -17,8 +17,8 @@ Este borrador regula las relaciones de capital tras la pivotación de la asociac
 
 ## 2. Cláusulas de Permanencia y Bad Leaver
 
-Si un colaborador clave con derecho a stock options decide abandonar el proyecto antes de cumplir 12 meses (cliff), perderá el 100% de sus opciones acumuladas. Si abandona de forma conflictiva perjudicando el desarrollo del CAD, sus participaciones se valorarán a valor nominal de 1€ (Bad Leaver).
+Si un colaborador clave con derecho a stock options decide abandonar el de forma conflictiva o perjudicial, se le aplicarán penalizaciones financieras. Si abandona antes de cumplir 12 meses (cliff), perderá el 100% de sus opciones acumuladas. Si abandona de forma conflictiva perjudicando el desarrollo del CAD, sus participaciones se valorarán a valor nominal de 1€ (Bad Leaver).
 
-## 3. Protocolo de Resolución de Conflictos
+## 3. Protocolo de Resolución de Conflictos y Arbitraje
 
-Cualquier disputa técnica o corporativa se someterá a mediación en la Corte de Arbitraje de Madrid de la Cámara de Comercio. Esto previene juicios prolongados que paralicen las homologaciones de calle en IDIADA/INTA.
+Cualquier disputa técnica o corporativa se someterá a mediación en la Corte de Arbitraje de Madrid de la Cámara de Comercio. Esto previene juicios prolongados que paralicen las homologaciones de calle en IDIADA/INTA, garantizando que el chasis de CERO pueda fabricarse y probarse sin interrupciones legales.
