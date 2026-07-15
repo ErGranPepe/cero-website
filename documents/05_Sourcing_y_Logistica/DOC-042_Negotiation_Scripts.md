@@ -8,17 +8,17 @@
 
 ---
 
-## 1. Guion Telefónico para Desguaces (Sourcing de Motor Suzuki)
+## 1. Guion Telefónico para Sponsors Técnicos (Sourcing de Motor Emrax)
 
-"Hola, buenas días. Busco un motor usado de Suzuki GSX-R 600cc de los años 2004 a 2008. ¿Tenéis en stock con cableado e inyección?
+"Hola, buenos días. Busco hablar con el departamento de marketing o ingeniería. Quería proponeros una colaboración de marca. Estoy dirigiendo CERO (buildcero.com), el primer monoplaza open-source eléctrico de calle fabricado en España desde internet.
 
-SI TIENEN: 'Excelente. Quería proponeros una colaboración comercial. Estoy dirigiendo CERO (buildcero.com), el primer monoplaza open-source homologado de calle fabricado en España desde internet. Os proponemos entregarnos el motor bajo un contrato de patrocinio de branding: a cambio, vuestra marca aparecerá grabada por láser en el chasis físico del coche y tendréis menciones exclusivas en todos nuestros vídeos semanales de YouTube de montaje del motor, llegando a miles de apasionados del motor locales. ¿Os interesaría tener una llamada de 5 minutos para presentaros la propuesta?'"
+Os proponemos cedernos un motor síncrono Emrax 228 bajo un contrato de patrocinio de branding: a cambio, vuestra marca aparecerá grabada por láser en las placas del chasis físico y tendréis menciones exclusivas de vuestro soporte técnico en todos nuestros vídeos semanales de YouTube de montaje del motor eléctrico, llegando a miles de ingenieros y estudiantes de automoción locales. ¿Os interesaría tener una reunión corta de 10 minutos para presentaros la propuesta de patrocinio?"
 
 ## 2. Guion para Taller Mecánico Colaborador (Rincón del Taller)
 
-"Hola, ¿qué tal? Soy Mario. Estoy liderando el diseño de un coche open-source homologado de calle con una gran comunidad de ingenieros detrás (buildcero.com).
+"Hola, ¿qué tal? Soy Mario. Estoy liderando el diseño de un coche open-source eléctrico de calle con una gran comunidad de ingenieros detrás (buildcero.com).
 
-Buscamos un taller partner local en Móstoles/Alcorcón para realizar la soldadura TIG del chasis y el ensamblaje de la suspensión los fines de semana. Quería proponerles cedernos un espacio de 20 metros cuadrados a cambio de colocar un cartel de vuestro taller de fondo de todos nuestros vídeos semanales de YouTube y Shorts de taller, llevando clientes de mantenimiento mecánico directo de vuestra zona. ¿Podríamos reunirnos 10 minutos y os muestro el CAD del coche?"
+Buscamos un taller partner local en Móstoles/Alcorcón para realizar la soldadura TIG del chasis y el ensamblaje de la suspensión los fines de semana. Quería proponerles cedernos un espacio de 20 metros cuadrados a cambio de colocar un cartel de vuestro taller de fondo de todos nuestros vídeos semanales de YouTube y Shorts de taller, llevando clientes de mantenimiento directo de vuestra zona. ¿Podríamos reunirnos 10 minutos y os muestro el CAD del coche?"
 
 ## 3. Guion de Seguimiento por Correo Electrónico
 

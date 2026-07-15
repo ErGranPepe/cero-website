@@ -22,3 +22,7 @@ Todos los soldadores voluntarios deben soldar un cupón de prueba de acero 4130.
 ## 3. Comparativa de Resistencia Estructural
 
 A continuación se muestra la resistencia elástica (MPa) del acero cromoly 4130 seleccionado frente al acero dulce estándar:
+
+## 4. Mapa de Tensiones FEA de la Estructura de Chasis
+
+A continuación se presenta el mapa de tensiones estructurales en 3D del chasis obtenido mediante simulación estática por el resolvedor de elementos finitos de CERO, demostrando la deformación y áreas de distribución de carga Von Mises bajo impacto frontal de 5G:

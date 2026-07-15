@@ -23,5 +23,5 @@ A continuación se ilustra la curva de coeficiente de resistencia (Cd) frente a 
 • Lunes: TikTok corto sobre ergonomía del cockpit o renders de Onshape.
 • Miércoles: Detrás de cámaras en Reels sobre el día a día en el taller colaborador.
 • Jueves: Hilo técnico en X/LinkedIn (ej. amortiguadores coilovers de moto vs amortiguación clásica FSAE).
-• Sábado: Vídeo largo de YouTube de 10-15 minutos detallando la soldadura TIG o la adquisición del motor GSX-R.
+• Sábado: Vídeo largo de YouTube de 10-15 minutos detallando la soldadura TIG o la adquisición de las celdas de litio.
 • Domingo: Asamblea de voz en Discord y votación comunitaria de diseño.

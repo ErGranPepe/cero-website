@@ -18,7 +18,7 @@ La toma de decisiones estratégicas se realiza en asamblea de la DAO física, pe
 
 • Founder/Mario: Coordinación estratégica, edición de vlogs en YouTube, contacto con sponsors, dueños de locales y gestión administrativa de la asociación cultural.
 • Lead Engineer: Aprobación final de archivos CAD Onshape, supervisión de rigidez estructural y diseño cinemático de suspensión. Valida los cupones de prueba de soldadura.
-• Sourcing Scouts: Voluntarios de Discord que buscan y catalogan motores Suzuki GSX-R de desguace, metalúrgicas de acero 4130 y distribuidores viales.
+• Sourcing Scouts: Voluntarios de Discord que buscan y catalogan motores Emrax de desguace/segunda mano, metalúrgicas de acero 4130 y distribuidores viales.
 • Moderadores de Discord: Gestión de la comunidad, bienvenida a ingenieros, resolución de conflictos online y organización de asambleas los domingos.
 
 ## 3. Criterios de Entrada al Core y Roles

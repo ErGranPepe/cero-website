@@ -1,5 +1,5 @@
 # DOC-007: Technical Architecture
-**Arquitectura Mecánica y Eléctrica del Monoplaza de Combustión**
+**Arquitectura Mecánica y Eléctrica del Monoplaza Eléctrico**
 
 - **Autor**: Ingeniería CERO
 - **Estado**: APROBADO
@@ -8,11 +8,11 @@
 
 ---
 
-## 1. Arquitectura de Sistemas de Combustión
+## 1. Arquitectura de Sistemas de Tracción Eléctrica
 
-El tren motriz de CERO utiliza un motor de moto Suzuki GSX-R transversal montado directamente en cunas antivibración soldadas al chasis trasero. Transmisión secuencial a cadena paso 530 hacia un eje trasero equipado con un diferencial Quaife ATB LSD para asegurar tracción en curva sin pérdidas de potencia.
+El tren motriz de CERO utiliza un motor síncrono de imanes permanentes y flujo axial Emrax 228 montado en el subchasis trasero. Transmisión directa mediante acoplamiento rígido hacia un diferencial autoblocante Drexler tarado para Formula Student, transmitiendo el par a los palieres traseros de acero 300M.
 
-El sistema de combustible cumple normas de seguridad de la FIA: depósito de combustible de aluminio con espuma interna deflactora para evitar el oleaje, bomba de inyección externa de alta presión (3 bar) con regulador de presión integrado, y tuberías de combustible trenzadas de teflón AN-6 con racores roscados blindados contra el calor. Cada racor se fija mecánicamente para resistir vibraciones extremas del motor de moto a 14.000 RPM.
+El sistema de acumulador de alta tensión (HV) utiliza celdas de litio 18650 encapsuladas en un contenedor estructural de fibra de carbono. Un sistema de gestión de baterías (Orion BMS) monitorea constantemente el voltaje de cada celda y su temperatura, comunicándose por bus CAN con el inversor Bamocar D3 para limitar la corriente en caso de sobretemperatura.
 
 ## 2. Geometría de Dirección y Comportamiento Dinámico Ackerman
 
@@ -30,6 +30,6 @@ Cremallera de dirección mecánica directa de kart modificada con 1.5 vueltas de
 
 ## 5. Arquitectura Eléctrica y Gestión Electrónica (ECU)
 
-Cableado original de la moto Suzuki aligerado de cables innecesarios. Mantenemos la ECU Keihin original desbloqueada (mapeo con inmovilizador HISS puenteado) para no tener que invertir en una ECU programable de competición de 2.000€.
+Mazo de cables de baja tensión (LV) aligerado de cables innecesarios. La ECU principal de diseño propio con microcontrolador Teensy 4.1 gestiona la adquisición de datos, lectura de aceleradores Hall duales redundantes y comunicación con el inversor.
 
-Cuadro de mandos digital multifunción conectado por bus de datos K-line original para visualizar en cabina las revoluciones, temperatura del refrigerante y presión del aceite, con sistema de corte de corriente de emergencia (cortacorrientes FIA) accesible tanto por el piloto desde el interior como por los comisarios desde el exterior en el arco principal. Todo el tendido eléctrico se aloja en fundas termorretráctiles con especificación militar Raychem DR-25.
+Se integra un dispositivo de monitoreo de aislamiento (IMD Bender) que corta la línea de seguridad (Shutdown loop) si detecta una fuga de corriente entre el sistema de alta tensión (HV) y el chasis de baja tensión (LV). Todo el tendido eléctrico se aloja en fundas termorretráctiles Raychem DR-25.

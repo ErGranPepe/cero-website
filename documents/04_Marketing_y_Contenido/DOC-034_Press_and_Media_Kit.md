@@ -12,7 +12,7 @@
 
 Dossier de 1 página con los datos clave: 'CERO: El primer monoplaza open-source de calle desarrollado de forma colaborativa por internet desde Móstoles con 0€'.
 • Fundador: Mario (Informático, 26 años).
-• Motor: Suzuki GSX-R 600cc de moto (125hp).
+• Motor: Emrax 228 síncrono de flujo axial (100 kW pico).
 • Enlace de contacto: buildcero.com / prensa@buildcero.com.
 • Enlace a material de descarga en alta definición (renders del chasis tubular, fotos de taller y logotipos oficiales de marca).
 Se adjuntarán las biografías del Core Team técnico y los hitos clave alcanzados hasta el momento.
@@ -21,9 +21,9 @@ Se adjuntarán las biografías del Core Team técnico y los hitos clave alcanzad
 
 "Hola [Nombre del Periodista], te escribo porque sigo tu cobertura en [Medio] y creo que te interesará CERO. Es el primer monoplaza de carreras open-source homologable de calle desarrollado en abierto por internet por una comunidad de ingenieros en España.
 
-Operamos con 0€ iniciales, compartiendo cada fallo del CAD en Onshape y negociando el motor Suzuki en desguaces en directo. Hemos subido todo el Data Room y renders a buildcero.com. ¿Te apetece tener una llamada de 10 minutos para contarte cómo avanza la soldadura? Un saludo, Mario."
+Operamos con 0€ iniciales, compartiendo cada fallo del CAD en Onshape y negociando el motor Emrax en directo. Hemos subido todo el Data Room y renders a buildcero.com. ¿Te apetece tener una llamada de 10 minutos para contarte cómo avanza la soldadura? Un saludo, Mario."
 
-El objetivo es conseguir reportajes en medios especializados en motor (Diariomotor, Motorpasión) para aumentar el tráfico orgánico a buildcero.com.
+El objetivo es conseguir reportajes en medios especializados en motor para aumentar el tráfico orgánico a buildcero.com.
 
 ## 3. Política de Embargo Informativo
 

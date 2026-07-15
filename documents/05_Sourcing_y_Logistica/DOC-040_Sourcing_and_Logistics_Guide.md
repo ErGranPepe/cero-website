@@ -8,12 +8,12 @@
 
 ---
 
-## 1. Sourcing del Motor Suzuki GSX-R 600 K6-K7
+## 1. Sourcing de las Celdas de Litio 18650 y Batería
 
-• Dónde: Desguaces de moto en España.
-• Comprobación física: Girar el cigüeñal suavemente por el tornillo del alternador para asegurar que no está gripado.
-• Requisito obligatorio: Debe venir con centralita ECU original y mazo de cables intacto para evitar costes de inyección prohibitivos. Se comprobará visualmente que el sensor de posición del acelerador (TPS) y las mariposas de inyección no presentan daños estructurales.
+• Dónde: Distribuidores autorizados de celdas de litio o fabricantes COTS comerciales.
+• Comprobación física: Medir resistencia interna de al menos el 10% del lote utilizando un medidor de resistencia interna de batería (milliohmímetro AC). La resistencia interna debe ser inferior a 15 miliohmios por celda Samsung 30Q.
+• Requisito obligatorio: Todas las celdas del pack deben provenir del mismo lote de fabricación para garantizar la uniformidad de la curva de descarga y la vida útil del acumulador.
 
-## 2. Logística y Transporte Seguro
+## 2. Logística y Transporte Seguro de Baterías de Litio (HV)
 
-Drenar aceite del cárter en garrafa antes de cargar. Alojar motor de 65 kg en caja de fruta rígida de plástico sobre cartón y mantas para no volcar ni verter en el maletero. Sujetar con cinchas de trinquete. Queda terminantemente prohibido transportar el motor en posición inclinada sin tapar la salida del respiradero del cárter, previniendo fugas residuales en la tapicería.
+El transporte de celdas de litio sueltas o del acumulador ensamblado está sujeto al reglamento internacional de transporte de mercancías peligrosas (UN 3480 Clase 9). Las celdas deben transportarse en cajas de embalaje certificadas de cartón grueso con separadores de espuma de polietileno individuales para evitar cortocircuitos accidentales durante el traslado. El acumulador debe estar apagado y con el conector de servicio (MSD) retirado de forma obligatoria durante todo el trayecto.

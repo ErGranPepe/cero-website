@@ -14,7 +14,7 @@
             ],
             [
                 "2. Principios de Bootstrapping y Apertura",
-                "• Transparencia Radical: Todo el trabajo se realiza en público. Las simulaciones, el software, las actas de reuniones y las finanzas son de acceso libre en el repositorio. No existen secretos industriales ni patentes ocultas; cada render, cada fallo en las soldaduras y cada céntimo gastado se publican de forma inmediata en GitHub, garantizando la confianza de mecenas e ingenieros colaboradores.\n• Acción Verificable: Una idea teórica no tiene valor si no está acompañada de una simulación matemática, un modelo CAD o un prototipo físico probado. Los debates en Discord se resuelven mostrando datos objetivos y resultados numéricos, no opiniones subjetivas o rangos de antigüedad.\n• Colaboración Desinteresada Inicial: Priorizamos a los ingenieros que buscan crear un portfolio real o que participan por entusiasmo técnico. Compensamos su tiempo mediante un reparto de equity (stock options) en la futura S.L. una vez constituida de forma oficial, permitiendo una alineación de intereses a largo plazo.\n• Financiación Comunitaria ex-ante: No gastamos dinero propio de los fundadores. Los gastos de caja (compra del motor Suzuki de desguace, cadena, silenciadores o cableado de control) se pagan exclusivamente con la caja acumulada del Patreon de la comunidad, lanzado en el Mes 4, asegurando que el proyecto dependa del interés social real para seguir avanzando. Si el público no valida la idea con su mecenazgo, el proyecto no consume recursos personales."
+                "• Transparencia Radical: Todo el trabajo se realiza en público. Las simulaciones, el software, las actas de reuniones y las finanzas son de acceso libre en el repositorio. No existen secretos industriales ni patentes ocultas; cada render, cada fallo en las soldaduras y cada céntimo gastado se publican de forma inmediata en GitHub, garantizando la confianza de mecenas e ingenieros colaboradores.\n• Acción Verificable: Una idea teórica no tiene valor si no está acompañada de una simulación matemática, un modelo CAD o un prototipo físico probado. Los debates en Discord se resuelven mostrando datos objetivos y resultados numéricos, no opiniones subjetivas o rangos de antigüedad.\n• Colaboración Desinteresada Inicial: Priorizamos a los ingenieros que buscan crear un portfolio real o que participan por entusiasmo técnico. Compensamos su tiempo mediante un reparto de equity (stock options) en la futura S.L. una vez constituida de forma oficial, permitiendo una alineación de intereses a largo plazo.\n• Financiación Comunitaria ex-ante: No gastamos dinero propio de los fundadores. Los gastos de caja (compra del inversor Bamocar D3, sensores, BMS o cableado de control) se pagan exclusivamente con la caja acumulada del Patreon de la comunidad, lanzado en el Mes 4, asegurando que el proyecto dependa del interés social real para seguir avanzando. Si el público no valida la idea con su mecenazgo, el proyecto no consume recursos personales."
             ],
             [
                 "3. Criterios de Éxito a Largo Plazo",
@@ -33,15 +33,15 @@
         "sections": [
             [
                 "1. Horizonte y Fases de Ejecución",
-                "El proyecto se extiende a 28 meses para incorporar de forma segura la fase de homologación de calle en España (ITV individual):\n• Fase 1 (Mes 1-3): Lanzamiento, reclutamiento y elección del motor (GSX-R 600 K6-K7). Fase puramente conceptual centrada en la narrativa y la captación de talento en LinkedIn y Discord. Se congelan las dimensiones generales del monoplaza.\n• Fase 2 (Mes 4-6): CAD conceptual del chasis y cockpit en Onshape. Se inician las simulaciones de ergonomía y colocación de mandos. Lanzamiento de Patreon.\n• Fase 3 (Mes 7-12): Ingeniería de detalle y simulaciones FEA/CFD. Se congelan los puntos de suspensión del monoplaza y se simulan cargas de flexión estática y torsión torsional bajo cargas dinámicas de 5G.\n• Fase 4 (Mes 13-18): Alianzas y soldadura del chasis tubular en taller colaborador. Se adquieren los tubos de acero cromoly 4130 y se fabrica la mesa jig.\n• Fase 5 (Mes 19-21): Montaje del tren motriz, escape Euro 6 y doble circuito de frenos Wilwood.\n• Fase 6 (Mes 22-24): Carrocería final de composite y pruebas dinámicas (slalom, frenado) en pista privada.\n• Fase 7 (Mes 25-28): Pruebas en laboratorios oficiales IDIADA/INTA y matriculación ordinaria para vías públicas."
+                "El proyecto se extiende a 28 meses para incorporar de forma segura la fase de homologación de calle en España (ITV individual):\n• Fase 1 (Mes 1-3): Lanzamiento, reclutamiento y elección del motor eléctrico (Emrax 228). Fase puramente conceptual centrada en la narrativa y la captación de talento en LinkedIn y Discord. Se congelan las dimensiones generales del monoplaza.\n• Fase 2 (Mes 4-6): CAD conceptual del chasis y cockpit en Onshape. Se inician las simulaciones de ergonomía y colocación de mandos. Lanzamiento de Patreon.\n• Fase 3 (Mes 7-12): Ingeniería de detalle y simulaciones FEA/CFD. Se congelan los puntos de suspensión del monoplaza y se simulan cargas de flexión estática y torsión torsional bajo cargas dinámicas de 5G.\n• Fase 4 (Mes 13-18): Alianzas y soldadura del chasis tubular en taller colaborador. Se adquieren los tubos de acero cromoly 4130 y se fabrica la mesa jig.\n• Fase 5 (Mes 19-21): Montaje del tren motriz, inversor Bamocar D3, Orion BMS y doble circuito de frenos Wilwood.\n• Fase 6 (Mes 22-24): Carrocería final de composite y pruebas dinámicas (slalom, frenado) en pista privada.\n• Fase 7 (Mes 25-28): Pruebas en laboratorios oficiales IDIADA/INTA y matriculación ordinaria para vías públicas."
             ],
             [
                 "2. Modelo de Financiación Mixto",
-                "Operación inicial con 0€ basándose en sponsors y canjes de publicidad. La compra del motor Suzuki GSX-R usado se financia en el Mes 12 con la caja acumulada del Patreon de la comunidad, lanzado en el Mes 4. Todo incremento de costes imprevisto en los ensayos mecánicos se cubrirá mediante campañas especiales de merchandising. El Core Team no realizará aportaciones de capital de su propio bolsillo, asegurando la sostenibilidad del bootstrapping puro durante toda la fase de desarrollo virtual. La estrategia comercial se centra en asociar marcas de componentes (frenos, amortiguadores, llantas) que busquen visibilidad en la serie de vlogs."
+                "Operación inicial con 0€ basándose en sponsors y canjes de publicidad. La compra de las celdas de litio 18650 para el acumulador y la electrónica del BMS se financia en el Mes 12 con la caja acumulada del Patreon de la comunidad, lanzado en el Mes 4. Todo incremento de costes imprevisto en los ensayos mecánicos se cubrirá mediante campañas especiales de merchandising. El Core Team no realizará aportaciones de capital de su propio bolsillo, asegurando la sostenibilidad del bootstrapping puro durante toda la fase de desarrollo virtual. La estrategia comercial se centra en asociar marcas de componentes (frenos, amortiguadores, llantas) que busquen visibilidad en la serie de vlogs."
             ],
             [
                 "3. Plan de Contingencia y Rutas Alternativas",
-                "Si en el Mes 12 la recaudación es insuficiente para la compra del motor o del metal, se retrasará el encargo del corte de tubos 4130 cromoly, extendiendo el diseño CAD virtual y lanzando retos adicionales de patrocinio en redes viales. El diseño virtual continuará optimizándose en Onshape, realizando más iteraciones en OpenFOAM.\n\nEn caso de que un taller colaborador retire el espacio físico cedido para el montaje del chasis tubular, se activará el Plan B: trueque comercial con institutos de formación profesional mecánica en la zona sur de Madrid, ofreciéndoles acceso directo a los planos de ingeniería para sus asignaturas prácticas de soldadura y automoción a cambio del uso de sus instalaciones durante los fines de semana. Si el motor Suzuki GSX-R resulta muy complejo de homologar por emisiones, se estudiará la pivotación al motor de la Yamaha MT-07, más moderno y con homologación de emisiones nativa más sencilla."
+                "Si en el Mes 12 la recaudación es insuficiente para la compra de las celdas o del metal, se retrasará el encargo del corte de tubos 4130 cromoly, extendiendo el diseño CAD virtual y lanzando retos adicionales de patrocinio en redes viales. El diseño virtual continuará optimizándose en Onshape, realizando más iteraciones en OpenFOAM.\n\nEn caso de que un taller colaborador retire el espacio físico cedido para el montaje del chasis tubular, se activará el Plan B: trueque comercial con institutos de formación profesional mecánica en la zona sur de Madrid, ofreciéndoles acceso directo a los planos de ingeniería para sus asignaturas prácticas de soldadura y automoción a cambio del uso de sus instalaciones durante los fines de semana. Si el motor Emrax 228 resulta muy costoso, se estudiará la pivotación a un motor síncrono de imanes permanentes comercial de menor coste, rediseñando la placa adaptadora del diferencial."
             ]
         ]
     },
@@ -56,7 +56,7 @@
         "sections": [
             [
                 "1. Cronograma de Hitos (Master Gantt)",
-                "El desarrollo del vehículo se organiza en un cronograma lineal de 28 meses. Las dependencias críticas son el escaneo 3D del motor de moto antes de cerrar el CAD trasero del chasis, y el diseño de aristas según normativa peatonal para el dossier IDIADA/INTA. Cada retraso en una fase de diseño afectará directamente al inicio del ensamblaje físico en el taller colaborador. La planificación se ha estructurado con amortiguadores temporales (buffers) de 15 días entre fases críticas para mitigar demoras en el suministro de metalurgia. La ruta crítica pasa obligatoriamente por el congelado del diseño de suspensión y dirección, ya que sus anclajes dictan la triangulación del chasis delantero."
+                "El desarrollo del vehículo se organiza en un cronograma lineal de 28 meses. Las dependencias críticas son el escaneo 3D del motor Emrax y el inversor antes de cerrar el CAD trasero del chasis, y el diseño de aristas según normativa peatonal para el dossier IDIADA/INTA. Cada retraso en una fase de diseño afectará directamente al inicio del ensamblaje físico en el taller colaborador. La planificación se ha estructurado con amortiguadores temporales (buffers) de 15 días entre fases críticas para mitigar demoras en el suministro de metalurgia. La ruta crítica pasa obligatoriamente por el congelado del diseño de suspensión y dirección, ya que sus anclajes dictan la triangulación del chasis delantero."
             ],
             [
                 "2. Gráfico del Gantt de Desarrollo",
@@ -87,7 +87,7 @@
                 [
                     "MS-0",
                     "Fase 1",
-                    "Freeze de Requerimientos Técnicos Básicos y Motor GSX-R",
+                    "Freeze de Requerimientos Técnicos Básicos y Motor Emrax 228",
                     "Mes 3",
                     "Completado"
                 ],
@@ -115,7 +115,7 @@
                 [
                     "MS-4",
                     "Fase 5",
-                    "Integración Tren Motriz y Electrónica V1",
+                    "Integración Tren Motriz Eléctrico y Electrónica V1",
                     "Mes 21",
                     "Planificado"
                 ],
@@ -328,9 +328,13 @@
             [
                 "3. Comparativa de Resistencia Estructural",
                 "A continuación se muestra la resistencia elástica (MPa) del acero cromoly 4130 seleccionado frente al acero dulce estándar:"
+            ],
+            [
+                "4. Mapa de Tensiones FEA de la Estructura de Chasis",
+                "A continuación se presenta el mapa de tensiones estructurales en 3D del chasis obtenido mediante simulación estática por el resolvedor de elementos finitos de CERO, demostrando la deformación y áreas de distribución de carga Von Mises bajo impacto frontal de 5G:"
             ]
         ],
-        "image": "fsae_structural_equivalency.png"
+        "image": "chassis_fea.png"
     },
     "DOC-005": {
         "category": "01_Producto_e_Ingenieria",
@@ -350,11 +354,11 @@
                 "• Chasis Tubular: Estructura espacial triangulada (spaceframe) fabricada en tubos de acero aleado al cromo-molibdeno 4130 (normativa aeronáutica MIL-T-6736 B). El arco principal de seguridad antivuelco (Main Hoop) tendrá un diámetro de 25.4 mm y un espesor de pared mínimo de 2.0 mm. La rigidez torsional estructural de diseño objetivo es de 1.800 Nm/grado, validada por simulaciones numéricas de elementos finitos (FEA) bajo cargas estáticas axiales y de torsión de 5G.\n• Suspensión Cinemática: Configuración de doble trapecio independiente (double wishbone) delantero y trasero. Brazos fabricados en tubo 4130 de 19.0 mm x 1.5 mm, unidos mediante rótulas esféricas de competición (uniball) de rosca métrica fina grado automotriz. Amortiguación ajustable de moto de alto rendimiento (tipo Coilover) montada con sistema de bieletas push-rod para optimizar el ratio de movimiento y el control de balanceo.\n• Sistema de Frenado Independiente: Pinzas Brembo de doble pistón opuesto y discos ventilados delanteros de 240 mm. El pedalier de competición incluirá dos bombas de freno independientes Wilwood conectadas mediante una barra de equilibrio (bias bar) mecánica ajustable en cabina. Esto garantiza el doble circuito independiente exigido por ley: si ocurre una fuga en el circuito delantero, el circuito trasero retiene capacidad de frenado estática superior al 45%."
             ],
             [
-                "3. Tren Motriz de Combustión e Inyección Electrónica",
-                "El motor seleccionado es el bloque de cuatro cilindros en línea de la Suzuki GSX-R 600 K6-K7. Especificaciones de ingeniería:\n• Cilindrada: 599 cc, relación de compresión de 12.5:1.\n• Potencia: 125 hp a 13.500 RPM, par motor de 64 Nm a 11.500 RPM.\n• Transmisión: Caja de cambios secuencial de 6 velocidades integrada, embrague de moto multidisco en baño de aceite. Transmisión secundaria por cadena de competición paso 530 de alta resistencia al estiramiento (resistencia a la rotura por tracción > 40 kN).\n• Sistema de Escape de Calle: Colector de escape de acero inoxidable 304, convertidor catalítico de tres vías homologado Euro 6, sonda lambda para control de mezcla estequiométrica (ECU cerrada) y silenciador acústico (ONU 51) con dB-killer para mantener el nivel de presión sonora por debajo de los 74 dB(A) a 5.000 RPM."
+                "3. Tren Motriz Eléctrico e Inversor de Tracción",
+                "El motor seleccionado es el bloque síncrono de imanes permanentes y flujo axial Emrax 228, de alto rendimiento y bajo peso. Especificaciones de ingeniería:\n• Tipo de Motor: Imanes permanentes de flujo axial, refrigeración líquida.\n• Potencia: Pico de 100 kW (134 hp), par máximo de 240 Nm a 6.000 RPM.\n• Inversor: Bamocar D3, refrigerado por líquido, controlado por bus CAN a 500 kbps.\n• Sistema de Acumulador: Tensión nominal de 350V, configuración 80S6P (480 celdas de iones de litio 18650 Samsung 30Q), contenedor ignífugo de fibra de carbono y Nomex."
             ],
             [
-                "4. Curva de Potencia y Par del Motor Suzuki GSX-R 600",
+                "4. Curva de Potencia y Par del Motor Eléctrico Emrax 228",
                 "A continuación se ilustra la curva de potencia (hp) y par motor (Nm) en función de las revoluciones por minuto (RPM) del bloque motor seleccionado:"
             ],
             [
@@ -379,7 +383,7 @@
         "sections": [
             [
                 "1. Arquitectura de Sourcing y Logística",
-                "Esta Lista de Materiales (BOM) detalla de manera minuciosa cada elemento físico necesario para el montaje final de CERO. Para mantener el modelo estratégico de bootstrapping de 0€, el aprovisionamiento se gestiona mediante tres fuentes:\n• Sourcing por Sponsor (Canje de Branding): Metalúrgicas de acero 4130, talleres CNC de aluminio y marcas de neumáticos.\n• Caja Acumulada de Patreon (Compra Directa): Compra de motor Suzuki GSX-R usado completo, latiguillos de freno, escape de calle y tornillería grado 8.8.\n• Consumibles de Taller: Discos de corte de fibra de carbono, gas de purga argón, varillas de soldadura TIG de aporte (ER70S-6 o ER80S-D2).\nToda adquisición se registra de forma pública en el Data Room de inversores (DOC-022) para garantizar trazabilidad contable total."
+                "Esta Lista de Materiales (BOM) detalla de manera minuciosa cada elemento físico necesario para el montaje final de CERO. Para mantener el modelo estratégico de bootstrapping de 0€, el aprovisionamiento se gestiona mediante tres fuentes:\n• Sourcing por Sponsor (Canje de Branding): Metalúrgicas de acero 4130, talleres CNC de aluminio y marcas de neumáticos.\n• Caja Acumulada de Patreon (Compra Directa): Compra de motor Emrax 228, inversor Bamocar D3, latiguillos de freno, Orion BMS y celdas 18650.\n• Consumibles de Taller: Discos de corte de fibra de carbono, gas de purga argón, varillas de soldadura TIG de aporte (ER70S-6 o ER80S-D2).\nToda adquisición se registra de forma pública en el Data Room de inversores (DOC-022) para garantizar traza contable total."
             ],
             [
                 "2. Distribución Presupuestaria Comparativa",
@@ -406,10 +410,16 @@
                     "Estrategia Adquisición"
                 ],
                 [
-                    "Motor Suzuki GSX-R",
-                    "Usado K6-K7, cableado y ECU",
-                    "1.200 €",
-                    "Compra Patreon Mes 12"
+                    "Motor Emrax 228",
+                    "Flujo axial, 100 kW pico, síncrono",
+                    "3.500 €",
+                    "Compra Patreon / Donación"
+                ],
+                [
+                    "Inversor Bamocar D3",
+                    "Controlador trifásico 400V, CAN",
+                    "2.400 €",
+                    "Compra Patreon"
                 ],
                 [
                     "Tubos Acero 4130",
@@ -424,15 +434,15 @@
                     "Compra Patreon"
                 ],
                 [
-                    "Amortiguadores",
-                    "Coilovers de moto ajustables",
-                    "0 €",
-                    "Patrocinio Marca"
+                    "Celdas Litio 18650",
+                    "Samsung 30Q (480 uds pack)",
+                    "1.500 €",
+                    "Compra Patreon"
                 ],
                 [
-                    "Escape y Catalizador",
-                    "Convertidor Euro 6 y silenciador",
-                    "1.200 €",
+                    "Orion BMS",
+                    "Battery Management System, CAN",
+                    "950 €",
                     "Compra Patreon"
                 ],
                 [
@@ -459,15 +469,15 @@
     "DOC-007": {
         "category": "01_Producto_e_Ingenieria",
         "title": "Technical Architecture",
-        "subtitle": "Arquitectura Mecánica y Eléctrica del Monoplaza de Combustión",
+        "subtitle": "Arquitectura Mecánica y Eléctrica del Monoplaza Eléctrico",
         "author": "Ingeniería CERO",
         "status": "APROBADO",
         "version": "v15.0",
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Arquitectura de Sistemas de Combustión",
-                "El tren motriz de CERO utiliza un motor de moto Suzuki GSX-R transversal montado directamente en cunas antivibración soldadas al chasis trasero. Transmisión secuencial a cadena paso 530 hacia un eje trasero equipado con un diferencial Quaife ATB LSD para asegurar tracción en curva sin pérdidas de potencia.\n\nEl sistema de combustible cumple normas de seguridad de la FIA: depósito de combustible de aluminio con espuma interna deflactora para evitar el oleaje, bomba de inyección externa de alta presión (3 bar) con regulador de presión integrado, y tuberías de combustible trenzadas de teflón AN-6 con racores roscados blindados contra el calor. Cada racor se fija mecánicamente para resistir vibraciones extremas del motor de moto a 14.000 RPM."
+                "1. Arquitectura de Sistemas de Tracción Eléctrica",
+                "El tren motriz de CERO utiliza un motor síncrono de imanes permanentes y flujo axial Emrax 228 montado en el subchasis trasero. Transmisión directa mediante acoplamiento rígido hacia un diferencial autoblocante Drexler tarado para Formula Student, transmitiendo el par a los palieres traseros de acero 300M.\n\nEl sistema de acumulador de alta tensión (HV) utiliza celdas de litio 18650 encapsuladas en un contenedor estructural de fibra de carbono. Un sistema de gestión de baterías (Orion BMS) monitorea constantemente el voltaje de cada celda y su temperatura, comunicándose por bus CAN con el inversor Bamocar D3 para limitar la corriente en caso de sobretemperatura."
             ],
             [
                 "2. Geometría de Dirección y Comportamiento Dinámico Ackerman",
@@ -483,7 +493,7 @@
             ],
             [
                 "5. Arquitectura Eléctrica y Gestión Electrónica (ECU)",
-                "Cableado original de la moto Suzuki aligerado de cables innecesarios. Mantenemos la ECU Keihin original desbloqueada (mapeo con inmovilizador HISS puenteado) para no tener que invertir en una ECU programable de competición de 2.000€.\n\nCuadro de mandos digital multifunción conectado por bus de datos K-line original para visualizar en cabina las revoluciones, temperatura del refrigerante y presión del aceite, con sistema de corte de corriente de emergencia (cortacorrientes FIA) accesible tanto por el piloto desde el interior como por los comisarios desde el exterior en el arco principal. Todo el tendido eléctrico se aloja en fundas termorretráctiles con especificación militar Raychem DR-25."
+                "Mazo de cables de baja tensión (LV) aligerado de cables innecesarios. La ECU principal de diseño propio con microcontrolador Teensy 4.1 gestiona la adquisición de datos, lectura de aceleradores Hall duales redundantes y comunicación con el inversor.\n\nSe integra un dispositivo de monitoreo de aislamiento (IMD Bender) que corta la línea de seguridad (Shutdown loop) si detecta una fuga de corriente entre el sistema de alta tensión (HV) y el chasis de baja tensión (LV). Todo el tendido eléctrico se aloja en fundas termorretráctiles Raychem DR-25."
             ]
         ],
         "image": "steering_geometry_ackermann.png"
@@ -504,6 +514,10 @@
             [
                 "2. Proceso de Soldadura TIG de Tubos de Cromoly 4130",
                 "El acero cromoly 4130 requiere soldadura TIG de alta precisión para evitar la formación de microfisuras debido al enfriamiento rápido:\n• Preparación de Juntas: Todos los extremos de los tubos deben biselarse con una notcher de tubo a un ajuste perfecto sin holguras (>0.5 mm de hueco invalidará la junta). Se eliminará la capa de calamina y óxido mediante cepillo de acero inoxidable.\n• Purga Interna: Llenado del interior del tubo con gas argón al 99.9% durante la soldadura para evitar la oxidación interna (back-purging). El caudal de purga se mantendrá entre 2 y 5 PSI.\n• Parámetros de Soldadura: Corriente continua con electrodo de tungsteno al 2% de torio o lantano, varilla de aporte ER70S-6 o ER80S-D2 de 1.6 mm. Enfriamiento lento controlado mediante mantas térmicas ignífugas para evitar tensiones estructurales internas residuales. Queda prohibido enfriar las soldaduras con aire comprimido o agua."
+            ],
+            [
+                "3. Proceso de Soldadura por Puntos del Acumulador",
+                "Las 480 celdas de litio 18650 se soldarán por puntos utilizando una soldadora de pulso controlado de precisión y tiras de níquel puro de 0.15 mm de espesor. Queda estrictamente prohibido soldar celdas con soldador de estaño convencional, ya que el calor excesivo daña los separadores internos de la celda, provocando cortocircuitos térmicos."
             ]
         ]
     },
@@ -517,14 +531,19 @@
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Ensayos No Destructivos de Soldaduras (NDT)",
-                "Todas las uniones soldadas del arco de seguridad y soportes de suspensión se someterán a inspección visual y ensayos por líquidos penetrantes (norma UNE-EN ISO 3452-1) en taller. Se aplicará el limpiador, luego el penetrante de contraste rojo durante 15 minutos, y finalmente el revelador blanco. Cualquier defecto de soldadura (poros, fisuras superficiales, socavaduras de raíz) obligará a amolar y resoldar la junta de forma inmediata, registrando la reparación en el diario técnico."
+                "1. Ensayos No Destructivos de Soldaduras (NDT) y Aislamiento Eléctrico",
+                "Todas las uniones soldadas del arco de seguridad y soportes de suspensión se someterán a inspección visual y ensayos por líquidos penetrantes (norma UNE-EN ISO 3452-1) en taller. Se aplicará el limpiador, luego el penetrante de contraste rojo durante 15 minutos, y finalmente el revelador blanco. Cualquier defecto de soldadura obligará a amolar y resoldar la junta de forma inmediata.\n\nSe realizará una prueba de resistencia de aislamiento utilizando un medidor de aislamiento (Megóhmetro) aplicando 500V DC entre el bus de alta tensión (HV) y el chasis metálico (LV). La resistencia de aislamiento debe ser superior a 500 kiloohmios por voltio (mínimo 175 kOhm para 350V) según reglamentos de la FIA."
             ],
             [
-                "2. Protocolo de Pruebas Dinámicas en Circuito Cerrado",
-                "Pruebas de validación en circuito privado antes de iniciar el dossier de homologación de calle:\n• Test de Slalom (ISO 7401): Slalom a 40 km/h, 60 km/h y 80 km/h con telemetría de acelerómetros para verificar balanceo lateral, transferencias de peso y rigidez cinemática de los trapecios. Se comprobará que la frecuencia natural de balanceo se mantiene dentro de los límites calculados en Onshape.\n• Ensayo de Frenado de Emergencia: 5 detenciones completas consecutivas desde 80 km/h a 0 km/h. Verificación de desvanecimiento (fade) de frenos y ajuste mecánico de la bias bar del pedalier para asegurar que las ruedas delanteras bloquean ligeramente antes que las traseras, evitando trompos dinámicos.\n• Prueba de Stress de Temperatura: 30 minutos de rodaje continuo en pista controlando temperaturas de refrigerante, aceite de motor y temperatura de escape de gases en el catalizador Euro 6, asegurando que no existan fugas térmicas en el mamparo parallamas del cockpit."
+                "2. Gráfico de Física y Dinámica Lateral en Pista",
+                "A continuación se presentan los resultados del ensayo dinámico simulado de slalom de CERO, mostrando la trayectoria XY y el perfil de aceleración lateral en fuerzas G:"
+            ],
+            [
+                "3. Protocolo de Pruebas Dinámicas en Circuito Cerrado",
+                "Pruebas de validación en circuito privado antes de iniciar el dossier de homologación de calle:\n• Test de Slalom (ISO 7401): Slalom a 40 km/h, 60 km/h y 80 km/h con telemetría de acelerómetros para verificar balanceo lateral, transferencias de peso y rigidez cinemática de los trapecios. Se comprobará que la frecuencia natural de balanceo se mantiene dentro de los límites calculados en Onshape.\n• Ensayo de Frenado de Emergencia: 5 detenciones completas consecutivas desde 80 km/h a 0 km/h. Verificación de desvanecimiento (fade) de frenos y ajuste mecánico de la bias bar del pedalier para asegurar que las ruedas delanteras bloquean ligeramente antes que las traseras, evitando trompos dinámicos.\n• Prueba de Stress de Temperatura del Acumulador: Monitorear la temperatura de las celdas de litio durante 30 minutos de rodaje continuo a potencia constante de 40 kW. La temperatura de ninguna celda debe superar los 55°C, activándose el apagado de seguridad del BMS de forma automática si se rebasa dicha cota."
             ]
-        ]
+        ],
+        "image": "dynamics_plot.png"
     },
     "DOC-010": {
         "category": "02_Reclutamiento_y_Equipo",
@@ -541,7 +560,7 @@
             ],
             [
                 "2. Organigrama de Decisiones Técnicas",
-                "• Founder/Mario: Coordinación estratégica, edición de vlogs en YouTube, contacto con sponsors, dueños de locales y gestión administrativa de la asociación cultural.\n• Lead Engineer: Aprobación final de archivos CAD Onshape, supervisión de rigidez estructural y diseño cinemático de suspensión. Valida los cupones de prueba de soldadura.\n• Sourcing Scouts: Voluntarios de Discord que buscan y catalogan motores Suzuki GSX-R de desguace, metalúrgicas de acero 4130 y distribuidores viales.\n• Moderadores de Discord: Gestión de la comunidad, bienvenida a ingenieros, resolución de conflictos online y organización de asambleas los domingos."
+                "• Founder/Mario: Coordinación estratégica, edición de vlogs en YouTube, contacto con sponsors, dueños de locales y gestión administrativa de la asociación cultural.\n• Lead Engineer: Aprobación final de archivos CAD Onshape, supervisión de rigidez estructural y diseño cinemático de suspensión. Valida los cupones de prueba de soldadura.\n• Sourcing Scouts: Voluntarios de Discord que buscan y catalogan motores Emrax de desguace/segunda mano, metalúrgicas de acero 4130 y distribuidores viales.\n• Moderadores de Discord: Gestión de la comunidad, bienvenida a ingenieros, resolución de conflictos online y organización de asambleas los domingos."
             ],
             [
                 "3. Criterios de Entrada al Core y Roles",
@@ -560,7 +579,7 @@
         "sections": [
             [
                 "1. Canales de Reclutamiento y Captación de Ingenieros",
-                "La captación de talento en CERO es un proceso activo y estructurado. Dado que operamos bajo un modelo de bootstrapping de 0€, nuestro valor diferencial radica en ofrecer portfolio real, desafíos técnicos complejos y participación (equity) en la futura S.L. Buscamos estudiantes y graduados de Fórmula Student en LinkedIn, simuladores FEA en foros técnicos de Reddit y soldadores experimentados de talleres locales.\n\nEstableceremos convenios de prácticas con escuelas técnicas universitarias (ETSII Madrid, UC3M Leganés) para incorporar estudiantes como parte de su Trabajo de Fin de Grado (TFG), aportándoles tutorización y un caso de uso real a cambio de su trabajo de diseño y cálculo en Onshape."
+                "La captación de talento en CERO es un proceso activo y estructurado. Dado que operamos bajo un modelo de bootstrapping de 0€, nuestro valor diferencial radica en ofrecer portfolio real, desafíos técnicos complejos y participación (equity) en la futura S.L. Buscamos estudiantes y graduados de Fórmula Student en LinkedIn, simuladores FEA en foros técnicos de Reddit y soldadores experimentados de talleres locales.\n\nEstableceremos convenios de prácticas con escuelas técnicas universitarias (ETSII Madrid, UC3M Leganés) para incorporar estudiantes como parte de su Trabajo de Fin de Grado (TFG), aportándoles tutorización y un caso de uso real a cambio de su trabajo de diseño y cálculo en Onshape. El reclutamiento se enfocará de forma prioritaria en ingenieros con conocimientos en sistemas de alta tensión (HV) y programación de buses CAN."
             ],
             [
                 "2. Guion de Contacto en LinkedIn",
@@ -648,14 +667,14 @@
         "sections": [
             [
                 "1. Modelo Financiero de Caja",
-                "El proyecto asume 0€ el primer mes y acumula caja mediante Patreon (Tier Boceto 2.99€, Tier CAD 5.99€, Tier Core 19.99€). Los gastos reales de compra de motor Suzuki GSX-R (€1.200) y frenos se realizan con la caja acumulada al Mes 12. Las proyecciones contemplan un colchón financiero para cubrir comisiones bancarias y de Stripe, asegurando que el flujo neto sea suficiente para afrontar la compra de consumibles de taller."
+                "El proyecto asume 0€ el primer mes y acumula caja mediante Patreon (Tier Boceto 2.99€, Tier CAD 5.99€, Tier Core 19.99€). Los gastos reales de compra de motor Emrax y inversor se realizan con la caja acumulada al Mes 12. Las proyecciones contemplan un colchón financiero para cubrir comisiones bancarias y de Stripe, asegurando que el flujo neto sea suficiente para afrontar la compra de consumibles de taller."
             ],
             [
                 "2. Crecimiento de Suscripciones y Runrate Recurrente",
                 "A continuación se muestra de manera gráfica la curva de crecimiento del número de mecenas y el runrate de suscripciones acumuladas a lo largo de las fases de diseño virtual:"
             ],
             [
-                "3. Runway de Inversión y Tasa de Gasto (Burn Rate)",
+                "3. Runway de Inversión y Tasa de Gasto (Burn Rate) Pre-Semilla",
                 "A continuación se ilustra la simulación de flujo de caja y la tasa de consumo de capital (runway) proyectada tras asegurar la ronda de financiación pre-semilla de 50.000€:"
             ],
             [
@@ -789,7 +808,7 @@
             ],
             [
                 "3. Calendario Semanal Tipo",
-                "• Lunes: TikTok corto sobre ergonomía del cockpit o renders de Onshape.\n• Miércoles: Detrás de cámaras en Reels sobre el día a día en el taller colaborador.\n• Jueves: Hilo técnico en X/LinkedIn (ej. amortiguadores coilovers de moto vs amortiguación clásica FSAE).\n• Sábado: Vídeo largo de YouTube de 10-15 minutos detallando la soldadura TIG o la adquisición del motor GSX-R.\n• Domingo: Asamblea de voz en Discord y votación comunitaria de diseño."
+                "• Lunes: TikTok corto sobre ergonomía del cockpit o renders de Onshape.\n• Miércoles: Detrás de cámaras en Reels sobre el día a día en el taller colaborador.\n• Jueves: Hilo técnico en X/LinkedIn (ej. amortiguadores coilovers de moto vs amortiguación clásica FSAE).\n• Sábado: Vídeo largo de YouTube de 10-15 minutos detallando la soldadura TIG o la adquisición de las celdas de litio.\n• Domingo: Asamblea de voz en Discord y votación comunitaria de diseño."
             ]
         ],
         "image": "chasis_aerodynamics_lift_drag.png"
@@ -805,22 +824,22 @@
         "sections": [
             [
                 "1. Estructura del Vídeo de YouTube de Lanzamiento (Episodio 1)",
-                "• 0:00 - 1:00: Gancho de alta retención. Mario frente a la cámara en un garaje vacío. 'Voy a construir un coche de carreras real para calle desde 0€ y solo con internet. No tengo taller ni dinero. Os muestro cómo'. Renders rápidos del chasis 4130 cromoly.\n• 1:00 - 3:00: El problema industrial. El coste prohibitivo de los karts y monoplazas tradicionales, y las trabas burocráticas europeas.\n• 3:00 - 6:00: La solución CERO. Concepto de monoplaza de código abierto, con motor Suzuki GSX-R central. Muestra del Onshape compartido.\n• 6:00 - 8:00: Búsqueda activa de local. Sourcing en directo de locales comerciales en Móstoles mediante llamadas a Idealista. Negociación del primer canje publicitario.\n• 8:00 - 10:00: Llamada a la acción. 'Si eres ingeniero, soldador o quieres ceder espacio, únete a Discord en buildcero.com'. Suscríbete."
+                "• 0:00 - 1:00: Gancho de alta retención. Mario frente a la cámara en un garaje vacío. 'Voy a construir un coche de carreras real para calle desde 0€ y solo con internet. No tengo taller ni dinero. Os muestro cómo'. Renders rápidos del chasis 4130 cromoly.\n• 1:00 - 3:00: El problema industrial. El coste prohibitivo de los karts y monoplazas tradicionales, y las trabas burocráticas europeas.\n• 3:00 - 6:00: La solución CERO. Concepto de monoplaza de código abierto, con motor eléctrico Emrax y baterías.\n• 6:00 - 8:00: Búsqueda activa de local. Sourcing en directo de locales comerciales en Móstoles mediante llamadas a Idealista. Negociación del primer canje publicitario.\n• 8:00 - 10:00: Llamada a la acción. 'Si eres ingeniero, soldador o quieres ceder espacio, únete a Discord en buildcero.com'. Suscríbete."
             ],
             [
-                "2. Episodio 2: Elección del Motor GSX-R 600 vs GSX-R 1000",
-                "• 0:00 - 1:30: Gancho. '¿Por qué un motor de 600cc de 125hp es mejor para un coche de calle que el de 1000cc de 180hp?'\n• 1:30 - 5:00: Análisis técnico. Comparativa de pesos, curvas de potencia, limitaciones de la transmisión por cadena paso 530 y fiabilidad mecánica. Muestra de simulaciones de velocidad en Onshape.\n• 5:00 - 8:00: Debate de la comunidad. Lectura de las opiniones de Discord y la votación final que congeló los planos del chasis trasero para el motor 600 K6.\n• 8:00 - 10:00: Llamada a la acción: mecenazgo de Patreon para financiar la compra física en desguace."
+                "2. Episodio 2: Elección de Celdas de Litio para el Acumulador",
+                "• 0:00 - 1:30: Gancho. '¿Por qué soldar 480 celdas de litio en mi casa no es una locura y cómo lo haremos de forma segura?'\n• 1:30 - 5:00: Análisis técnico. Comparativa de densidades de celdas Samsung 30Q vs Sony VTC6, configuración 80S6P, y el diseño de la carcasa de fibra de carbono contra fuego en Onshape.\n• 5:00 - 8:00: Debate de la comunidad. Explicación del Orion BMS y las medidas de aislamiento IMD Bender exigidas por la ITV.\n• 8:00 - 10:00: Llamada a la acción: mecenazgo de Patreon para financiar la compra física de las celdas."
             ],
             [
-                "3. Episodio 3: Llamadas a Desguaces en Directo",
-                "• 0:00 - 2:00: Gancho. Mario con el teléfono en altavoz. 'Hola, ¿tenéis algún motor Suzuki GSX-R roto o usado para ceder a cambio de salir en YouTube ante 20.000 apasionados del motor?'\n• 2:00 - 7:00: Grabación de las llamadas de sourcing. Objeciones comunes, rechazos y el primer desguace que acepta estudiar la propuesta de canje de marca.\n• 7:00 - 10:00: Lección de negociación. Cómo vender tracción online a negocios tradicionales de barrio. Enlace al manual de negociación (DOC-042)."
+                "3. Episodio 3: Llamadas a Distribuidores de Acero y Canjes",
+                "• 0:00 - 2:00: Gancho. Mario con el teléfono en altavoz. 'Hola, buscaba tubos de acero 4130 cromoly para ceder a cambio de salir de fondo en YouTube ante 20.000 ingenieros'.\n• 2:00 - 7:00: Grabación de las llamadas de sourcing de materiales. Negociaciones con metalúrgicas locales.\n• 7:00 - 10:00: Lección de negociación. Cómo vender tracción online a negocios tradicionales de barrio. Enlace al manual de negociación (DOC-042)."
             ]
         ]
     },
     "DOC-032": {
         "category": "04_Marketing_y_Contenido",
         "title": "Social Media Playbook",
-        "subtitle": "Manual de Publicación, Hashtags, Formatos y Respuestas",
+        "subtitle": "Manual de Publicación, Hashtags, Formatos and Respuestas",
         "author": "Medios y Crecimiento CERO",
         "status": "APROBADO",
         "version": "v15.0",
@@ -828,11 +847,11 @@
         "sections": [
             [
                 "1. Directrices de Publicación y Estilo Visual",
-                "• Estética: Fondo de vídeo limpio, luz natural de taller, renders CAD en Onshape de alta definición. Tomas de primer plano de soldaduras y chispas sin filtros embellecedores artificiales.\n• Tono: Crudo, honesto y técnico. Se responderá en los comentarios como un diario personal del fundador, no como una marca fría corporativa. Si cometemos un error soldando, lo mostramos y pedimos disculpas.\n• Hashtags a utilizar: #CERO #buildinpublic #open-source #ingenieria #SuzukiGSXR #tubularchassis #Mostoles"
+                "• Estética: Fondo de vídeo limpio, luz de taller, renders CAD en Onshape de alta definición. Tomas de primer plano de soldaduras y chispas sin filtros artificiales.\n• Tono: Crudo, honesto y técnico. Se responderá en los comentarios como un diario personal del fundador, no como una marca fría corporativa.\n• Hashtags a utilizar: #CERO #buildinpublic #open-source #ingenieria #electricvehicle #tubularchassis #Mostoles"
             ],
             [
                 "2. Respuestas a Críticas Comunes en Comentarios",
-                "• Comentario: 'Eso se va a partir en el primer bache'.\n  - Respuesta: 'Es un buen punto. Hemos metido una deformación de 3G en el análisis FEA de Onshape y el factor de seguridad es de 1.8. Te invito a ver la simulación en nuestro GitHub/Discord y a debatir con los ingenieros'.\n• Comentario: 'No vas a conseguir homologarlo de calle en España'.\n  - Respuesta: 'Estamos adaptando el chasis con radios >2.5mm y catalizador Euro 6 desde el primer día. Compartimos el dossier IDIADA en buildcero.com, ¡pásate a revisarlo!'"
+                "• Comentario: 'Eso se va a partir en el primer bache'.\n  - Respuesta: 'Es un buen punto. Hemos metido una deformación de 3G en el análisis FEA de Onshape y el factor de seguridad es de 1.8. Te invito a ver la simulación en nuestro GitHub/Discord y a debatir con los ingenieros'.\n• Comentario: 'No vas a conseguir homologarlo de calle en España'.\n  - Respuesta: 'Estamos adaptando el chasis con radios >2.5mm y aislamiento eléctrico IMD Bender desde el primer día. Compartimos el dossier IDIADA en buildcero.com, ¡pásate a revisarlo!'"
             ],
             [
                 "3. Criterios de Reposteo de Contenido de la Comunidad",
@@ -851,11 +870,11 @@
         "sections": [
             [
                 "1. Merchandising sin Stock (Mes 7+)",
-                "Lanzamiento de camisetas con el plano explotado del chasis mediante impresión bajo demanda (Print-on-Demand) utilizando pasarelas como Ko-fi o Printful. Esto garantiza stock de 0€ y un margen del 40-50% por camiseta vendida. Los diseños de las camisetas incluirán detalles reales del CAD de suspensión, atrayendo a entusiastas de la ingeniería.\n\nTodo el dinero recaudado de la tienda online se ingresará en la cuenta bancaria de la asociación cultural, destinándose íntegramente a las tasas de homologación final."
+                "Lanzamiento de camisetas con el plano explotado del chasis mediante impresión bajo demanda (Print-on-Demand) utilizando pasarelas como Ko-fi o Printful. Esto garantiza stock de 0€ y un margen del 40-50% por camiseta vendida. Los de las camisetas incluirán detalles reales del CAD de suspensión, atrayendo a entusiastas de la ingeniería.\n\nTodo el dinero recaudado de la tienda online se ingresará en la cuenta bancaria de la asociación cultural, destinándose íntegramente a las tasas de homologación final."
             ],
             [
                 "2. Tiers de Patreon (Mes 4+)",
-                "Patreon se activa en el Mes 4 para acumular el fondo de caja con el que compraremos el motor Suzuki GSX-R usado en el Mes 12:\n• Tier 1 (2.99€/mes): Acceso al canal de Discord de debates técnicos privados.\n• Tier 2 (5.99€/mes): Planos CAD Onshape en tiempo real y commits de GitHub.\n• Tier 3 (19.99€/mes): Grabado láser de tu nombre en el chasis físico del monoplaza real de calle, con derecho a voto en las asambleas generales."
+                "Patreon se activa en el Mes 4 para acumular el fondo de caja con el que compraremos la electrónica y celdas de batería en el Mes 12:\n• Tier 1 (2.99€/mes): Acceso al canal de Discord de debates técnicos privados.\n• Tier 2 (5.99€/mes): Planos CAD Onshape en tiempo real y commits de GitHub.\n• Tier 3 (19.99€/mes): Grabado láser de tu nombre en el chasis físico del monoplaza real de calle, con derecho a voto en las asambleas generales."
             ]
         ]
     },
@@ -870,11 +889,11 @@
         "sections": [
             [
                 "1. Dossier de Prensa CERO",
-                "Dossier de 1 página con los datos clave: 'CERO: El primer monoplaza open-source de calle desarrollado de forma colaborativa por internet desde Móstoles con 0€'.\n• Fundador: Mario (Informático, 26 años).\n• Motor: Suzuki GSX-R 600cc de moto (125hp).\n• Enlace de contacto: buildcero.com / prensa@buildcero.com.\n• Enlace a material de descarga en alta definición (renders del chasis tubular, fotos de taller y logotipos oficiales de marca).\nSe adjuntarán las biografías del Core Team técnico y los hitos clave alcanzados hasta el momento."
+                "Dossier de 1 página con los datos clave: 'CERO: El primer monoplaza open-source de calle desarrollado de forma colaborativa por internet desde Móstoles con 0€'.\n• Fundador: Mario (Informático, 26 años).\n• Motor: Emrax 228 síncrono de flujo axial (100 kW pico).\n• Enlace de contacto: buildcero.com / prensa@buildcero.com.\n• Enlace a material de descarga en alta definición (renders del chasis tubular, fotos de taller y logotipos oficiales de marca).\nSe adjuntarán las biografías del Core Team técnico y los hitos clave alcanzados hasta el momento."
             ],
             [
                 "2. Plantilla de Correo de Pitch para Periodistas de Motor",
-                "\"Hola [Nombre del Periodista], te escribo porque sigo tu cobertura en [Medio] y creo que te interesará CERO. Es el primer monoplaza de carreras open-source homologable de calle desarrollado en abierto por internet por una comunidad de ingenieros en España.\n\nOperamos con 0€ iniciales, compartiendo cada fallo del CAD en Onshape y negociando el motor Suzuki en desguaces en directo. Hemos subido todo el Data Room y renders a buildcero.com. ¿Te apetece tener una llamada de 10 minutos para contarte cómo avanza la soldadura? Un saludo, Mario.\"\n\nEl objetivo es conseguir reportajes en medios especializados en motor (Diariomotor, Motorpasión) para aumentar el tráfico orgánico a buildcero.com."
+                "\"Hola [Nombre del Periodista], te escribo porque sigo tu cobertura en [Medio] y creo que te interesará CERO. Es el primer monoplaza de carreras open-source homologable de calle desarrollado en abierto por internet por una comunidad de ingenieros en España.\n\nOperamos con 0€ iniciales, compartiendo cada fallo del CAD en Onshape y negociando el motor Emrax en directo. Hemos subido todo el Data Room y renders a buildcero.com. ¿Te apetece tener una llamada de 10 minutos para contarte cómo avanza la soldadura? Un saludo, Mario.\"\n\nEl objetivo es conseguir reportajes en medios especializados en motor para aumentar el tráfico orgánico a buildcero.com."
             ],
             [
                 "3. Política de Embargo Informativo",
@@ -892,12 +911,12 @@
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Sourcing del Motor Suzuki GSX-R 600 K6-K7",
-                "• Dónde: Desguaces de moto en España.\n• Comprobación física: Girar el cigüeñal suavemente por el tornillo del alternador para asegurar que no está gripado.\n• Requisito obligatorio: Debe venir con centralita ECU original y mazo de cables intacto para evitar costes de inyección prohibitivos. Se comprobará visualmente que el sensor de posición del acelerador (TPS) y las mariposas de inyección no presentan daños estructurales."
+                "1. Sourcing de las Celdas de Litio 18650 y Batería",
+                "• Dónde: Distribuidores autorizados de celdas de litio o fabricantes COTS comerciales.\n• Comprobación física: Medir resistencia interna de al menos el 10% del lote utilizando un medidor de resistencia interna de batería (milliohmímetro AC). La resistencia interna debe ser inferior a 15 miliohmios por celda Samsung 30Q.\n• Requisito obligatorio: Todas las celdas del pack deben provenir del mismo lote de fabricación para garantizar la uniformidad de la curva de descarga y la vida útil del acumulador."
             ],
             [
-                "2. Logística y Transporte Seguro",
-                "Drenar aceite del cárter en garrafa antes de cargar. Alojar motor de 65 kg en caja de fruta rígida de plástico sobre cartón y mantas para no volcar ni verter en el maletero. Sujetar con cinchas de trinquete. Queda terminantemente prohibido transportar el motor en posición inclinada sin tapar la salida del respiradero del cárter, previniendo fugas residuales en la tapicería."
+                "2. Logística y Transporte Seguro de Baterías de Litio (HV)",
+                "El transporte de celdas de litio sueltas o del acumulador ensamblado está sujeto al reglamento internacional de transporte de mercancías peligrosas (UN 3480 Clase 9). Las celdas deben transportarse en cajas de embalaje certificadas de cartón grueso con separadores de espuma de polietileno individuales para evitar cortocircuitos accidentales durante el traslado. El acumulador debe estar apagado y con el conector de servicio (MSD) retirado de forma obligatoria durante todo el trayecto."
             ]
         ]
     },
@@ -916,7 +935,7 @@
             ],
             [
                 "2. Sourcing de Neumáticos de Pista y Calle",
-                "Para la homologación individual, los neumáticos deben tener obligatoriamente grabado el marcado 'E' y el índice de velocidad correspondiente. Sourcing preferido: desguaces de neumáticos o canje directo de branding con marcas comerciales ligeras. Se utilizarán medidas estándar (ej. 195/50 R15) para reducir costes de reposición."
+                "Para la homologación individual, los neumáticos deben tener obligatoriamente grabado el marcado 'E' y el índice de velocidad correspondiente. Sourcing preferido: desguaces de neumáticos o canje directo de branding con marcas comerciales de competición. Se utilizarán medidas estándar (ej. 195/50 R15) para reducir costes de reposición."
             ],
             [
                 "3. Contactos de Ingeniería de Homologación",
@@ -934,12 +953,12 @@
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Guion Telefónico para Desguaces (Sourcing de Motor Suzuki)",
-                "\"Hola, buenas días. Busco un motor usado de Suzuki GSX-R 600cc de los años 2004 a 2008. ¿Tenéis en stock con cableado e inyección?\n\nSI TIENEN: 'Excelente. Quería proponeros una colaboración comercial. Estoy dirigiendo CERO (buildcero.com), el primer monoplaza open-source homologado de calle fabricado en España desde internet. Os proponemos entregarnos el motor bajo un contrato de patrocinio de branding: a cambio, vuestra marca aparecerá grabada por láser en el chasis físico del coche y tendréis menciones exclusivas en todos nuestros vídeos semanales de YouTube de montaje del motor, llegando a miles de apasionados del motor locales. ¿Os interesaría tener una llamada de 5 minutos para presentaros la propuesta?'\""
+                "1. Guion Telefónico para Sponsors Técnicos (Sourcing de Motor Emrax)",
+                "\"Hola, buenos días. Busco hablar con el departamento de marketing o ingeniería. Quería proponeros una colaboración de marca. Estoy dirigiendo CERO (buildcero.com), el primer monoplaza open-source eléctrico de calle fabricado en España desde internet.\n\nOs proponemos cedernos un motor síncrono Emrax 228 bajo un contrato de patrocinio de branding: a cambio, vuestra marca aparecerá grabada por láser en las placas del chasis físico y tendréis menciones exclusivas de vuestro soporte técnico en todos nuestros vídeos semanales de YouTube de montaje del motor eléctrico, llegando a miles de ingenieros y estudiantes de automoción locales. ¿Os interesaría tener una reunión corta de 10 minutos para presentaros la propuesta de patrocinio?\""
             ],
             [
                 "2. Guion para Taller Mecánico Colaborador (Rincón del Taller)",
-                "\"Hola, ¿qué tal? Soy Mario. Estoy liderando el diseño de un coche open-source homologado de calle con una gran comunidad de ingenieros detrás (buildcero.com).\n\nBuscamos un taller partner local en Móstoles/Alcorcón para realizar la soldadura TIG del chasis y el ensamblaje de la suspensión los fines de semana. Quería proponerles cedernos un espacio de 20 metros cuadrados a cambio de colocar un cartel de vuestro taller de fondo de todos nuestros vídeos semanales de YouTube y Shorts de taller, llevando clientes de mantenimiento mecánico directo de vuestra zona. ¿Podríamos reunirnos 10 minutos y os muestro el CAD del coche?\""
+                "\"Hola, ¿qué tal? Soy Mario. Estoy liderando el diseño de un coche open-source eléctrico de calle con una gran comunidad de ingenieros detrás (buildcero.com).\n\nBuscamos un taller partner local en Móstoles/Alcorcón para realizar la soldadura TIG del chasis y el ensamblaje de la suspensión los fines de semana. Quería proponerles cedernos un espacio de 20 metros cuadrados a cambio de colocar un cartel de vuestro taller de fondo de todos nuestros vídeos semanales de YouTube y Shorts de taller, llevando clientes de mantenimiento directo de vuestra zona. ¿Podríamos reunirnos 10 minutos y os muestro el CAD del coche?\""
             ],
             [
                 "3. Guion de Seguimiento por Correo Electrónico",

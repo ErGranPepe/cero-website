@@ -20,15 +20,15 @@ El monoplaza debe combinar la agilidad en curva de un kart de competición con e
 • Suspensión Cinemática: Configuración de doble trapecio independiente (double wishbone) delantero y trasero. Brazos fabricados en tubo 4130 de 19.0 mm x 1.5 mm, unidos mediante rótulas esféricas de competición (uniball) de rosca métrica fina grado automotriz. Amortiguación ajustable de moto de alto rendimiento (tipo Coilover) montada con sistema de bieletas push-rod para optimizar el ratio de movimiento y el control de balanceo.
 • Sistema de Frenado Independiente: Pinzas Brembo de doble pistón opuesto y discos ventilados delanteros de 240 mm. El pedalier de competición incluirá dos bombas de freno independientes Wilwood conectadas mediante una barra de equilibrio (bias bar) mecánica ajustable en cabina. Esto garantiza el doble circuito independiente exigido por ley: si ocurre una fuga en el circuito delantero, el circuito trasero retiene capacidad de frenado estática superior al 45%.
 
-## 3. Tren Motriz de Combustión e Inyección Electrónica
+## 3. Tren Motriz Eléctrico e Inversor de Tracción
 
-El motor seleccionado es el bloque de cuatro cilindros en línea de la Suzuki GSX-R 600 K6-K7. Especificaciones de ingeniería:
-• Cilindrada: 599 cc, relación de compresión de 12.5:1.
-• Potencia: 125 hp a 13.500 RPM, par motor de 64 Nm a 11.500 RPM.
-• Transmisión: Caja de cambios secuencial de 6 velocidades integrada, embrague de moto multidisco en baño de aceite. Transmisión secundaria por cadena de competición paso 530 de alta resistencia al estiramiento (resistencia a la rotura por tracción > 40 kN).
-• Sistema de Escape de Calle: Colector de escape de acero inoxidable 304, convertidor catalítico de tres vías homologado Euro 6, sonda lambda para control de mezcla estequiométrica (ECU cerrada) y silenciador acústico (ONU 51) con dB-killer para mantener el nivel de presión sonora por debajo de los 74 dB(A) a 5.000 RPM.
+El motor seleccionado es el bloque síncrono de imanes permanentes y flujo axial Emrax 228, de alto rendimiento y bajo peso. Especificaciones de ingeniería:
+• Tipo de Motor: Imanes permanentes de flujo axial, refrigeración líquida.
+• Potencia: Pico de 100 kW (134 hp), par máximo de 240 Nm a 6.000 RPM.
+• Inversor: Bamocar D3, refrigerado por líquido, controlado por bus CAN a 500 kbps.
+• Sistema de Acumulador: Tensión nominal de 350V, configuración 80S6P (480 celdas de iones de litio 18650 Samsung 30Q), contenedor ignífugo de fibra de carbono y Nomex.
 
-## 4. Curva de Potencia y Par del Motor Suzuki GSX-R 600
+## 4. Curva de Potencia y Par del Motor Eléctrico Emrax 228
 
 A continuación se ilustra la curva de potencia (hp) y par motor (Nm) en función de las revoluciones por minuto (RPM) del bloque motor seleccionado:
 

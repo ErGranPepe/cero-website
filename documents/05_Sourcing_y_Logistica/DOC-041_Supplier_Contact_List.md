@@ -16,7 +16,7 @@
 
 ## 2. Sourcing de Neumáticos de Pista y Calle
 
-Para la homologación individual, los neumáticos deben tener obligatoriamente grabado el marcado 'E' y el índice de velocidad correspondiente. Sourcing preferido: desguaces de neumáticos o canje directo de branding con marcas comerciales ligeras. Se utilizarán medidas estándar (ej. 195/50 R15) para reducir costes de reposición.
+Para la homologación individual, los neumáticos deben tener obligatoriamente grabado el marcado 'E' y el índice de velocidad correspondiente. Sourcing preferido: desguaces de neumáticos o canje directo de branding con marcas comerciales de competición. Se utilizarán medidas estándar (ej. 195/50 R15) para reducir costes de reposición.
 
 ## 3. Contactos de Ingeniería de Homologación
 

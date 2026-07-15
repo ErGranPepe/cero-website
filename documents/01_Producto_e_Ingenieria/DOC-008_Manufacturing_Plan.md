@@ -20,3 +20,7 @@ El acero cromoly 4130 requiere soldadura TIG de alta precisión para evitar la f
 • Preparación de Juntas: Todos los extremos de los tubos deben biselarse con una notcher de tubo a un ajuste perfecto sin holguras (>0.5 mm de hueco invalidará la junta). Se eliminará la capa de calamina y óxido mediante cepillo de acero inoxidable.
 • Purga Interna: Llenado del interior del tubo con gas argón al 99.9% durante la soldadura para evitar la oxidación interna (back-purging). El caudal de purga se mantendrá entre 2 y 5 PSI.
 • Parámetros de Soldadura: Corriente continua con electrodo de tungsteno al 2% de torio o lantano, varilla de aporte ER70S-6 o ER80S-D2 de 1.6 mm. Enfriamiento lento controlado mediante mantas térmicas ignífugas para evitar tensiones estructurales internas residuales. Queda prohibido enfriar las soldaduras con aire comprimido o agua.
+
+## 3. Proceso de Soldadura por Puntos del Acumulador
+
+Las 480 celdas de litio 18650 se soldarán por puntos utilizando una soldadora de pulso controlado de precisión y tiras de níquel puro de 0.15 mm de espesor. Queda estrictamente prohibido soldar celdas con soldador de estaño convencional, ya que el calor excesivo daña los separadores internos de la celda, provocando cortocircuitos térmicos.
