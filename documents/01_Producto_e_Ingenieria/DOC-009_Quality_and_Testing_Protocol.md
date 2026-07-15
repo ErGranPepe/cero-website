@@ -20,6 +20,6 @@ A continuación se presentan los resultados del ensayo dinámico de slalom de CE
 
 Pruebas de validación en circuito privado antes de iniciar el dossier de homologación de calle:
 
-• Test de Slalom: Slalom a 40 km/h, 60 km/h and 80 km/h con telemetría de acelerómetros para verificar balanceo lateral, transferencias de peso y rigidez cinemática de los trapecios. Se comprobará que la frecuencia natural de balanceo se mantiene dentro de los límites calculados en Onshape.
+• Test de Slalom: Slalom a 40 km/h, 60 km/h y 80 km/h con telemetría de acelerómetros para verificar balanceo lateral, transferencias de peso y rigidez cinemática de los trapecios. Se comprobará que la frecuencia natural de balanceo se mantiene dentro de los límites calculados en Onshape.
 • Ensayo de Frenado de Emergencia: Detenciones completas consecutivas desde 80 km/h a 0 km/h. Verificación de desvanecimiento (fade) de frenos y ajuste mecánico de la bias bar del pedalier para asegurar que las ruedas delanteras bloquean ligeramente antes que las traseras, evitando trompos dinámicos.
 • Prueba de Stress de Temperatura de Baterías: Monitorear la temperatura de las celdas de litio durante 30 minutos de rodaje continuo. La temperatura de ninguna celda debe superar los 55°C, activándose el apagado de seguridad del BMS de forma automática si se rebasa dicha cota.

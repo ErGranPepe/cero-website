@@ -18,7 +18,7 @@ El monoplaza debe combinar la agilidad en curva de un kart de competición con e
 
 • Chasis Tubular: Estructura espacial triangulada (spaceframe) fabricada en tubos de acero aleado al cromo-molibdeno 4130. El arco principal de seguridad antivuelco (Main Hoop) tendrá un diámetro de 25.4 mm y un espesor de pared mínimo de 2.0 mm, dimensionado para alojar un piloto del percentil 95 (1.90 m de altura).
 • Suspensión Cinemática: Configuración de doble trapecio independiente (double wishbone) delantero y trasero. Brazos fabricados en tubo 4130, unidos mediante rótulas esféricas de competición (uniball) de rosca métrica fina grado automotriz. Amortiguación ajustable montada con sistema de bieletas push-rod para optimizar el ratio de movimiento y el control de balanceo.
-• Sistema de Frenado Independiente: Pinzas de doble pistón opuesto y discos ventilados. El pedalier de competición incluirá dos bombas de freno independientes conectadas mediante una barra de equilibrio (bias bar) mecánica ajustable en cabina. Esto garantiza el doble circuito independiente exigido por ley: si ocurre una fuga en el circuito delantero, el circuito trasero retiene capacidad de frenado estática superior al 45%.
+• Sistema de Frenado Independiente: Pinzas de doble pisón opuesto y discos ventilados. El pedalier de competición incluirá dos bombas de freno independientes conectadas mediante una barra de equilibrio (bias bar) mecánica ajustable en cabina. Esto garantiza el doble circuito independiente exigido por ley: si ocurre una fuga en el circuito delantero, el circuito trasero retiene capacidad de frenado estática superior al 45%.
 
 ## 3. Tren Motriz Eléctrico e Inversor de Tracción (Conceptual)
 
@@ -40,7 +40,7 @@ A continuación se muestra el análisis de distribución de fuerzas hidráulicas
 
 Para la obtención de placas de matrícula ordinarias mediante el proceso de Homologación Individual de Vehículos (HIV):
 
-• Secuencia de Luces: Integración de luces de posición, cruce, carretera, intermitentes, emergencia, luz de marcha atrás, antiniebla trasera y luz de matrícula con código de homologación europeo 'E' grabado en las lentes.
-• Seguridad Peatonal (Radios de Curvatura): El exterior de la carrocería de composite (fibra de vidrio) debe ser completamente suave, sin salientes punzantes ni aristas. Todos los radios de curvatura exteriores en superficies expuestas deben ser superiores a 2.5 mm.
-• Retrovisores: Dos retrovisores exteriores con espejo convexo que permitan un campo de visión horizontal mínimo de 15 metros a una distancia de 10 metros detrás del coche.
-• Auditoría ex-ante: Se firmará un acuerdo con un laboratorio oficial (como IDIADA o el INTA) para realizar una revisión preliminar de los planos CAD antes de iniciar la fabricación física.
+• Ficha Reducida: Documento técnico detallado firmado por ingeniero colegiado que describe la geometría, masas y elementos de seguridad activa/pasiva.
+• Informe de Conformidad: Emitido por un Servicio Técnico de Homologación oficial (como IDIADA o INTA), certificando que el diseño del chasis modular cumple con el Reglamento UE 2018/858. Se buscarán exenciones de crash-test destructivos mediante validaciones numéricas avanzadas por FEA.
+• Ensayos en Pista Oficiales: Pruebas dinámicas de frenado en mojado, comportamiento dinámico de dirección a velocidad, nivel de ruido acústico y compatibilidad electromagnética en laboratorios acreditados.
+• Inspección en Estación ITV: Verificación física final de los marcados de homologación 'E' en vidrios, ópticas, retrovisores convexos y radios de curvatura exteriores de carrocería superiores a 2.5 mm.

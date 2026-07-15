@@ -17,4 +17,4 @@ Lanzamiento de camisetas con el plano explotado del chasis mediante impresión b
 Patreon se activa en el Mes 4 para acumular el fondo de caja con el que compraremos consumibles de taller y piezas en el Mes 12:
 • Tier 1 (2.99€/mes): Acceso al canal de Discord de debates técnicos privados.
 • Tier 2 (5.99€/mes): Acceso a planos CAD Onshape en tiempo real y commits de GitHub.
-• Tier 3 (19.99€/mes): Grabado láser de tu nombre en el chasis físico del coche real de calle, con derecho a voto en las asambleas generales.
+• Tier 3 (19.99€/mes): Grabado láser de tu nombre en el chasis físico del coche real de calle, con derecho a voto en las asambleas generales y participación de roles.

@@ -18,6 +18,6 @@ Bienvenido a CERO. Nuestro objetivo es que realices tu primera aportación al di
 • Onshape: Crea una cuenta gratuita de estudiante o entusiasta. Solicita acceso de edición en el canal #cad-chasis enviando tu email registrado.
 • GitHub: Clona el repositorio maestro `ErGranPepe/cero-website` para tener acceso a los scripts y documentos Markdown del proyecto. Configura tus credenciales Git locales.
 
-## 3. Primer Challenge del Colaborador
+## 3. Primer Challenge del Colaborador (Micro-Retos de 2 Horas)
 
-Para validar tus habilidades y concederte permisos de fusión en la rama principal, debes resolver un reto menor. El challenge por defecto consiste en modelar en Onshape el soporte de la pinza de freno trasera respetando los radios de curvatura de aristas obligatorios de 2.5 mm de la ITV. Una vez finalizado, abre una pull request en GitHub o comparte el enlace Onshape en el canal #revision-cad para que el Lead Engineer valide la geometría.
+Para evitar la inactividad y dar feedback inmediato, el onboarding se gestiona mediante 'Micro-Retos' técnicos de menos de 2 horas. Un micro-reto típico para diseño CAD consiste en modelar en Onshape el soporte del sensor de velocidad del buje delantero respetando los radios de aristas de 2.5 mm de la ITV, o para análisis estructural realizar el cálculo estático de un nudo del subchasis trasero. Una vez finalizado, abre una pull request en GitHub o comparte el enlace Onshape en el canal #micro-retos para su validación rápida.

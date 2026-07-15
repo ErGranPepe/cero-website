@@ -8,9 +8,11 @@
 
 ---
 
-## 1. Estructura de Trabajo Abierta
+## 1. Estructura de Trabajo Abierta y Tableros Kanban
 
 El proyecto opera mediante un núcleo (Core Team) y comisiones de voluntarios coordinadas en Discord y GitHub. No existen rangos jerárquicos corporativos clásicos; las aportaciones técnicas registradas en el repositorio otorgan el estatus de colaborador activo. Esto fomenta una meritocracia técnica pura donde las mejores ideas se validan en CAD de forma colegiada y transparente, evitando atascos burocráticos. La gobernanza busca descentralizar el desarrollo de ingeniería mientras mantiene un núcleo fuerte responsable de las operaciones de taller físico y marketing.
+
+Las comisiones técnicas de Discord operan en Sprints estructurados de 2 semanas, gestionados mediante un tablero Kanban público en GitHub Projects. Las tareas abiertas se dividen en Micro-Retos de menos de 2 horas para facilitar la participación rápida de nuevos voluntarios técnicos, evitando cuellos de botella en la ruta crítica del chasis modular.
 
 ## 2. Canales Oficiales y Protocolos de Comunicación
 
@@ -25,7 +27,7 @@ A continuación se muestra gráficamente cómo convertimos espectadores casuales
 
 ## 4. Diagrama de Roles y Organización del Discord
 
-A continuación se ilustra la hierarquía de roles y responsabilidades en Discord:
+A continuación se ilustra la jerarquía de roles y responsabilidades en Discord:
 
 ## 5. Matriz RACI Básica
 

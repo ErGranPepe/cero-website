@@ -20,11 +20,19 @@ Tenemos una comunidad de miles de ingenieros y entusiastas siguiendo el proceso 
 
 Viendo la calidad de sus instalaciones, queríamos proponerle un acuerdo de trueque comercial. Buscamos un rincón libre de su taller (de unos 15-20 m²) para soldar el chasis y ensamblar las piezas únicamente los sábados por la tarde, fuera de su horario comercial. A cambio, colocaremos un cartel gigante de su taller de fondo en todos nuestros vídeos semanales de YouTube y Shorts de taller (donde nos siguen miles de apasionados locales), ayudaremos a limpiar y ordenar el taller los fines de semana, y promocionaremos activamente sus servicios de mecánica en la zona de Móstoles. ¿Podríamos pasarnos el sábado por la tarde 10 minutos para mostrarle el diseño en Onshape?"
 
-## 3. Guion para Conseguir el Patrocinio de Tubos de Acero 4130
+## 3. Plantilla de Contrato de Permuta de Servicios Publicitarios (Barter)
 
-"Hola, buenas. Quería hablar con el responsable de marketing o ventas. Les proponemos una colaboración: estamos fabricando CERO, un monoplaza de código abierto para calle (buildcero.com) seguido en vlogs de YouTube por miles de estudiantes de ingeniería y mecánicos.
+REUNIDOS:
+De una parte, Don/Doña [Propietario/Representante], en adelante el CEDENTE, titular del espacio/material ubicado en [Dirección].
+De otra parte, Don Mario, en representación de la 'Asociación de Ingeniería de Código Abierto CERO', en adelante el ADQUISITOR.
 
-Les proponemos patrocinarnos con 50 metros de tubo de acero cromoly 4130 a cambio de colocar el logotipo de su metalúrgica grabado por láser en el chasis físico, menciones de su empresa en los vlogs del proceso de soldadura y enlaces directos en nuestro repositorio GitHub. ¿Podríamos enviarle una propuesta de patrocinio por correo electrónico para que la valoren?"
+ACUERDAN:
+1. Objeto: El CEDENTE cede temporalmente el uso de un espacio de 20 metros cuadrados en sus instalaciones los sábados en horario de 16:00 a 21:00 horas, o en su defecto 50 metros de tubos de acero cromoly 4130.
+2. Contraprestación Publicitaria: El ADQUISITOR se compromete a promocionar la marca/instalación del CEDENTE en la serie de vlogs semanales de YouTube y en la web buildcero.com mediante la colocación de un cartel visible en el área de trabajo y enlaces web directos.
+3. Suministro Eléctrico: El coste de suministro eléctrico de fuerza (potencia contratada mínima de 5.5 kW para soldadora TIG a 230V) será asumido por el CEDENTE, aportando la asociación un pago compensatorio estimado en caso de soldadura intensiva continuo superior a 10 horas mensuales.
+4. Responsabilidad Civil: El ADQUISITOR exime de toda responsabilidad civil al CEDENTE ante cualquier accidente derivado de la actividad de soldadura o manipulación mecánica dentro del espacio cedido, contando con seguro de responsabilidad de la Asociación.
+
+En prueba de conformidad, firman en duplicado en Madrid, a [Fecha].
 
 ## 4. Guion de Seguimiento por Correo Electrónico
 

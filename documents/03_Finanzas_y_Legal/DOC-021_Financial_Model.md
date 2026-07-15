@@ -16,7 +16,7 @@ El proyecto asume 0€ el primer mes y acumula caja mediante Patreon (Tier Bocet
 
 A continuación se muestra de manera gráfica la curva de crecimiento del número de mecenas y el runrate de suscripciones acumuladas a lo largo de las fases de diseño virtual:
 
-## 3. Runway de Inversión y Tasa de Gasto (Burn Rate) Pre-Semilla
+## 3. Runway de Inversión y Tasa de Gasto (Burn Rate) Proyectada
 
 A continuación se ilustra la simulación de flujo de caja y la tasa de consumo de capital (runway) proyectada tras asegurar la ronda de financiación pre-semilla de 50.000€:
 

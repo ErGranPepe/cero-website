@@ -16,7 +16,7 @@ La asociación abrirá una cuenta bancaria dedicada donde se depositarán todas 
 
 ## 2. Pivotación Futura a Sociedad Limitada (S.L.)
 
-En el Mes 18, de cara a la homologación final y comercialización de planos, se constituirá la S.L. aportando los activos intangibles de la asociación (CAD y marca CERO) como aportaciones no dinerarias, activando el plan de equity. La S.L. asumirá todos los derechos y obligations de la asociación, incluyendo los contratos de cesión de IP firmados por los ingenieros, garantizando la continuidad legal del Data Room ante inversores de capital riesgo.
+En el Mes 18, de cara a la homologación final y comercialización de planos, se constituirá la S.L. aportando los activos intangibles de la asociación (CAD y marca CERO) como aportaciones no dinerarias, activando el plan de equity. La S.L. asumirá todos los derechos y obligaciones de la asociación, incluyendo los contratos de cesión de IP firmados por los ingenieros, garantizando la continuidad legal del Data Room ante inversores de capital riesgo.
 
 ## 3. Fiscalidad y Gestión de Exenciones
 
