@@ -3,7 +3,7 @@
 
 - **Autor**: Dirección Estratégica CERO
 - **Estado**: APROBADO
-- **Versión**: v12.0
+- **Versión**: v13.0
 - **Fecha**: 15.07.2026
 
 ---
@@ -21,8 +21,8 @@ El proyecto se extiende a 28 meses para incorporar de forma segura la fase de ho
 
 ## 2. Modelo de Financiación Mixto
 
-Operación inicial con 0€ basándose en sponsors y canjes de publicidad. La compra del motor Suzuki GSX-R usado se financia en el Mes 12 con la caja acumulada del Patreon de la comunidad, lanzado en el Mes 4.
+Operación inicial con 0€ basándose en sponsors y canjes de publicidad. La compra del motor Suzuki GSX-R usado se financia en el Mes 12 con la caja acumulada del Patreon de la comunidad, lanzado en el Mes 4. Todo incremento de costes imprevisto en los ensayos mecánicos se cubrirá mediante campañas especiales de merchandising.
 
 ## 3. Plan de Contingencia
 
-Si en el Mes 12 la recaudación es insuficiente, se retrasará el encargo del corte de tubos 4130 cromoly, extendiendo el diseño CAD virtual y lanzando retos adicionales de patrocinio.
+Si en el Mes 12 la recaudación es insuficiente, se retrasará el encargo del corte de tubos 4130 cromoly, extendiendo el diseño CAD virtual y lanzando retos adicionales de patrocinio. El diseño virtual continuará optimizándose, incrementando la carga aerodinámica teórica en Onshape y realizando más iteraciones en OpenFOAM.

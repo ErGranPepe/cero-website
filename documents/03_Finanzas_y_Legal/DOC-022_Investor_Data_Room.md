@@ -3,19 +3,22 @@
 
 - **Autor**: Fundadores de CERO
 - **Estado**: APROBADO
-- **Versión**: v12.0
+- **Versión**: v13.0
 - **Fecha**: 15.07.2026
 
 ---
 
-## 1. Estructura de la Data Room de Inversores
+## 1. Organización del Repositorio de Inversores
 
-Repositorio estructurado en Google Drive para compartir con inversores semilla:
-• Carpeta 01: Corporativa (Manifiesto, Brand Bible).
-• Carpeta 02: Finanzas (Presupuesto v12.0, Proyecciones Patreon, Stripe Fees).
-• Carpeta 03: Técnica (FSAE tubos specs, planos Onshape, FEA chasis).
-• Carpeta 04: Crecimiento ( Followers Instagram, Discord stats, GitHub commits).
+El Data Room de inversores se estructura en Google Drive de forma indexada. Contiene los contratos de cesión de IP firmados por cada colaborador (DOC-023), el pacto de socios preliminar (DOC-024) y las proyecciones financieras (DOC-021). Este repositorio se mantiene actualizado de forma mensual por el área de finanzas del Core Team.
 
-## 2. Proyecciones a Presentar
+## 2. Activos Intangibles del Proyecto
 
-Se muestra a los inversores que el Coste de Adquisición de Colaboradores (CAC) es de 0€ y que la comunidad aporta miles de horas de ingeniería gratuita valoradas en más de 60.000€ en el mercado.
+• CAD Completo de Suspensión y Dirección en Onshape.
+• Certificados de Simulación Estructural de Torsión (FEA).
+• Marca CERO registrada a nivel europeo en la Oficina de Propiedad Intelectual (EUIPO).
+• Registros de tracción orgánica en redes: seguidores y engagement acumulado en vlogs de YouTube.
+
+## 3. Criterios de Acceso para Inversores Ángeles
+
+El acceso al Data Room se concede bajo estricto acuerdo de confidencialidad (NDA). Los inversores interesados en la ronda pre-semilla de 50.000€ deben acreditar experiencia previa en automoción, desarrollo de hardware de código abierto o startups industriales antes de recibir acceso completo.

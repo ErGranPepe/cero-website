@@ -1,22 +1,20 @@
 # DOC-033: Merch and Crowdfunding Plan
-**Estrategia de Lanzamiento de Productos de 0€, Impresión bajo Demanda y Patreon**
+**Plan de Lanzamiento de Productos Físicos y Cuotas de Patreon**
 
 - **Autor**: Medios y Crecimiento CERO
 - **Estado**: APROBADO
-- **Versión**: v12.0
+- **Versión**: v13.0
 - **Fecha**: 15.07.2026
 
 ---
 
-## 1. Lanzamiento de Merchandising sin Stock (Print-on-Demand)
+## 1. Merchandising sin Stock (Mes 7+)
 
-Para evitar cualquier inversión inicial, la tienda de merchandising de CERO (lanzada en el Mes 7) utilizará un modelo de impresión bajo demanda (Print-on-Demand) mediante pasarelas gratuitas (ej: Ko-fi / Printful). Las camisetas se fabrican y envían directamente por el proveedor solo cuando el comprador final realiza el pago completo en la web, garantizando stock de 0€.
-• Camiseta Blueprint V1 (Plano del chasis tubular en espalda): PVP 25€ / Coste de producción 11€ (Margen: 14€ por unidad).
-• Póster Chapa de Aluminio Grabado (Geometría de suspensión): PVP 35€ / Coste de producción 14€ (Margen: 21€ por unidad).
+Lanzamiento de camisetas con el plano explotado del chasis mediante impresión bajo demanda (Print-on-Demand). Esto garantiza stock de 0€ y un margen del 40-50% por camiseta soldada en internet.
 
-## 2. Campaña de Crowdfunding y Patreon (Mes 4+)
+## 2. Tiers de Patreon (Mes 4+)
 
-Lanzamiento de las membresías recurrentes de Patreon en el Mes 4 para financiar la compra de las piezas del motor de desguace y los kits de seguridad de calle:
-• Tier 1 (2,99 €/mes): Acceso al canal de Discord de debates técnicos privados.
-• Tier 2 (5,99 €/mes): Acceso anticipado de 48 horas a los planos de Onshape actualizados y commits de GitHub.
-• Tier 3 (19,99 €/mes): Grabado láser de tu nombre o logotipo de internet en las placas del chasis del coche real de calle.
+Patreon se activa en el Mes 4 para acumular el fondo de caja con el que compraremos el motor Suzuki GSX-R usado en el Mes 12:
+• Tier 1: Acceso a Discord debates.
+• Tier 2: Planos CAD Onshape en tiempo real.
+• Tier 3: Grabado láser de tu nombre en el chasis físico del monoplaza.

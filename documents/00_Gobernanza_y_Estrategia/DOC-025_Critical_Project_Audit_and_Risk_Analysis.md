@@ -3,7 +3,7 @@
 
 - **Autor**: Dirección Estratégica CERO
 - **Estado**: APROBADO
-- **Versión**: v12.0
+- **Versión**: v13.0
 - **Fecha**: 15.07.2026
 
 ---

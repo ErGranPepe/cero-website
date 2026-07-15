@@ -3,14 +3,14 @@
 
 - **Autor**: Operaciones CERO
 - **Estado**: APROBADO
-- **Versión**: v12.0
+- **Versión**: v13.0
 - **Fecha**: 15.07.2026
 
 ---
 
 ## 1. Estructura de Trabajo Abierta
 
-El proyecto opera mediante un núcleo (Core Team) y comisiones de voluntarios coordinadas en Discord y GitHub. No existen rangos jerárquicos corporativos clásicos; las aportaciones técnicas registradas en el repositorio otorgan el estatus de colaborador activo.
+El proyecto opera mediante un núcleo (Core Team) y comisiones de voluntarios coordinadas en Discord y GitHub. No existen rangos jerárquicos corporativos clásicos; las aportaciones técnicas registradas en el repositorio otorgan el estatus de colaborador activo. Esto fomenta una meritocracia técnica pura donde las mejores ideas se validan en CAD.
 
 ## 2. Canales Oficiales
 

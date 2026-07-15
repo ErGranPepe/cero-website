@@ -3,7 +3,7 @@
 
 - **Autor**: Fundadores de CERO
 - **Estado**: APROBADO
-- **Versión**: v12.0
+- **Versión**: v13.0
 - **Fecha**: 15.07.2026
 
 ---
@@ -12,7 +12,7 @@
 
 CERO es el primer coche de calle del mundo desarrollado 100% en abierto por internet. Sin fábrica física cerrada, sin capital de partida, y coordinando colaboradores de forma de comunidad abierta. El monoplaza de CERO se concibe como un diseño abierto y homologable en Europa, permitiendo que cualquiera descargue sus planos y los replique de manera local.
 
-Queremos romper las barreras de entrada de la industria de automoción tradicional. Tradicionalmente, diseñar un coche exige millones de euros, laboratorios privados y equipos cerrados. CERO demuestra que la inteligencia colectiva y la transparencia radical pueden coordinar talento de manera descentralizada para fabricar un vehículo real, homologable y de alto rendimiento.
+Queremos romper las barreras de entrada de la industria de automoción tradicional. Tradicionalmente, diseñar un coche exige millones de euros, laboratorios privados y equipos cerrados. CERO demuestra que la inteligencia colectiva y la transparencia radical pueden coordinar talento de manera descentralizada para fabricar un vehículo real, homologable y de alto rendimiento. No aspiramos solo a construir un coche rápido, sino a crear el plano de libertad definitivo para que cualquier aficionado al motor pueda replicar la construcción física en su entorno local con recursos modestos.
 
 ## 2. Principios de Bootstrapping y Apertura
 
@@ -23,4 +23,4 @@ Queremos romper las barreras de entrada de la industria de automoción tradicion
 
 ## 3. Criterios de Éxito a Largo Plazo
 
-Establecer la viabilidad del open-source en el sector automotriz físico. Demostrar que un coche diseñado colectivamente puede superar las pruebas de emisiones, ruido e impacto de la ITV individual en España, creando un precedente mundial para constructores aficionados.
+Establecer la viabilidad del open-source en el sector automotriz físico. Demostrar que un coche diseñado colectivamente puede superar las pruebas de emisiones, ruido e impacto de la ITV individual en España, creando un precedente mundial para constructores aficionados. El éxito se medirá cuando el primer chasis soldado circule de forma legal con placas de matrícula ordinarias, con planos Onshape 100% validados por la comunidad.

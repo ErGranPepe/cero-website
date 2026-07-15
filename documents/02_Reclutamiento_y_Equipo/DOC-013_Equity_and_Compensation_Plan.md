@@ -1,20 +1,23 @@
 # DOC-013: Equity and Compensation Plan
-**Estructura de Equity de Colaboradores e Incentivos**
+**Estructura de Equity de Colaboradores e Incentivos en Sociedad Limitada**
 
 - **Autor**: Fundadores de CERO
 - **Estado**: APROBADO
-- **Versión**: v12.0
+- **Versión**: v13.0
 - **Fecha**: 15.07.2026
 
 ---
 
-## 1. Reparto de Equity Inicial (Stock Options)
+## 1. Reparto de Equity (Stock Options Pool)
 
-Dado que operamos con 0€, se reserva un 15% del equity total de la futura Sociedad Limitada (S.L.) para colaboradores clave:
-• Lead Engineer: 3-5% vesting de 2 años.
-• Ingenieros Senior de CAD: 1-2% vesting de 1 año.
-• Colaboradores Activos (Challenges): Participación de un pool común de equity.
+Dado que el desarrollo inicial opera con 0€ de presupuesto, compensamos el tiempo de los ingenieros mediante un pool de stock options equivalente al 15% de las acciones de la futura CERO S.L. Las opciones se devengan mediante un vesting mensual de 12 meses con un cliff inicial de 3 meses para asegurar compromiso real.
 
-## 2. Hitos de Compensación Directa
+## 2. Hitos de Compensación Financiera Directa
 
-Cuando el proyecto consiga su primera ronda de inversión semilla de 50.000€, los ingenieros colaboradores activos tendrán prioridad de contratación laboral con sueldo de mercado.
+Cuando CERO consiga su primera ronda de inversión pre-semilla de 50.000€, los ingenieros con rol de 'Colaborador Activo' verificado tendrán prioridad absoluta para ser contratados con salario de mercado.
+
+El valor de su equity acumulado se respetará de forma íntegra en la constitución legal de la sociedad de capital.
+
+## 3. Registro de Contribuciones Técnicas
+
+Cada hora de diseño CAD o cálculo FEA reportada y aprobada en las asambleas de Discord dominicales se registra en una hoja de cálculo del Data Room de inversores (DOC-022). Este historial sirve de base para el cálculo proporcional de stock options de cada colaborador al final del año.

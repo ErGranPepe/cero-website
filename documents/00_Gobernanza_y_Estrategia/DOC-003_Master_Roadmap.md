@@ -3,14 +3,14 @@
 
 - **Autor**: Gestión de Proyectos CERO
 - **Estado**: APROBADO
-- **Versión**: v12.0
+- **Versión**: v13.0
 - **Fecha**: 15.07.2026
 
 ---
 
 ## 1. Cronograma de Hitos (Master Gantt)
 
-El desarrollo del vehículo se organiza en un cronograma lineal de 28 meses. Las dependencias críticas son el escaneo 3D del motor de moto antes de cerrar el CAD trasero del chasis, y el diseño de aristas según normativa peatonal para el dossier IDIADA/INTA.
+El desarrollo del vehículo se organiza en un cronograma lineal de 28 meses. Las dependencias críticas son el escaneo 3D del motor de moto antes de cerrar el CAD trasero del chasis, y el diseño de aristas según normativa peatonal para el dossier IDIADA/INTA. Cada retraso en una fase de diseño afectará directamente al inicio del ensamblaje físico en el taller colaborador.
 
 ## 2. Gráfico del Gantt de Desarrollo
 
