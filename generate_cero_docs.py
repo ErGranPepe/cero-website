@@ -2,6 +2,7 @@ import os
 import sys
 import json
 import shutil
+import urllib.request
 import matplotlib.pyplot as plt
 import numpy as np
 from reportlab.lib.pagesizes import letter
@@ -10,6 +11,47 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, Tabl
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib import colors
 from reportlab.pdfgen import canvas
+from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.ttfonts import TTFont
+
+# Download premium Outfit fonts from Google Fonts
+def download_font(url, dest):
+    try:
+        if not os.path.exists(dest):
+            os.makedirs(os.path.dirname(dest), exist_ok=True)
+            print(f"[FONT] Descargando fuente desde {url}...")
+            req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+            with urllib.request.urlopen(req) as response:
+                with open(dest, 'wb') as out_file:
+                    out_file.write(response.read())
+            print(f"[FONT] Descargada con éxito en {dest}")
+    except Exception as e:
+        print(f"[FONT] Advertencia: No se pudo descargar la fuente {os.path.basename(dest)}: {e}")
+
+base_dir = os.path.dirname(os.path.abspath(__file__))
+font_dir = os.path.join(base_dir, "assets", "brand")
+outfit_reg_path = os.path.join(font_dir, "Outfit-Regular.ttf")
+outfit_bold_path = os.path.join(font_dir, "Outfit-Bold.ttf")
+
+download_font("https://raw.githubusercontent.com/Outfitio/Outfit-Fonts/main/fonts/ttf/Outfit-Regular.ttf", outfit_reg_path)
+download_font("https://raw.githubusercontent.com/Outfitio/Outfit-Fonts/main/fonts/ttf/Outfit-Bold.ttf", outfit_bold_path)
+
+if os.path.exists(outfit_reg_path) and os.path.exists(outfit_bold_path):
+    try:
+        pdfmetrics.registerFont(TTFont('Outfit', outfit_reg_path))
+        pdfmetrics.registerFont(TTFont('Outfit-Bold', outfit_bold_path))
+        FONT_NAME = 'Outfit'
+        FONT_BOLD = 'Outfit-Bold'
+        print("[FONT] Usando fuente premium registrada: Outfit")
+    except Exception as e:
+        print(f"[FONT] Error al registrar la fuente: {e}. Usando Helvetica.")
+        FONT_NAME = 'Helvetica'
+        FONT_BOLD = 'Helvetica-Bold'
+else:
+    FONT_NAME = 'Helvetica'
+    FONT_BOLD = 'Helvetica-Bold'
+    print("[FONT] Usando fuente por defecto: Helvetica")
+
 
 # Custom Canvas for professional running header/footer and front cover styling.
 class CeroNumberedCanvas(canvas.Canvas):
@@ -29,117 +71,40 @@ class CeroNumberedCanvas(canvas.Canvas):
             super().showPage()
         super().save()
 
-    def draw_cero_badge(self, x, y, size, stroke_color, badge_bg):
-        self.saveState()
-        self.setFillColor(colors.HexColor(badge_bg))
-        self.setStrokeColor(colors.HexColor(badge_bg))
-        r = size / 2
-        self.circle(x + r, y + r, r, fill=1, stroke=0)
-        
-        lw = size * 0.05
-        w = size * 0.38
-        h = size * 0.62
-        logo_x = x + (size - w) / 2
-        logo_y = y + (size - h) / 2
-        logo_r = size * 0.12
-        
-        self.setStrokeColor(colors.HexColor(stroke_color))
-        self.setLineWidth(lw)
-        self.roundRect(logo_x, logo_y, w, h, logo_r, stroke=1, fill=0)
-        
-        self.setFillColor(colors.HexColor(badge_bg))
-        self.setStrokeColor(colors.HexColor(badge_bg))
-        cover_w = w * 0.35
-        cover_h = lw * 2.5
-        
-        self.rect(logo_x + (w - cover_w)/2, logo_y + h - cover_h/2, cover_w, cover_h, fill=1, stroke=0)
-        self.rect(logo_x + (w - cover_w)/2, logo_y - cover_h/2, cover_w, cover_h, fill=1, stroke=0)
-        self.restoreState()
-
-    def draw_cero_letters(self, x, y, char_w, char_h, lw, stroke_color, bg_color):
-        self.saveState()
-        self.setStrokeColor(colors.HexColor(stroke_color))
-        self.setFillColor(colors.HexColor(bg_color))
-        self.setLineWidth(lw)
-        self.setLineCap(1)
-        self.setLineJoin(1)
-        
-        gap = char_w * 0.4
-        r = char_w * 0.35
-        
-        # C
-        self.arc(x, y + char_h - r*2, x + r*2, y + char_h, 90, 90)
-        self.line(x, y + r, x, y + char_h - r)
-        self.arc(x, y, x + r*2, y + r*2, 180, 90)
-        self.line(x + r, y + char_h, x + char_w, y + char_h)
-        self.line(x + r, y, x + char_w, y)
-        
-        x += char_w + gap
-        # E
-        self.arc(x, y + char_h - r*2, x + r*2, y + char_h, 90, 90)
-        self.line(x, y + r, x, y + char_h - r)
-        self.arc(x, y, x + r*2, y + r*2, 180, 90)
-        self.line(x + r, y + char_h, x + char_w, y + char_h)
-        self.line(x + r, y, x + char_w, y)
-        self.line(x, y + char_h/2, x + char_w * 0.7, y + char_h/2)
-        
-        x += char_w + gap
-        # R
-        self.line(x, y, x, y + char_h)
-        self.line(x, y + char_h, x + char_w - r, y + char_h)
-        self.arc(x + char_w - r*2, y + char_h/2, x + char_w, y + char_h, 270, 180)
-        self.line(x, y + char_h/2, x + char_w - r, y + char_h/2)
-        self.line(x + char_w * 0.45, y + char_h/2, x + char_w * 0.9, y)
-        
-        x += char_w + gap
-        # O
-        self.roundRect(x, y, char_w, char_h, r, stroke=1, fill=0)
-        self.setFillColor(colors.HexColor(bg_color))
-        self.setStrokeColor(colors.HexColor(bg_color))
-        cover_w = char_w * 0.35
-        cover_h = lw * 2.5
-        self.rect(x + (char_w - cover_w)/2, y + char_h - cover_h/2, cover_w, cover_h, fill=1, stroke=0)
-        self.rect(x + (char_w - cover_w)/2, y - cover_h/2, cover_w, cover_h, fill=1, stroke=0)
-        
-        self.restoreState()
-
     def draw_page_elements(self, page_count):
         doc_template = getattr(self, "_doctemplate", None)
         doc_id = getattr(doc_template, "doc_id", "DOC-XXX")
         
+        # Clean cover page (let the story handle cover visual layout)
         if self._pageNumber == 1:
-            self.saveState()
-            self.draw_cero_badge(306 - 45, 450, 90, "#FFFFFF", "#000000")
-            self.draw_cero_letters(233.5, 385, 28, 42, 4.5, "#000000", "#FFFFFF")
-            self.setFont("Helvetica", 9)
-            self.setFillColor(colors.HexColor("#8E8E93"))
-            self.drawCentredString(306, 360, "E L   P R O Y E C T O .")
-            self.setStrokeColor(colors.HexColor("#FF3B30"))
-            self.setLineWidth(4)
-            self.line(54, 738, 54, 54)
-            self.restoreState()
             return
 
         self.saveState()
         self.setStrokeColor(colors.HexColor("#FF3B30"))
         self.setLineWidth(1)
         self.line(54, 738, 558, 738)
-        self.draw_cero_badge(54, 742, 24, "#FFFFFF", "#000000")
         
-        self.setFont("Helvetica-Bold", 8)
+        # Draw the official black logo in running page header
+        logo_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "brand", "logo_black_on_transparent.png")
+        if os.path.exists(logo_path):
+            try:
+                self.drawImage(logo_path, 54, 742, width=18, height=18, mask='auto')
+            except Exception:
+                pass
+        
+        self.setFont(FONT_BOLD, 8)
         self.setFillColor(colors.HexColor("#1C1C1E"))
-        self.drawString(84, 746, "CERO MOTOR CO. — DOCUMENTO OFICIAL")
+        self.drawString(80, 746, "CERO MOTOR CO. — DOCUMENTO OFICIAL")
         self.drawRightString(558, 746, doc_id)
 
         self.setStrokeColor(colors.HexColor("#E5E5EA"))
         self.setLineWidth(1)
         self.line(54, 54, 558, 54)
         
-        self.setFont("Helvetica", 8)
+        self.setFont(FONT_NAME, 8)
         self.setFillColor(colors.HexColor("#8E8E93"))
         self.drawString(54, 38, "CONFIDENCIAL — PROHIBIDA SU DISTRIBUCIÓN COMERCIAL")
         self.drawRightString(558, 38, f"Pág. {self._pageNumber} de {page_count}")
-        self.draw_cero_badge(300, 36, 12, "#FFFFFF", "#000000")
         self.restoreState()
 
 
@@ -186,33 +151,31 @@ def create_pdf(doc_id, doc_info, output_dir, assets_dir):
     title_style = ParagraphStyle(
         'CoverTitle',
         parent=styles['Normal'],
-        fontName='Helvetica-Bold',
-        fontSize=20,
-        leading=26,
-        textColor=colors.HexColor('#000000'),
-        spaceAfter=15,
-        alignment=1
+        fontName=FONT_BOLD,
+        fontSize=24,
+        leading=30,
+        textColor=colors.HexColor('#1C1C1E'),
+        spaceAfter=10
     )
     
     subtitle_style = ParagraphStyle(
         'CoverSubtitle',
         parent=styles['Normal'],
-        fontName='Helvetica-Oblique',
-        fontSize=10,
-        leading=14,
+        fontName=FONT_NAME,
+        fontSize=12,
+        leading=16,
         textColor=colors.HexColor('#8E8E93'),
-        spaceAfter=30,
-        alignment=1
+        spaceAfter=25
     )
     
     h1_style = ParagraphStyle(
         'Heading1Custom',
         parent=styles['Normal'],
-        fontName='Helvetica-Bold',
-        fontSize=14,
-        leading=18,
-        textColor=colors.HexColor('#000000'),
-        spaceBefore=18,
+        fontName=FONT_BOLD,
+        fontSize=13,
+        leading=17,
+        textColor=colors.HexColor('#FF3B30'),
+        spaceBefore=16,
         spaceAfter=8,
         keepWithNext=True
     )
@@ -220,9 +183,9 @@ def create_pdf(doc_id, doc_info, output_dir, assets_dir):
     body_style = ParagraphStyle(
         'BodyCustom',
         parent=styles['Normal'],
-        fontName='Helvetica',
-        fontSize=10,
-        leading=14,
+        fontName=FONT_NAME,
+        fontSize=9.5,
+        leading=14.5,
         textColor=colors.HexColor('#1C1C1E'),
         spaceAfter=12
     )
@@ -230,39 +193,68 @@ def create_pdf(doc_id, doc_info, output_dir, assets_dir):
     meta_label_style = ParagraphStyle(
         'MetaLabel',
         parent=styles['Normal'],
-        fontName='Helvetica-Bold',
-        fontSize=9,
-        leading=12,
-        textColor=colors.HexColor('#8E8E93')
+        fontName=FONT_BOLD,
+        fontSize=8.5,
+        leading=11,
+        textColor=colors.HexColor('#555559')
     )
     
     meta_val_style = ParagraphStyle(
         'MetaValue',
         parent=styles['Normal'],
-        fontName='Helvetica',
-        fontSize=9,
-        leading=12,
+        fontName=FONT_NAME,
+        fontSize=8.5,
+        leading=11,
         textColor=colors.HexColor('#1C1C1E')
     )
     
     table_header_style = ParagraphStyle(
         'TableHeader',
         parent=styles['Normal'],
-        fontName='Helvetica-Bold',
-        fontSize=9,
-        leading=12,
+        fontName=FONT_BOLD,
+        fontSize=8.5,
+        leading=11,
         textColor=colors.white
     )
 
     story = []
     
-    # COVER PAGE
-    story.append(Spacer(1, 380))
-    story.append(Paragraph(doc_id, ParagraphStyle('CoverDocId', parent=styles['Normal'], fontName='Helvetica-Bold', fontSize=14, leading=18, textColor=colors.HexColor('#FF3B30'), alignment=1)))
+    # PREMIUM REDESIGNED COVER PAGE
+    logo_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "brand", "logo_black_on_transparent.png")
+    if os.path.exists(logo_path):
+        try:
+            story.append(Image(logo_path, width=70, height=70))
+        except Exception:
+            story.append(Spacer(1, 40))
+    else:
+        story.append(Spacer(1, 40))
+        
+    story.append(Spacer(1, 15))
+    story.append(Paragraph(doc_id, ParagraphStyle('CoverDocId', fontName=FONT_BOLD, fontSize=14, leading=18, textColor=colors.HexColor('#FF3B30'), spaceAfter=5)))
     story.append(Paragraph(doc_info['title'].upper(), title_style))
     story.append(Paragraph(doc_info['subtitle'], subtitle_style))
-    story.append(Spacer(1, 15))
     
+    # Red accent divider line
+    story.append(Table([['']], colWidths=[504], rowHeights=[3], style=[('BACKGROUND', (0,0), (-1,-1), colors.HexColor('#FF3B30')), ('BOTTOMPADDING', (0,0), (-1,-1), 0), ('TOPPADDING', (0,0), (-1,-1), 0)]))
+    story.append(Spacer(1, 20))
+    
+    # Branded disclosure text
+    disclosure_style = ParagraphStyle(
+        'CoverDisclosure',
+        parent=styles['Normal'],
+        fontName=FONT_NAME,
+        fontSize=8.5,
+        leading=12.5,
+        textColor=colors.HexColor('#8E8E93')
+    )
+    story.append(Paragraph("<b>DATA ROOM DE INGENIERÍA Y OPERACIONES CERO</b><br/>"
+                           "Este documento contiene especificaciones técnicas, estratégicas, de sourcing y de marketing del primer coche de calle del mundo co-diseñado por internet. "
+                           "Toda contribución queda bajo la licencia abierta Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0). "
+                           "La reproducción o uso comercial de esta información sin la aprobación explícita del Core Team de CERO está prohibida.", disclosure_style))
+    
+    story.append(Spacer(1, 150))
+    
+    # Metadata card table
     meta_data = [
         [Paragraph("AUTOR:", meta_label_style), Paragraph(doc_info['author'].upper(), meta_val_style), Paragraph("ESTADO:", meta_label_style), Paragraph(doc_info['status'], meta_val_style)],
         [Paragraph("VERSIÓN:", meta_label_style), Paragraph(doc_info['version'], meta_val_style), Paragraph("FECHA:", meta_label_style), Paragraph(doc_info['date'], meta_val_style)]
@@ -272,9 +264,11 @@ def create_pdf(doc_id, doc_info, output_dir, assets_dir):
     meta_table.setStyle(TableStyle([
         ('ALIGN', (0,0), (-1,-1), 'LEFT'),
         ('VALIGN', (0,0), (-1,-1), 'TOP'),
-        ('BOTTOMPADDING', (0,0), (-1,-1), 8),
-        ('TOPPADDING', (0,0), (-1,-1), 8),
-        ('LINEBELOW', (0,0), (-1,-1), 0.5, colors.HexColor('#E5E5EA')),
+        ('BOTTOMPADDING', (0,0), (-1,-1), 6),
+        ('TOPPADDING', (0,0), (-1,-1), 6),
+        ('BACKGROUND', (0,0), (-1,-1), colors.HexColor('#F2F2F7')),
+        ('BOX', (0,0), (-1,-1), 0.5, colors.HexColor('#E5E5EA')),
+        ('INNERGRID', (0,0), (-1,-1), 0.5, colors.HexColor('#E5E5EA')),
     ]))
     
     story.append(meta_table)
