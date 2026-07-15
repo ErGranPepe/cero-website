@@ -14,7 +14,11 @@ Para evitar cualquier distorsión térmica o desalineación milimétrica de la e
 
 La bancada se fabricará utilizando perfiles de acero dulce estructural de 80 mm x 40 mm x 4 mm, atornillados al suelo nivelado del taller. Se soldarán soportes ajustables para sujetar en su posición teórica exacta los nudos de suspensión delantera, soportes de motor y el arco antivuelco principal antes de realizar las soldaduras definitivas. La nivelación de la mesa jig se comprobará mediante nivel láser micrométrico, admitiéndose una desviación máxima de 0.2 mm por metro lineal.
 
-## 2. Proceso de Soldadura TIG de Tubos de Cromoly 4130
+## 2. Ilustración del Entorno de Taller y la Mesa Jig
+
+A continuación se muestra de manera referencial el garaje de soldadura con el chasis spaceframe en proceso de armado sobre la bancada fija:
+
+## 3. Proceso de Soldadura TIG de Tubos de Cromoly 4130
 
 El acero cromoly 4130 requiere soldadura TIG de alta precisión para evitar la formación de microfisuras debido al enfriamiento rápido:
 
@@ -23,6 +27,6 @@ El acero cromoly 4130 requiere soldadura TIG de alta precisión para evitar la f
 • Purga Interna: Llenado del interior del tubo con gas argón al 99.9% durante la soldadura para evitar la oxidación interna (back-purging). El caudal de purga se mantendrá entre 2 y 5 PSI.
 • Parámetros de Soldadura: Corriente continua con electrodo de tungsteno al 2%, varilla de aporte ER70S-6 o ER80S-D2 de 1.6 mm. Enfriamiento lento controlado mediante mantas térmicas ignífugas para evitar tensiones estructurales internas residuales. Queda prohibido enfriar las soldaduras con aire comprimido o agua.
 
-## 3. Ensamble de Acumulador de Baterías
+## 4. Ensamble de Acumulador de Baterías
 
 Las celdas de batería se soldarán por puntos utilizando una soldadora de pulso controlado de precisión y tiras de níquel de espesor adecuado. Queda estrictamente prohibido soldar celdas con soldador de estaño convencional, ya que el calor excesivo daña los separadores internos de la celda, provocando cortocircuitos térmicos.

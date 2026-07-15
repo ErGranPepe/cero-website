@@ -20,11 +20,15 @@ El proyecto se extiende a 28 meses para incorporar de forma segura la fase de ho
 • Fase 6 (Mes 22-24): Fabricación de la carrocería final de composite y pruebas dinámicas de slalom y frenado en pista privada o aeródromo cerrado.
 • Fase 7 (Mes 25-28): Pruebas en laboratorios oficiales IDIADA/INTA y matriculación ordinaria para vías públicas de España.
 
-## 2. Modelo de Financiación Mixto
+## 2. Ilustración de la Maqueta de Madera a Escala 1:1 (Mockup)
+
+A continuación se ilustra visualmente el montaje conceptual del chasis de madera cortado por láser para validar el espacio del habitáculo (cockpit) antes de encargar el acero:
+
+## 3. Modelo de Financiación Mixto
 
 Operación inicial con 0€ basándose en sponsors y canjes de publicidad. La compra de los componentes del coche se financia con la caja acumulada del Patreon de la comunidad, lanzado en el Mes 4. Todo incremento de costes imprevisto en los ensayos mecánicos se cubrirá mediante campañas especiales de merchandising o crowdfunding. El Core Team no realizará aportaciones de capital de su propio bolsillo, asegurando la sostenibilidad del bootstrapping puro durante toda la fase de desarrollo virtual. La estrategia comercial se centra en asociar marcas de componentes (frenos, amortiguadores, llantas, herramientas) que busquen visibilidad en la serie de vlogs y redes sociales del proyecto.
 
-## 3. Plan de Contingencia y Rutas Alternativas
+## 4. Plan de Contingencia y Rutas Alternativas
 
 Si en el Mes 12 la recaudación es insuficiente para la compra de materiales, se retrasará el encargo del corte de tubos cromoly, extendiendo el diseño CAD virtual y lanzando retos adicionales de patrocinio en redes viales. El diseño virtual continuará optimizándose en Onshape, realizando más iteraciones en OpenFOAM.
 

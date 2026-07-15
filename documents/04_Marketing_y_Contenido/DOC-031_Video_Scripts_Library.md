@@ -12,7 +12,7 @@
 
 • 0:00 - 1:00: Gancho de retención de 5 segundos. Mario frente a la cámara en un garaje vacío: 'Voy a construir un coche de carreras real para calle desde 0€ y solo con internet. No tengo taller ni dinero. Os muestro cómo'. Renders rápidos del chasis modular.
 • 1:00 - 3:00: El problema industrial. El coste prohibitivo de los karts y monoplazas tradicionales, y las trabas burocráticas europeas. La filosofía de código abierto de CERO.
-• 3:00 - 6:00: Clímax medio (Tensión). Mario visita tres locales comerciales en Móstoles que están en alquiler. Dos agencias inmobiliarias le rechazan de inmediato al proponerles un canje de publicidad. Mario comparte su frustración ante la cámara: 'Nadie cree en esto al inicio. Pero vamos a seguir llamando a talleres activos'.
+• 3:00 - 6:00: Conflicto del espacio. Mario visita tres locales comerciales en Móstoles que están en alquiler. Dos agencias inmobiliarias le rechazan de inmediato al proponerles un canje de publicidad. Mario comparte su frustración ante la cámara: 'Nadie cree en esto al inicio. Pero vamos a seguir llamando a talleres activos'.
 • 6:00 - 8:00: Llamadas de sourcing. Mario llama en directo a distribuidores de acero para conseguir tubos de cromoly 4130 a coste cero. La llamada termina en un cliffhanger sobre si el distribuidor aceptará.
 • 8:00 - 10:00: Llamada a la acción. 'Si eres ingeniero, soldador o tienes un local, únete a Discord en buildcero.com'. Suscríbete.
 

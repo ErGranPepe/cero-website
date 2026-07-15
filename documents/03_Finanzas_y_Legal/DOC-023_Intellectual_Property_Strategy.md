@@ -10,7 +10,7 @@
 
 ## 1. Estrategia de Código Abierto CC BY-NC 4.0
 
-Los planos y simulaciones de CERO se liberan bajo licencia Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0). Esto permite a entusiastas construir sus propios coches, pero protege comercialmente la marca CERO ante copias industriales sin convenio. Cualquier empresa que desee comercializar kits de montaje del chasis de CERO deberá adquirir una licencia comercial con CERO S.L.
+Los planos y simulaciones de CERO se liberan bajo licencia Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0). Esto permite a entusiastas construir sus propios coches, pero protege comercialmente la marca CERO ante copias industriales sin convenio. Cualquier empresa que desee comercializar kits de montaje del chasis de CERO intermedia deberá adquirir una licencia comercial con CERO S.L.
 
 Esta estrategia equilibra la filosofía de código abierto y compartición de conocimiento con la sostenibilidad financiera del proyecto, reteniendo el Core Team los derechos comerciales para financiar futuras iteraciones del vehículo.
 

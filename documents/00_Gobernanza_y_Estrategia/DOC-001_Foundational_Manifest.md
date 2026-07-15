@@ -22,7 +22,7 @@ Queremos democratizar la ingeniería automotriz, permitiendo que estudiantes de 
 
 • Acción Verificable: Una idea teórica no tiene valor si no está acompañada de una simulación matemática, un modelo CAD o un prototipo físico probado. Los debates en Discord se resuelven mostrando datos objetivos y resultados numéricos, no opiniones subjetivas o rangos de antigüedad.
 
-• Colaboración Desinteresada Inicial: Priorizamos a los ingenieros que buscan crear un portfolio real o que participan por entusiasmo técnico. Compensamos su tiempo mediante un reparto de equity (stock options) en la futura S.L. una vez constituida de forma oficial, permitiendo una alineación de intereses a largo plazo.
+• Colaboración Desinteresada Inicial: Priorizamos a los ingenieros que buscan crear un portfolio real o que participan por entusiasmo técnico. Compensamos su tiempo mediante un reparto de equity (stock options) en la futura S.L. una vez constituida de forma oficial, permitiendo una aliniación de intereses a largo plazo.
 
 • Financiación Comunitaria ex-ante: No gastamos dinero propio de los fundadores. Los gastos de caja (compra de materiales, sensores, consumibles o gestiones viales) se pagan exclusivamente con la caja acumulada del Patreon de la comunidad, lanzado en el Mes 4, asegurando que el proyecto dependa del interés social real para seguir avanzando. Si el público no valida la idea con su mecenazgo, el proyecto no consume recursos personales.
 

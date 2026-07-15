@@ -24,7 +24,7 @@ def get_db():
             ["2. Principios de Bootstrapping y Apertura",
              "• Transparencia Radical: Todo el trabajo se realiza en público. Las simulaciones, el software, las actas de reuniones y las finanzas son de acceso libre en el repositorio. No existen secretos industriales ni patentes ocultas; cada render, cada fallo en las soldaduras y cada céntimo gastado se publican de forma inmediata en GitHub, garantizando la confianza de mecenas e ingenieros colaboradores.\n\n"
              "• Acción Verificable: Una idea teórica no tiene valor si no está acompañada de una simulación matemática, un modelo CAD o un prototipo físico probado. Los debates en Discord se resuelven mostrando datos objetivos y resultados numéricos, no opiniones subjetivas o rangos de antigüedad.\n\n"
-             "• Colaboración Desinteresada Inicial: Priorizamos a los ingenieros que buscan crear un portfolio real o que participan por entusiasmo técnico. Compensamos su tiempo mediante un reparto de equity (stock options) en la futura S.L. una vez constituida de forma oficial, permitiendo una alineación de intereses a largo plazo.\n\n"
+             "• Colaboración Desinteresada Inicial: Priorizamos a los ingenieros que buscan crear un portfolio real o que participan por entusiasmo técnico. Compensamos su tiempo mediante un reparto de equity (stock options) en la futura S.L. una vez constituida de forma oficial, permitiendo una aliniación de intereses a largo plazo.\n\n"
              "• Financiación Comunitaria ex-ante: No gastamos dinero propio de los fundadores. Los gastos de caja (compra de materiales, sensores, consumibles o gestiones viales) se pagan exclusivamente con la caja acumulada del Patreon de la comunidad, lanzado en el Mes 4, asegurando que el proyecto dependa del interés social real para seguir avanzando. Si el público no valida la idea con su mecenazgo, el proyecto no consume recursos personales."],
             ["3. Criterios de Éxito a Largo Plazo",
              "Establecer la viabilidad del open-source en el sector automotriz físico. Demostrar que un coche diseñado colectivamente puede superar las pruebas de emisiones, ruido e impacto de la ITV individual en España, creando un precedente mundial para constructores aficionados. El éxito se medirá cuando el primer chasis soldado circule de forma legal con placas de matrícula ordinarias, con planos Onshape 100% validados por la comunidad.\n\n"
@@ -50,12 +50,15 @@ def get_db():
              "• Fase 5 (Mes 19-21): Montaje del tren motriz, cableado básico, suspensión, dirección y doble circuito de frenos Wilwood. Colaboración estrecha con los ingenieros para la integración del sistema.\n"
              "• Fase 6 (Mes 22-24): Fabricación de la carrocería final de composite y pruebas dinámicas de slalom y frenado en pista privada o aeródromo cerrado.\n"
              "• Fase 7 (Mes 25-28): Pruebas en laboratorios oficiales IDIADA/INTA y matriculación ordinaria para vías públicas de España."],
-            ["2. Modelo de Financiación Mixto", 
+            ["2. Ilustración de la Maqueta de Madera a Escala 1:1 (Mockup)",
+             "A continuación se ilustra visualmente el montaje conceptual del chasis de madera cortado por láser para validar el espacio del habitáculo (cockpit) antes de encargar el acero:"],
+            ["3. Modelo de Financiación Mixto", 
              "Operación inicial con 0€ basándose en sponsors y canjes de publicidad. La compra de los componentes del coche se financia con la caja acumulada del Patreon de la comunidad, lanzado en el Mes 4. Todo incremento de costes imprevisto en los ensayos mecánicos se cubrirá mediante campañas especiales de merchandising o crowdfunding. El Core Team no realizará aportaciones de capital de su propio bolsillo, asegurando la sostenibilidad del bootstrapping puro durante toda la fase de desarrollo virtual. La estrategia comercial se centra en asociar marcas de componentes (frenos, amortiguadores, llantas, herramientas) que busquen visibilidad en la serie de vlogs y redes sociales del proyecto."],
-            ["3. Plan de Contingencia y Rutas Alternativas", 
+            ["4. Plan de Contingencia y Rutas Alternativas", 
              "Si en el Mes 12 la recaudación es insuficiente para la compra de materiales, se retrasará el encargo del corte de tubos cromoly, extendiendo el diseño CAD virtual y lanzando retos adicionales de patrocinio en redes viales. El diseño virtual continuará optimizándose en Onshape, realizando más iteraciones en OpenFOAM.\n\n"
              "En caso de que un taller colaborador retire el espacio físico cedido para el montaje del chasis tubular, se activará el Plan B: trueque comercial con institutos de formación profesional mecánica en la zona sur de Madrid, ofreciéndoles acceso directo a los planos de ingeniería para sus asignaturas prácticas de soldadura y automoción a cambio del uso de sus instalaciones durante los fines de semana. Si el motor seleccionado inicialmente resulta muy costoso, se estudiará la pivotación a un motor síncrono de imanes comerciales alternativo, rediseñando la placa adaptadora del diferencial con el equipo técnico."]
-        ]
+        ],
+        "image": "cero_wood_mockup.png"
     }
     
     db["DOC-003"] = {
@@ -239,8 +242,8 @@ def get_db():
              "El monoplaza debe combinar la agilidad en curva de un kart de competición con el cumplimiento estricto de los requisitos legales del Reglamento General de Vehículos en España y las directivas de homologación individual de la Unión Europea (Reglamento UE 2018/858)."],
             ["2. Especificaciones de Sistemas Dinámicos y Mecánicos",
              "• Chasis Tubular: Estructura espacial triangulada (spaceframe) fabricada en tubos de acero aleado al cromo-molibdeno 4130. El arco principal de seguridad antivuelco (Main Hoop) tendrá un diámetro de 25.4 mm y un espesor de pared mínimo de 2.0 mm, dimensionado para alojar un piloto del percentil 95 (1.90 m de altura).\n"
-             "• Suspensión Cinemática: Configuración de doble trapecio independiente (double wishbone) delantero y trasero. Brazos fabricados en tubo 4130, unidos mediante rótulas esféricas de competición (uniball) de rosca métrica fina grado automotriz. Amortiguación ajustable montada con sistema de bieletas push-rod para optimizar el ratio de movimiento y el control de balanceo.\n"
-             "• Sistema de Frenado Independiente: Pinzas de doble pisón opuesto y discos ventilados. El pedalier de competición incluirá dos bombas de freno independientes conectadas mediante una barra de equilibrio (bias bar) mecánica ajustable en cabina. Esto garantiza el doble circuito independiente exigido por ley: si ocurre una fuga en el circuito delantero, el circuito trasero retiene capacidad de frenado estática superior al 45%."],
+             "• Susrubricación Cinemática: Configuración de doble trapecio independiente (double wishbone) delantero y trasero. Brazos fabricados en tubo 4130, unidos mediante rótulas esféricas de competición (uniball) de rosca métrica fina grado automotriz. Amortiguación ajustable montada con sistema de bieletas push-rod para optimizar el ratio de movimiento y el control de balanceo.\n"
+             "• Sistema de Frenado Independiente: Pinzas de doble pistón opuesto y discos ventilados. El pedalier de competición incluirá dos bombas de freno independientes conectadas mediante una barra de equilibrio (bias bar) mecánica ajustable en cabina. Esto garantiza el doble circuito independiente exigido por ley: si ocurre una fuga en el circuito delantero, el circuito trasero retiene capacidad de frenado estática superior al 45%."],
             ["3. Tren Motriz Eléctrico e Inversor de Tracción (Conceptual)",
              "El coche utilizará un motor eléctrico síncrono de imanes permanentes montado en el subchasis trasero en una zona protegida contra colisiones laterales. La especificación exacta del motor y del inversor de tracción será definida por el equipo de ingenieros y patrocinadores una vez completada la fase conceptual, basándose en la disponibilidad de canje o compra Patreon:\n"
              "• Tipo de Motor: Imanes permanentes de flujo axial, refrigeración líquida.\n"
@@ -254,7 +257,8 @@ def get_db():
              "• Ficha Reducida: Documento técnico detallado firmado por ingeniero colegiado que describe la geometría, masas y elementos de seguridad activa/pasiva.\n"
              "• Informe de Conformidad: Emitido por un Servicio Técnico de Homologación oficial (como IDIADA o INTA), certificando que el diseño del chasis modular cumple con el Reglamento UE 2018/858. Se buscarán exenciones de crash-test destructivos mediante validaciones numéricas avanzadas por FEA.\n"
              "• Ensayos en Pista Oficiales: Pruebas dinámicas de frenado en mojado, comportamiento dinámico de dirección a velocidad, nivel de ruido acústico y compatibilidad electromagnética en laboratorios acreditados.\n"
-             "• Inspección en Estación ITV: Verificación física final de los marcados de homologación 'E' en vidrios, ópticas, retrovisores convexos y radios de curvatura exteriores de carrocería superiores a 2.5 mm."]
+             "• Inspección en Estación ITV: Verificación física final de los marcados de homologación 'E' en vidrios, ópticas, retrovisores convexos y radios de curvatura exteriores de carrocería superiores a 2.5 mm.\n"
+             "• Auditoría ex-ante: Se firmará un acuerdo con un laboratorio oficial (como IDIADA o el INTA) para realizar una revisión preliminar de los planos CAD antes de iniciar la fabricación física."]
         ],
         "image": "engine_power_torque_curve.png"
     }
@@ -328,15 +332,18 @@ def get_db():
             ["1. Construcción de la Bancada de Soldadura (Jig)", 
              "Para evitar cualquier distorsión térmica o desalineación milimétrica de la estructura del chasis durante la soldadura, es obligatorio fabricar una bancada de soldadura (jig) rígida de acero.\n\n"
              "La bancada se fabricará utilizando perfiles de acero dulce estructural de 80 mm x 40 mm x 4 mm, atornillados al suelo nivelado del taller. Se soldarán soportes ajustables para sujetar en su posición teórica exacta los nudos de suspensión delantera, soportes de motor y el arco antivuelco principal antes de realizar las soldaduras definitivas. La nivelación de la mesa jig se comprobará mediante nivel láser micrométrico, admitiéndose una desviación máxima de 0.2 mm por metro lineal."],
-            ["2. Proceso de Soldadura TIG de Tubos de Cromoly 4130", 
+            ["2. Ilustración del Entorno de Taller y la Mesa Jig",
+             "A continuación se muestra de manera referencial el garaje de soldadura con el chasis spaceframe en proceso de armado sobre la bancada fija:"],
+            ["3. Proceso de Soldadura TIG de Tubos de Cromoly 4130", 
              "El acero cromoly 4130 requiere soldadura TIG de alta precisión para evitar la formación de microfisuras debido al enfriamiento rápido:\n\n"
              "• Potencia Eléctrica del Garaje: Es obligatorio que la línea de alimentación eléctrica tenga una potencia contratada mínima de **5.5 kW a 230V** (o circuito de fuerza trifásica de 400V) para sostener el arco de la soldadora TIG a 120-160A y la operación simultánea de ventilación y compresor, con una toma de tierra independiente verificada.\n"
              "• Preparación de Juntas: Todos los extremos de los tubos deben biselarse con una notcher de tubo a un ajuste perfecto sin holguras (>0.5 mm de hueco invalidará la junta). Se eliminará la capa de calamina y óxido mediante cepillo de acero inoxidable.\n"
              "• Purga Interna: Llenado del interior del tubo con gas argón al 99.9% durante la soldadura para evitar la oxidación interna (back-purging). El caudal de purga se mantendrá entre 2 y 5 PSI.\n"
              "• Parámetros de Soldadura: Corriente continua con electrodo de tungsteno al 2%, varilla de aporte ER70S-6 o ER80S-D2 de 1.6 mm. Enfriamiento lento controlado mediante mantas térmicas ignífugas para evitar tensiones estructurales internas residuales. Queda prohibido enfriar las soldaduras con aire comprimido o agua."],
-            ["3. Ensamble de Acumulador de Baterías", 
+            ["4. Ensamble de Acumulador de Baterías", 
              "Las celdas de batería se soldarán por puntos utilizando una soldadora de pulso controlado de precisión y tiras de níquel de espesor adecuado. Queda estrictamente prohibido soldar celdas con soldador de estaño convencional, ya que el calor excesivo daña los separadores internos de la celda, provocando cortocircuitos térmicos."]
-        ]
+        ],
+        "image": "cero_garage_workshop.png"
     }
     
     db["DOC-009"] = {
@@ -523,7 +530,7 @@ def get_db():
         "date": "15.07.2026",
         "sections": [
             ["1. Estrategia de Código Abierto CC BY-NC 4.0", 
-             "Los planos y simulaciones de CERO se liberan bajo licencia Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0). Esto permite a entusiastas construir sus propios coches, pero protege comercialmente la marca CERO ante copias industriales sin convenio. Cualquier empresa que desee comercializar kits de montaje del chasis de CERO deberá adquirir una licencia comercial con CERO S.L.\n\n"
+             "Los planos y simulaciones de CERO se liberan bajo licencia Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0). Esto permite a entusiastas construir sus propios coches, pero protege comercialmente la marca CERO ante copias industriales sin convenio. Cualquier empresa que desee comercializar kits de montaje del chasis de CERO intermedia deberá adquirir una licencia comercial con CERO S.L.\n\n"
              "Esta estrategia equilibra la filosofía de código abierto y compartición de conocimiento con la sostenibilidad financiera del proyecto, reteniendo el Core Team los derechos comerciales para financiar futuras iteraciones del vehículo."],
             ["2. Contratos de Cesión de IP de Colaboradores", 
              "Todos los ingenieros colaboradores deben firmar un documento de cesión de IP en el onboarding de forma digital. Esto garantiza que CERO S.L. posee los derechos de los archivos CAD para poder homologar y fabricar el monoplaza de forma física ante laboratorios estatales sin bloqueos legales por derechos de autor. La firma es un paso previo innegociable para obtener permisos de edición en la rama principal de Onshape o fusiones en el repositorio."]
@@ -590,7 +597,7 @@ def get_db():
             ["1. Estructura del Vídeo de YouTube de Lanzamiento (Episodio 1)", 
              "• 0:00 - 1:00: Gancho de retención de 5 segundos. Mario frente a la cámara en un garaje vacío: 'Voy a construir un coche de carreras real para calle desde 0€ y solo con internet. No tengo taller ni dinero. Os muestro cómo'. Renders rápidos del chasis modular.\n"
              "• 1:00 - 3:00: El problema industrial. El coste prohibitivo de los karts y monoplazas tradicionales, y las trabas burocráticas europeas. La filosofía de código abierto de CERO.\n"
-             "• 3:00 - 6:00: Clímax medio (Tensión). Mario visita tres locales comerciales en Móstoles que están en alquiler. Dos agencias inmobiliarias le rechazan de inmediato al proponerles un canje de publicidad. Mario comparte su frustración ante la cámara: 'Nadie cree en esto al inicio. Pero vamos a seguir llamando a talleres activos'.\n"
+             "• 3:00 - 6:00: Conflicto del espacio. Mario visita tres locales comerciales en Móstoles que están en alquiler. Dos agencias inmobiliarias le rechazan de inmediato al proponerles un canje de publicidad. Mario comparte su frustración ante la cámara: 'Nadie cree en esto al inicio. Pero vamos a seguir llamando a talleres activos'.\n"
              "• 6:00 - 8:00: Llamadas de sourcing. Mario llama en directo a distribuidores de acero para conseguir tubos de cromoly 4130 a coste cero. La llamada termina en un cliffhanger sobre si el distribuidor aceptará.\n"
              "• 8:00 - 10:00: Llamada a la acción. 'Si eres ingeniero, soldador o tienes un local, únete a Discord en buildcero.com'. Suscríbete."],
             ["2. Episodio 2: Negociando el Garaje en Directo y Renders", 

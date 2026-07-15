@@ -744,6 +744,24 @@ if __name__ == "__main__":
         print("[COMPILER] Copiado gráfico dinámico real de slalom: dynamics_plot.png")
     else:
         print("[COMPILER] Advertencia: No se encontró dynamics_plot.png real. Usando placeholder.")
+
+    # 2.5 Copy generated reference images from brain artifacts using glob
+    import glob
+    brain_dir = os.path.join(base_dir, "..", "..", "brain", "ef78b327-4617-43fd-842c-68d7f84986df")
+    
+    wood_matches = glob.glob(os.path.join(brain_dir, "cero_wood_mockup_*.png"))
+    if wood_matches:
+        shutil.copy(wood_matches[0], os.path.join(assets_dir, "cero_wood_mockup.png"))
+        print("[COMPILER] Copiado mockup de madera real: cero_wood_mockup.png")
+    else:
+        print("[COMPILER] Advertencia: No se encontró cero_wood_mockup.png en artifacts.")
+        
+    garage_matches = glob.glob(os.path.join(brain_dir, "cero_garage_workshop_*.png"))
+    if garage_matches:
+        shutil.copy(garage_matches[0], os.path.join(assets_dir, "cero_garage_workshop.png"))
+        print("[COMPILER] Copiado taller mecánico real: cero_garage_workshop.png")
+    else:
+        print("[COMPILER] Advertencia: No se encontró cero_garage_workshop.png en artifacts.")
     
     # 3. Load cero_docs_db.json
     db_path = os.path.join(base_dir, "cero_docs_db.json")
