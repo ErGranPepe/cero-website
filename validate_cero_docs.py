@@ -5,16 +5,15 @@ import sys
 import xml.etree.ElementTree as ET
 
 def run_validation():
-    print("=== INICIANDO VALIDACION DEL ECOSISTEMA DOCUMENTAL CERO ===\n")
+    print("=== INICIANDO VALIDACION DEL ECOSISTEMA DOCUMENTAL CONCEPTUAL CERO ===\n")
     base_dir = os.path.dirname(os.path.abspath(__file__))
     
-    # Configure stdout to handle utf-8 on Windows consoles to prevent encoding errors
     try:
         sys.stdout.reconfigure(encoding='utf-8')
     except AttributeError:
-        pass # python < 3.7
+        pass
         
-    # 1. VALIDACION DEL MANIFIESTO JSON (cero_docs_db.json)
+    # 1. VALIDACION DEL MANIFIESTO JSON
     db_path = os.path.join(base_dir, "cero_docs_db.json")
     if not os.path.exists(db_path):
         print("[ERROR] cero_docs_db.json no existe en la raiz.")
@@ -28,13 +27,12 @@ def run_validation():
         print(f"[ERROR] cero_docs_db.json no es un JSON valido. Motivo: {e}")
         sys.exit(1)
         
-    # Validar campos de esquema requeridos
     doc_ids = list(db.keys())
     required_keys = ["category", "title", "subtitle", "author", "status", "version", "date", "sections"]
     
     for doc_id, doc_info in db.items():
-        if not re.match(r"^DOC-\d{3}$", doc_id):
-            print(f"[ERROR] Formato de ID invalido: '{doc_id}'. Debe ser DOC-XXX.")
+        if not re.match(r"^DOC-A\d$", doc_id):
+            print(f"[ERROR] Formato de ID invalido: '{doc_id}'. Debe ser DOC-AX (donde X es 1-8).")
             sys.exit(1)
             
         for key in required_keys:
@@ -46,18 +44,18 @@ def run_validation():
             print(f"[ERROR] Documento '{doc_id}' debe contener una lista no vacia de 'sections'.")
             sys.exit(1)
             
-    print(f"[OK] Esquema verificado para los {len(doc_ids)} documentos del manifiesto.")
+    print(f"[OK] Esquema verificado para los {len(doc_ids)} documentos conceptuales.")
 
-    # 2. VALIDACION DE REFERENCIAS CRUZADAS (Cross-References)
-    print("\nAuditando referencias cruzadas internas (DOC-XXX)...")
-    ref_pattern = re.compile(r"DOC-\d{3}")
+    # 2. VALIDACION DE REFERENCIAS CRUZADAS
+    print("\nAuditando referencias cruzadas internas (DOC-AX)...")
+    ref_pattern = re.compile(r"DOC-A\d")
     errors_cross_ref = 0
     
     for doc_id, doc_info in db.items():
         for sec_title, sec_text in doc_info["sections"]:
             found_refs = ref_pattern.findall(sec_text)
             for ref in found_refs:
-                if ref not in db and ref != "DOC-000": # DOC-000 is allowed
+                if ref not in db:
                     print(f"[WARN] En '{doc_id}', seccion '{sec_title}', se referencia '{ref}' pero no existe en la base de datos.")
                     errors_cross_ref += 1
                     
@@ -75,10 +73,6 @@ def run_validation():
         
     for doc_id, doc_info in db.items():
         category = doc_info["category"]
-        if "category_override" in doc_info:
-            category = doc_info["category_override"]
-            
-        # File basenames matching the engine naming convention
         base_name = f"{doc_id}_{doc_info['title'].replace(' ', '_').replace('&', 'and').replace('/', '_')}"
         pdf_path = os.path.join(documents_dir, category, f"{base_name}.pdf")
         md_path = os.path.join(documents_dir, category, f"{base_name}.md")
@@ -90,15 +84,23 @@ def run_validation():
             print(f"[ERROR] MD no encontrado: '{md_path}'")
             sys.exit(1)
             
-    # Check landscape calendar
-    landscape_path = os.path.join(documents_dir, "01_Marca_y_Comunidad", "DOC-006_Content_OS_Landscape.pdf")
-    if not os.path.exists(landscape_path):
-        print(f"[ERROR] PDF Calendario Horizontal no encontrado: '{landscape_path}'")
+    print("[OK] Todos los 8 archivos PDF y Markdown conceptuales se han generado en documents/00_Gobernanza_y_Estrategia.")
+
+    # 4. VERIFICACION DE ARCHIVADO LEGACY
+    print("\nVerificando archivado en el directorio legacy/...")
+    legacy_dir = os.path.join(base_dir, "legacy")
+    if not os.path.exists(legacy_dir):
+        print("[ERROR] El directorio 'legacy/' de archivado no existe.")
+        sys.exit(1)
+    
+    legacy_folders = os.listdir(legacy_dir)
+    if len(legacy_folders) == 0:
+        print("[ERROR] El directorio 'legacy/' esta vacio. No se archivaron los documentos anteriores.")
         sys.exit(1)
         
-    print("[OK] Todos los 31 archivos PDF y Markdown se han generado correctamente en sus subcarpetas.")
+    print(f"[OK] Directorio legacy/ verificado con exito. Contiene: {', '.join(legacy_folders)}.")
 
-    # 4. CONTROL DE REGRESIONES EN MATPLOTLIB (pad= en labels)
+    # 5. CONTROL DE REGRESIONES EN MATPLOTLIB (pad= en labels)
     print("\nBuscando regresiones del bug de Matplotlib (pad= en set_xlabel/set_ylabel)...")
     engine_path = os.path.join(base_dir, "generate_cero_docs.py")
     if os.path.exists(engine_path):
@@ -111,7 +113,7 @@ def run_validation():
         else:
             print("[OK] Ningun bug de 'pad' detectado en las llamadas de etiquetas de Matplotlib.")
 
-    # 5. AUDITORIA DE CALIDAD SVG
+    # 6. AUDITORIA DE CALIDAD SVG
     print("\nAuditando calidad de los archivos de marca vectoriales (SVG)...")
     brand_dir = os.path.join(base_dir, "assets", "brand")
     svg_files = ["logo_white.svg", "logo_black.svg", "logo_red.svg"]
@@ -133,7 +135,6 @@ def run_validation():
             if root.tag.split('}')[-1] != 'svg':
                 print(f"[ERROR] El archivo '{svg_file}' no es una estructura raiz <svg> valida.")
                 sys.exit(1)
-            # Find paths (using namespace or ignoring namespace)
             paths = [elem for elem in root.iter() if elem.tag.endswith('path')]
             if len(paths) > 10:
                 print(f"[ERROR] Demasiados paths ({len(paths)}) detectados en '{svg_file}'.")
@@ -144,7 +145,7 @@ def run_validation():
             
         print(f"[OK] SVG '{svg_file}' validado: peso ligero ({file_size} bytes) e integridad geometrica correcta.")
 
-    print("\n=== ECOSISTEMA DOCUMENTAL CERO VALIDADO CON EXITO [100% CORRECTO] ===")
+    print("\n=== ECOSISTEMA DOCUMENTAL CONCEPTUAL CERO VALIDADO CON EXITO [100% CORRECTO] ===")
 
 if __name__ == "__main__":
     run_validation()
