@@ -3,7 +3,7 @@
 
 - **Autor**: Dirección Estratégica CERO
 - **Estado**: APROBADO
-- **Versión**: v15.0
+- **Versión**: v16.0
 - **Fecha**: 15.07.2026
 
 ---
@@ -16,4 +16,4 @@
 
 ## 2. Propuesta de Valor Única (USP)
 
-CERO es el primer coche de calle del mundo desarrollado con código abierto e internet, permitiendo la co-creación real de su chasis y tren motriz de moto por parte de aficionados e ingenieros. La combinación de una narrativa audiovisual atractiva en YouTube con un desarrollo de ingeniería transparente y documentado nos posiciona como un proyecto único en el sector automotriz global, abriendo un canal directo de conversión comunitaria.
+CERO es el primer coche de calle del mundo desarrollado con código abierto e internet, permitiendo la co-creación real de su chasis y tren motriz por parte de aficionados e ingenieros. La combinación de una narrativa audiovisual atractiva en YouTube con un desarrollo de ingeniería transparente y de comunidad nos posiciona como un proyecto único en el sector automotriz global, abriendo un canal directo de conversión comunitaria.

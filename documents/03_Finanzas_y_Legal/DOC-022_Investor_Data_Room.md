@@ -3,22 +3,22 @@
 
 - **Autor**: Fundadores de CERO
 - **Estado**: APROBADO
-- **Versión**: v15.0
+- **Versión**: v16.0
 - **Fecha**: 15.07.2026
 
 ---
 
 ## 1. Organización del Repositorio de Inversores
 
-El Data Room de inversores se estructura en Google Drive de forma indexada. Contiene los contratos de cesión de IP firmados por cada colaborador (DOC-023), el pacto de socios preliminar (DOC-024) y las proyecciones financieras (DOC-021). Este repositorio se mantiene actualizado de forma mensual por el área de finanzas del Core Team, permitiendo una debida diligencia rápida por parte de fondos de capital semilla.
+El Data Room de inversores se estructura en el repositorio de forma indexada. Contiene los contratos de cesión de IP firmados por cada colaborador (DOC-023), el pacto de socios preliminar (DOC-024) y las proyecciones financieras (DOC-021). Este repositorio se mantiene actualizado de forma mensual por el área de finanzas del Core Team, permitiendo una debida diligencia rápida por parte de fondos de capital semilla.
 
-La documentación técnica adjunta incluye las simulaciones FEA firmadas por ingenieros colegiados y las especificaciones de materiales de los tubos 4130 cromoly, aportando confianza sobre la viabilidad física del monoplaza.
+La documentación técnica adjunta incluye las simulaciones FEA y los informes de diseño de chasis, aportando confianza sobre la viabilidad física del monoplaza.
 
 ## 2. Activos Intangibles del Proyecto y Valoración
 
 • CAD Completo de Suspensión, Chasis y Dirección en Onshape.
-• Certificados de Simulación Estructural de Torsión (FEA) bajo cargas estáticas y dinámicas.
-• Marca CERO registrada a nivel europeo en la Oficina de Propiedad Intelectual (EUIPO).
+• Certificados de Simulación Estructural de Torsión (FEA) del chasis.
+• Marca CERO registrada a nivel europeo en la Oficina de Propiedad Intelectual.
 • Registros de tracción orgánica en redes: seguidores y mecenas recurrentes en Patreon.
 La valoración inicial de los intangibles se estima en 60.000€, calculada en base al coste de mercado de las horas de ingeniería aportadas de forma gratuita por la comunidad.
 

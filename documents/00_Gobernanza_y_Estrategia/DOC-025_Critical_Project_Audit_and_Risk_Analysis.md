@@ -3,7 +3,7 @@
 
 - **Autor**: Dirección Estratégica CERO
 - **Estado**: APROBADO
-- **Versión**: v15.0
+- **Versión**: v16.0
 - **Fecha**: 15.07.2026
 
 ---
@@ -12,9 +12,9 @@
 
 En el día 1, proponer canjes de branding con 0 seguidores es inviable. Debemos concentrar el Mes 1-3 en ganar visibilidad técnica compartiendo diseños y simulaciones impactantes antes de contactar con patrocinadores. Si intentamos conseguir tubos de acero cromoly o espacio en talleres sin un canal de YouTube con tracción, la tasa de rechazo será del 100%. La estrategia pasa por crear expectación compartiendo el proceso de diseño en redes antes de realizar llamadas de sourcing físico.
 
-## 2. Riesgo Técnico de Ingenieros Anónimos
+## 2. Riesgo de Falta de Espacio Físico (Garaje)
 
-Los planos de Discord deben validarse rigurosamente por un Ingeniero Colegiado y un soldador certificado de forma externa antes de rodar en pista, mitigando fallos fatales en juntas de soldadura del chasis. Un diseño defectuoso en Onshape realizado por un estudiante entusiasta pero sin experiencia en cargas dinámicas puede provocar un fallo estructural catastrófico del arco antivuelco principal a alta velocidad. Es vital contar con firmas de ingenieros colegiados para respaldar cada ADR de seguridad.
+El montaje físico no puede iniciarse sin un local seguro. El riesgo de no encontrar un taller colaborador o garaje asequible se mitiga mediante un plan de trueque publicitario con escuelas de Formación Profesional o pequeños talleres locales en Móstoles que busquen visibilidad online. Si fallan las negociaciones, se retrasará la compra de materiales físicos y se extenderá la fase de diseño CAD virtual en Onshape, minimizando el burn-rate de caja.
 
 ## 3. Logística Oculta y Gastos Hormiga
 

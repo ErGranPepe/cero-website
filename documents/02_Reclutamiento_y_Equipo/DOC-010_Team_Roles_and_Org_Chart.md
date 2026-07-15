@@ -3,22 +3,20 @@
 
 - **Autor**: Gobernanza CERO
 - **Estado**: APROBADO
-- **Versión**: v15.0
+- **Versión**: v16.0
 - **Fecha**: 15.07.2026
 
 ---
 
 ## 1. Estructura de Roles de la Comunidad
 
-La organización de CERO se fundamenta en un equipo de coordinación local (Core Team) y comisiones de ingeniería descentralizadas. El Core Team de Móstoles gestiona las relaciones con talleres mecánicos físicos y la caja del Patreon. Los colaboradores online aportan planos CAD en Onshape y simulaciones FEA. El Lead Engineer tiene la última palabra sobre el diseño del chasis tubular. Esta estructura garantiza agilidad operacional y control de calidad físico.
+La organización de CERO se fundamenta en un equipo de coordinación local (Core Team) y comisiones de ingeniería descentralizadas. El Core Team de Móstoles gestiona las relaciones con talleres mecánicos físicos, la búsqueda del garaje y la caja del Patreon. Los colaboradores online aportan planos CAD en Onshape y simulaciones FEA. El Lead Engineer tiene la última palabra sobre el diseño del chasis tubular. Esta estructura garantiza agilidad operacional y control de calidad físico. La toma de decisiones estratégicas se realiza en asamblea de la DAO física, pero la implementación física en el taller recae exclusivamente en los miembros con firma técnica certificada.
 
-La toma de decisiones estratégicas se realiza en asamblea de la DAO física, pero la implementación física en el taller recae exclusivamente en los miembros con firma técnica certificada. Los coordinadores de comisión son responsables del avance semanal de sus respectivos subsistemas y de reportar bloqueos en la asamblea dominical.
-
-## 2. Organigrama de Decisiones Técnicas
+## 2. Organigrama de Decisiones Técnicas y de Medios
 
 • Founder/Mario: Coordinación estratégica, edición de vlogs en YouTube, contacto con sponsors, dueños de locales y gestión administrativa de la asociación cultural.
 • Lead Engineer: Aprobación final de archivos CAD Onshape, supervisión de rigidez estructural y diseño cinemático de suspensión. Valida los cupones de prueba de soldadura.
-• Sourcing Scouts: Voluntarios de Discord que buscan y catalogan motores Emrax de desguace/segunda mano, metalúrgicas de acero 4130 y distribuidores viales.
+• Sourcing Scouts: Voluntarios de Discord que buscan y catalogan locales comerciales, metalúrgicas de acero 4130 y distribuidores viales.
 • Moderadores de Discord: Gestión de la comunidad, bienvenida a ingenieros, resolución de conflictos online y organización de asambleas los domingos.
 
 ## 3. Criterios de Entrada al Core y Roles

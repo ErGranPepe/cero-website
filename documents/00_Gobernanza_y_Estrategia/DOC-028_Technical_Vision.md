@@ -1,9 +1,9 @@
 # DOC-028: Technical Vision
-**Especificación Técnica del Chasis, Materiales y Soldadura**
+**Especificación Técnica General del Chasis, Materiales y Soldadura**
 
 - **Autor**: Ingeniería CERO
 - **Estado**: APROBADO
-- **Versión**: v15.0
+- **Versión**: v16.0
 - **Fecha**: 15.07.2026
 
 ---

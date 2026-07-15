@@ -3,7 +3,7 @@
 
 - **Autor**: Operaciones CERO
 - **Estado**: APROBADO
-- **Versión**: v15.0
+- **Versión**: v16.0
 - **Fecha**: 15.07.2026
 
 ---
@@ -20,4 +20,4 @@ Bienvenido a CERO. Nuestro objetivo es que realices tu primera aportación al di
 
 ## 3. Primer Challenge del Colaborador
 
-Para validar tus habilidades y concederte permisos de fusión en la rama principal, debes resolver un reto menor. El challenge por defecto consiste en modelar en Onshape el soporte de la pinza de freno Brembo trasera respetando los radios de curvatura de aristas obligatorios de 2.5 mm de la ITV. Una vez finalizado, abre una pull request en GitHub o comparte el enlace Onshape en el canal #revision-cad para que el Lead Engineer valide la geometría.
+Para validar tus habilidades y concederte permisos de fusión en la rama principal, debes resolver un reto menor. El challenge por defecto consiste en modelar en Onshape el soporte de la pinza de freno trasera respetando los radios de curvatura de aristas obligatorios de 2.5 mm de la ITV. Una vez finalizado, abre una pull request en GitHub o comparte el enlace Onshape en el canal #revision-cad para que el Lead Engineer valide la geometría.

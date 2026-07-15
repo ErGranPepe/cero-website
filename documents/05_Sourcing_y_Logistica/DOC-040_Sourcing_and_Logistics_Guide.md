@@ -3,17 +3,17 @@
 
 - **Autor**: Alianzas y Sourcing CERO
 - **Estado**: APROBADO
-- **Versión**: v15.0
+- **Versión**: v16.0
 - **Fecha**: 15.07.2026
 
 ---
 
-## 1. Sourcing de las Celdas de Litio 18650 y Batería
+## 1. Adquisición de Materiales para el Chasis
 
-• Dónde: Distribuidores autorizados de celdas de litio o fabricantes COTS comerciales.
-• Comprobación física: Medir resistencia interna de al menos el 10% del lote utilizando un medidor de resistencia interna de batería (milliohmímetro AC). La resistencia interna debe ser inferior a 15 miliohmios por celda Samsung 30Q.
-• Requisito obligatorio: Todas las celdas del pack deben provenir del mismo lote de fabricación para garantizar la uniformidad de la curva de descarga y la vida útil del acumulador.
+• Metal: Distribuidores autorizados de acero cromoly 4130 con certificado de composición química de colada.
+• Comprobación física: Inspección visual de rectitud de los tubos recibidos y medición de espesores con micrómetro digital.
+• Requisito obligatorio: Almacenamiento horizontal en soporte elevado del suelo en el garaje para evitar la flexión residual de los tubos por gravedad.
 
-## 2. Logística y Transporte Seguro de Baterías de Litio (HV)
+## 2. Logística y Envío Seguro de Componentes Pesados
 
-El transporte de celdas de litio sueltas o del acumulador ensamblado está sujeto al reglamento internacional de transporte de mercancías peligrosas (UN 3480 Clase 9). Las celdas deben transportarse en cajas de embalaje certificadas de cartón grueso con separadores de espuma de polietileno individuales para evitar cortocircuitos accidentales durante el traslado. El acumulador debe estar apagado y con el conector de servicio (MSD) retirado de forma obligatoria durante todo el trayecto.
+El transporte de tubos de acero de 6 metros de longitud requiere camión de carga abierta y descarga manual. Las manguetas mecanizadas y amortiguadores se enviarán por mensajería ordinaria bien embalados. La logística de las baterías y el motor de tracción se coordinará con transportistas autorizados una vez definidos los componentes concretos por el equipo técnico.

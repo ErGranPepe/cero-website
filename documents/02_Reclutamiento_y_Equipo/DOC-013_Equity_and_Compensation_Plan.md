@@ -3,16 +3,14 @@
 
 - **Autor**: Fundadores de CERO
 - **Estado**: APROBADO
-- **Versión**: v15.0
+- **Versión**: v16.0
 - **Fecha**: 15.07.2026
 
 ---
 
 ## 1. Reparto de Equity (Stock Options Pool)
 
-Dado que el desarrollo inicial opera con 0€ de presupuesto, compensamos el tiempo de los ingenieros mediante un pool de stock options equivalente al 15% de las acciones de la futura CERO S.L. Las opciones se devengan mediante un vesting mensual de 12 meses con un cliff inicial de 3 meses para asegurar compromiso real. Esto garantiza que quienes participen activamente tengan una participación real en el valor comercial de los planos y la marca.
-
-El reparto de equity se calcula según una matriz de puntos: cada entregable CAD cerrado, simulación aprobada o gestión de sourcing concede puntos de participación. Al constituirse la S.L., los puntos acumulados se transforman en participaciones sociales.
+Dado que el desarrollo inicial opera con 0€ de presupuesto, compensamos el tiempo de los ingenieros mediante un pool de stock options equivalente al 15% de las acciones de la futura CERO S.L. Las opciones se devengan mediante un vesting mensual de 12 meses con un cliff inicial de 3 meses para asegurar compromiso real. Esto garantiza que quienes participen activamente tengan una participación real en el valor comercial de los planos y la marca. El reparto de equity se calcula según una matriz de puntos: cada entregable CAD cerrado, simulación aprobada o gestión de sourcing concede puntos de participación. Al constituirse la S.L., los puntos acumulados se transforman en participaciones sociales.
 
 ## 2. Hitos de Compensación Financiera Directa
 

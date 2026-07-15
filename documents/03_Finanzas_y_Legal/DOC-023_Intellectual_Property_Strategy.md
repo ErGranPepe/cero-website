@@ -3,7 +3,7 @@
 
 - **Autor**: Legal y Cumplimiento CERO
 - **Estado**: APROBADO
-- **Versión**: v15.0
+- **Versión**: v16.0
 - **Fecha**: 15.07.2026
 
 ---
@@ -16,4 +16,4 @@ Esta estrategia equilibra la filosofía de código abierto y compartición de co
 
 ## 2. Contratos de Cesión de IP de Colaboradores
 
-Todos los ingenieros colaboradores deben firmar un documento de cesión de IP en el onboarding de forma digital. Esto garantiza que CERO S.L. posee los derechos de los archivos CAD para poder homologar y fabricar el monoplaza de forma física ante laboratorios estatales sin bloqueos legales por derechos de autor. La firma es un paso previo innegociable para obtener permisos de edición en la rama principal de Onshape.
+Todos los ingenieros colaboradores deben firmar un documento de cesión de IP en el onboarding de forma digital. Esto garantiza que CERO S.L. posee los derechos de los archivos CAD para poder homologar y fabricar el monoplaza de forma física ante laboratorios estatales sin bloqueos legales por derechos de autor. La firma es un paso previo innegociable para obtener permisos de edición en la rama principal de Onshape o fusiones en el repositorio.

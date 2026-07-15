@@ -3,7 +3,7 @@
 
 - **Autor**: Legal y Cumplimiento CERO
 - **Estado**: APROBADO
-- **Versión**: v15.0
+- **Versión**: v16.0
 - **Fecha**: 15.07.2026
 
 ---
@@ -20,4 +20,4 @@ En el Mes 18, de cara a la homologación final y comercialización de planos, se
 
 ## 3. Fiscalidad y Gestión de Exenciones
 
-Se solicitará la declaración de utilidad pública para la asociación una vez cumplidos los plazos legales, permitiendo que las empresas que donen materiales o coticen como mecenas puedan desgravarse hasta el 35% de sus aportaciones en el Impuesto de Sociedades. La gestión fiscal será externalizada a una gestoría colaboradora mediante acuerdo de canje publicitario.
+Se solicitará la declaración de utilidad pública para la asociación una vez cumplidos los plazos legales, permitiendo que las empresas que donen materiales o coticen como mecenas puedan desgravarse de sus aportaciones en el Impuesto de Sociedades. La gestión fiscal será externalizada a una gestoría colaboradora mediante acuerdo de canje publicitario.

@@ -3,7 +3,7 @@
 
 - **Autor**: Comité de Gobernanza CERO
 - **Estado**: APROBADO
-- **Versión**: v15.0
+- **Versión**: v16.0
 - **Fecha**: 15.07.2026
 
 ---

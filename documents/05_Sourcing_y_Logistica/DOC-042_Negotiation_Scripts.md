@@ -1,29 +1,31 @@
 # DOC-042: Negotiation Scripts
-**Guiones Telefónicos y de Correo para Alianzas y Canjes Comerciales**
+**Guiones Telefónicos y de Correo para Alianzas, Garajes y Canjes Comerciales**
 
 - **Autor**: Alianzas y Sourcing CERO
 - **Estado**: APROBADO
-- **Versión**: v15.0
+- **Versión**: v16.0
 - **Fecha**: 15.07.2026
 
 ---
 
-## 1. Guion Telefónico para Sponsors Técnicos (Sourcing de Motor Emrax)
+## 1. Guion Telefónico para Conseguir el Garaje (Local Físico)
 
-"Hola, buenos días. Busco hablar con el departamento de marketing o ingeniería. Quería proponeros una colaboración de marca. Estoy dirigiendo CERO (buildcero.com), el primer monoplaza open-source eléctrico de calle fabricado en España desde internet.
+"Hola, buenas tardes. Llamaba por el anuncio del local en alquiler en Móstoles. Me gustaría proponerle un trato alternativo: dirijo CERO (buildcero.com), el primer coche open-source de calle desarrollado de forma colaborativa por internet en Madrid.
 
-Os proponemos cedernos un motor síncrono Emrax 228 bajo un contrato de patrocinio de branding: a cambio, vuestra marca aparecerá grabada por láser en las placas del chasis físico y tendréis menciones exclusivas de vuestro soporte técnico en todos nuestros vídeos semanales de YouTube de montaje del motor eléctrico, llegando a miles de ingenieros y estudiantes de automoción locales. ¿Os interesaría tener una reunión corta de 10 minutos para presentaros la propuesta de patrocinio?"
+Tenemos una comunidad de miles de ingenieros y entusiastas siguiendo el proceso semanal en YouTube. Le proponemos cedernos el uso de su local cerrado o garaje como taller de montaje a cambio de un contrato de canje de publicidad: su local aparecerá de fondo en todos nuestros vlogs semanales y Shorts de YouTube, con enlaces de contacto y publicidad directa que llevarán visibilidad y clientes a su negocio o cartera inmobiliaria. ¿Le interesaría que nos reunamos 10 minutos en el local y le enseño los planos conceptuales del coche?"
 
-## 2. Guion para Taller Mecánico Colaborador (Rincón del Taller)
+## 2. Guion para Conseguir el Patrocinio de Tubos de Acero 4130
 
-"Hola, ¿qué tal? Soy Mario. Estoy liderando el diseño de un coche open-source eléctrico de calle con una gran comunidad de ingenieros detrás (buildcero.com).
+"Hola, buenas. Quería hablar con el responsable de marketing o ventas. Les proponemos una colaboración: estamos fabricando CERO, un monoplaza de código abierto para calle (buildcero.com) seguido en vlogs de YouTube por miles de estudiantes de ingeniería y mecánicos.
 
-Buscamos un taller partner local en Móstoles/Alcorcón para realizar la soldadura TIG del chasis y el ensamblaje de la suspensión los fines de semana. Quería proponerles cedernos un espacio de 20 metros cuadrados a cambio de colocar un cartel de vuestro taller de fondo de todos nuestros vídeos semanales de YouTube y Shorts de taller, llevando clientes de mantenimiento directo de vuestra zona. ¿Podríamos reunirnos 10 minutos y os muestro el CAD del coche?"
+Les proponemos patrocinarnos con 50 metros de tubo de acero cromoly 4130 a cambio de colocar el logotipo de su metalúrgica grabado por láser en el chasis físico, menciones de su empresa en los vlogs del proceso de soldadura y enlaces directos en nuestro repositorio GitHub. ¿Podríamos enviarle una propuesta de patrocinio por correo electrónico para que la valoren?"
 
 ## 3. Guion de Seguimiento por Correo Electrónico
 
-"Estimado [Nombre del Proveedor],
+"Estimado [Nombre del Propietario / Proveedor],
 
-Le escribo de parte del proyecto CERO (buildcero.com) para dar seguimiento a nuestra llamada del pasado martes. Le adjunto el dossier de patrocinio de marca y el Manifiesto de CERO (DOC-001) para que su equipo de marketing pueda evaluar el retorno de la donación de los tubos de acero 4130 cromoly. Quedamos a su entera disposición para cualquier aclaración técnica. Un saludo cordial, Mario."
+Le escribo para dar seguimiento a nuestra conversación de ayer. Le adjunto el dossier de patrocinio y el Manifiesto de CERO (DOC-001) donde detallamos el modelo operativo y la tracción en redes sociales. Estamos muy interesados en colaborar con usted para establecer el garaje del proyecto en su local.
 
-Este correo se enviará en las 24 horas posteriores al contacto telefónico para mantener vivo el interés comercial.
+Quedamos a su entera disposición para reunirnos de forma física. Un saludo cordial, Mario."
+
+Este correo se enviará de inmediato para mantener viva la negociación del espacio o materiales.
