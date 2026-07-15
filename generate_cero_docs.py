@@ -367,7 +367,7 @@ def generate_diagrams(assets_dir):
         ("1. Diseño de Narrativa y Storytelling", 0, 4, "Narrativa"),
         ("2. Lanzamiento Redes e Hype Inicial", 1, 6, "Medios"),
         ("3. Reclutamiento y Onboarding Discord", 3, 5, "Equipo"),
-        ("4. Bapeado y Visita de Locales", 5, 5, "Sourcing"),
+        ("4. Mapeo y Visita de Locales", 5, 5, "Sourcing"),
         ("5. Trueques y Canjes de Branding", 7, 5, "Sourcing"),
         ("6. Alquiler/Cierre de Garaje (Hito)", 11, 1, "Hito")
     ]
@@ -504,14 +504,26 @@ if __name__ == "__main__":
     documents_dir = os.path.join(base_dir, "documents")
     assets_dir = os.path.join(documents_dir, "assets")
     
-    # Create required directories
-    os.makedirs(documents_dir, exist_ok=True)
+    # 1. Clean the old documents folder completely to make it a flat structure
+    if os.path.exists(documents_dir):
+        # We preserve only the assets subfolder
+        for item in os.listdir(documents_dir):
+            item_path = os.path.join(documents_dir, item)
+            if item == "assets":
+                continue
+            if os.path.isdir(item_path):
+                shutil.rmtree(item_path)
+            else:
+                os.remove(item_path)
+    else:
+        os.makedirs(documents_dir, exist_ok=True)
+        
     os.makedirs(assets_dir, exist_ok=True)
     
-    # 1. Generate non-technical diagrams
+    # 2. Generate non-technical diagrams
     generate_diagrams(assets_dir)
     
-    # 2. Load cero_docs_db.json
+    # 3. Load cero_docs_db.json
     db_path = os.path.join(base_dir, "cero_docs_db.json")
     if not os.path.exists(db_path):
         print(f"Error: {db_path} not found.")
@@ -520,21 +532,9 @@ if __name__ == "__main__":
     with open(db_path, "r", encoding="utf-8") as f:
         doc_database = json.load(f)
     
-    # 3. Clean active category folders inside documents/
-    active_categories = ["00_Gobernanza_y_Estrategia"]
-    for cat in active_categories:
-        cat_path = os.path.join(documents_dir, cat)
-        if os.path.exists(cat_path):
-            shutil.rmtree(cat_path)
-        os.makedirs(cat_path, exist_ok=True)
-        
-    # 4. Generate the DOC-A1 to DOC-A8 documents
+    # 4. Generate the DOC-A1 to DOC-A8 documents FLAT inside /documents/
     for doc_id, doc_info in doc_database.items():
-        category = doc_info.get("category", "00_Gobernanza_y_Estrategia")
-        category_dir = os.path.join(documents_dir, category)
-        os.makedirs(category_dir, exist_ok=True)
+        create_pdf(doc_id, doc_info, documents_dir, assets_dir)
+        create_markdown(doc_id, doc_info, documents_dir)
         
-        create_pdf(doc_id, doc_info, category_dir, assets_dir)
-        create_markdown(doc_id, doc_info, category_dir)
-        
-    print("\n--- ¡ECOSISTEMA DOCUMENTAL CONCEPTUAL FASE 0-1 COMPILADO EXITOSAMENTE! ---")
+    print("\n--- ¡ECOSISTEMA DOCUMENTAL CONCEPTUAL FASE 0-1 COMPILADO FLAT EXITOSAMENTE! ---")
