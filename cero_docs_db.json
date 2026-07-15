@@ -646,16 +646,16 @@
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Constitución de Asociación Inicial y Ventajas",
-                "Para operar legalmente con 0€ y gestionar suscripciones Patreon y donaciones, se constituye la 'Asociación de Ingeniería de Código Abierto CERO' en España. Esta forma jurídica está exenta de IVA en sus cuotas asociativas (Patreon) y permite la firma de contratos de canje de patrocinio (branding por material) de forma legal. La asociación actúa como paraguas legal para evitar riesgos patrimoniales personales a los fundadores durante el desarrollo virtual.\n\nLa asociación abrirá una cuenta bancaria dedicada donde se depositarán todas las cuotas de Patreon y donaciones de patrocinadores, gestionándose con total transparencia pública en las auditorías contables mensuales."
+                "1. Constitución de Asociación Inicial y Ventajas Fiscales",
+                "Para operar legalmente con 0€ y gestionar suscripciones Patreon y donaciones, se constituye la 'Asociación de Ingeniería de Código Abierto CERO' en España bajo la Ley Orgánica 1/2002. Esta forma jurídica está exenta de IVA en sus cuotas asociativas (Patreon) bajo el Artículo 20.Uno.14º de la Ley del IVA (exención de actividades socioculturales y de desarrollo de ingeniería de código abierto). Asimismo, permite la firma de contratos de permuta de servicios publicitarios (canje publicitario o barter) de forma legal bajo el Artículo 1538 del Código Civil, posibilitando recibir materiales (tubos de cromoly, consumibles de soldadura, espacio físico de garaje) a cambio de espacio publicitario en la serie de vlogs de YouTube de CERO sin devengo de IVA ni facturación comercial monetaria en la fase inicial de bootstrapping. Esta estructura protege patrimonialmente a los fundadores ante responsabilidades civiles en las fases virtuales del proyecto.\n\nLa asociación abrirá una cuenta bancaria dedicada donde se depositarán todas las cuotas de Patreon y donaciones de patrocinadores, gestionándose con total transparencia pública en las deudas y auditorías contables mensuales."
             ],
             [
                 "2. Pivotación Futura a Sociedad Limitada (S.L.)",
-                "En el Mes 18, de cara a la homologación final y comercialización de planos, se constituirá la S.L. aportando los activos intangibles de la asociación (CAD y marca CERO) como aportaciones no dinerarias, activando el plan de equity. La S.L. asumirá todos los derechos y obligaciones de la asociación, incluyendo los contratos de cesión de IP firmados por los ingenieros, garantizando la continuidad legal del Data Room ante inversores de capital riesgo."
+                "En el Mes 18, coincidiendo con la congelación del diseño CAD y antes de iniciar los ensayos físicos en pista de homologación, se constituirá 'CERO MOTOR S.L.' conforme a la Ley de Sociedades de Capital (LSC). Los activos intangibles acumulados por la Asociación (planos Onshape CAD V2, simulaciones FEA de torsión y CFD de aerodinámica, y la base de datos de 10.000+ miembros de la comunidad) se transferirán a la S.L. mediante una aportación no dineraria de activos intangibles, regulada bajo el Artículo 63 de la LSC. El valor de dicha aportación será unánimemente certificado y garantizado por los socios fundadores bajo responsabilidad solidaria (Artículo 73 LSC), evitando costes elevados de auditoría externa y facilitando la inyección inmediata de capital semilla en la S.L."
             ],
             [
-                "3. Fiscalidad y Gestión de Exenciones",
-                "Se solicitará la declaración de utilidad pública para la asociación una vez cumplidos los plazos legales, permitiendo que las empresas que donen materiales o coticen como mecenas puedan desgravarse de sus aportaciones en el Impuesto de Sociedades. La gestión fiscal será externalizada a una gestoría colaboradora mediante acuerdo de canje publicitario."
+                "3. Modelo de Doble Entidad y Acuerdo de Nivel de Servicio (SLA)",
+                "El ecosistema CERO operará mediante una estructura dual. La Asociación retendrá la gestión de la comunidad abierta de Discord, los canales de marketing, los vlogs de YouTube y la marca open-source, garantizando que el núcleo del proyecto siga perteneciendo a internet. La S.L. será la entidad encargada de la homologación individual de vehículos, la compra del chasis, la producción física de kits de montaje comercial y la firma de rondas de inversión. Ambas entidades estarán vinculadas por un Acuerdo de Nivel de Servicio (SLA) y licencia de marca. La S.L. pagará un canon anual de licencia de marca a la Asociación (financiando eventos comunitarios y servidores de Discord) y, a cambio, la Asociación cederá en exclusiva los derechos de explotación comercial y fabricación de los planos CAD desarrollados por la comunidad."
             ]
         ]
     },
@@ -738,17 +738,18 @@
         "sections": [
             [
                 "1. Organización del Repositorio de Inversores",
-                "El Data Room de inversores se estructura en el repositorio de forma indexada. Contiene los contratos de cesión de IP firmados por cada colaborador (DOC-023), el pacto de socios preliminar (DOC-024) y las proyecciones financieras (DOC-021). Este repositorio se mantiene actualizado de forma mensual por el área de finanzas del Core Team, permitiendo una debida diligencia rápida por parte de fondos de capital semilla.\n\nLa documentación técnica adjunta incluye las simulaciones FEA y los informes de diseño de chasis, aportando confianza sobre la viabilidad física del monoplaza."
+                "El Data Room de CERO está estructurado bajo estándares de Venture Capital para facilitar la auditoría de Due Diligence. El repositorio en la nube se divide en cuatro carpetas maestras:\n1. Corporativo y Legal: Estatutos de la S.L., borrador de Pacto de Socios (DOC-024), contratos de cesión de IP de todos los ingenieros (DOC-023), y el acuerdo SLA dual (DOC-020).\n2. Financiero: Modelo de caja, runway proyectado a 24 meses (DOC-021) y conciliación de donaciones Patreon.\n3. Técnico e Ingeniería: Archivos CAD exportados, simulaciones de fatiga del chasis y flujogramas de homologación ITV.\n4. Marketing: Métricas mensuales de conversión de redes y tasa de retención de Patreon.\n\nLa documentación técnica adjunta incluye las simulaciones FEA y los informes de diseño de chasis, aportando confianza sobre la viabilidad física del monoplaza."
             ],
             [
                 "2. Activos Intangibles del Proyecto y Valoración",
-                "• CAD Completo de Suspensión, Chasis y Dirección en Onshape.\n• Certificados de Simulación Estructural de Torsión (FEA) del chasis.\n• Marca CERO registrada a nivel europeo en la Oficina de Propiedad Intelectual.\n• Registros de tracción orgánica en redes: seguidores y mecenas recurrentes en Patreon.\nLa valoración inicial de los intangibles se estima en 60.000€, calculada en base al coste de mercado de las horas de ingeniería aportadas de forma gratuita por la comunidad."
+                "La valoración premoney de CERO en la ronda semilla se sustenta en tres pilares intangibles:\n• Propiedad Intelectual Industrial: Licencia de explotación exclusiva de los planos CAD del chasis en Onshape, validados mediante FEA.\n• Base de Clientes y Comunidad: Lista de correos y miembros activos de Discord (5.000+) listos para el lanzamiento de kits de chasis.\n• Marca Registrada: El registro nacional y europeo de la marca mixta 'CERO' ante la OEPM y la EUIPO, protegiendo las clases de automoción y software abierto."
             ],
             [
-                "3. Criterios de Acceso para Inversores Ángeles",
-                "El acceso al Data Room se concede bajo estricto acuerdo de confidencialidad (NDA). Los inversores interesados en la ronda pre-semilla de 50.000€ deben acreditar experiencia previa en automoción, desarrollo de hardware de código abierto o startups industriales antes de recibir acceso completo, buscando un perfil de Smart Money que aporte contactos en la industria de homologación."
+                "3. Estructura de la Ronda Semilla (Seed Round)",
+                "Se proyecta levantar una ronda semilla de **150.000 €** en el Mes 18 de desarrollo:\n• Instrumento: Nota convertible o ampliación de capital directa con prima de emisión.\n• Destino de Fondos: 35% Adquisición final de baterías e inversores, 30% Tasas de laboratorios oficiales IDIADA/INTA y pruebas viales, 25% Alquiler del taller de montaje definitivo, 10% Gastos de constitución legal e impuestos.\n• Derechos de Inversores: Acceso a un asiento en el Consejo de Administración (formado por 2 fundadores y 1 inversor principal) y cláusulas de arrastre/acompañamiento para la salida estratégica."
             ]
-        ]
+        ],
+        "image": "kpi_projections.png"
     },
     "DOC-023": {
         "category": "03_Finanzas_y_Legal",
@@ -761,11 +762,15 @@
         "sections": [
             [
                 "1. Estrategia de Código Abierto CC BY-NC 4.0",
-                "Los planos y simulaciones de CERO se liberan bajo licencia Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0). Esto permite a entusiastas construir sus propios coches, pero protege comercialmente la marca CERO ante copias industriales sin convenio. Cualquier empresa que desee comercializar kits de montaje del chasis de CERO intermedia deberá adquirir una licencia comercial con CERO S.L.\n\nEsta estrategia equilibra la filosofía de código abierto y compartición de conocimiento con la sostenibilidad financiera del proyecto, reteniendo el Core Team los derechos comerciales para financiar futuras iteraciones del vehículo."
+                "Todos los planos de diseño CAD, especificaciones de componentes y código de control de CERO se publican bajo la licencia de código abierto Creative Commons Reconocimiento-NoComercial 4.0 Internacional (CC BY-NC 4.0). Esta licencia permite que aficionados y estudiantes descarguen, modifiquen y fabriquen el coche de manera individual para su uso recreativo o de investigación. Sin embargo, prohíbe explícitamente el uso comercial de los diseños, incluyendo: la venta de chasis soldados de forma industrial, la comercialización de kits pre-fabricados de chasis de CERO, o la explotación de los planos para crear una marca de vehículos comerciales competidora sin un acuerdo formal con CERO S.L. Cualquier uso comercial requiere la firma de una licencia comercial exclusiva de pago, garantizando la monetización del proyecto para el sostenimiento financiero a largo plazo."
             ],
             [
-                "2. Contratos de Cesión de IP de Colaboradores",
-                "Todos los ingenieros colaboradores deben firmar un documento de cesión de IP en el onboarding de forma digital. Esto garantiza que CERO S.L. posee los derechos de los archivos CAD para poder homologar y fabricar el monoplaza de forma física ante laboratorios estatales sin bloqueos legales por derechos de autor. La firma es un paso previo innegociable para obtener permisos de edición en la rama principal de Onshape o fusiones en el repositorio."
+                "2. Contratos de Cesión de IP de Colaboradores (CLA)",
+                "Para asegurar que el proyecto no se bloquee legalmente debido a reclamaciones de derechos de autor de antiguos colaboradores, es obligatorio que todo ingeniero firme digitalmente un Acuerdo de Licencia de Contribuidor (CLA) antes de recibir permisos de edición en Onshape o de realizar un Pull Request en GitHub. Bajo este acuerdo, el colaborador cede irrevocablemente todos los derechos patrimoniales sobre su diseño a la Asociación CERO, conservando los derechos morales de atribución. Esta cadena de custodia de la propiedad intelectual es auditada periódicamente y se encuentra a disposición de los inversores en el Data Room."
+            ],
+            [
+                "3. Defensa de Marca y Registro de Patentes",
+                "La marca gráfica y fonética 'CERO MOTOR CO.' y sus variantes serán registradas en la Oficina Española de Patentes y Marcas (OEPM) y en la EUIPO bajo las clases de Niza correspondientes a vehículos eléctricos terrestres y software de diseño. Si un tercero realiza un fork malicioso comercial del repositorio de chasis de CERO, se ejercerán acciones legales por infracción de marca registrada. Quedan excluidas de patentes las geometrías de chasis para asegurar su carácter libre, pero se patentarán los algoritmos de control dinámico desarrollados por el Core Team, licenciándose en abierto únicamente para uso no comercial."
             ]
         ]
     },
@@ -780,15 +785,15 @@
         "sections": [
             [
                 "1. Cláusulas de Pacto de Socios de CERO S.L.",
-                "Este borrador regula las relaciones de capital tras la pivotación de la asociación a S.L. en el Mes 18:\n• Cláusula de Acompañamiento (Tag-Along): Los socios minoritarios (ingenieros colaboradores) tienen derecho a vender sus acciones en las mismas condiciones si los socios mayoritarios venden su participación.\n• Cláusula de Arrastre (Drag-Along): Si un comprador ofrece adquirir el 100% de CERO, los socios mayoritarios pueden obligar a los minoritarios a vender sus acciones al mismo precio.\n• Derecho de Adquisición Preferente: Los fundadores tienen prioridad de compra ante la salida de algún colaborador."
+                "Este borrador regula las relaciones de capital tras la pivotación de la asociación a S.L. en el Mes 18:\n• Cláusula de Acompañamiento (Tag-Along): Los socios minoritarios (ingenieros colaboradores) tienen derecho a vender sus acciones en las mismas condiciones si los socios mayoritarios venden su participación.\n• Cláusula de Arrastre (Drag-Along): Si un comprador ofrece adquirir el 100% de CERO, los socios mayoritarios pueden obligar a los minoritarios a vender sus acciones al mismo precio con un umbral de aprobación del 66%.\n• Derecho de Adquisición Preferente: Los fundadores y socios activos tienen prioridad de compra ante la salida de algún colaborador."
             ],
             [
-                "2. Cláusulas de Permanencia y Bad Leaver",
-                "Si un colaborador clave con derecho a stock options decide abandonar el proyecto de forma conflictiva o perjudicial, se le aplicarán penalizaciones financieras. Si abandona antes de cumplir 12 meses (cliff), perderá el 100% de sus opciones acumuladas. Si abandona de forma conflictiva perjudicando el desarrollo del CAD, sus participaciones se valorarán a valor nominal de 1€ (Bad Leaver)."
+                "2. Esquema de Vesting y Cláusulas de Leaver (Good/Bad)",
+                "El reparto de stock options y participaciones de CERO S.L. para colaboradores Core está sujeto a un calendario de vesting de **4 años con un cliff de 12 meses** (el devengo se inicia mensualmente al transcurrir el primer año de permanencia).\n• Good Leaver: Si un miembro abandona el proyecto por causas justificadas (salud, incapacidad, o despido improcedente), conservará el porcentaje ya consolidado (vested), cancelándose el no consolidado.\n• Bad Leaver: Si el miembro es despedido de forma procedente, comete infracciones de propiedad intelectual, trabaja para un competidor directo o abandona voluntariamente antes del cliff de 12 meses, perderá todo derecho acumulado y las participaciones serán recompradas por la S.L. a valor nominal de 0.01 € por acción."
             ],
             [
-                "3. Protocolo de Resolución de Conflictos y Arbitraje",
-                "Cualquier disputa técnica o corporativa se someterá a mediación en la Corte de Arbitraje de Madrid. Esto previene juicios prolongados que paralicen las homologaciones de calle en IDIADA/INTA, garantizando que el chasis de CERO pueda fabricarse y probarse sin interrupciones legales."
+                "3. Gobernanza Corporativa y Toma de Decisiones",
+                "La junta general de socios de CERO S.L. se regirá por mayorías simples para decisiones ordinarias, pero requerirá una **mayoría cualificada del 75%** para asuntos trascendentales:\n• Modificación del carácter open-source del diseño CAD fundamental.\n• Fusión, adquisición, venta de la propiedad intelectual o liquidación de la compañía.\n• Emisión de nuevas clases de acciones o deuda superior a 50.000 €.\n• Aprobación del plan anual de compensación a fundadores.\nEsto garantiza que el Core Team y los inversores semilla tengan control de veto mutuo sobre el rumbo estratégico de la empresa."
             ]
         ]
     },
