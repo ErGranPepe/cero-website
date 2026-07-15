@@ -3,7 +3,7 @@
 
 - **Autor**: Alianzas y Sourcing CERO
 - **Estado**: APROBADO
-- **Versión**: v14.0
+- **Versión**: v15.0
 - **Fecha**: 15.07.2026
 
 ---
@@ -14,8 +14,13 @@ Esta Lista de Materiales (BOM) detalla de manera minuciosa cada elemento físico
 • Sourcing por Sponsor (Canje de Branding): Metalúrgicas de acero 4130, talleres CNC de aluminio y marcas de neumáticos.
 • Caja Acumulada de Patreon (Compra Directa): Compra de motor Suzuki GSX-R usado completo, latiguillos de freno, escape de calle y tornillería grado 8.8.
 • Consumibles de Taller: Discos de corte de fibra de carbono, gas de purga argón, varillas de soldadura TIG de aporte (ER70S-6 o ER80S-D2).
+Toda adquisición se registra de forma pública en el Data Room de inversores (DOC-022) para garantizar trazabilidad contable total.
 
-## 2. Lista Detallada de Componentes de Ingeniería
+## 2. Distribución Presupuestaria Comparativa
+
+A continuación se muestra de forma visual la distribución de costes y el presupuesto estimado del monoplaza:
+
+## 3. Lista Detallada de Componentes de Ingeniería
 
 A continuación se presenta la base de datos de piezas del monoplaza:
 

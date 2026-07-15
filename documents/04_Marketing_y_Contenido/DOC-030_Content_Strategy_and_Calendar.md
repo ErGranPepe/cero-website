@@ -3,7 +3,7 @@
 
 - **Autor**: Medios y Crecimiento CERO
 - **Estado**: APROBADO
-- **Versión**: v14.0
+- **Versión**: v15.0
 - **Fecha**: 15.07.2026
 
 ---
@@ -14,7 +14,11 @@ Producción de 1 vídeo largo semanal en YouTube (avance técnico, llamadas a de
 
 El objetivo de marketing es acumular una base de 10.000 seguidores activos antes del Mes 4, permitiendo que el lanzamiento de Patreon tenga una tasa de conversión de suscripción del 1.5%, generando los primeros ingresos recurrentes para consumibles de taller.
 
-## 2. Calendario Semanal Tipo
+## 2. Optimización Aerodinámica del Chasis y CFD
+
+A continuación se ilustra la curva de coeficiente de resistencia (Cd) frente a la fuerza de sustentación negativa (downforce, N) generada por el alerón trasero ajustable simulado a una velocidad constante de 120 km/h:
+
+## 3. Calendario Semanal Tipo
 
 • Lunes: TikTok corto sobre ergonomía del cockpit o renders de Onshape.
 • Miércoles: Detrás de cámaras en Reels sobre el día a día en el taller colaborador.

@@ -3,7 +3,7 @@
 
 - **Autor**: Ingeniería CERO
 - **Estado**: APROBADO
-- **Versión**: v14.0
+- **Versión**: v15.0
 - **Fecha**: 15.07.2026
 
 ---
@@ -17,7 +17,7 @@ Adopción de estándares FSAE (Formula Student):
 
 ## 2. Control de Soldadura y Homologación de Soldadores
 
-Todos los soldadores voluntarios deben soldar un cupón de prueba de acero 4130. Este cupón se enviará a ensayos de tracción en laboratorio. Solo los soldadores aprobados podrán soldar la jaula de seguridad del chasis físico, garantizando la integridad de las juntas bajo cargas extremas. Se realizarán inspecciones con líquidos penetrantes en taller para validar la ausencia de poros.
+Todos los soldadores voluntarios deben soldar un cupón de prueba de acero 4130. Este cupón se enviará a ensayos de tracción en laboratorio. Solo los soldadores aprobados podrán soldar la jaula de seguridad del chasis físico, garantizando la integridad de las juntas bajo cargas extremas. Se realizarán inspecciones con líquidos penetrantes en taller para validar la ausencia de poros en la raíz de la soldadura.
 
 ## 3. Comparativa de Resistencia Estructural
 

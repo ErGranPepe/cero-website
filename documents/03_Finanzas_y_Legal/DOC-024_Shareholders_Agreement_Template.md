@@ -3,7 +3,7 @@
 
 - **Autor**: Legal y Cumplimiento CERO
 - **Estado**: APROBADO
-- **Versión**: v14.0
+- **Versión**: v15.0
 - **Fecha**: 15.07.2026
 
 ---

@@ -3,7 +3,7 @@
 
 - **Autor**: Ingeniería CERO
 - **Estado**: APROBADO
-- **Versión**: v14.0
+- **Versión**: v15.0
 - **Fecha**: 15.07.2026
 
 ---
@@ -28,9 +28,17 @@ El motor seleccionado es el bloque de cuatro cilindros en línea de la Suzuki GS
 • Transmisión: Caja de cambios secuencial de 6 velocidades integrada, embrague de moto multidisco en baño de aceite. Transmisión secundaria por cadena de competición paso 530 de alta resistencia al estiramiento (resistencia a la rotura por tracción > 40 kN).
 • Sistema de Escape de Calle: Colector de escape de acero inoxidable 304, convertidor catalítico de tres vías homologado Euro 6, sonda lambda para control de mezcla estequiométrica (ECU cerrada) y silenciador acústico (ONU 51) con dB-killer para mantener el nivel de presión sonora por debajo de los 74 dB(A) a 5.000 RPM.
 
-## 4. Requerimientos Legales para Homologación de Calle en España (ITV)
+## 4. Curva de Potencia y Par del Motor Suzuki GSX-R 600
+
+A continuación se ilustra la curva de potencia (hp) y par motor (Nm) en función de las revoluciones por minuto (RPM) del bloque motor seleccionado:
+
+## 5. Distribución de Fuerzas de Frenado Frontal y Trasera
+
+A continuación se muestra el análisis de distribución de fuerzas hidráulicas de frenado y la línea de adherencia óptima calculada para evitar el bloqueo del eje trasero:
+
+## 6. Requerimientos Legales para Homologación de Calle en España (ITV)
 
 Para la obtención de placas de matrícula ordinarias mediante el proceso de Homologación Individual de Vehículos (HIV):
-• Iluminación: Integración de luces de posición, cruce, carretera, intermitentes, emergencia, luz de marcha atrás, antiniebla trasera y luz de matrícula con código de homologación europeo 'E' grabado en las lentes.
+• Secuencia de Luces: Integración de luces de posición, cruce, carretera, intermitentes, emergencia, luz de marcha atrás, antiniebla trasera y luz de matrícula con código de homologación europeo 'E' grabado en las lentes.
 • Seguridad Peatonal (Radios de Curvatura): El exterior de la carrocería de composite (fibra de vidrio) debe ser completamente suave, sin salientes punzantes ni aristas. Todos los radios de curvatura exteriores en superficies expuestas deben ser superiores a 2.5 mm.
 • Retrovisores: Dos retrovisores exteriores con espejo convexo que permitan un campo de visión horizontal mínimo de 15 metros a una distancia de 10 metros detrás del coche.

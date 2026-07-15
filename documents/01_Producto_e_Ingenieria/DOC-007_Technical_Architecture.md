@@ -3,7 +3,7 @@
 
 - **Autor**: Ingeniería CERO
 - **Estado**: APROBADO
-- **Versión**: v14.0
+- **Versión**: v15.0
 - **Fecha**: 15.07.2026
 
 ---
@@ -14,13 +14,21 @@ El tren motriz de CERO utiliza un motor de moto Suzuki GSX-R transversal montado
 
 El sistema de combustible cumple normas de seguridad de la FIA: depósito de combustible de aluminio con espuma interna deflactora para evitar el oleaje, bomba de inyección externa de alta presión (3 bar) con regulador de presión integrado, y tuberías de combustible trenzadas de teflón AN-6 con racores roscados blindados contra el calor. Cada racor se fija mecánicamente para resistir vibraciones extremas del motor de moto a 14.000 RPM.
 
-## 2. Arquitectura de Suspensión y Geometría de Dirección
+## 2. Geometría de Dirección y Comportamiento Dinámico Ackerman
+
+A continuación se muestra el análisis geométrico de la dirección Ackerman y su porcentaje de desviación (85% Ackerman) para el comportamiento óptimo de guiado en curva del eje delantero:
+
+## 3. Rigidez de Amortiguación y Ratio de Fuerza de Rueda
+
+A continuación se ilustra la curva de rigidez de los coilovers progresivos de moto en función del recorrido de rueda (mm) y la fuerza aplicada (N):
+
+## 4. Arquitectura de Suspensión y Geometría de Dirección
 
 Geometría de suspensión de doble trapecio independiente en las 4 ruedas. El diseño cinemático en Onshape optimiza el centro de balanceo (Roll Center) manteniéndolo a 45 mm del suelo en reposo. Manguetas (uprights) delanteras y traseras fresadas por control numérico (CNC) en aluminio aeronáutico 7075-T6 para minimizar la masa no suspendida. Brazos de suspensión diseñados con perfiles elípticos aerodinámicos para reducir la resistencia al avance.
 
 Cremallera de dirección mecánica directa de kart modificada con 1.5 vueltas de tope a tope, garantizando una respuesta inmediata y precisa en circuito cerrado y carreteras de curvas. El brazo de dirección incorpora un diseño de Ackerman al 85% para reducir el arrastre de neumáticos en curvas cerradas urbanas.
 
-## 3. Arquitectura Eléctrica y Gestión Electrónica (ECU)
+## 5. Arquitectura Eléctrica y Gestión Electrónica (ECU)
 
 Cableado original de la moto Suzuki aligerado de cables innecesarios. Mantenemos la ECU Keihin original desbloqueada (mapeo con inmovilizador HISS puenteado) para no tener que invertir en una ECU programable de competición de 2.000€.
 

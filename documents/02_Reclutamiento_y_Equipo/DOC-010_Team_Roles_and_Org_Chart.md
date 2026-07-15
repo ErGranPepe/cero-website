@@ -3,14 +3,14 @@
 
 - **Autor**: Gobernanza CERO
 - **Estado**: APROBADO
-- **Versión**: v14.0
+- **Versión**: v15.0
 - **Fecha**: 15.07.2026
 
 ---
 
 ## 1. Estructura de Roles de la Comunidad
 
-La organización de CERO se fundamenta en un equipo de coordinación local (Core Team) y comisiones de ingeniería descentralizadas. El Core Team gestiona las relaciones con talleres mecánicos físicos y la caja del Patreon. Los colaboradores online aportan planos CAD en Onshape y simulaciones FEA. El Lead Engineer tiene la última palabra sobre el diseño del chasis tubular. Esta estructura garantiza agilidad operacional y control de calidad físico.
+La organización de CERO se fundamenta en un equipo de coordinación local (Core Team) y comisiones de ingeniería descentralizadas. El Core Team de Móstoles gestiona las relaciones con talleres mecánicos físicos y la caja del Patreon. Los colaboradores online aportan planos CAD en Onshape y simulaciones FEA. El Lead Engineer tiene la última palabra sobre el diseño del chasis tubular. Esta estructura garantiza agilidad operacional y control de calidad físico.
 
 La toma de decisiones estratégicas se realiza en asamblea de la DAO física, pero la implementación física en el taller recae exclusivamente en los miembros con firma técnica certificada. Los coordinadores de comisión son responsables del avance semanal de sus respectivos subsistemas y de reportar bloqueos en la asamblea dominical.
 

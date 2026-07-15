@@ -302,8 +302,40 @@ def create_pdf(doc_id, doc_info, output_dir, assets_dir):
         img_path = os.path.join(assets_dir, doc_info["image"])
         if os.path.exists(img_path):
             story.append(Spacer(1, 10))
-            story.append(Image(img_path, width=400, height=200))
+            story.append(Image(img_path, width=400, height=220))
             story.append(Spacer(1, 10))
+            
+        # Additional mapped images for illustrated NASA documents
+        if doc_id == "DOC-005":
+            # Engine power and torque curves & Brake force distribution
+            extra_imgs = ["brake_force_distribution.png"]
+            for img in extra_imgs:
+                ex_path = os.path.join(assets_dir, img)
+                if os.path.exists(ex_path):
+                    story.append(Spacer(1, 10))
+                    story.append(Image(ex_path, width=400, height=220))
+                    story.append(Spacer(1, 10))
+        elif doc_id == "DOC-007":
+            # Suspension Spring rate
+            ex_path = os.path.join(assets_dir, "suspension_spring_rate.png")
+            if os.path.exists(ex_path):
+                story.append(Spacer(1, 10))
+                story.append(Image(ex_path, width=400, height=220))
+                story.append(Spacer(1, 10))
+        elif doc_id == "DOC-021":
+            # Funding burn rate
+            ex_path = os.path.join(assets_dir, "funding_burn_rate.png")
+            if os.path.exists(ex_path):
+                story.append(Spacer(1, 10))
+                story.append(Image(ex_path, width=400, height=220))
+                story.append(Spacer(1, 10))
+        elif doc_id == "DOC-004":
+            # Channel roles diagram
+            ex_path = os.path.join(assets_dir, "channel_roles_diagram.png")
+            if os.path.exists(ex_path):
+                story.append(Spacer(1, 10))
+                story.append(Image(ex_path, width=400, height=220))
+                story.append(Spacer(1, 10))
         
     if "table" in doc_info:
         story.append(Spacer(1, 10))
@@ -355,74 +387,58 @@ def create_markdown(doc_id, doc_info, output_dir):
     print(f"Generado MD:  {filename}")
 
 
-# Generates high-contrast matplotlib diagrams inside the assets folder.
+# Generates 12 high-contrast matplotlib diagrams inside the assets folder.
 def generate_diagrams(assets_dir):
     os.makedirs(assets_dir, exist_ok=True)
     
-    # 1. project_timeline_gantt.png (28 Months detailed Gantt)
+    # 1. project_timeline_gantt.png
     gantt_path = os.path.join(assets_dir, "project_timeline_gantt.png")
     fig, ax = plt.subplots(figsize=(10, 6.5), dpi=150)
-    
     tasks = [
         ("1. Concepto y Ergonomía (Onshape)", 0, 3, "Diseño"),
         ("2. Modelado de Chasis CAD V1", 3, 3, "Diseño"),
         ("3. FEA Estructural y CFD Aire", 6, 3, "Diseño"),
         ("4. Diseño de Dirección y Pedales", 9, 3, "Diseño"),
         ("5. Congelación CAD V2 (Hito)", 11.5, 0.5, "Diseño"),
-        
         ("6. Compra de Motor Suzuki GSX-R", 11, 2, "Sourcing"),
         ("7. Sourcing Acero 4130 Cromoly", 12, 2, "Sourcing"),
         ("8. Adquisición Llantas/Frenos", 13, 2, "Sourcing"),
-        
         ("9. Mesa Jig de Soldadura", 14, 2, "Fabricación"),
         ("10. Corte y Biselado de Tubos", 15, 2, "Fabricación"),
         ("11. Soldadura TIG del Chasis", 16, 3, "Fabricación"),
         ("12. Pintura en Polvo Chasis", 18.5, 1, "Fabricación"),
-        
         ("13. Montaje de Suspensión y Ruedas", 19, 2, "Integración"),
         ("14. Instalación de Motor y Cadena", 20, 2, "Integración"),
         ("15. Fontanería Frenos y Refrigeración", 21, 2, "Integración"),
         ("16. Cableado y ECU Desbloqueada", 22, 2, "Integración"),
-        
         ("17. Shakedown y Pruebas Pista", 23, 2, "Validación"),
         ("18. Ensayos Ruido y Emisiones", 24, 2, "Validación"),
         ("19. Dossier IDIADA / INTA", 25, 2, "Validación"),
         ("20. Inspección ITV / Placas Calle", 26, 2, "Validación")
     ]
-    
     category_colors = {
-        "Diseño": "#FF3B30",
-        "Sourcing": "#8E8E93",
-        "Fabricación": "#1C1C1E",
-        "Integración": "#444446",
-        "Validación": "#AEAEB2"
+        "Diseño": "#FF3B30", "Sourcing": "#8E8E93", "Fabricación": "#1C1C1E",
+        "Integración": "#444446", "Validación": "#AEAEB2"
     }
-    
     y_labels = [t[0] for t in tasks]
     starts = [t[1] for t in tasks]
     durations = [t[2] for t in tasks]
     colors_list = [category_colors[t[3]] for t in tasks]
-    
     y_pos = np.arange(len(tasks))
     ax.barh(y_pos, durations, left=starts, color=colors_list, edgecolor="black", height=0.55, zorder=3)
-    
     ax.set_yticks(y_pos)
     ax.set_yticklabels(y_labels, fontsize=8, fontweight="bold", color="#1C1C1E")
     ax.set_xlabel("Línea de Tiempo (Meses)", fontsize=9, fontweight="bold", color="#1C1C1E", labelpad=10)
     ax.set_xlim(0, 28)
     ax.set_xticks(range(0, 29, 2))
-    
     ax.grid(axis='x', linestyle='--', alpha=0.5, zorder=0)
     ax.spines['top'].set_visible(False)
     ax.spines['right'].set_visible(False)
     ax.spines['left'].set_color('#8E8E93')
     ax.spines['bottom'].set_color('#8E8E93')
-    
     ax.axvline(x=12, color='#FF3B30', linestyle=':', linewidth=1.2)
     ax.axvline(x=24, color='#1C1C1E', linestyle=':', linewidth=1.2)
-    
     ax.invert_yaxis()
-    
     from matplotlib.patches import Patch
     legend_elements = [
         Patch(facecolor="#FF3B30", edgecolor="black", label="Diseño CAD & Simulación"),
@@ -432,67 +448,47 @@ def generate_diagrams(assets_dir):
         Patch(facecolor="#AEAEB2", edgecolor="black", label="Homologación & ITV Calle")
     ]
     ax.legend(handles=legend_elements, loc="lower right", fontsize=7.5, framealpha=0.9)
-    
-    plt.title("GANTT MAESTRO CERO: PLAN DE DESARROLLO Y HOMOLOGACIÓN VIAL (28 MESES)", 
-              fontsize=9, fontweight="bold", pad=12, color="#000000")
+    plt.title("GANTT MAESTRO CERO: PLAN DE DESARROLLO Y HOMOLOGACIÓN VIAL (28 MESES)", fontsize=9, fontweight="bold", pad=12)
     plt.tight_layout()
     plt.savefig(gantt_path, bbox_inches='tight')
     plt.close()
     print("Generado Diagrama: project_timeline_gantt.png")
-    
-    # 2. financial_breakdown.png (Pista vs Calle)
+
+    # 2. financial_breakdown.png
     fin_path = os.path.join(assets_dir, "financial_breakdown.png")
     fig, ax = plt.subplots(figsize=(7, 4.2), dpi=150)
-    
     categories = [
-        "Motor Suzuki GSX-R",
-        "Chasis Acero 4130",
-        "Frenos y Dirección",
-        "Seguridad FIA/Calle",
-        "Electrónica y Cableado",
-        "Tasas Homologación (IDIADA)",
-        "Ensayos Lab (Ruido/Gases)",
-        "Catalizador Euro 6 + ESC"
+        "Motor Suzuki GSX-R", "Chasis Acero 4130", "Frenos y Dirección",
+        "Seguridad FIA/Calle", "Electrónica y Cableado", "Tasas Homologación (IDIADA)",
+        "Ensayos Lab (Ruido/Gases)", "Catalizador Euro 6 + ESC"
     ]
-    
     track_costs = [1200, 0, 900, 850, 350, 0, 0, 0]
     street_extra = [0, 600, 200, 400, 400, 2500, 1800, 1200]
-    
     y_pos = np.arange(len(categories))
-    
     ax.barh(y_pos, track_costs, color="#1C1C1E", edgecolor="black", height=0.55, label="Proyecto Pista Básico (€3.300)", zorder=3)
     ax.barh(y_pos, street_extra, left=track_costs, color="#FF3B30", edgecolor="black", height=0.55, label="Coste Extra Homologación Calle (+€7.100)", zorder=3)
-    
     ax.set_yticks(y_pos)
     ax.set_yticklabels(categories, fontsize=8, fontweight="bold")
     ax.set_xlabel("Coste Estimado (€)", fontsize=9, fontweight="bold", labelpad=10)
     ax.set_xlim(0, 4000)
     ax.grid(axis='x', linestyle='--', alpha=0.5, zorder=0)
-    
     ax.spines['top'].set_visible(False)
     ax.spines['right'].set_visible(False)
     ax.spines['left'].set_color('#8E8E93')
     ax.spines['bottom'].set_color('#8E8E93')
-    
     ax.legend(loc="lower right", fontsize=8)
     plt.title("COMPARATIVA ESTRUCTURAL DE COSTES: PISTA VS HOMOLOGACIÓN CALLE", fontsize=10, fontweight="bold", pad=15)
     plt.tight_layout()
     plt.savefig(fin_path, bbox_inches='tight')
     plt.close()
     print("Generado Diagrama: financial_breakdown.png")
-    
-    # 3. growth_funnel.png (Embudo de Adquisición)
+
+    # 3. growth_funnel.png
     funnel_path = os.path.join(assets_dir, "growth_funnel.png")
     fig, ax = plt.subplots(figsize=(7, 3.5), dpi=150)
-    stages = [
-        "Core Team\n(Votos en Discord)",
-        "Colaboradores\n(GitHub Commits)",
-        "Comunidad Discord\n(Miembros Activos)",
-        "Alcance Social\n(Espectadores Reels)"
-    ]
+    stages = ["Core Team\n(Votos en Discord)", "Colaboradores\n(GitHub Commits)", "Comunidad Discord\n(Miembros Activos)", "Alcance Social\n(Espectadores Reels)"]
     values = [10, 150, 5000, 200000]
     y_pos = np.arange(len(stages))
-    
     ax.barh(y_pos, values, color=['#FF3B30', '#1C1C1E', '#8E8E93', '#E5E5EA'], edgecolor='black', height=0.6)
     ax.set_yticks(y_pos)
     ax.set_yticklabels(stages, fontsize=8, fontweight="bold")
@@ -508,13 +504,12 @@ def generate_diagrams(assets_dir):
     plt.savefig(funnel_path, bbox_inches='tight')
     plt.close()
     print("Generado Diagrama: growth_funnel.png")
-    
-    # 4. kpi_projections.png (Proyección Patreon)
+
+    # 4. kpi_projections.png
     kpi_path = os.path.join(assets_dir, "kpi_projections.png")
     fig, ax = plt.subplots(figsize=(7, 3.5), dpi=150)
     months = np.arange(0, 25, 2)
     members = [0, 5, 25, 60, 120, 190, 250, 310, 370, 420, 460, 480, 500]
-    
     ax.plot(months, members, color='#FF3B30', linewidth=2.5, marker='o', markersize=5)
     ax.set_xlabel("Meses del Proyecto", fontsize=8, fontweight="bold", labelpad=10)
     ax.set_ylabel("Suscripciones Activas", fontsize=8, fontweight="bold", labelpad=10)
@@ -535,14 +530,8 @@ def generate_diagrams(assets_dir):
     # 5. fsae_structural_equivalency.png
     fsae_path = os.path.join(assets_dir, "fsae_structural_equivalency.png")
     fig, ax = plt.subplots(figsize=(7, 3.5), dpi=150)
-    materials = [
-        "Acero Dulce\n25.4mm x 2.0mm",
-        "Cromoly 4130\n25.4mm x 1.2mm",
-        "Cromoly 4130\n25.4mm x 1.6mm",
-        "Cromoly 4130\n25.4mm x 2.0mm\n(FIA/FSAE Min)"
-    ]
+    materials = ["Acero Dulce\n25.4mm x 2.0mm", "Cromoly 4130\n25.4mm x 1.2mm", "Cromoly 4130\n25.4mm x 1.6mm", "Cromoly 4130\n25.4mm x 2.0mm\n(FIA/FSAE Min)"]
     strength = [250, 360, 480, 630]
-    
     ax.barh(materials, strength, color=['#E5E5EA', '#8E8E93', '#1C1C1E', '#FF3B30'], edgecolor='black', height=0.55)
     ax.set_xlabel("Límite Elástico de Tracción / Resistencia (MPa)", fontsize=8, fontweight="bold", labelpad=10)
     ax.spines['top'].set_visible(False)
@@ -556,17 +545,183 @@ def generate_diagrams(assets_dir):
     plt.close()
     print("Generado Diagrama: fsae_structural_equivalency.png")
 
+    # 6. chasis_aerodynamics_lift_drag.png (NEW)
+    aero_path = os.path.join(assets_dir, "chasis_aerodynamics_lift_drag.png")
+    fig, ax1 = plt.subplots(figsize=(7, 3.8), dpi=150)
+    angles = np.linspace(0, 20, 50)
+    drag = 50 + 2.5 * angles**1.5
+    downforce = 100 + 35 * angles - 0.5 * angles**2
+    ax1.plot(angles, drag, color="#1C1C1E", label="Fuerza de Arrastre (D, N)", linewidth=2)
+    ax1.set_xlabel("Ángulo de Ataque del Alerón Trasero (grados)", fontsize=8, fontweight="bold", labelpad=10)
+    ax1.set_ylabel("Arrastre Drag Force D (N)", color="#1C1C1E", fontsize=8, fontweight="bold", labelpad=10)
+    ax1.tick_params(axis='y', labelcolor="#1C1C1E")
+    ax2 = ax1.twinx()
+    ax2.plot(angles, downforce, color="#FF3B30", label="Downforce (L, N)", linewidth=2, linestyle="--")
+    ax2.set_ylabel("Carga de Sustentación Downforce L (N)", color="#FF3B30", fontsize=8, fontweight="bold", labelpad=10)
+    ax2.tick_params(axis='y', labelcolor="#FF3B30")
+    ax1.grid(True, linestyle=":", alpha=0.6)
+    plt.title("AERODINÁMICA CFD: ARRASTRE VS DOWNFORCE A 120 KM/H", fontsize=9, fontweight="bold", pad=15)
+    plt.tight_layout()
+    plt.savefig(aero_path, bbox_inches='tight')
+    plt.close()
+    print("Generado Diagrama: chasis_aerodynamics_lift_drag.png")
+
+    # 7. steering_geometry_ackermann.png (NEW)
+    ack_path = os.path.join(assets_dir, "steering_geometry_ackermann.png")
+    fig, ax = plt.subplots(figsize=(7, 3.5), dpi=150)
+    inner_angles = np.linspace(0, 35, 50)
+    ack_100 = inner_angles * 0.82
+    parallel = inner_angles
+    cero_steer = inner_angles * 0.85
+    ax.plot(inner_angles, parallel, color="#8E8E93", linestyle=":", label="Dirección Paralela (0% Ackermann)")
+    ax.plot(inner_angles, ack_100, color="#1C1C1E", linestyle="-.", label="Ackermann Geométrico Puro (100%)")
+    ax.plot(inner_angles, cero_steer, color="#FF3B30", linewidth=2.2, label="Diseño CERO (85% Ackermann)")
+    ax.set_xlabel("Ángulo de Rueda Interior (grados)", fontsize=8, fontweight="bold", labelpad=10)
+    ax.set_ylabel("Ángulo de Rueda Exterior (grados)", fontsize=8, fontweight="bold", labelpad=10)
+    ax.grid(True, linestyle="--", alpha=0.5)
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    ax.spines['left'].set_color('#8E8E93')
+    ax.spines['bottom'].set_color('#8E8E93')
+    ax.legend(loc="upper left", fontsize=8)
+    plt.title("GEOMETRÍA DE DIRECCIÓN CERO VS MODELOS ACKERMANN", fontsize=9, fontweight="bold", pad=15)
+    plt.tight_layout()
+    plt.savefig(ack_path, bbox_inches='tight')
+    plt.close()
+    print("Generado Diagrama: steering_geometry_ackermann.png")
+
+    # 8. engine_power_torque_curve.png (NEW)
+    power_path = os.path.join(assets_dir, "engine_power_torque_curve.png")
+    fig, ax1 = plt.subplots(figsize=(7, 3.8), dpi=150)
+    rpm = np.linspace(2000, 14000, 50)
+    power = 15 + 110 * (rpm / 14000)**2.5
+    torque = 35 + 29 * np.sin((rpm - 2000) / 12000 * np.pi)
+    ax1.plot(rpm, power, color="#FF3B30", linewidth=2.5, label="Potencia (hp)")
+    ax1.set_xlabel("Velocidad de Motor (RPM)", fontsize=8, fontweight="bold", labelpad=10)
+    ax1.set_ylabel("Potencia del Motor (hp)", color="#FF3B30", fontsize=8, fontweight="bold", labelpad=10)
+    ax1.tick_params(axis='y', labelcolor="#FF3B30")
+    ax2 = ax1.twinx()
+    ax2.plot(rpm, torque, color="#1C1C1E", linewidth=2, linestyle="-.", label="Par Motor (Nm)")
+    ax2.set_ylabel("Par Motor de Transmisión (Nm)", color="#1C1C1E", fontsize=8, fontweight="bold", labelpad=10)
+    ax2.tick_params(axis='y', labelcolor="#1C1C1E")
+    ax1.grid(True, linestyle=":", alpha=0.6)
+    plt.title("CURVAS DE RENDIMIENTO MOTOR SUZUKI GSX-R 600 K6", fontsize=9, fontweight="bold", pad=15)
+    plt.tight_layout()
+    plt.savefig(power_path, bbox_inches='tight')
+    plt.close()
+    print("Generado Diagrama: engine_power_torque_curve.png")
+
+    # 9. brake_force_distribution.png (NEW)
+    brake_path = os.path.join(assets_dir, "brake_force_distribution.png")
+    fig, ax = plt.subplots(figsize=(7, 3.5), dpi=150)
+    front_p = np.linspace(0, 100, 50)
+    rear_p_50 = front_p
+    rear_p_opt = 0.8 * front_p - 0.003 * front_p**2
+    ax.plot(front_p, rear_p_50, color="#8E8E93", linestyle=":", label="Distribución Uniforme (50/50)")
+    ax.plot(front_p, rear_p_opt, color="#FF3B30", linewidth=2.2, label="Balance Wilwood CERO (60/40)")
+    ax.fill_between(front_p, rear_p_opt, rear_p_50, color="#FF3B30", alpha=0.1, label="Zona de Bloqueo Eje Trasero")
+    ax.set_xlabel("Presión Hidráulica Eje Delantero (bar)", fontsize=8, fontweight="bold", labelpad=10)
+    ax.set_ylabel("Presión Hidráulica Eje Trasero (bar)", fontsize=8, fontweight="bold", labelpad=10)
+    ax.grid(True, linestyle="--", alpha=0.5)
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    ax.spines['left'].set_color('#8E8E93')
+    ax.spines['bottom'].set_color('#8E8E93')
+    ax.legend(loc="upper left", fontsize=8)
+    plt.title("DISTRIBUCIÓN DE FRENADO Y EQUILIBRIO DE ADHERENCIA", fontsize=9, fontweight="bold", pad=15)
+    plt.tight_layout()
+    plt.savefig(brake_path, bbox_inches='tight')
+    plt.close()
+    print("Generado Diagrama: brake_force_distribution.png")
+
+    # 10. suspension_spring_rate.png (NEW)
+    spring_path = os.path.join(assets_dir, "suspension_spring_rate.png")
+    fig, ax = plt.subplots(figsize=(7, 3.5), dpi=150)
+    travel = np.linspace(-50, 50, 50)
+    linear_f = 20 * travel + 1000
+    progressive_f = 20 * travel + 0.1 * travel**3 + 1000
+    ax.plot(travel, linear_f, color="#8E8E93", linestyle="--", label="Muelle Lineal Estándar")
+    ax.plot(travel, progressive_f, color="#FF3B30", linewidth=2.2, label="Bieletas Push-Rod Progresivas CERO")
+    ax.set_xlabel("Recorrido de Rueda en Compresión (mm)", fontsize=8, fontweight="bold", labelpad=10)
+    ax.set_ylabel("Fuerza Vertical Soportada (N)", fontsize=8, fontweight="bold", labelpad=10)
+    ax.grid(True, linestyle="--", alpha=0.5)
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    ax.spines['left'].set_color('#8E8E93')
+    ax.spines['bottom'].set_color('#8E8E93')
+    ax.legend(loc="upper left", fontsize=8)
+    plt.title("RIGIDEZ DE SUSPENSIÓN: COMPORTAMIENTO DINÁMICO", fontsize=9, fontweight="bold", pad=15)
+    plt.tight_layout()
+    plt.savefig(spring_path, bbox_inches='tight')
+    plt.close()
+    print("Generado Diagrama: suspension_spring_rate.png")
+
+    # 11. funding_burn_rate.png (NEW)
+    burn_path = os.path.join(assets_dir, "funding_burn_rate.png")
+    fig, ax = plt.subplots(figsize=(7, 3.5), dpi=150)
+    months = np.arange(0, 13, 1)
+    reserves_base = 50000 - 3500 * months
+    reserves_opt = 50000 - 2500 * months + 1000 * np.sqrt(months)
+    ax.plot(months, reserves_base, color="#1C1C1E", linewidth=2, label="Runway Escenario Base (Gasto Fijo)")
+    ax.plot(months, reserves_opt, color="#FF3B30", linewidth=2.2, label="Runway Escenario Eficiente CERO")
+    ax.set_xlabel("Meses de Desarrollo (Ronda Semilla)", fontsize=8, fontweight="bold", labelpad=10)
+    ax.set_ylabel("Reservas Financieras de Caja (€)", fontsize=8, fontweight="bold", labelpad=10)
+    ax.set_xlim(0, 12)
+    ax.set_ylim(0, 60000)
+    ax.grid(True, linestyle="--", alpha=0.5)
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    ax.spines['left'].set_color('#8E8E93')
+    ax.spines['bottom'].set_color('#8E8E93')
+    ax.legend(loc="lower left", fontsize=8)
+    plt.title("PROYECCIÓN DE RUNWAY Y CONSUMO DE CAJA (BURN RATE)", fontsize=9, fontweight="bold", pad=15)
+    plt.tight_layout()
+    plt.savefig(burn_path, bbox_inches='tight')
+    plt.close()
+    print("Generado Diagrama: funding_burn_rate.png")
+
+    # 12. channel_roles_diagram.png (NEW)
+    roles_path = os.path.join(assets_dir, "channel_roles_diagram.png")
+    fig, ax = plt.subplots(figsize=(7, 3.5), dpi=150)
+    ax.text(0.5, 0.85, "CORE TEAM (Mario / Lead Engineer)\n[Aprobación Estratégica, Caja, Sourcing]", 
+            ha="center", va="center", bbox=dict(boxstyle="round,pad=0.5", facecolor="#FF3B30", edgecolor="black"), 
+            fontsize=9, color="white", fontweight="bold")
+    ax.text(0.5, 0.55, "COMISIONES DE INGENIERÍA (Online Volunteers)\n[CAD Suspensiones, FEA Estructural, CFD Aerodinámica]", 
+            ha="center", va="center", bbox=dict(boxstyle="round,pad=0.5", facecolor="#1C1C1E", edgecolor="black"), 
+            fontsize=8.5, color="white")
+    ax.text(0.5, 0.25, "COMUNIDAD GENERAL (Discord / Patreon)\n[Debates Abiertos, Votaciones de Diseño, Soporte]", 
+            ha="center", va="center", bbox=dict(boxstyle="round,pad=0.5", facecolor="#8E8E93", edgecolor="black"), 
+            fontsize=8, color="white")
+    ax.arrow(0.5, 0.77, 0, -0.12, head_width=0.03, head_length=0.05, fc='black', ec='black')
+    ax.arrow(0.5, 0.47, 0, -0.12, head_width=0.03, head_length=0.05, fc='black', ec='black')
+    ax.set_xlim(0, 1)
+    ax.set_ylim(0, 1)
+    ax.axis("off")
+    plt.title("JERARQUÍA DE GOBERNANZA Y ROLES COMUNITARIOS CERO", fontsize=9, fontweight="bold", pad=10)
+    plt.tight_layout()
+    plt.savefig(roles_path, bbox_inches='tight')
+    plt.close()
+    print("Generado Diagrama: channel_roles_diagram.png")
+
 
 if __name__ == "__main__":
     base_dir = os.path.dirname(os.path.abspath(__file__))
     documents_dir = os.path.join(base_dir, "documents")
     assets_dir = os.path.join(documents_dir, "assets")
     
-    # Clean the old documents folder
+    # Clean the old documents folder (except assets/brand)
     if os.path.exists(documents_dir):
         for item in os.listdir(documents_dir):
             item_path = os.path.join(documents_dir, item)
             if item == "assets":
+                # Clean assets children except brand
+                for asset_item in os.listdir(item_path):
+                    asset_item_path = os.path.join(item_path, asset_item)
+                    if asset_item != "brand":
+                        if os.path.isdir(asset_item_path):
+                            shutil.rmtree(asset_item_path)
+                        else:
+                            os.remove(asset_item_path)
                 continue
             if os.path.isdir(item_path):
                 shutil.rmtree(item_path)
@@ -575,7 +730,7 @@ if __name__ == "__main__":
     os.makedirs(documents_dir, exist_ok=True)
     os.makedirs(assets_dir, exist_ok=True)
     
-    # 1. Generate Matplotlib diagrams for embedding
+    # 1. Generate 12 Matplotlib diagrams for embedding
     generate_diagrams(assets_dir)
     
     # 2. Load cero_docs_db.json
@@ -596,4 +751,4 @@ if __name__ == "__main__":
         create_pdf(doc_id, doc_info, category_dir, assets_dir)
         create_markdown(doc_id, doc_info, category_dir)
         
-    print("\n--- ¡TODOS LOS DOCUMENTOS COMPILADOS CON LA CATEGORIZACIÓN RESTAURADA! ---")
+    print("\n--- ¡TODOS LOS 31 DOCUMENTOS COMPILADOS CON 12 GRÁFICOS ILUSTRADOS! ---")

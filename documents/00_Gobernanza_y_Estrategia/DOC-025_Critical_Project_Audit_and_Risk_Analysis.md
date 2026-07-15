@@ -3,7 +3,7 @@
 
 - **Autor**: Dirección Estratégica CERO
 - **Estado**: APROBADO
-- **Versión**: v14.0
+- **Versión**: v15.0
 - **Fecha**: 15.07.2026
 
 ---
@@ -14,7 +14,7 @@ En el día 1, proponer canjes de branding con 0 seguidores es inviable. Debemos 
 
 ## 2. Riesgo Técnico de Ingenieros Anónimos
 
-Los planos de Discord deben validarse rigurosamente por un Ingeniero Colegiado y un soldador certificado de forma externa antes de rodar en pista, mitigando fallos fatales en juntas de soldadura del chasis. Un diseño defectuoso en Onshape realizado por un estudiante entusiasta pero sin experiencia en cargas dinámicas puede provocar un fallo estructural catastrófico del arco antivuelco principal a alta velocidad.
+Los planos de Discord deben validarse rigurosamente por un Ingeniero Colegiado y un soldador certificado de forma externa antes de rodar en pista, mitigando fallos fatales en juntas de soldadura del chasis. Un diseño defectuoso en Onshape realizado por un estudiante entusiasta pero sin experiencia en cargas dinámicas puede provocar un fallo estructural catastrófico del arco antivuelco principal a alta velocidad. Es vital contar con firmas de ingenieros colegiados para respaldar cada ADR de seguridad.
 
 ## 3. Logística Oculta y Gastos Hormiga
 
