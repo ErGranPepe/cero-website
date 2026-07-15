@@ -5,7 +5,7 @@ import sys
 import xml.etree.ElementTree as ET
 
 def run_validation():
-    print("=== INICIANDO VALIDACION DEL ECOSISTEMA DOCUMENTAL CONCEPTUAL CERO (FLAT) ===\n")
+    print("=== INICIANDO VALIDACION DEL ECOSISTEMA MASTER CERO (31 DOCUMENTOS) ===\n")
     base_dir = os.path.dirname(os.path.abspath(__file__))
     
     try:
@@ -31,8 +31,8 @@ def run_validation():
     required_keys = ["category", "title", "subtitle", "author", "status", "version", "date", "sections"]
     
     for doc_id, doc_info in db.items():
-        if not re.match(r"^DOC-A\d$", doc_id):
-            print(f"[ERROR] Formato de ID invalido: '{doc_id}'. Debe ser DOC-AX.")
+        if not re.match(r"^DOC-\d{3}$", doc_id):
+            print(f"[ERROR] Formato de ID invalido: '{doc_id}'. Debe ser DOC-XXX.")
             sys.exit(1)
             
         for key in required_keys:
@@ -44,11 +44,11 @@ def run_validation():
             print(f"[ERROR] Documento '{doc_id}' debe contener una lista no vacia de 'sections'.")
             sys.exit(1)
             
-    print(f"[OK] Esquema verificado para los {len(doc_ids)} documentos conceptuales.")
+    print(f"[OK] Esquema verificado para los {len(doc_ids)} documentos del manifiesto.")
 
     # 2. VALIDACION DE REFERENCIAS CRUZADAS
-    print("\nAuditando referencias cruzadas internas (DOC-AX)...")
-    ref_pattern = re.compile(r"DOC-A\d")
+    print("\nAuditando referencias cruzadas internas (DOC-XXX)...")
+    ref_pattern = re.compile(r"DOC-\d{3}")
     errors_cross_ref = 0
     
     for doc_id, doc_info in db.items():
@@ -64,49 +64,29 @@ def run_validation():
     else:
         print(f"[WARN] Se encontraron {errors_cross_ref} referencias cruzadas dudosas.")
 
-    # 3. VERIFICACION DE LA COMPILACION FISICA EN FORMATO PLANO (FLAT)
-    print("\nAuditando compilacion fisica plana en documents/...")
+    # 3. VERIFICACION DE LA COMPILACION FISICA EN FORMATO CATEGORIZADO
+    print("\nAuditando compilacion fisica en subcarpetas de documents/...")
     documents_dir = os.path.join(base_dir, "documents")
     if not os.path.exists(documents_dir):
         print("[ERROR] El directorio 'documents' no existe. Compila primero.")
         sys.exit(1)
         
     for doc_id, doc_info in db.items():
+        category = doc_info["category"]
         base_name = f"{doc_id}_{doc_info['title'].replace(' ', '_').replace('&', 'and').replace('/', '_')}"
-        pdf_path = os.path.join(documents_dir, f"{base_name}.pdf")
-        md_path = os.path.join(documents_dir, f"{base_name}.md")
+        pdf_path = os.path.join(documents_dir, category, f"{base_name}.pdf")
+        md_path = os.path.join(documents_dir, category, f"{base_name}.md")
         
         if not os.path.exists(pdf_path):
-            print(f"[ERROR] PDF no encontrado en ruta plana: '{pdf_path}'")
+            print(f"[ERROR] PDF no encontrado: '{pdf_path}'")
             sys.exit(1)
         if not os.path.exists(md_path):
-            print(f"[ERROR] MD no encontrado en ruta plana: '{md_path}'")
+            print(f"[ERROR] MD no encontrado: '{md_path}'")
             sys.exit(1)
             
-    # Check that NO extra category subfolders exist in documents (only assets)
-    for item in os.listdir(documents_dir):
-        item_path = os.path.join(documents_dir, item)
-        if os.path.isdir(item_path) and item != "assets":
-            print(f"[ERROR] Se detecto subcarpeta prohibida '{item}' en el directorio plano 'documents/'.")
-            sys.exit(1)
-            
-    print("[OK] Todos los 8 archivos PDF y Markdown se han generado correctamente y de forma PLANA en documents/.")
+    print("[OK] Todos los 31 archivos PDF y Markdown se han generado correctamente en sus subcarpetas de documents/.")
 
-    # 4. VERIFICACION DE ARCHIVADO LEGACY
-    print("\nVerificando archivado en el directorio legacy/...")
-    legacy_dir = os.path.join(base_dir, "legacy")
-    if not os.path.exists(legacy_dir):
-        print("[ERROR] El directorio 'legacy/' de archivado no existe.")
-        sys.exit(1)
-    
-    legacy_folders = os.listdir(legacy_dir)
-    if len(legacy_folders) == 0:
-        print("[ERROR] El directorio 'legacy/' esta vacio.")
-        sys.exit(1)
-        
-    print(f"[OK] Directorio legacy/ verificado con exito. Contiene: {', '.join(legacy_folders)}.")
-
-    # 5. CONTROL DE REGRESIONES EN MATPLOTLIB (pad= en labels)
+    # 4. CONTROL DE REGRESIONES EN MATPLOTLIB (pad= en labels)
     print("\nBuscando regresiones del bug de Matplotlib (pad= en set_xlabel/set_ylabel)...")
     engine_path = os.path.join(base_dir, "generate_cero_docs.py")
     if os.path.exists(engine_path):
@@ -119,7 +99,7 @@ def run_validation():
         else:
             print("[OK] Ningun bug de 'pad' detectado en las llamadas de etiquetas de Matplotlib.")
 
-    # 6. AUDITORIA DE CALIDAD SVG
+    # 5. AUDITORIA DE CALIDAD SVG
     print("\nAuditando calidad de los archivos de marca vectoriales (SVG)...")
     brand_dir = os.path.join(base_dir, "assets", "brand")
     svg_files = ["logo_white.svg", "logo_black.svg", "logo_red.svg"]
@@ -151,7 +131,7 @@ def run_validation():
             
         print(f"[OK] SVG '{svg_file}' validado: peso ligero ({file_size} bytes) e integridad geometrica correcta.")
 
-    print("\n=== ECOSISTEMA DOCUMENTAL CONCEPTUAL CERO VALIDADO CON EXITO [100% CORRECTO] ===")
+    print("\n=== ECOSISTEMA DOCUMENTAL MASTER CERO VALIDADO CON EXITO [100% CORRECTO] ===")
 
 if __name__ == "__main__":
     run_validation()

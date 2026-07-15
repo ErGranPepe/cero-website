@@ -1,49 +1,62 @@
-# 🏁 CERO — El Coche de Internet
+# 🏁 CERO — El Coche de Internet (Master Plan v12.0)
 
 > **El primer monoplaza de calle desarrollado 100% en abierto por internet, partiendo de 0€ y construido mediante el poder de la comunidad.**
 
 ---
 
-## 🎯 Fase Actual: Fase 0-1 (Concepto + Gente + Garaje)
-CERO no es una multinacional del automóvil ni un proyecto industrial cerrado. Es un experimento social y creativo de código abierto.
+## 🎯 Visión y Alcance
+CERO es un experimento social y creativo de código abierto para fabricar un vehículo real homologado en España (ITV individual) en 28 meses.
 
-**En esta fase inicial, no hay chasis soldados, no hay motores en el taller ni compras de materiales. Estamos concentrados en:**
-1. Definir la narrativa humana del proyecto.
-2. Construir la base de la comunidad en redes sociales y Discord.
-3. Buscar y conseguir nuestro primer espacio físico (garaje o taller partner) en Móstoles o alrededores sin capital inicial.
-4. Diseñar las dinámicas de gobierno abierto de los colaboradores.
+Este repositorio actúa como el Data Room maestro del proyecto. Contiene toda la documentación técnica, estratégica, de marketing, financiera y de sourcing necesaria para coordinar el trabajo descentralizado del Core Team y los colaboradores.
 
 ---
 
 ## 📂 Estructura del Repositorio
 
-Para facilitar la auditoría de la comunidad y la integración de inteligencias artificiales (como Perplexity), el repositorio está estructurado de manera simple y directa:
+El repositorio está estructurado en 6 carpetas operativas conteniendo **31 documentos maestros** generados en formato PDF y Markdown:
 
-### 📄 Documentos de Operación Conceptual (`/documents/`)
-Una lista plana de 8 documentos fundamentales que guían el día a día de esta fase 0-1:
-*   [DOC-A1: Story and Narrative](file:///C:/Users/mario/.gemini/antigravity-ide/scratch/cero-website/documents/DOC-A1_Story_and_Narrative.md) — La historia humana detrás de CERO y el por qué del proyecto.
-*   [DOC-A2: Social Media Playbook](file:///C:/Users/mario/.gemini/antigravity-ide/scratch/cero-website/documents/DOC-A2_Social_Media_Playbook.md) — Voz, tono y directrices de publicación en redes (vulnerabilidad radical).
-*   [DOC-A3: 12-Week Content Calendar](file:///C:/Users/mario/.gemini/antigravity-ide/scratch/cero-website/documents/DOC-A3_12-Week_Content_Calendar.md) — Planificación temporal de contenidos semanales y ganchos virales.
-*   [DOC-A4: Recruitment and Roles Guide](file:///C:/Users/mario/.gemini/antigravity-ide/scratch/cero-website/documents/DOC-A4_Recruitment_and_Roles_Guide.md) — Perfiles y roles humanos requeridos inicialmente.
-*   [DOC-A5: Garage and Space Acquisition Plan](file:///C:/Users/mario/.gemini/antigravity-ide/scratch/cero-website/documents/DOC-A5_Garage_and_Space_Acquisition_Plan.md) — Rutas y estrategias de trueque para conseguir taller físico.
-*   [DOC-A6: Community and Governance Charter](file:///C:/Users/mario/.gemini/antigravity-ide/scratch/cero-website/documents/DOC-A6_Community_and_Governance_Charter.md) — Dinámicas de voto y asambleas de Discord.
-*   [DOC-A7: Pre-Seed Funding Strategy](file:///C:/Users/mario/.gemini/antigravity-ide/scratch/cero-website/documents/DOC-A7_Pre-Seed_Funding_Strategy.md) — Crowdfunding, tiers de Patreon y merch en impresión bajo demanda.
-*   [DOC-A8: First 10 Videos Script Pack](file:///C:/Users/mario/.gemini/antigravity-ide/scratch/cero-website/documents/DOC-A8_First_10_Videos_Script_Pack.md) — Guiones y hooks de los vlogs iniciales de YouTube y TikTok.
+### 📁 00_Gobernanza_y_Estrategia
+*   `DOC-001_Foundational_Manifest.md` — Declaración de principios y reglas.
+*   `DOC-002_Strategic_Plan.md` — Plan de negocio a 28 meses.
+*   `DOC-003_Master_Roadmap.md` — GANTT maestro y dependencias críticas.
+*   `DOC-004_Operating_System.md` — Canales de comunicación Discord y GitHub.
+*   `DOC-017_Weekly_Review_System.md` — Plantilla de reporte semanal de estado.
+*   `DOC-018_Decision_Register.md` — Registro de decisiones críticas (ADR).
+*   `DOC-025_Critical_Project_Audit_and_Risk_Analysis.md` — Gestión de riesgos viales y financieros.
+*   `DOC-026_Competitor_Analysis.md` — Benchmark de proyectos (Binky, Kagan, Wikispeed).
+*   `DOC-028_Technical_Vision.md` — Especificación del chasis FSAE 4130 cromoly.
 
-### 🎨 Activos de Marca (`/assets/brand/`)
-Logotipos de marca consistentes y listos para producción digital e impresa:
-*   `logo_original_glow.png` — El logotipo original con el resplandor de iluminación de redes.
-*   `logo_white_on_transparent.png` / `logo_black_on_transparent.png` / `logo_red_on_transparent.png` — PNGs limpios de alta resolución con fondo transparente.
-*   `logo_white.svg` / `logo_black.svg` / `logo_red.svg` — Archivos vectoriales SVG reconstruidos geométricamente de forma ultra-ligera (<1KB).
+### 📁 01_Producto_e_Ingenieria
+*   `DOC-005_Product_Requirements_Document.md` — Ficha de requerimientos ITV de calle.
+*   `DOC-006_Bill_of_Materials.md` — Lista de materiales (BOM) y costes estimados.
+*   `DOC-007_Technical_Architecture.md` — Arquitectura de motor Suzuki GSX-R y transmisión.
+*   `DOC-008_Manufacturing_Plan.md` — Bancada y plan de soldadura TIG.
+*   `DOC-009_Quality_and_Testing_Protocol.md` — Líquidos penetrantes y pruebas dinámicas.
 
-### 🏛️ Histórico Técnico (`/legacy/`)
-Contiene los borradores preliminares de especificaciones técnicas del vehículo (chasis tubular FSAE specs, motor GSX-R, frenado dual y tasas de homologación ITV) archivados para su uso en las fases 2 y 3.
+### 📁 02_Reclutamiento_y_Equipo
+*   `DOC-010_Team_Roles_and_Org_Chart.md` — Organigrama del Core Team.
+*   `DOC-011_Recruitment_Playbook.md` — Guiones de contacto en LinkedIn.
+*   `DOC-012_Onboarding_Guide.md` — Manual de bienvenida del nuevo colaborador.
+*   `DOC-013_Equity_and_Compensation_Plan.md` — Plan de stock options y SL.
 
----
+### 📁 03_Finanzas_y_Legal
+*   `DOC-020_Legal_Structure.md` — Constitución de Asociación e integración a S.L.
+*   `DOC-021_Financial_Model.md` — Proyecciones de Patreon (Stripe fees inc.).
+*   `DOC-022_Investor_Data_Room.md` — Estructura de activos para inversores.
+*   `DOC-023_Intellectual_Property_Strategy.md` — Licencia abierta CC BY-NC 4.0.
+*   `DOC-024_Shareholders_Agreement_Template.md` — Borrador de pacto de socios.
 
-## 🛠️ Herramientas de Compilación y Validación
-*   `generate_cero_docs.py` — Script que genera los PDFs formales y Markdowns leyendo del manifiesto JSON.
-*   `validate_cero_docs.py` — Suite de validación de calidad del repositorio. Comprueba esquemas JSON, enlaces internos, ausencia de regresiones de Matplotlib y peso de los archivos SVG.
+### 📁 04_Marketing_y_Contenido
+*   `DOC-030_Content_Strategy_and_Calendar.md` — Estrategia editorial en redes.
+*   `DOC-031_Video_Scripts_Library.md` — Guiones de los primeros episodios de YouTube.
+*   `DOC-032_Social_Media_Playbook.md` — Directrices de voz y hashtags.
+*   `DOC-033_Merch_and_Crowdfunding_Plan.md` — Tienda Print-on-Demand.
+*   `DOC-034_Press_and_Media_Kit.md` — Kit de prensa de una página.
+
+### 📁 05_Sourcing_y_Logistica
+*   `DOC-040_Sourcing_and_Logistics_Guide.md` — Compra de motor en desguace.
+*   `DOC-041_Supplier_Contact_List.md` — Lista de distribuidores de acero y CNC.
+*   `DOC-042_Negotiation_Scripts.md` — Guiones telefónicos de negociación.
 
 ---
 
