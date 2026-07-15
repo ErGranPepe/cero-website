@@ -1,23 +1,21 @@
 # DOC-040: Sourcing and Logistics Guide
-**Guía Práctica de Adquisición de Tren Motriz, Chasis y Baterías**
+**Guía Práctica de Compra, Logística de Baterías y Almacenamiento Seguro**
 
-- **Autor**: Alianzas y Sourcing CERO
+- **Autor**: Logística CERO
 - **Estado**: APROBADO
 - **Versión**: v16.0
 - **Fecha**: 15.07.2026
 
 ---
 
-## 1. Adquisición de Materiales para el Chasis
+## 1. Sourcing de Materiales y Tubos de Cromoly 4130
 
-• Metal: Distribuidores autorizados de acero cromoly 4130 con certificado de composición química de colada.
-• Comprobación física: Inspección visual de rectitud de los tubos recibidos y medición de espesores con micrómetro digital.
-• Requisito obligatorio: Almacenamiento horizontal en soporte elevado del suelo en el garaje para evitar la flexión residual de los tubos por gravedad.
+La compra de tubos de acero 4130 Chromoly con certificación de calidad de colada se realizará a distribuidores autorizados en Europa (como Tube Service o ThyssenKrupp Aerospace) para asegurar que el espesor de pared y la composición química cumplen las normas UNE-EN. No se aceptarán tubos sin certificado de colada original (Mill Test Certificate), ya que son obligatorios para la justificación del chasis ante los inspectores técnicos de IDIADA durante la homologación individual.
 
-## 2. Almacenamiento Seguro de Baterías de Litio
+## 2. Logística de Tránsito y Almacenamiento Seguro de Litio
 
-Las celdas de litio sueltas o módulos del acumulador deben almacenarse obligatoriamente en cajas metálicas refractarias herméticas, rellenas con arena seca o perlita expansiva en un rincón ventilado del taller. Esto previene e interrumpe cualquier propagación de incendio por embalamiento térmico (thermal runaway). El área contará con un extintor dedicado de CO2 de 5kg clase D.
+Las celdas de iones de litio 18650 se consideran mercancías peligrosas de Clase 9 bajo el acuerdo ADR para transporte por carretera. La logística de tránsito requiere embalaje certificado UN3480 con separadores internos para evitar vibraciones y cortocircuitos. Una vez recibidas en el garaje de Móstoles, las celdas se almacenarán en una estantería metálica ignífuga dedicada, alejada del área de soldadura TIG, y cada módulo se conservará dentro de contenedores refractarios rellenos de arena seca silícea para aislar el calor ante cualquier combustión espontánea.
 
-## 3. Logística y Envío Seguro de Componentes Pesados
+## 3. Suministro de Gas Argón y Consumibles de Taller
 
-El transporte de tubos de acero de 6 metros de longitud requiere camión de carga abierta y descarga manual. Las manguetas mecanizadas y amortiguadores se enviarán por mensajería ordinaria bien embalados. La logística de las baterías y el motor de tracción se coordinará con transportistas autorizados una vez definidos los componentes concretos por el equipo técnico.
+El suministro de Argón puro al 99.9% (gas de purga y soldadura) se coordinará con distribuidores locales (como Carburos Metálicos o Air Liquide) mediante contratos de alquiler de botellas de 50L. Se dispondrá de un regulador de doble caudalímetro para alimentar de forma simultánea la antorcha TIG y la línea de purga de respaldo en el chasis. Los electrodos de tungsteno (toriados al 2% o lantanosos al 2% de 2.4mm) y las varillas de aporte ER70S-6 se almacenarán en estuches herméticos desecantes para evitar que la humedad debilite la resistencia estructural de los cordones de soldadura.

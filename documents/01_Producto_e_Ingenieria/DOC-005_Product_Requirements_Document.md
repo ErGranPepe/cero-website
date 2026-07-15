@@ -1,43 +1,33 @@
 # DOC-005: Product Requirements Document
-**Ficha de Requerimientos ITV de Calle, Ergonomía y Homologación**
+**Ficha de Especificaciones Técnicas y Requisitos de Homologación Individual**
 
-- **Autor**: Ingeniería CERO
+- **Autor**: Ingeniería y Producto CERO
 - **Estado**: APROBADO
 - **Versión**: v16.0
 - **Fecha**: 15.07.2026
 
 ---
 
-## 1. Filosofía de Ingeniería y Sistemas Automotrices
+## 1. Objetivo del Producto CERO
 
-El documento de requerimientos de producto (PRD) de CERO se ha estructurado bajo los estándares de ingeniería de sistemas de la NASA (NASA Systems Engineering Handbook, SP-2016-6105). El objetivo es diseñar, simular y fabricar un vehículo monoplaza de calle con un coste de adquisición inicial de 0€, optimizando al límite el peso estructural y la rigidez torsional.
+El objetivo es construir un vehículo eléctrico de chasis modular, legalizable para la vía pública en España mediante el trámite de Homologación Individual de Vehículos (HIV) regulado por el Real Decreto 750/2010 y el Reglamento (UE) 2018/858. El diseño equilibra el minimalismo de un kit de automoción recreativo y las normativas de seguridad vial europeas, permitiendo que cualquier persona con planos open-source y tubos pre-cortados pueda montar un monoplaza matriculable.
 
-El monoplaza debe combinar la agilidad en curva de un kart de competición con el cumplimiento estricto de los requisitos legales del Reglamento General de Vehículos en España y las directivas de homologación individual de la Unión Europea (Reglamento UE 2018/858).
+## 2. Requisitos Técnicos de Chasis y Homologación Individual (Real Decreto 750/2010)
 
-## 2. Especificaciones de Sistemas Dinámicos y Mecánicos
+Para obtener el Informe de Conformidad oficial emitido por un Servicio Técnico de Homologación calificado (como IDIADA o INTA) sin incurrir en crash-tests destructivos (los cuales costarían más de 50.000 € y destruirían el prototipo de 0 €), se aplica la exención por homologación individual mediante justificación computacional FEA. La Crash Box delantera debe diseñarse en Onshape y validarse mediante simulación de fatiga e impacto dinámico a 7 m/s (25.2 km/h) contra barrera rígida, certificando una deceleración máxima de 20G y la absorción de energía estructural sin intrusión en el espacio de supervivencia del habitáculo. El chasis spaceframe tubular se soldará con aportación ER70S-6 TIG y purga de argón interna, certificándose la calidad de soldadura mediante ensayo no destructivo de líquidos penetrantes por un técnico certificado.
 
-• Chasis Tubular: Estructura espacial triangulada (spaceframe) fabricada en tubos de acero aleado al cromo-molibdeno 4130. El arco principal de seguridad antivuelco (Main Hoop) tendrá un diámetro de 25.4 mm y un espesor de pared mínimo de 2.0 mm, dimensionado para alojar un piloto del percentil 95 (1.90 m de altura).
-• Suspensión Cinemática: Configuración de doble trapecio independiente (double wishbone) delantero y trasero. Brazos fabricados en tubo 4130, unidos mediante rótulas esféricas de competición (uniball) de rosca métrica fina grado automotriz. Amortiguación ajustable montada con sistema de bieletas push-rod para optimizar el ratio de movimiento y el control de balanceo.
-• Sistema de Frenado Independiente: Pinzas de doble pistón opuesto y discos ventilados. El pedalier de competición incluirá dos bombas de freno independientes conectadas mediante una barra de equilibrio (bias bar) mecánica ajustable en cabina. Esto garantiza el doble circuito independiente exigido por ley: si ocurre una fuga en el circuito delantero, el circuito trasero retiene capacidad de frenado estática superior al 45%.
+## 3. Estándares y Directivas UNECE del Tren Motriz y Seguridad
 
-## 3. Tren Motriz Eléctrico e Inversor de Tracción (Conceptual)
+El monoplaza debe cumplir estrictamente con los siguientes estándares de homologación vial:
+• Compatibilidad Electromagnética (UNECE R10): El inversor Bamocar D3 y el cableado apantallado de alta tensión deben superar los ensayos de interferencias electromagnéticas en cámara anecoica.
+• Frenos (UNECE R13-H): Pinzas de freno Wilwood con sistema de doble circuito hidráulico cruzado en diagonal y freno de mano mecánico de estacionamiento independiente actuando sobre el eje trasero.
+• Ruido y Emisiones (UNECE R51): El zumbido del motor eléctrico Emrax 228 y la transmisión reductora no deben superar los 72 dB(A) a una velocidad de paso de 50 km/h en pista de pruebas.
+• Seguridad Eléctrica (UNECE R100): El pack de baterías de alta tensión (350V) debe contar con fusible pirotécnico de desconexión rápida de servicio MSD, monitoreo de aislamiento continuo (BMS Orion) y relés de seguridad principales alojados en caja estanca ignífuga.
 
-El coche utilizará un motor eléctrico síncrono de imanes permanentes montado en el subchasis trasero en una zona protegida contra colisiones laterales. La especificación exacta del motor y del inversor de tracción será definida por el equipo de ingenieros y patrocinadores una vez completada la fase conceptual, basándose en la disponibilidad de canje o compra Patreon:
-• Tipo de Motor: Imanes permanentes de flujo axial, refrigeración líquida.
-• Par y Potencia de Diseño: Potencia máxima objetivo de 80-100 kW, par máximo de 240 Nm.
-• Inversor: Controlador trifásico de alta tensión controlado por bus CAN a 500 kbps.
-• Sistema de Batería: Acumulador de iones de litio encapsulado en un contenedor ignífugo de fibra de carbono y Nomex.
+## 4. Proceso de Homologación en España (Paso a Paso)
 
-## 4. Flujo de Homologación Individual de Vehículos (HIV)
-
-A continuación se ilustra de forma visual el flujo administrativo del proceso de Homologación Individual de Vehículos (HIV) en España, detallando cada paso desde la ficha reducida hasta la obtención de las placas viales ordinarias:
-
-## 5. Requerimientos Legales para Homologación de Calle en España (ITV)
-
-Para la obtención de placas de matrícula ordinarias mediante el proceso de Homologación Individual de Vehículos (HIV):
-
-• Ficha Reducida: Documento técnico detallado firmado por ingeniero colegiado que describe la geometría, masas y elementos de seguridad activa/pasiva.
-• Informe de Conformidad: Emitido por un Servicio Técnico de Homologación oficial (como IDIADA o INTA), certificando que el diseño del chasis modular cumple con el Reglamento UE 2018/858. Se buscarán exenciones de crash-test destructivos mediante validaciones numéricas avanzadas por FEA.
-• Ensayos en Pista Oficiales: Pruebas dinámicas de frenado en mojado, comportamiento dinámico de dirección a velocidad, nivel de ruido acústico y compatibilidad electromagnética en laboratorios acreditados.
-• Inspección en Estación ITV: Verificación física final de los marcados de homologación 'E' en vidrios, ópticas, retrovisores convexos y radios de curvatura exteriores de carrocería superiores a 2.5 mm.
-• Auditoría ex-ante: Se firmará un acuerdo con un laboratorio oficial (como IDIADA o el INTA) para realizar una revisión preliminar de los planos CAD antes de iniciar la fabricación física.
+El proceso administrativo consta de 4 pasos obligatorios:
+1. Ficha Reducida: Elaboración y firma de la Ficha de Características Técnicas por Ingeniero Colegiado de automoción.
+2. Informe de Conformidad: Auditoría de planos y simulaciones FEA, y posterior emisión del certificado por IDIADA/INTA.
+3. Ensayos en Pista: Pruebas físicas de frenado (eficiencia y fatiga), medición de ruido y verificación de radio de giro.
+4. Inspección de ITV y Bastidor: Inspección ocular final en la estación de ITV física, grabado del número de bastidor (número VIN de CERO), y expedición de la Tarjeta de Inspección Técnica Tipo B para matriculación vial comercial.

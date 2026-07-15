@@ -1,30 +1,24 @@
 # DOC-031: Video Scripts Library
-**Librería de Guiones y Estructuras de Vídeo para YouTube**
+**Librería de Guiones de Vídeo para YouTube y TikTok**
 
-- **Autor**: Medios y Crecimiento CERO
+- **Autor**: Contenido CERO
 - **Estado**: APROBADO
 - **Versión**: v16.0
 - **Fecha**: 15.07.2026
 
 ---
 
-## 1. Estructura del Vídeo de YouTube de Lanzamiento (Episodio 1)
+## 1. Guion del Episodio 1 (YouTube Vlog): 'El Garaje de 0€'
 
-• 0:00 - 1:00: Gancho de retención de 5 segundos. Mario frente a la cámara en un garaje vacío: 'Voy a construir un coche de carreras real para calle desde 0€ y solo con internet. No tengo taller ni dinero. Os muestro cómo'. Renders rápidos del chasis modular.
-• 1:00 - 3:00: El problema industrial. El coste prohibitivo de los karts y monoplazas tradicionales, y las trabas burocráticas europeas. La filosofía de código abierto de CERO.
-• 3:00 - 6:00: Conflicto del espacio. Mario visita tres locales comerciales en Móstoles que están en alquiler. Dos agencias inmobiliarias le rechazan de inmediato al proponerles un canje de publicidad. Mario comparte su frustración ante la cámara: 'Nadie cree en esto al inicio. Pero vamos a seguir llamando a talleres activos'.
-• 6:00 - 8:00: Llamadas de sourcing. Mario llama en directo a distribuidores de acero para conseguir tubos de cromoly 4130 a coste cero. La llamada termina en un cliffhanger sobre si el distribuidor aceptará.
-• 8:00 - 10:00: Llamada a la acción. 'Si eres ingeniero, soldador o tienes un local, únete a Discord en buildcero.com'. Suscríbete.
+• Gancho Inicial (0-5s): Plano secuencia rápido. Mario entra en un garaje industrial polvoriento en Móstoles. Golpea una columna de metal. 'Aquí es donde vamos a construir el primer coche eléctrico open-source de España... si el dueño firma este contrato de 0€. Os enseño cómo.'
+• Introducción (5-45s): Intro animada dinámica de CERO. Mario explica la misión: construir un coche de carreras matriculable en 28 meses usando mecenazgo y trueque publicitario.
+• Conflicto y Desarrollo (45s - 7m): Mario saca su soldadora TIG del maletero. Enchufa y ¡pum! Salta la luz del local. El dueño del taller entra frunciendo el ceño. Conflicto físico: la toma del local es de solo 2.2 kW y necesitamos mínimo 5.5 kW para soldar cromoly sin debilitar el arco. Explicación técnica rápida sobre penetración de arco y purga de argón.
+• Negociación en Directo (7-9m): Mario y el dueño se sientan en dos cajas de madera. Mario le enseña las métricas de YouTube y le propone un trato: CERO asumirá el coste de aumentar la potencia del boletín eléctrico del local usando los fondos de Patreon, y a cambio, el taller aparecerá como patrocinador principal en todos los clips verticales de TikTok y Reels. El dueño sonríe y estrecha la mano.
+• Cierre y Call to Action (9-10m): Mario invita a la comunidad a unirse al Patreon y Discord para descargar el CAD del chasis. 'El garaje es nuestro. En el próximo episodio: el mockup de madera.'
 
-## 2. Episodio 2: Negociando el Garaje en Directo y Renders
+## 2. Estrategia de TikTok y Reels: Clips de Micro-Conflicto
 
-• 0:00 - 1:30: Gancho. '¿Hemos conseguido local? Hoy nos reunimos con el dueño de un taller cerrado para proponerle el trato de su vida'.
-• 1:30 - 5:00: Visita física al taller mecánico activo en Móstoles. Medidas del espacio, discusión sobre la instalación eléctrica trifásica y colocación de la futura mesa jig. El dueño del taller duda sobre la legalidad del canje publicitario.
-• 5:00 - 8:00: Resolución / Clímax del trueque. Mario presenta el borrador del contrato barter de permuta. El dueño firma el acuerdo. ¡Tenemos garaje físico para los sábados por la tarde!
-• 8:00 - 10:00: Llamada a la acción: lanzamiento del Patreon oficial para financiar los primeros consumibles del taller (gases de soldar).
-
-## 3. Episodio 3: Consiguiendo el Acero Cromoly 4130
-
-• 0:00 - 2:00: Gancho. Mario con el teléfono en altavoz. 'Hola, buscaba tubos de acero 4130 cromoly para ceder a cambio de salir de fondo en YouTube ante 20.000 ingenieros'.
-• 2:00 - 7:00: Grabación de las llamadas de sourcing de materiales. Negociaciones con metalúrgicas locales. Cierre del primer sponsor de metal.
-• 7:00 - 10:00: Lección de negociación. Cómo vender tracción online a negocios tradicionales de barrio. Enlace al manual de negociación (DOC-042).
+Cada clip vertical de 45 segundos debe estructurarse con la fórmula del Gancho Rápido de 3 segundos:
+• Segundo 0-3: 'Soldando un chasis de 0 €... ¿y explota la luz?' (Plano del salto de chispa).
+• Segundo 3-30: Explicación rápida de por qué no puedes soldar cromoly con un enchufe de casa de 2.2 kW, mostrando el amperímetro y el flujo de argón a 5L/min.
+• Segundo 30-45: Solución ágil firmada en el contrato de permuta publicitario y llamada a entrar en Discord para el Micro-Reto de la mangueta.

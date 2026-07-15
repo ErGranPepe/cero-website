@@ -1,45 +1,30 @@
 # DOC-042: Negotiation Scripts
-**Guiones Telefónicos y de Correo para Alianzas, Garajes y Canjes Comerciales**
+**Guiones Telefónicos de Patrocinio y Plantilla de Contrato Barter**
 
-- **Autor**: Alianzas y Sourcing CERO
+- **Autor**: Fundadores de CERO
 - **Estado**: APROBADO
 - **Versión**: v16.0
 - **Fecha**: 15.07.2026
 
 ---
 
-## 1. Guion Telefónico para Conseguir el Garaje (Local Físico Vacío)
+## 1. Guion de Llamada Fría para Locales y Taller
 
-"Hola, buenas tardes. Llamaba por el anuncio del local en alquiler en Móstoles. Me gustaría proponerle un trato alternativo: dirijo CERO (buildcero.com), el primer coche open-source de calle desarrollado de forma colaborativa por internet en Madrid.
+• Apertura (0-15s): 'Hola [PROPIETARIO], me llamo Mario. Estoy liderando el proyecto CERO. Estamos construyendo en abierto el primer deportivo eléctrico homologable de calle en España y documentando todo en YouTube. He visto que vuestro local en Móstoles tiene un espacio libre y quería proponeros una alianza.'
+• Gancho de Valor (15-45s): 'No buscamos un alquiler comercial clásico de dinero por espacio. Os ofrecemos un contrato de permuta de servicios: a cambio de usar ese espacio inactivo de taller, os patrocinamos de forma activa con logos, menciones semanales en nuestros vlogs de YouTube (200.000 vistas estimadas) y clips de TikTok, atrayendo clientes locales y reputación a vuestra marca de automoción.'
+• Cierre y Cita (45-60s): '¿Te vendría bien que pase este jueves a las 18:00 por el taller para enseñarte el diseño CAD y ver cómo podemos colaborar sin que os cueste un solo euro?'
 
-Tenemos una comunidad de miles de ingenieros y entusiastas siguiendo el proceso semanal en YouTube. Le proponemos cedernos el uso de su local cerrado o garaje como taller de montaje a cambio de un contrato de canje de publicidad: su local aparecerá de fondo en todos nuestros vlogs semanales y Shorts de YouTube, con enlaces de contacto y publicidad directa que llevarán visibilidad y clientes a su negocio o cartera inmobiliaria. ¿Le interesaría que nos reunamos 10 minutos en el local y le enseño los planos conceptuales del coche?"
+## 2. Plantilla Real de Contrato de Permuta de Servicios Publicitarios (Barter Contract)
 
-## 2. Guion Telefónico para Negociar Espacio en Taller Mecánico Activo (Plan B)
+**CONTRATO DE PERMUTA DE SERVICIOS PUBLICITARIOS (BARTER) DE ESPACIO DE TALLER**
 
-"Hola, buenas tardes. Quería hablar con el dueño del taller. Mi nombre es Mario y estoy coordinando CERO (buildcero.com), un monoplaza open-source para calle desarrollado colaborativamente por internet.
+En Móstoles, a [FECHA]. REUNIDOS: De una parte, [PROPIETARIO DE LOCAL], en adelante el Propietario. De otra parte, la Asociación de Ingeniería de Código Abierto CERO, representada por Mario, en adelante la Asociación. Ambas partes se reconocen capacidad legal y convienen el presente contrato al amparo del Artículo 1538 del Código Civil. CLÁUSULAS:
+• Primera (Objeto): El Propietario cede temporalmente el uso de X metros cuadrados de su local en Móstoles para el ensamblaje del prototipo CERO.
+• Segunda (Contraprestación): La Asociación se compromete a insertar la imagen corporativa del Propietario en la intro de sus vlogs de YouTube y realizar al menos 1 mención activa semanal en sus redes.
+• Tercera (Consumos): La Asociación asumirá mediante los fondos de Patreon el incremento del coste de la luz derivado del uso de la máquina soldadora TIG, estimándose en base a lecturas previas.
+• Cuarta (Responsabilidad): El Propietario queda exento de cualquier responsabilidad civil por accidentes o daños ocurridos durante el uso del taller. La Asociación mantendrá extintores clase D y seguro de responsabilidad civil al día.
+• Firmado en duplicado por ambas partes.
 
-Viendo la calidad de sus instalaciones, queríamos proponerle un acuerdo de trueque comercial. Buscamos un rincón libre de su taller (de unos 15-20 m²) para soldar el chasis y ensamblar las piezas únicamente los sábados por la tarde, fuera de su horario comercial. A cambio, colocaremos un cartel gigante de su taller de fondo en todos nuestros vídeos semanales de YouTube y Shorts de taller (donde nos siguen miles de apasionados locales), ayudaremos a limpiar y ordenar el taller los fines de semana, y promocionaremos activamente sus servicios de mecánica en la zona de Móstoles. ¿Podríamos pasarnos el sábado por la tarde 10 minutos para mostrarle el diseño en Onshape?"
+## 3. Guion de Negociación para Distribuidor de Materiales (Tubos/Cromoly)
 
-## 3. Plantilla de Contrato de Permuta de Servicios Publicitarios (Barter)
-
-REUNIDOS:
-De una parte, Don/Doña [Propietario/Representante], en adelante el CEDENTE, titular del espacio/material ubicado en [Dirección].
-De otra parte, Don Mario, en representación de la 'Asociación de Ingeniería de Código Abierto CERO', en adelante el ADQUISITOR.
-
-ACUERDAN:
-1. Objeto: El CEDENTE cede temporalmente el uso de un espacio de 20 metros cuadrados en sus instalaciones los sábados en horario de 16:00 a 21:00 horas, o en su defecto 50 metros de tubos de acero cromoly 4130.
-2. Contraprestación Publicitaria: El ADQUISITOR se compromete a promocionar la marca/instalación del CEDENTE en la serie de vlogs semanales de YouTube y en la web buildcero.com mediante la colocación de un cartel visible en el área de trabajo y enlaces web directos.
-3. Suministro Eléctrico: El coste de suministro eléctrico de fuerza (potencia contratada mínima de 5.5 kW para soldadora TIG a 230V) será asumido por el CEDENTE, aportando la asociación un pago compensatorio estimado en caso de soldadura intensiva continuo superior a 10 horas mensuales.
-4. Responsabilidad Civil: El ADQUISITOR exime de toda responsabilidad civil al CEDENTE ante cualquier accidente derivado de la actividad de soldadura o manipulación mecánica dentro del espacio cedido, contando con seguro de responsabilidad de la Asociación.
-
-En prueba de conformidad, firman en duplicado en Madrid, a [Fecha].
-
-## 4. Guion de Seguimiento por Correo Electrónico
-
-"Estimado [Nombre del Propietario / Proveedor],
-
-Le escribo para dar seguimiento a nuestra conversación de ayer. Le adjunto el dossier de patrocinio y el Manifiesto de CERO (DOC-001) where we detail the operational model and social media traction. We are very interested in working with you to set up the project's garage in your local shop.
-
-Quedamos a su entera disposición para reunirnos de forma física. Un saludo cordial, Mario."
-
-Este correo se enviará de inmediato para mantener viva la negociación del espacio o materiales.
+Guion de aproximación a directores comerciales de metalúrgicas: 'Hola [NOMBRE], vuestro acero cromoly 4130 es el estándar de la industria. Si nos donáis los tubos necesarios para el chasis (valorados en 1.200 €), grabaremos un episodio especial de YouTube detallando vuestros certificados de colada y control de calidad, asociando vuestra marca con el futuro del automovilismo eléctrico open-source de España. El documento de especificaciones técnicas citará vuestro acero como el oficial homologado de CERO.'

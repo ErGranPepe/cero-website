@@ -144,67 +144,66 @@
     "DOC-004": {
         "category": "00_Gobernanza_y_Estrategia",
         "title": "Operating System",
-        "subtitle": "Estructura de la Organización de Internet y Canales de Comunicación",
-        "author": "Operaciones CERO",
+        "subtitle": "Estructura de la Organización y Cadencia de Trabajo Semanal/Mensual",
+        "author": "Dirección Estratégica CERO",
         "status": "APROBADO",
         "version": "v16.0",
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Estructura de Trabajo Abierta y Tableros Kanban",
-                "El proyecto opera mediante un núcleo (Core Team) y comisiones de voluntarios coordinadas en Discord y GitHub. No existen rangos jerárquicos corporativos clásicos; las aportaciones técnicas registradas en el repositorio otorgan el estatus de colaborador activo. Esto fomenta una meritocracia técnica pura donde las mejores ideas se validan en CAD de forma colegiada y transparente, evitando atascos burocráticos. La gobernanza busca descentralizar el desarrollo de ingeniería mientras mantiene un núcleo fuerte responsable de las operaciones de taller físico y marketing.\n\nLas comisiones técnicas de Discord operan en Sprints estructurados de 2 semanas, gestionados mediante un tablero Kanban público en GitHub Projects. Las tareas abiertas se dividen en Micro-Retos de menos de 2 horas para facilitar la participación rápida de nuevos voluntarios técnicos, evitando cuellos de botella en la ruta crítica del chasis modular."
+                "1. Cadencia de Trabajo Semanal y Gestión del Scrum",
+                "Para mantener el ritmo y el alineamiento de la comunidad abierta sin fatigar a los voluntarios, CERO opera con Sprints bisemanales (sprints de 14 días) gestionados en Discord y coordinados a través de tableros Kanban públicos en GitHub. Cada sprint comienza el lunes a las 20:00 con una planificación rápida de 15 minutos en Discord de voz (Sprint Planning) y concluye con una sesión de Review y Demo los domingos alternos. Las tareas se desglosan en tarjetas Kanban accesibles, priorizando micro-retos de 2 horas. Esto asegura que cada miembro de la comunidad pueda aportar valor de inmediato y ver reflejado su esfuerzo en las actualizaciones viales de YouTube, las cuales coinciden con el cierre de cada sprint."
             ],
             [
-                "2. Canales Oficiales y Protocolos de Comunicación",
-                "• Discord: Debates rápidos y reuniones de voz dominicales. Canales específicos para cada subsistema del coche (chasis, suspensión, aero, baterías, contenido).\n• GitHub: Control de versiones de planos Onshape (enlaces y archivos CAD) e informes técnicos. Todos los documentos Markdown oficiales residen en la raíz del proyecto.\n• Web (buildcero.com): Landing de captación y data room. Acceso rápido a renders en 3D para patrocinadores e inversores.\n• Frecuencia de Reuniones: Asamblea general los domingos a las 20:00 CEST en Discord. Reuniones técnicas ad-hoc los miércoles. Todo el progreso se documenta mediante actas semanales publicadas en abierto."
+                "2. Reunión de Voz de Discord y Canales Operativos",
+                "La comunicación se organiza en servidores estructurados con permisos reactivos. Se definen tres niveles de acceso:\n• #general-chat: Para discusiones conceptuales abiertas, debates de vlogs y anuncios generales de operaciones.\n• #micro-retos: Canal clave de dopaminización donde se publican retos rápidos de diseño CAD y simulación, monitorizados por mentores.\n• #core-team-voice: Canal privado de voz con grabaciones automáticas de reuniones de desarrollo técnico.\n\nCada domingo de cierre de Sprint se realiza una Asamblea General en Discord de voz a las 18:00 (abierta a mecenas de Patreon y colaboradores), donde se repasan los avances del CAD en directo y se aprueba la fusión de ramas en la rama principal de Onshape."
             ],
             [
-                "3. Embudo de Crecimiento y Conversión Comunitaria",
-                "A continuación se muestra gráficamente cómo convertimos espectadores casuales en colaboradores del proyecto:"
-            ],
-            [
-                "4. Diagrama de Roles y Organización del Discord",
-                "A continuación se ilustra la jerarquía de roles y responsabilidades en Discord:"
-            ],
-            [
-                "5. Matriz RACI Básica",
-                "A continuación se presenta la matriz RACI del equipo CERO:"
+                "3. Matriz de Responsabilidades de Gobernanza (RACI)",
+                "Para garantizar la agilidad operativa, las decisiones se rigen por una matriz RACI estructurada: el Director de Proyecto asume la responsabilidad final (Accountable) de la homologación y de la S.L.; la Comisión Técnica (ingenieros de la comunidad) es Responsable de la ejecución de planos en Onshape y análisis FEA; los Asesores Legales son Consultados para los pactos de socios y cesiones de IP; y la comunidad en general es Informada a través de los vlogs y el servidor general de Discord."
             ]
         ],
-        "image": "growth_funnel.png",
         "table": {
             "cols": [
-                150,
-                70,
-                70,
-                70,
-                70,
-                70
+                120,
+                60,
+                60,
+                60,
+                60,
+                84
             ],
             "data": [
                 [
-                    "Actividad / Hito",
-                    "ENG (Ing.)",
-                    "MED (Medios)",
-                    "PART (Alian.)",
-                    "LEG (Legal)",
-                    "GOV (Gob.)"
+                    "Decisión / Tarea",
+                    "Director",
+                    "Comisión",
+                    "Asesores",
+                    "Mecenas",
+                    "Comunidad"
                 ],
                 [
-                    "Requerimientos",
+                    "Aprobación CAD",
+                    "A",
+                    "R",
+                    "C",
+                    "I",
+                    "I"
+                ],
+                [
+                    "Homologación HIV",
                     "A",
                     "C",
-                    "I",
                     "C",
-                    "R"
+                    "I",
+                    "I"
                 ],
                 [
-                    "Diseño CAD",
-                    "R",
+                    "Lanzamiento Patreon",
+                    "A",
                     "I",
                     "C",
-                    "I",
-                    "A"
+                    "R",
+                    "I"
                 ],
                 [
                     "Vídeos YouTube",
@@ -344,31 +343,27 @@
     "DOC-005": {
         "category": "01_Producto_e_Ingenieria",
         "title": "Product Requirements Document",
-        "subtitle": "Ficha de Requerimientos ITV de Calle, Ergonomía y Homologación",
-        "author": "Ingeniería CERO",
+        "subtitle": "Ficha de Especificaciones Técnicas y Requisitos de Homologación Individual",
+        "author": "Ingeniería y Producto CERO",
         "status": "APROBADO",
         "version": "v16.0",
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Filosofía de Ingeniería y Sistemas Automotrices",
-                "El documento de requerimientos de producto (PRD) de CERO se ha estructurado bajo los estándares de ingeniería de sistemas de la NASA (NASA Systems Engineering Handbook, SP-2016-6105). El objetivo es diseñar, simular y fabricar un vehículo monoplaza de calle con un coste de adquisición inicial de 0€, optimizando al límite el peso estructural y la rigidez torsional.\n\nEl monoplaza debe combinar la agilidad en curva de un kart de competición con el cumplimiento estricto de los requisitos legales del Reglamento General de Vehículos en España y las directivas de homologación individual de la Unión Europea (Reglamento UE 2018/858)."
+                "1. Objetivo del Producto CERO",
+                "El objetivo es construir un vehículo eléctrico de chasis modular, legalizable para la vía pública en España mediante el trámite de Homologación Individual de Vehículos (HIV) regulado por el Real Decreto 750/2010 y el Reglamento (UE) 2018/858. El diseño equilibra el minimalismo de un kit de automoción recreativo y las normativas de seguridad vial europeas, permitiendo que cualquier persona con planos open-source y tubos pre-cortados pueda montar un monoplaza matriculable."
             ],
             [
-                "2. Especificaciones de Sistemas Dinámicos y Mecánicos",
-                "• Chasis Tubular: Estructura espacial triangulada (spaceframe) fabricada en tubos de acero aleado al cromo-molibdeno 4130. El arco principal de seguridad antivuelco (Main Hoop) tendrá un diámetro de 25.4 mm y un espesor de pared mínimo de 2.0 mm, dimensionado para alojar un piloto del percentil 95 (1.90 m de altura).\n• Suspensión Cinemática: Configuración de doble trapecio independiente (double wishbone) delantero y trasero. Brazos fabricados en tubo 4130, unidos mediante rótulas esféricas de competición (uniball) de rosca métrica fina grado automotriz. Amortiguación ajustable montada con sistema de bieletas push-rod para optimizar el ratio de movimiento y el control de balanceo.\n• Sistema de Frenado Independiente: Pinzas de doble pistón opuesto y discos ventilados. El pedalier de competición incluirá dos bombas de freno independientes conectadas mediante una barra de equilibrio (bias bar) mecánica ajustable en cabina. Esto garantiza el doble circuito independiente exigido por ley: si ocurre una fuga en el circuito delantero, el circuito trasero retiene capacidad de frenado estática superior al 45%."
+                "2. Requisitos Técnicos de Chasis y Homologación Individual (Real Decreto 750/2010)",
+                "Para obtener el Informe de Conformidad oficial emitido por un Servicio Técnico de Homologación calificado (como IDIADA o INTA) sin incurrir en crash-tests destructivos (los cuales costarían más de 50.000 € y destruirían el prototipo de 0 €), se aplica la exención por homologación individual mediante justificación computacional FEA. La Crash Box delantera debe diseñarse en Onshape y validarse mediante simulación de fatiga e impacto dinámico a 7 m/s (25.2 km/h) contra barrera rígida, certificando una deceleración máxima de 20G y la absorción de energía estructural sin intrusión en el espacio de supervivencia del habitáculo. El chasis spaceframe tubular se soldará con aportación ER70S-6 TIG y purga de argón interna, certificándose la calidad de soldadura mediante ensayo no destructivo de líquidos penetrantes por un técnico certificado."
             ],
             [
-                "3. Tren Motriz Eléctrico e Inversor de Tracción (Conceptual)",
-                "El coche utilizará un motor eléctrico síncrono de imanes permanentes montado en el subchasis trasero en una zona protegida contra colisiones laterales. La especificación exacta del motor y del inversor de tracción será definida por el equipo de ingenieros y patrocinadores una vez completada la fase conceptual, basándose en la disponibilidad de canje o compra Patreon:\n• Tipo de Motor: Imanes permanentes de flujo axial, refrigeración líquida.\n• Par y Potencia de Diseño: Potencia máxima objetivo de 80-100 kW, par máximo de 240 Nm.\n• Inversor: Controlador trifásico de alta tensión controlado por bus CAN a 500 kbps.\n• Sistema de Batería: Acumulador de iones de litio encapsulado en un contenedor ignífugo de fibra de carbono y Nomex."
+                "3. Estándares y Directivas UNECE del Tren Motriz y Seguridad",
+                "El monoplaza debe cumplir estrictamente con los siguientes estándares de homologación vial:\n• Compatibilidad Electromagnética (UNECE R10): El inversor Bamocar D3 y el cableado apantallado de alta tensión deben superar los ensayos de interferencias electromagnéticas en cámara anecoica.\n• Frenos (UNECE R13-H): Pinzas de freno Wilwood con sistema de doble circuito hidráulico cruzado en diagonal y freno de mano mecánico de estacionamiento independiente actuando sobre el eje trasero.\n• Ruido y Emisiones (UNECE R51): El zumbido del motor eléctrico Emrax 228 y la transmisión reductora no deben superar los 72 dB(A) a una velocidad de paso de 50 km/h en pista de pruebas.\n• Seguridad Eléctrica (UNECE R100): El pack de baterías de alta tensión (350V) debe contar con fusible pirotécnico de desconexión rápida de servicio MSD, monitoreo de aislamiento continuo (BMS Orion) y relés de seguridad principales alojados en caja estanca ignífuga."
             ],
             [
-                "4. Flujo de Homologación Individual de Vehículos (HIV)",
-                "A continuación se ilustra de forma visual el flujo administrativo del proceso de Homologación Individual de Vehículos (HIV) en España, detallando cada paso desde la ficha reducida hasta la obtención de las placas viales ordinarias:"
-            ],
-            [
-                "5. Requerimientos Legales para Homologación de Calle en España (ITV)",
-                "Para la obtención de placas de matrícula ordinarias mediante el proceso de Homologación Individual de Vehículos (HIV):\n\n• Ficha Reducida: Documento técnico detallado firmado por ingeniero colegiado que describe la geometría, masas y elementos de seguridad activa/pasiva.\n• Informe de Conformidad: Emitido por un Servicio Técnico de Homologación oficial (como IDIADA o INTA), certificando que el diseño del chasis modular cumple con el Reglamento UE 2018/858. Se buscarán exenciones de crash-test destructivos mediante validaciones numéricas avanzadas por FEA.\n• Ensayos en Pista Oficiales: Pruebas dinámicas de frenado en mojado, comportamiento dinámico de dirección a velocidad, nivel de ruido acústico y compatibilidad electromagnética en laboratorios acreditados.\n• Inspección en Estación ITV: Verificación física final de los marcados de homologación 'E' en vidrios, ópticas, retrovisores convexos y radios de curvatura exteriores de carrocería superiores a 2.5 mm.\n• Auditoría ex-ante: Se firmará un acuerdo con un laboratorio oficial (como IDIADA o el INTA) para realizar una revisión preliminar de los planos CAD antes de iniciar la fabricación física."
+                "4. Proceso de Homologación en España (Paso a Paso)",
+                "El proceso administrativo consta de 4 pasos obligatorios:\n1. Ficha Reducida: Elaboración y firma de la Ficha de Características Técnicas por Ingeniero Colegiado de automoción.\n2. Informe de Conformidad: Auditoría de planos y simulaciones FEA, y posterior emisión del certificado por IDIADA/INTA.\n3. Ensayos en Pista: Pruebas físicas de frenado (eficiencia y fatiga), medición de ruido y verificación de radio de giro.\n4. Inspección de ITV y Bastidor: Inspección ocular final en la estación de ITV física, grabado del número de bastidor (número VIN de CERO), y expedición de la Tarjeta de Inspección Técnica Tipo B para matriculación vial comercial."
             ]
         ],
         "image": "itv_homologation_steps.png"
@@ -498,27 +493,23 @@
     "DOC-008": {
         "category": "01_Producto_e_Ingenieria",
         "title": "Manufacturing Plan",
-        "subtitle": "Plan de Corte, Soldadura e Integración en Taller Colaborador",
-        "author": "Ingeniería CERO",
+        "subtitle": "Plan de Corte, Soldadura TIG y Protocolo de Seguridad Eléctrica",
+        "author": "Taller y Fabricación CERO",
         "status": "APROBADO",
         "version": "v16.0",
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Construcción de la Bancada de Soldadura (Jig)",
-                "Para evitar cualquier distorsión térmica o desalineación milimétrica de la estructura del chasis durante la soldadura, es obligatorio fabricar una bancada de soldadura (jig) rígida de acero.\n\nLa bancada se fabricará utilizando perfiles de acero dulce estructural de 80 mm x 40 mm x 4 mm, atornillados al suelo nivelado del taller. Se soldarán soportes ajustables para sujetar en su posición teórica exacta los nudos de suspensión delantera, soportes de motor y el arco antivuelco principal antes de realizar las soldaduras definitivas. La nivelación de la mesa jig se comprobará mediante nivel láser micrométrico, admitiéndose una desviación máxima de 0.2 mm por metro lineal."
+                "1. Plan de Corte y Biselado CNC del Cromoly 4130",
+                "La fabricación del chasis spaceframe requiere precisión geométrica absoluta para evitar desviaciones axiales. Los tubos de acero 4130 Chromoly de 1.0 y 1.25 pulgadas se cortan y biselan utilizando una entalladora (notcher) CNC en base a las plantillas exportadas del Onshape. Las juntas deben quedar con una tolerancia de separación inferior a 0.5 mm para garantizar la penetración y resistencia del cordón de soldadura TIG, minimizando tensiones térmicas residuales que distorsionen el chasis."
             ],
             [
-                "2. Entorno del Garaje Físico y la Mesa Jig",
-                "A continuación se presenta el render conceptual del taller físico de ensamblaje en Móstoles:"
+                "2. Requerimientos Eléctricos y TIG de Taller",
+                "Para la soldadura TIG a 120-160 amperios de las uniones de cromoly, un garaje doméstico estándar con potencia contratada de 2.2 kW es totalmente insuficiente e inseguro. Es obligatorio disponer de una potencia contratada mínima de **5.5 kW a 230V** (o una toma industrial trifásica de 400V a 16A) para soportar de manera simultánea la soldadora de alta frecuencia, la refrigeración líquida de la antorcha, la bomba de vacío y el compresor de aire sin caídas de tensión que debiliten la penetración del arco. Se realizará purga de argón interna (back-purging) a 5L/min en el interior de los tubos estructurales para evitar la oxidación y la formación de 'flores de óxido' internas, garantizando una soldadura de calidad aeroespacial."
             ],
             [
-                "3. Proceso de Soldadura TIG de Tubos de Cromoly 4130",
-                "El acero cromoly 4130 requiere soldadura TIG de alta precisión para evitar la formación de microfisuras debido al enfriamiento rápido:\n\n• Potencia Eléctrica del Garaje: Es obligatorio que la línea de alimentación eléctrica tenga una potencia contratada mínima de **5.5 kW a 230V** (o circuito de fuerza trifásica de 400V) para sostener el arco de la soldadora TIG a 120-160A y la operación simultánea de ventilación y compresor, con una toma de tierra independiente verificada.\n• Preparación de Juntas: Todos los extremos de los tubos deben biselarse con una notcher de tubo a un ajuste perfecto sin holguras (>0.5 mm de hueco invalidará la junta). Se eliminará la capa de calamina y óxido mediante cepillo de acero inoxidable.\n• Purga Interna: Llenado del interior del tubo con gas argón al 99.9% durante la soldadura para evitar la oxidación interna (back-purging). El caudal de purga se mantendrá entre 2 y 5 PSI.\n• Parámetros de Soldadura: Corriente continua con electrodo de tungsteno al 2%, varilla de aporte ER70S-6 o ER80S-D2 de 1.6 mm. Enfriamiento lento controlado mediante mantas térmicas ignífugas para evitar tensiones estructurales internas residuales. Queda prohibido enfriar las soldaduras con aire comprimido o agua."
-            ],
-            [
-                "4. Ensamble de Acumulador de Baterías",
-                "Las celdas de batería se soldarán por puntos utilizando una soldadora de pulso controlado de precisión y tiras de níquel de espesor adecuado. Queda estrictamente prohibido soldar celdas con soldador de estaño convencional, ya que el calor excesivo daña los separadores internos de la celda, provocando cortocircuitos térmicos."
+                "3. Protocolo de Seguridad de Celdas de Litio y Fuga Térmica",
+                "El ensamblaje y almacenamiento del pack de baterías (480 celdas 18650) exige un riguroso protocolo de seguridad química:\n• Almacenamiento Refractario: Todas las celdas y módulos a medio montar deben almacenarse en contenedores metálicos herméticos llenos de arena seca de sílice o esferas de vidrio extinguibles especiales. Esto asfixia el oxígeno en caso de cortocircuito.\n• Prevención de Fuga Térmica (Thermal Runaway): Queda terminantemente prohibido soldar celdas con calor directo (soldadura de estaño). El ensamblaje de contactos se realizará mediante soldadora de puntos por resistencia CNC por impulsos cortos de 5ms. El taller contará con ventilación forzada conectada a un extractor exterior y extintores de clase D específicos para fuego de metales y celdas de litio."
             ]
         ],
         "image": "cero_garage_workshop.png"
@@ -592,23 +583,23 @@
     "DOC-012": {
         "category": "02_Reclutamiento_y_Equipo",
         "title": "Onboarding Guide",
-        "subtitle": "Manual de Incorporación del Colaborador y Herramientas del Proyecto",
-        "author": "Operaciones CERO",
+        "subtitle": "Manual de Incorporación y Tareas de Dopamina Rápida",
+        "author": "Recursos Humanos y Comunidad CERO",
         "status": "APROBADO",
         "version": "v16.0",
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Manual de Bienvenida del Colaborador",
-                "Bienvenido a CERO. Nuestro objetivo es que realices tu primera aportación al diseño conceptual en menos de 7 días. El primer paso obligatorio es la lectura del Manifiesto Fundacional (DOC-001) para comprender las dinámicas de bootstrapping con 0€, así como la firma del acuerdo de cesión de propiedad intelectual (DOC-023) para proteger el desarrollo open-source. Creemos en la autonomía y la responsabilidad compartida: no esperes órdenes, busca un issue abierto y empieza a proponer soluciones."
+                "1. Guía de Bienvenida al Discord de CERO",
+                "¡Bienvenido a la comunidad de CERO! Nuestra misión es construir y homologar el primer deportivo eléctrico de código abierto de España. Para que tu integración sea ágil y gratificante, el proceso de onboarding está completamente gamificado. Una vez que te unas al Discord, debes dirigirte al canal #roles para asignar tu disciplina (CAD Chassis, Simulaciones FEA/CFD, Electrónica/ECU, o Contenido/Vlogs). Recibirás acceso de lectura al Onshape y al repositorio central en GitHub, listos para tu primera contribución."
             ],
             [
-                "2. Configuración del Workspace Técnico",
-                "• Discord: Regístrate con tu nombre real e indica tu especialidad (CAD, FEA, CFD, soldadura o edición) en el canal #roles. Solicita los permisos técnicos correspondientes.\n• Onshape: Crea una cuenta gratuita de estudiante o entusiasta. Solicita acceso de edición en el canal #cad-chasis enviando tu email registrado.\n• GitHub: Clona el repositorio maestro `ErGranPepe/cero-website` para tener acceso a los scripts y documentos Markdown del proyecto. Configura tus credenciales Git locales."
+                "2. Micro-Retos de 2 Horas y Dopamina Operativa",
+                "Para evitar la fatiga temprana y el abandono por sobrecarga cognitiva, no te pediremos que diseñes el coche entero el primer día. En su lugar, el equipo opera a través de 'Micro-Retos' rápidos de 2 horas en el canal #micro-retos. Estos retos están diseñados para completarse en una tarde y aportar dopamina de logro rápido, tales como:\n• Micro-Reto A: Modelar el soporte impreso en 3D para el sensor Hall de velocidad en la mangueta delantera.\n• Micro-Reto B: Comprobar la tolerancia y evitar colisiones de la tornillería de métrica 6 en los trapecios de suspensión.\n• Micro-Reto C: Validar los grosores e inercias del pedal de acelerador de aluminio en Onshape.\n\nUna vez resuelto, subes tu enlace de Onshape al Discord, es verificado por un mentor del Core Team, y se añade a la rama principal, apareciendo tu nombre en los créditos del siguiente vlog semanal."
             ],
             [
-                "3. Primer Challenge del Colaborador (Micro-Retos de 2 Horas)",
-                "Para evitar la inactividad y dar feedback inmediato, el onboarding se gestiona mediante 'Micro-Retos' técnicos de menos de 2 horas. Un micro-reto típico para diseño CAD consiste en modelar en Onshape el soporte del sensor de velocidad del buje delantero respetando los radios de aristas de 2.5 mm de la ITV, o para análisis estructural realizar el cálculo estático de un nudo del subchasis trasero. Una vez finalizado, abre una pull request en GitHub o comparte el enlace Onshape en el canal #micro-retos para su validación rápida."
+                "3. Firma de Contrato CLA y Acceso de Fusión",
+                "Antes de fusionar tu diseño en la rama principal, el bot del canal de Discord te solicitará firmar digitalmente el Contributor License Agreement (CLA). Este documento formaliza la cesión de los derechos patrimoniales a la Asociación CERO para asegurar que el coche físico pueda homologarse en IDIADA sin disputas de derechos de autor, mientras tú retienes la autoría moral del diseño y la visibilidad en el Data Room de inversores."
             ]
         ],
         "image": "volunteer_onboarding_pipeline.png"
@@ -824,23 +815,19 @@
     "DOC-031": {
         "category": "04_Marketing_y_Contenido",
         "title": "Video Scripts Library",
-        "subtitle": "Librería de Guiones y Estructuras de Vídeo para YouTube",
-        "author": "Medios y Crecimiento CERO",
+        "subtitle": "Librería de Guiones de Vídeo para YouTube y TikTok",
+        "author": "Contenido CERO",
         "status": "APROBADO",
         "version": "v16.0",
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Estructura del Vídeo de YouTube de Lanzamiento (Episodio 1)",
-                "• 0:00 - 1:00: Gancho de retención de 5 segundos. Mario frente a la cámara en un garaje vacío: 'Voy a construir un coche de carreras real para calle desde 0€ y solo con internet. No tengo taller ni dinero. Os muestro cómo'. Renders rápidos del chasis modular.\n• 1:00 - 3:00: El problema industrial. El coste prohibitivo de los karts y monoplazas tradicionales, y las trabas burocráticas europeas. La filosofía de código abierto de CERO.\n• 3:00 - 6:00: Conflicto del espacio. Mario visita tres locales comerciales en Móstoles que están en alquiler. Dos agencias inmobiliarias le rechazan de inmediato al proponerles un canje de publicidad. Mario comparte su frustración ante la cámara: 'Nadie cree en esto al inicio. Pero vamos a seguir llamando a talleres activos'.\n• 6:00 - 8:00: Llamadas de sourcing. Mario llama en directo a distribuidores de acero para conseguir tubos de cromoly 4130 a coste cero. La llamada termina en un cliffhanger sobre si el distribuidor aceptará.\n• 8:00 - 10:00: Llamada a la acción. 'Si eres ingeniero, soldador o tienes un local, únete a Discord en buildcero.com'. Suscríbete."
+                "1. Guion del Episodio 1 (YouTube Vlog): 'El Garaje de 0€'",
+                "• Gancho Inicial (0-5s): Plano secuencia rápido. Mario entra en un garaje industrial polvoriento en Móstoles. Golpea una columna de metal. 'Aquí es donde vamos a construir el primer coche eléctrico open-source de España... si el dueño firma este contrato de 0€. Os enseño cómo.'\n• Introducción (5-45s): Intro animada dinámica de CERO. Mario explica la misión: construir un coche de carreras matriculable en 28 meses usando mecenazgo y trueque publicitario.\n• Conflicto y Desarrollo (45s - 7m): Mario saca su soldadora TIG del maletero. Enchufa y ¡pum! Salta la luz del local. El dueño del taller entra frunciendo el ceño. Conflicto físico: la toma del local es de solo 2.2 kW y necesitamos mínimo 5.5 kW para soldar cromoly sin debilitar el arco. Explicación técnica rápida sobre penetración de arco y purga de argón.\n• Negociación en Directo (7-9m): Mario y el dueño se sientan en dos cajas de madera. Mario le enseña las métricas de YouTube y le propone un trato: CERO asumirá el coste de aumentar la potencia del boletín eléctrico del local usando los fondos de Patreon, y a cambio, el taller aparecerá como patrocinador principal en todos los clips verticales de TikTok y Reels. El dueño sonríe y estrecha la mano.\n• Cierre y Call to Action (9-10m): Mario invita a la comunidad a unirse al Patreon y Discord para descargar el CAD del chasis. 'El garaje es nuestro. En el próximo episodio: el mockup de madera.'"
             ],
             [
-                "2. Episodio 2: Negociando el Garaje en Directo y Renders",
-                "• 0:00 - 1:30: Gancho. '¿Hemos conseguido local? Hoy nos reunimos con el dueño de un taller cerrado para proponerle el trato de su vida'.\n• 1:30 - 5:00: Visita física al taller mecánico activo en Móstoles. Medidas del espacio, discusión sobre la instalación eléctrica trifásica y colocación de la futura mesa jig. El dueño del taller duda sobre la legalidad del canje publicitario.\n• 5:00 - 8:00: Resolución / Clímax del trueque. Mario presenta el borrador del contrato barter de permuta. El dueño firma el acuerdo. ¡Tenemos garaje físico para los sábados por la tarde!\n• 8:00 - 10:00: Llamada a la acción: lanzamiento del Patreon oficial para financiar los primeros consumibles del taller (gases de soldar)."
-            ],
-            [
-                "3. Episodio 3: Consiguiendo el Acero Cromoly 4130",
-                "• 0:00 - 2:00: Gancho. Mario con el teléfono en altavoz. 'Hola, buscaba tubos de acero 4130 cromoly para ceder a cambio de salir de fondo en YouTube ante 20.000 ingenieros'.\n• 2:00 - 7:00: Grabación de las llamadas de sourcing de materiales. Negociaciones con metalúrgicas locales. Cierre del primer sponsor de metal.\n• 7:00 - 10:00: Lección de negociación. Cómo vender tracción online a negocios tradicionales de barrio. Enlace al manual de negociación (DOC-042)."
+                "2. Estrategia de TikTok y Reels: Clips de Micro-Conflicto",
+                "Cada clip vertical de 45 segundos debe estructurarse con la fórmula del Gancho Rápido de 3 segundos:\n• Segundo 0-3: 'Soldando un chasis de 0 €... ¿y explota la luz?' (Plano del salto de chispa).\n• Segundo 3-30: Explicación rápida de por qué no puedes soldar cromoly con un enchufe de casa de 2.2 kW, mostrando el amperímetro y el flujo de argón a 5L/min.\n• Segundo 30-45: Solución ágil firmada en el contrato de permuta publicitario y llamada a entrar en Discord para el Micro-Reto de la mangueta."
             ]
         ]
     },
@@ -912,23 +899,23 @@
     "DOC-040": {
         "category": "05_Sourcing_y_Logistica",
         "title": "Sourcing and Logistics Guide",
-        "subtitle": "Guía Práctica de Adquisición de Tren Motriz, Chasis y Baterías",
-        "author": "Alianzas y Sourcing CERO",
+        "subtitle": "Guía Práctica de Compra, Logística de Baterías y Almacenamiento Seguro",
+        "author": "Logística CERO",
         "status": "APROBADO",
         "version": "v16.0",
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Adquisición de Materiales para el Chasis",
-                "• Metal: Distribuidores autorizados de acero cromoly 4130 con certificado de composición química de colada.\n• Comprobación física: Inspección visual de rectitud de los tubos recibidos y medición de espesores con micrómetro digital.\n• Requisito obligatorio: Almacenamiento horizontal en soporte elevado del suelo en el garaje para evitar la flexión residual de los tubos por gravedad."
+                "1. Sourcing de Materiales y Tubos de Cromoly 4130",
+                "La compra de tubos de acero 4130 Chromoly con certificación de calidad de colada se realizará a distribuidores autorizados en Europa (como Tube Service o ThyssenKrupp Aerospace) para asegurar que el espesor de pared y la composición química cumplen las normas UNE-EN. No se aceptarán tubos sin certificado de colada original (Mill Test Certificate), ya que son obligatorios para la justificación del chasis ante los inspectores técnicos de IDIADA durante la homologación individual."
             ],
             [
-                "2. Almacenamiento Seguro de Baterías de Litio",
-                "Las celdas de litio sueltas o módulos del acumulador deben almacenarse obligatoriamente en cajas metálicas refractarias herméticas, rellenas con arena seca o perlita expansiva en un rincón ventilado del taller. Esto previene e interrumpe cualquier propagación de incendio por embalamiento térmico (thermal runaway). El área contará con un extintor dedicado de CO2 de 5kg clase D."
+                "2. Logística de Tránsito y Almacenamiento Seguro de Litio",
+                "Las celdas de iones de litio 18650 se consideran mercancías peligrosas de Clase 9 bajo el acuerdo ADR para transporte por carretera. La logística de tránsito requiere embalaje certificado UN3480 con separadores internos para evitar vibraciones y cortocircuitos. Una vez recibidas en el garaje de Móstoles, las celdas se almacenarán en una estantería metálica ignífuga dedicada, alejada del área de soldadura TIG, y cada módulo se conservará dentro de contenedores refractarios rellenos de arena seca silícea para aislar el calor ante cualquier combustión espontánea."
             ],
             [
-                "3. Logística y Envío Seguro de Componentes Pesados",
-                "El transporte de tubos de acero de 6 metros de longitud requiere camión de carga abierta y descarga manual. Las manguetas mecanizadas y amortiguadores se enviarán por mensajería ordinaria bien embalados. La logística de las baterías y el motor de tracción se coordinará con transportistas autorizados una vez definidos los componentes concretos por el equipo técnico."
+                "3. Suministro de Gas Argón y Consumibles de Taller",
+                "El suministro de Argón puro al 99.9% (gas de purga y soldadura) se coordinará con distribuidores locales (como Carburos Metálicos o Air Liquide) mediante contratos de alquiler de botellas de 50L. Se dispondrá de un regulador de doble caudalímetro para alimentar de forma simultánea la antorcha TIG y la línea de purga de respaldo en el chasis. Los electrodos de tungsteno (toriados al 2% o lantanosos al 2% de 2.4mm) y las varillas de aporte ER70S-6 se almacenarán en estuches herméticos desecantes para evitar que la humedad debilite la resistencia estructural de los cordones de soldadura."
             ]
         ]
     },
@@ -958,27 +945,23 @@
     "DOC-042": {
         "category": "05_Sourcing_y_Logistica",
         "title": "Negotiation Scripts",
-        "subtitle": "Guiones Telefónicos y de Correo para Alianzas, Garajes y Canjes Comerciales",
-        "author": "Alianzas y Sourcing CERO",
+        "subtitle": "Guiones Telefónicos de Patrocinio y Plantilla de Contrato Barter",
+        "author": "Fundadores de CERO",
         "status": "APROBADO",
         "version": "v16.0",
         "date": "15.07.2026",
         "sections": [
             [
-                "1. Guion Telefónico para Conseguir el Garaje (Local Físico Vacío)",
-                "\"Hola, buenas tardes. Llamaba por el anuncio del local en alquiler en Móstoles. Me gustaría proponerle un trato alternativo: dirijo CERO (buildcero.com), el primer coche open-source de calle desarrollado de forma colaborativa por internet en Madrid.\n\nTenemos una comunidad de miles de ingenieros y entusiastas siguiendo el proceso semanal en YouTube. Le proponemos cedernos el uso de su local cerrado o garaje como taller de montaje a cambio de un contrato de canje de publicidad: su local aparecerá de fondo en todos nuestros vlogs semanales y Shorts de YouTube, con enlaces de contacto y publicidad directa que llevarán visibilidad y clientes a su negocio o cartera inmobiliaria. ¿Le interesaría que nos reunamos 10 minutos en el local y le enseño los planos conceptuales del coche?\""
+                "1. Guion de Llamada Fría para Locales y Taller",
+                "• Apertura (0-15s): 'Hola [PROPIETARIO], me llamo Mario. Estoy liderando el proyecto CERO. Estamos construyendo en abierto el primer deportivo eléctrico homologable de calle en España y documentando todo en YouTube. He visto que vuestro local en Móstoles tiene un espacio libre y quería proponeros una alianza.'\n• Gancho de Valor (15-45s): 'No buscamos un alquiler comercial clásico de dinero por espacio. Os ofrecemos un contrato de permuta de servicios: a cambio de usar ese espacio inactivo de taller, os patrocinamos de forma activa con logos, menciones semanales en nuestros vlogs de YouTube (200.000 vistas estimadas) y clips de TikTok, atrayendo clientes locales y reputación a vuestra marca de automoción.'\n• Cierre y Cita (45-60s): '¿Te vendría bien que pase este jueves a las 18:00 por el taller para enseñarte el diseño CAD y ver cómo podemos colaborar sin que os cueste un solo euro?'"
             ],
             [
-                "2. Guion Telefónico para Negociar Espacio en Taller Mecánico Activo (Plan B)",
-                "\"Hola, buenas tardes. Quería hablar con el dueño del taller. Mi nombre es Mario y estoy coordinando CERO (buildcero.com), un monoplaza open-source para calle desarrollado colaborativamente por internet.\n\nViendo la calidad de sus instalaciones, queríamos proponerle un acuerdo de trueque comercial. Buscamos un rincón libre de su taller (de unos 15-20 m²) para soldar el chasis y ensamblar las piezas únicamente los sábados por la tarde, fuera de su horario comercial. A cambio, colocaremos un cartel gigante de su taller de fondo en todos nuestros vídeos semanales de YouTube y Shorts de taller (donde nos siguen miles de apasionados locales), ayudaremos a limpiar y ordenar el taller los fines de semana, y promocionaremos activamente sus servicios de mecánica en la zona de Móstoles. ¿Podríamos pasarnos el sábado por la tarde 10 minutos para mostrarle el diseño en Onshape?\""
+                "2. Plantilla Real de Contrato de Permuta de Servicios Publicitarios (Barter Contract)",
+                "**CONTRATO DE PERMUTA DE SERVICIOS PUBLICITARIOS (BARTER) DE ESPACIO DE TALLER**\n\nEn Móstoles, a [FECHA]. REUNIDOS: De una parte, [PROPIETARIO DE LOCAL], en adelante el Propietario. De otra parte, la Asociación de Ingeniería de Código Abierto CERO, representada por Mario, en adelante la Asociación. Ambas partes se reconocen capacidad legal y convienen el presente contrato al amparo del Artículo 1538 del Código Civil. CLÁUSULAS:\n• Primera (Objeto): El Propietario cede temporalmente el uso de X metros cuadrados de su local en Móstoles para el ensamblaje del prototipo CERO.\n• Segunda (Contraprestación): La Asociación se compromete a insertar la imagen corporativa del Propietario en la intro de sus vlogs de YouTube y realizar al menos 1 mención activa semanal en sus redes.\n• Tercera (Consumos): La Asociación asumirá mediante los fondos de Patreon el incremento del coste de la luz derivado del uso de la máquina soldadora TIG, estimándose en base a lecturas previas.\n• Cuarta (Responsabilidad): El Propietario queda exento de cualquier responsabilidad civil por accidentes o daños ocurridos durante el uso del taller. La Asociación mantendrá extintores clase D y seguro de responsabilidad civil al día.\n• Firmado en duplicado por ambas partes."
             ],
             [
-                "3. Plantilla de Contrato de Permuta de Servicios Publicitarios (Barter)",
-                "REUNIDOS:\nDe una parte, Don/Doña [Propietario/Representante], en adelante el CEDENTE, titular del espacio/material ubicado en [Dirección].\nDe otra parte, Don Mario, en representación de la 'Asociación de Ingeniería de Código Abierto CERO', en adelante el ADQUISITOR.\n\nACUERDAN:\n1. Objeto: El CEDENTE cede temporalmente el uso de un espacio de 20 metros cuadrados en sus instalaciones los sábados en horario de 16:00 a 21:00 horas, o en su defecto 50 metros de tubos de acero cromoly 4130.\n2. Contraprestación Publicitaria: El ADQUISITOR se compromete a promocionar la marca/instalación del CEDENTE en la serie de vlogs semanales de YouTube y en la web buildcero.com mediante la colocación de un cartel visible en el área de trabajo y enlaces web directos.\n3. Suministro Eléctrico: El coste de suministro eléctrico de fuerza (potencia contratada mínima de 5.5 kW para soldadora TIG a 230V) será asumido por el CEDENTE, aportando la asociación un pago compensatorio estimado en caso de soldadura intensiva continuo superior a 10 horas mensuales.\n4. Responsabilidad Civil: El ADQUISITOR exime de toda responsabilidad civil al CEDENTE ante cualquier accidente derivado de la actividad de soldadura o manipulación mecánica dentro del espacio cedido, contando con seguro de responsabilidad de la Asociación.\n\nEn prueba de conformidad, firman en duplicado en Madrid, a [Fecha]."
-            ],
-            [
-                "4. Guion de Seguimiento por Correo Electrónico",
-                "\"Estimado [Nombre del Propietario / Proveedor],\n\nLe escribo para dar seguimiento a nuestra conversación de ayer. Le adjunto el dossier de patrocinio y el Manifiesto de CERO (DOC-001) where we detail the operational model and social media traction. We are very interested in working with you to set up the project's garage in your local shop.\n\nQuedamos a su entera disposición para reunirnos de forma física. Un saludo cordial, Mario.\"\n\nEste correo se enviará de inmediato para mantener viva la negociación del espacio o materiales."
+                "3. Guion de Negociación para Distribuidor de Materiales (Tubos/Cromoly)",
+                "Guion de aproximación a directores comerciales de metalúrgicas: 'Hola [NOMBRE], vuestro acero cromoly 4130 es el estándar de la industria. Si nos donáis los tubos necesarios para el chasis (valorados en 1.200 €), grabaremos un episodio especial de YouTube detallando vuestros certificados de colada y control de calidad, asociando vuestra marca con el futuro del automovilismo eléctrico open-source de España. El documento de especificaciones técnicas citará vuestro acero como el oficial homologado de CERO.'"
             ]
         ],
         "image": "garage_sourcing_flow.png"

@@ -1,23 +1,26 @@
 # DOC-012: Onboarding Guide
-**Manual de Incorporación del Colaborador y Herramientas del Proyecto**
+**Manual de Incorporación y Tareas de Dopamina Rápida**
 
-- **Autor**: Operaciones CERO
+- **Autor**: Recursos Humanos y Comunidad CERO
 - **Estado**: APROBADO
 - **Versión**: v16.0
 - **Fecha**: 15.07.2026
 
 ---
 
-## 1. Manual de Bienvenida del Colaborador
+## 1. Guía de Bienvenida al Discord de CERO
 
-Bienvenido a CERO. Nuestro objetivo es que realices tu primera aportación al diseño conceptual en menos de 7 días. El primer paso obligatorio es la lectura del Manifiesto Fundacional (DOC-001) para comprender las dinámicas de bootstrapping con 0€, así como la firma del acuerdo de cesión de propiedad intelectual (DOC-023) para proteger el desarrollo open-source. Creemos en la autonomía y la responsabilidad compartida: no esperes órdenes, busca un issue abierto y empieza a proponer soluciones.
+¡Bienvenido a la comunidad de CERO! Nuestra misión es construir y homologar el primer deportivo eléctrico de código abierto de España. Para que tu integración sea ágil y gratificante, el proceso de onboarding está completamente gamificado. Una vez que te unas al Discord, debes dirigirte al canal #roles para asignar tu disciplina (CAD Chassis, Simulaciones FEA/CFD, Electrónica/ECU, o Contenido/Vlogs). Recibirás acceso de lectura al Onshape y al repositorio central en GitHub, listos para tu primera contribución.
 
-## 2. Configuración del Workspace Técnico
+## 2. Micro-Retos de 2 Horas y Dopamina Operativa
 
-• Discord: Regístrate con tu nombre real e indica tu especialidad (CAD, FEA, CFD, soldadura o edición) en el canal #roles. Solicita los permisos técnicos correspondientes.
-• Onshape: Crea una cuenta gratuita de estudiante o entusiasta. Solicita acceso de edición en el canal #cad-chasis enviando tu email registrado.
-• GitHub: Clona el repositorio maestro `ErGranPepe/cero-website` para tener acceso a los scripts y documentos Markdown del proyecto. Configura tus credenciales Git locales.
+Para evitar la fatiga temprana y el abandono por sobrecarga cognitiva, no te pediremos que diseñes el coche entero el primer día. En su lugar, el equipo opera a través de 'Micro-Retos' rápidos de 2 horas en el canal #micro-retos. Estos retos están diseñados para completarse en una tarde y aportar dopamina de logro rápido, tales como:
+• Micro-Reto A: Modelar el soporte impreso en 3D para el sensor Hall de velocidad en la mangueta delantera.
+• Micro-Reto B: Comprobar la tolerancia y evitar colisiones de la tornillería de métrica 6 en los trapecios de suspensión.
+• Micro-Reto C: Validar los grosores e inercias del pedal de acelerador de aluminio en Onshape.
 
-## 3. Primer Challenge del Colaborador (Micro-Retos de 2 Horas)
+Una vez resuelto, subes tu enlace de Onshape al Discord, es verificado por un mentor del Core Team, y se añade a la rama principal, apareciendo tu nombre en los créditos del siguiente vlog semanal.
 
-Para evitar la inactividad y dar feedback inmediato, el onboarding se gestiona mediante 'Micro-Retos' técnicos de menos de 2 horas. Un micro-reto típico para diseño CAD consiste en modelar en Onshape el soporte del sensor de velocidad del buje delantero respetando los radios de aristas de 2.5 mm de la ITV, o para análisis estructural realizar el cálculo estático de un nudo del subchasis trasero. Una vez finalizado, abre una pull request en GitHub o comparte el enlace Onshape en el canal #micro-retos para su validación rápida.
+## 3. Firma de Contrato CLA y Acceso de Fusión
+
+Antes de fusionar tu diseño en la rama principal, el bot del canal de Discord te solicitará firmar digitalmente el Contributor License Agreement (CLA). Este documento formaliza la cesión de los derechos patrimoniales a la Asociación CERO para asegurar que el coche físico pueda homologarse en IDIADA sin disputas de derechos de autor, mientras tú retienes la autoría moral del diseño y la visibilidad en el Data Room de inversores.
