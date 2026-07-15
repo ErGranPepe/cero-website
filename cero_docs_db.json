@@ -1,0 +1,817 @@
+{
+    "DOC-001": {
+        "category": "00_Gobernanza_y_Estrategia",
+        "title": "Foundational Manifest",
+        "subtitle": "Declaración de Principios y Reglas de Coordinación",
+        "author": "Fundadores de CERO",
+        "status": "APROBADO",
+        "version": "v1.1",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. La Misión Fundamental",
+                "CERO es el primer coche de calle del mundo desarrollado 100% en abierto por internet. Sin fábrica física cerrada, sin capital de partida, y coordinando colaboradores de forma global. El monoplaza de CERO se concibe como un diseño abierto y homologable en Europa, permitiendo que cualquiera descargue sus planos y los replique de manera local."
+            ],
+            [
+                "2. Principios de Bootstrapping y Apertura",
+                "• Transparencia total de finanzas y planos.\n• Acción real: las ideas teóricas deben validarse en CAD o prototipos antes de consolidarse.\n• Gobernanza abierta: la comunidad vota en Discord las decisiones técnicas secundarias.\n• Cero capital inicial: todo el progreso inicial se basa en aportaciones de tiempo y canjes de branding."
+            ],
+            [
+                "3. Criterios de Éxito a Largo Plazo",
+                "Establecer la viabilidad del open-source en el sector automotriz físico. Demostrar que un coche diseñado colectivamente puede superar las pruebas de emisiones, ruido e impacto de la ITV individual en España."
+            ]
+        ]
+    },
+    "DOC-002": {
+        "category": "00_Gobernanza_y_Estrategia",
+        "title": "Strategic Plan",
+        "subtitle": "Plan de Negocio a 28 Meses y Modelo Operativo",
+        "author": "Dirección Estratégica CERO",
+        "status": "APROBADO",
+        "version": "v1.1",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Horizonte y Fases de Ejecución",
+                "El proyecto se extiende a 28 meses para incorporar de forma segura la fase de homologación de calle en España (ITV individual):\n• Fase 1 (Mes 1-3): Lanzamiento, reclutamiento y elección del motor (GSX-R 600).\n• Fase 2 (Mes 4-6): CAD conceptual del chasis y cockpit en Onshape.\n• Fase 3 (Mes 7-12): Ingeniería de detalle y simulaciones FEA/CFD.\n• Fase 4 (Mes 13-18): Alianzas y soldadura del chasis tubular.\n• Fase 5 (Mes 19-21): Montaje del tren motriz, escape y frenos.\n• Fase 6 (Mes 22-24): Carrocería final y pruebas dinámicas en circuito.\n• Fase 7 (Mes 25-28): Pruebas IDIADA/INTA y matriculación ordinaria."
+            ],
+            [
+                "2. Modelo de Financiación Mixto",
+                "Operación inicial con 0€ basándose en sponsors y canjes de publicidad. La compra del motor Suzuki GSX-R usado se financia en el Mes 12 con la caja acumulada del Patreon de la comunidad, lanzado en el Mes 4."
+            ],
+            [
+                "3. Plan de Contingencia",
+                "Si en el Mes 12 la recaudación es insuficiente, se retrasará el encargo del corte de tubos 4130 cromoly, extendiendo el diseño CAD virtual y lanzando retos adicionales de patrocinio."
+            ]
+        ]
+    },
+    "DOC-003": {
+        "category": "00_Gobernanza_y_Estrategia",
+        "title": "Master Roadmap",
+        "subtitle": "Hitos, Entregables y Dependencias Críticas",
+        "author": "Gestión de Proyectos CERO",
+        "status": "APROBADO",
+        "version": "v1.1",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Cronograma de Hitos (Master Gantt)",
+                "El desarrollo del vehículo se organiza en un cronograma lineal de 28 meses. Las dependencias críticas son el escaneo 3D del motor de moto antes de cerrar el CAD trasero del chasis, y el diseño de aristas según normativa peatonal para el dossier IDIADA/INTA."
+            ],
+            [
+                "2. Gráfico del Gantt de Desarrollo",
+                "A continuación se ilustra gráficamente la planificación temporal y fases del proyecto:"
+            ],
+            [
+                "3. Tabla de Puertas de Control (Gates)",
+                "A continuación se detallan los entregables obligatorios por fase:"
+            ]
+        ],
+        "image": "project_timeline_gantt.png",
+        "table": {
+            "cols": [
+                50,
+                60,
+                200,
+                80,
+                114
+            ],
+            "data": [
+                [
+                    "Hito",
+                    "Fase",
+                    "Entregable Clave",
+                    "Límite",
+                    "Estado"
+                ],
+                [
+                    "MS-0",
+                    "Fase 1",
+                    "Freeze de Requerimientos Técnicos Básicos y Motor GSX-R",
+                    "Mes 3",
+                    "Completado"
+                ],
+                [
+                    "MS-1",
+                    "Fase 2",
+                    "Diseño Conceptual CAD y Cockpit en Onshape",
+                    "Mes 6",
+                    "En Progreso"
+                ],
+                [
+                    "MS-2",
+                    "Fase 3",
+                    "Diseño Detallado e Ingeniería (FEA/CFD)",
+                    "Mes 12",
+                    "Planificado"
+                ],
+                [
+                    "MS-3",
+                    "Fase 4",
+                    "Adquisición y Ensamblaje de Chasis Tubular",
+                    "Mes 18",
+                    "Planificado"
+                ],
+                [
+                    "MS-4",
+                    "Fase 5",
+                    "Integración Tren Motriz y Electrónica V1",
+                    "Mes 21",
+                    "Planificado"
+                ],
+                [
+                    "MS-5",
+                    "Fase 6",
+                    "Lanzamiento y Pruebas en Pista Privada",
+                    "Mes 24",
+                    "Planificado"
+                ],
+                [
+                    "MS-6",
+                    "Fase 7",
+                    "Dossier IDIADA / INTA y Obtención de Placas de Calle",
+                    "Mes 28",
+                    "Planificado"
+                ]
+            ]
+        }
+    },
+    "DOC-004": {
+        "category": "00_Gobernanza_y_Estrategia",
+        "title": "Operating System",
+        "subtitle": "Estructura de la Organización de Internet y Canales de Comunicación",
+        "author": "Operaciones CERO",
+        "status": "APROBADO",
+        "version": "v1.1",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Estructura de Trabajo Abierta",
+                "El proyecto opera mediante un núcleo (Core Team) y comisiones de voluntarios coordinadas en Discord y GitHub. No existen rangos jerárquicos corporativos clásicos; las aportaciones técnicas registradas en el repositorio otorgan el estatus de colaborador activo."
+            ],
+            [
+                "2. Canales Oficiales",
+                "• Discord: Debates rápidos y reuniones de voz dominicales.\n• GitHub: Control de versiones de planos Onshape (enlaces y archivos CAD) e informes técnicos.\n• Web (buildcero.com): Landing de captación y data room."
+            ],
+            [
+                "3. Embudo de Crecimiento y Conversión Comunitaria",
+                "A continuación se muestra gráficamente cómo convertimos espectadores casuales en colaboradores del proyecto:"
+            ],
+            [
+                "4. Matriz RACI Básica",
+                "A continuación se presenta la matriz RACI del equipo CERO:"
+            ]
+        ],
+        "image": "growth_funnel.png",
+        "table": {
+            "cols": [
+                150,
+                70,
+                70,
+                70,
+                70,
+                70
+            ],
+            "data": [
+                [
+                    "Actividad / Hito",
+                    "ENG (Ing.)",
+                    "MED (Medios)",
+                    "PART (Alian.)",
+                    "LEG (Legal)",
+                    "GOV (Gob.)"
+                ],
+                [
+                    "Requerimientos",
+                    "A",
+                    "C",
+                    "I",
+                    "C",
+                    "R"
+                ],
+                [
+                    "Diseño CAD",
+                    "R",
+                    "I",
+                    "C",
+                    "I",
+                    "A"
+                ],
+                [
+                    "Vídeos YouTube",
+                    "I",
+                    "R",
+                    "C",
+                    "I",
+                    "A"
+                ],
+                [
+                    "Contratos IP",
+                    "I",
+                    "I",
+                    "C",
+                    "R",
+                    "A"
+                ]
+            ]
+        }
+    },
+    "DOC-017": {
+        "category": "00_Gobernanza_y_Estrategia",
+        "title": "Weekly Review System",
+        "subtitle": "Metodología de Reunión y Plantilla de Estado",
+        "author": "Operaciones CERO",
+        "status": "APROBADO",
+        "version": "v1.0",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Reunión Semanal de Sincronización",
+                "Celebrada todos los domingos a las 20:00 CEST en el canal de voz de Discord. Estrictamente limitada a 45 minutos. Cada coordinador dispone de 3 minutos para reportar su estado, bloqueos y planes."
+            ],
+            [
+                "2. Plantilla de Reporte de Estado",
+                "• KPIs Generales (followers, Discord, Patreon).\n• Tareas en progreso (CAD, alianzas).\n• Semáforo de Riesgo (Rojo/Amarillo/Verde).\n• Bloqueos identificados que requieran soporte multidisciplinar."
+            ]
+        ]
+    },
+    "DOC-018": {
+        "category": "00_Gobernanza_y_Operaciones",
+        "category_override": "00_Gobernanza_y_Estrategia",
+        "title": "Decision Register",
+        "subtitle": "Protocolo de Registro y Aprobación de Decisiones Críticas",
+        "author": "Comité de Gobernanza CERO",
+        "status": "APROBADO",
+        "version": "v1.0",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Introducción al Registro de Decisiones",
+                "Toda decisión de diseño o finanzas de gran calado debe registrarse bajo la estructura de Architecture Decision Record (ADR) para mantener la trazabilidad ante inversores e ingenieros."
+            ],
+            [
+                "2. Proceso de Votación y Aprobación",
+                "El debate técnico dura 72 horas en Discord. Si no hay consenso claro, el Coordinador de Ingeniería ostenta el voto de calidad. Las decisiones de gasto superior a 100€ se someten a aprobación del Core Team."
+            ]
+        ]
+    },
+    "DOC-025": {
+        "category": "00_Gobernanza_y_Estrategia",
+        "title": "Critical Project Audit and Risk Analysis",
+        "subtitle": "Auditoría de Viabilidad y Análisis Crítico del Ecosistema de Proyecto",
+        "author": "Dirección Estratégica CERO",
+        "status": "APROBADO",
+        "version": "v1.0",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Bucle de Muerte de la Tracción de 0€",
+                "En el día 1, proponer canjes de branding con 0 seguidores es inviable. Debemos concentrar el Mes 1-3 en ganar visibilidad técnica compartiendo diseños y simulaciones impactantes antes de contactar con patrocinadores."
+            ],
+            [
+                "2. Riesgo Técnico de Ingenieros Anónimos",
+                "Los planos de Discord deben validarse rigurosamente por un Ingeniero Colegiado y un soldador certificado de forma externa antes de rodar en pista, mitigando fallos fatales en juntas de soldadura del chasis."
+            ],
+            [
+                "3. Logística Oculta y Gastos Hormiga",
+                "Radial, gases TIG, discos, furgoneta de transporte y tornillería sumarán unos 300-600€ el primer año. Se financiarán con la caja de Patreon del Mes 4, prohibiendo compras grandes hasta cubrir consumibles."
+            ]
+        ]
+    },
+    "DOC-026": {
+        "category": "00_Gobernanza_y_Estrategia",
+        "title": "Competitor Analysis",
+        "subtitle": "Benchmark del Mercado de Monoplazas y Proyectos de Internet",
+        "author": "Dirección Estratégica CERO",
+        "status": "APROBADO",
+        "version": "v1.0",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Precedentes Históricos y Lecciones",
+                "• Project Binky: Tardaron 10 años por no delegar en la comunidad. CERO usará Onshape público para diseño colaborativo.\n• Wesley Kagan: Demostró la viabilidad de coches F1 clásicos en 18 meses liberando el CAD. CERO aplicará este dinamismo.\n• Wikispeed: Demostraron rapidez ágil pero fallaron en homologación. CERO integra el plan de ITV individual desde el día 1."
+            ],
+            [
+                "2. Propuesta de Valor Única (USP)",
+                "CERO es el primer coche de calle del mundo desarrollado con código abierto e internet, permitiendo la co-creación real de su chasis y tren motriz de moto por parte de aficionados e ingenieros."
+            ]
+        ]
+    },
+    "DOC-028": {
+        "category": "00_Gobernanza_y_Estrategia",
+        "title": "Technical Vision",
+        "subtitle": "Especificación Técnica del Chasis, Materiales y Soldadura",
+        "author": "Ingeniería CERO",
+        "status": "APROBADO",
+        "version": "v1.0",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Requerimientos del Chasis Tubular",
+                "Adopción de estándares FSAE (Formula Student):\n• Arco Principal (Main Hoop): Acero cromoly 4130, diámetro exterior de 25.4mm y espesor de pared de 2.0mm.\n• Diagonales y Tirantes: Acero 4130, 25.0mm x 1.2mm."
+            ],
+            [
+                "2. Control de Soldadura y Homologación",
+                "Todos los soldadores voluntarios deben soldar un cupón de prueba de acero 4130. Este cupón se enviará a ensayos de tracción en laboratorio. Solo los soldadores aprobados podrán soldar la jaula de seguridad del chasis físico."
+            ],
+            [
+                "3. Comparativa de Resistencia Estructural",
+                "A continuación se muestra la resistencia elástica (MPa) del acero cromoly 4130 seleccionado frente al acero dulce estándar:"
+            ]
+        ],
+        "image": "fsae_structural_equivalency.png"
+    },
+    "DOC-005": {
+        "category": "01_Producto_e_Ingenieria",
+        "title": "Product Requirements Document",
+        "subtitle": "Ficha de Especificaciones de Producto del Monoplaza CERO",
+        "author": "Ingeniería CERO",
+        "status": "APROBADO",
+        "version": "v1.0",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Objetivos del Vehículo",
+                "Construcción de un monoplaza ligero, de combustión, con motor de moto central-trasero, homologable para vías públicas en Europa. El peso en orden de marcha debe ser inferior a 420 kg, y la relación peso-potencia superior a 250 hp/tonelada."
+            ],
+            [
+                "2. Requerimientos de Calle Obligatorios",
+                "• Iluminación: Faros, intermitentes, reflectantes y luz de matrícula con marca 'E'.\n• Mandos: Pedalier de doble circuito hidráulico con balanceador de frenado, y freno de estacionamiento mecánico independiente.\n• Seguridad Peatonal: Bumper delantero sin aristas cortantes (radios de curvatura > 2.5 mm).\n• Emisiones: Motor de moto con catalizador Euro 6 adaptado y sonda lambda."
+            ]
+        ]
+    },
+    "DOC-006": {
+        "category": "01_Producto_e_Ingenieria",
+        "title": "Bill of Materials",
+        "subtitle": "Lista de Materiales y Costes de Sourcing del Monoplaza",
+        "author": "Alianzas y Sourcing CERO",
+        "status": "APROBADO",
+        "version": "v1.0",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Lista de Materiales del Vehículo (BOM)",
+                "La lista de materiales está optimizada para la consecución de piezas por canje y compra financiada de componentes de seguridad. El chasis y el motor Suzuki GSX-R representan el 60% del coste de caja proyectado."
+            ],
+            [
+                "2. Presupuesto Físico Estimado de Materiales",
+                "A continuación se detallan los costes estimados del coche de pista y calle:"
+            ]
+        ],
+        "table": {
+            "cols": [
+                120,
+                160,
+                100,
+                124
+            ],
+            "data": [
+                [
+                    "Componente",
+                    "Especificación",
+                    "Coste Estimado",
+                    "Método Adquisición"
+                ],
+                [
+                    "Motor Suzuki GSX-R",
+                    "600cc usado, completo con ECU y cables",
+                    "1.200 €",
+                    "Compra Patreon Mes 12"
+                ],
+                [
+                    "Tubos Acero 4130",
+                    "Cromoly 25.4mm x 2.0mm (50 metros)",
+                    "600 €",
+                    "Patrocinio Metalúrgica"
+                ],
+                [
+                    "Pinzas y Discos",
+                    "Doble circuito independiente (ITV)",
+                    "1.100 €",
+                    "Compra Patreon"
+                ],
+                [
+                    "Catalizador Euro 6",
+                    "Línea escape homologada con dB Killer",
+                    "1.200 €",
+                    "Compra Patreon"
+                ],
+                [
+                    "Iluminación / Espejos",
+                    "Espejos y faros marcas 'E' (ITV)",
+                    "800 €",
+                    "Canje Branding / Patreon"
+                ]
+            ]
+        }
+    },
+    "DOC-007": {
+        "category": "01_Producto_e_Ingenieria",
+        "title": "Technical Architecture",
+        "subtitle": "Arquitectura Mecánica y Eléctrica del Monoplaza de Combustión",
+        "author": "Ingeniería CERO",
+        "status": "APROBADO",
+        "version": "v1.0",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Tren Motriz de Combustión",
+                "Motor Suzuki GSX-R transversal detrás del cockpit. Transmisión secuencial de moto por cadena reforzada paso 530 al eje trasero. Diferencial autoblocante LSD para asegurar tracción en curva."
+            ],
+            [
+                "2. Suspensión y Dirección",
+                "Doble trapecio independiente en las 4 ruedas (brazos de acero 4130). Cremallera de dirección manual rápida de kart modificada. Amortiguadores de moto (coilovers) ajustables."
+            ],
+            [
+                "3. Sistema Eléctrico",
+                "Cableado de moto modificado para coche. Mantenemos la ECU de moto desbloqueada original. Sensores básicos de temperatura, presión y revoluciones integrados en cuadro digital."
+            ]
+        ]
+    },
+    "DOC-008": {
+        "category": "01_Producto_e_Ingenieria",
+        "title": "Manufacturing Plan",
+        "subtitle": "Plan de Corte, Soldadura e Integración en Taller Colaborador",
+        "author": "Ingeniería CERO",
+        "status": "APROBADO",
+        "version": "v1.0",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Construcción de la Bancada (Jig)",
+                "Es obligatorio construir una mesa de soldadura (jig) rígida atornillada al suelo antes de cortar tubos. Soldar en el aire provocará desalineaciones debido a la distorsión térmica de la soldadura TIG."
+            ],
+            [
+                "2. Proceso de Soldadura del Chasis",
+                "Se utilizará soldadura TIG con purga interna de gas argón para garantizar penetración perfecta y juntas de resistencia superior, evitando la fragilidad en juntas de cromo-molibdeno."
+            ]
+        ]
+    },
+    "DOC-009": {
+        "category": "01_Producto_e_Ingenieria",
+        "title": "Quality and Testing Protocol",
+        "subtitle": "Ensayos No Destructivos, Dinámicos y Certificaciones en Pista",
+        "author": "Ingeniería CERO",
+        "status": "APROBADO",
+        "version": "v1.0",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Inspección de Soldaduras",
+                "Inspección mediante líquidos penetrantes en el 100% de las soldaduras de la jaula antivuelco. Cualquier poro o grieta detectado debe ser amolado y resoldado."
+            ],
+            [
+                "2. Ensayos Dinámicos de Seguridad",
+                "En circuito cerrado: prueba de frenado estático a 80 bar sin fugas. Prueba de detención total desde 100 km/h en menos de 4.2 segundos. Test de slalom para evaluar estabilidad lateral y balance de amortiguadores."
+            ]
+        ]
+    },
+    "DOC-010": {
+        "category": "02_Reclutamiento_y_Equipo",
+        "title": "Team Roles and Org Chart",
+        "subtitle": "Estructura del Equipo Core y Colaboradores de Internet",
+        "author": "Gobernanza CERO",
+        "status": "APROBADO",
+        "version": "v1.0",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Roles Principales",
+                "• Founder / Director del Proyecto: Mario (coordinación general y medios).\n• Lead Engineer: Coordinación de CAD, FEA y soldadura.\n• Sourcing Scouts: Colaboradores que contactan con desguaces y metalúrgicas.\n• Community Moderators: Gestión de Discord e incorporación de ingenieros."
+            ],
+            [
+                "2. Estructura Meritocrática",
+                "Los roles se ganan mediante commits de Onshape o aportaciones cuantificables. Las decisiones técnicas se aprueban por consenso técnico o por el Lead Engineer."
+            ]
+        ]
+    },
+    "DOC-011": {
+        "category": "02_Reclutamiento_y_Equipo",
+        "title": "Recruitment Playbook",
+        "subtitle": "Estrategias de Reclutamiento en LinkedIn, Foros y Escuelas Técnicas",
+        "author": "Operaciones CERO",
+        "status": "APROBADO",
+        "version": "v1.0",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Canales de Reclutamiento",
+                "• LinkedIn: Búsqueda activa de estudiantes de Fórmula Student y diseñadores CAD de automoción.\n• Foros de Ingeniería (Reddit, GitHub): Hilos de simulación FEA y dinámica de karts.\n• Escuelas Técnicas: ETSII Madrid, Carlos III (Leganés), etc."
+            ],
+            [
+                "2. Guion de Contacto en LinkedIn",
+                "\"Hola [nombre], soy Mario y estoy construyendo CERO, el primer coche de calle hecho 100% desde internet (0€ iniciales, open-source). He visto tu perfil y encaja perfectamente en nuestra comisión de diseño de suspensión. ¿Te apetece colaborar en un proyecto real? Te adjunto el Manifiesto: [link]. ¿Hablamos 15 minutos?\""
+            ]
+        ]
+    },
+    "DOC-012": {
+        "category": "02_Reclutamiento_y_Equipo",
+        "title": "Onboarding Guide",
+        "subtitle": "Manual de Incorporación y Acceso a Herramientas de Colaboración",
+        "author": "Operaciones CERO",
+        "status": "APROBADO",
+        "version": "v1.0",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Primeros Pasos del Colaborador",
+                "1. Leer el Manifiesto Fundacional (DOC-001) y firmar el contrato de cesión de IP (DOC-010).\n2. Unirse al servidor Discord oficial y solicitar rol técnico.\n3. Crear cuenta gratuita de Onshape y solicitar acceso al repositorio CAD central CERO."
+            ],
+            [
+                "2. Tareas Minor de Entrada (Challenges)",
+                "Para acceder a canales de toma de decisiones, el nuevo miembro debe resolver un challenge de diseño menor (ej. acotar tolerancias en el soporte del alternador en CAD)."
+            ]
+        ]
+    },
+    "DOC-013": {
+        "category": "02_Reclutamiento_y_Equipo",
+        "title": "Equity and Compensation Plan",
+        "subtitle": "Estructura de Equity de Colaboradores e Incentivos",
+        "author": "Fundadores de CERO",
+        "status": "APROBADO",
+        "version": "v1.0",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Reparto de Equity Inicial (Stock Options)",
+                "Dado que operamos con 0€, se reserva un 15% del equity total de la futura Sociedad Limitada (S.L.) para colaboradores clave:\n• Lead Engineer: 3-5% vesting de 2 años.\n• Ingenieros Senior de CAD: 1-2% vesting de 1 año.\n• Colaboradores Activos (Challenges): Participación de un pool común de equity."
+            ],
+            [
+                "2. Hitos de Compensación Directa",
+                "Cuando el proyecto consiga su primera ronda de inversión semilla de 50.000€, los ingenieros colaboradores activos tendrán prioridad de contratación laboral con sueldo de mercado."
+            ]
+        ]
+    },
+    "DOC-020": {
+        "category": "03_Finanzas_y_Legal",
+        "title": "Legal Structure",
+        "subtitle": "Estructura Legal de Asociación Cultural y Pivotación a Sociedad Limitada",
+        "author": "Legal y Cumplimiento CERO",
+        "status": "APROBADO",
+        "version": "v1.0",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Constitución de Asociación Inicial",
+                "Para operar legalmente con 0€ y gestionar suscripciones Patreon y donaciones, se constituye la 'Asociación de Ingeniería de Código Abierto CERO' en España. Esta forma jurídica está exenta de IVA en sus cuotas y permite la firma de contratos de canje de patrocinio de forma legal."
+            ],
+            [
+                "2. Pivotación Futura a Sociedad Limitada (S.L.)",
+                "En el Mes 18, de cara a la homologación final y comercialización de planos, se constituirá la S.L. aportando los activos intangibles de la asociación (CAD y marca CERO) como aportaciones no dinerarias, activando el plan de equity."
+            ]
+        ]
+    },
+    "DOC-021": {
+        "category": "03_Finanzas_y_Legal",
+        "title": "Financial Model",
+        "subtitle": "Proyecciones Financieras a 3-5 Años y Presupuestos Viales",
+        "author": "Dirección Estratégica CERO",
+        "status": "APROBADO",
+        "version": "v1.1",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Modelo Financiero de Caja",
+                "El proyecto asume 0€ el primer mes y acumula caja mediante Patreon (Tier Boceto 2.99€, Tier CAD 5.99€, Tier Core 19.99€). Los gastos reales de compra de motor Suzuki GSX-R (€1.200) y frenos se realizan con la caja acumulada al Mes 12."
+            ],
+            [
+                "2. Comparación Financiera Pista vs. Homologación de Calle",
+                "A continuación se muestra de manera gráfica la diferencia de coste entre el proyecto de pista y el coche homologado para calle:"
+            ],
+            [
+                "3. Estimaciones Financieras a 3 Años",
+                "A continuación se detallan las proyecciones financieras de la organización:"
+            ]
+        ],
+        "image": "financial_breakdown.png",
+        "table": {
+            "cols": [
+                120,
+                100,
+                100,
+                184
+            ],
+            "data": [
+                [
+                    "Fase Proyecto",
+                    "Gasto Caja",
+                    "Ingreso Patreon",
+                    "Estado Financiación"
+                ],
+                [
+                    "Mes 1-3 (Lanzamiento)",
+                    "0 €",
+                    "0 €",
+                    "Caja Cero, sin gastos operacionales"
+                ],
+                [
+                    "Mes 4-12 (CAD & Simul)",
+                    "250 € (Gasto) ",
+                    "3.600 € (Acu)",
+                    "Reserva libre de caja de 3.350 €"
+                ],
+                [
+                    "Mes 13-24 (Taller & Sold)",
+                    "5.500 €",
+                    "12.000 €",
+                    "Compra de motor Suzuki GSX-R y frenos viales"
+                ],
+                [
+                    "Mes 25-28 (Homologación)",
+                    "10.050 € (Total)",
+                    "24.000 €",
+                    "Pago de tasas IDIADA/INTA y laboratorios"
+                ]
+            ]
+        }
+    },
+    "DOC-022": {
+        "category": "03_Finanzas_y_Legal",
+        "title": "Investor Data Room",
+        "subtitle": "Estructura de Activos Financieros y Técnicos para Ronda Semilla",
+        "author": "Fundadores de CERO",
+        "status": "APROBADO",
+        "version": "v1.0",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Estructura de la Data Room de Inversores",
+                "Repositorio estructurado en Google Drive para compartir con inversores semilla:\n• Carpeta 01: Corporativa (Manifiesto, Brand Bible).\n• Carpeta 02: Finanzas (Presupuesto v11.0, Proyecciones Patreon, Stripe Fees).\n• Carpeta 03: Técnica (FSAE tubos specs, planos Onshape, FEA chasis).\n• Carpeta 04: Crecimiento ( Followers Instagram, Discord stats, GitHub commits)."
+            ],
+            [
+                "2. Proyecciones a Presentar",
+                "Se muestra a los inversores que el Coste de Adquisición de Colaboradores (CAC) es de 0€ y que la comunidad aporta miles de horas de ingeniería gratuita valoradas en más de 60.000€ en el mercado."
+            ]
+        ]
+    },
+    "DOC-023": {
+        "category": "03_Finanzas_y_Legal",
+        "title": "Intellectual Property Strategy",
+        "subtitle": "Estrategia de Propiedad Intelectual y Licencia Abierta",
+        "author": "Legal y Cumplimiento CERO",
+        "status": "APROBADO",
+        "version": "v1.0",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Estrategia de Código Abierto",
+                "Los planos y simulaciones de CERO se liberan bajo licencia Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0). Esto permite a entusiastas construir sus propios coches, pero protege comercialmente la marca CERO ante copias industriales sin convenio."
+            ],
+            [
+                "2. Contratos de Cesión de IP de Colaboradores",
+                "Todos los ingenieros colaboradores deben firmar un documento de cesión de IP en el onboarding. Esto garantiza que CERO S.L. posee los derechos de los archivos CAD para poder homologar y fabricar el monoplaza de forma física."
+            ]
+        ]
+    },
+    "DOC-024": {
+        "category": "03_Finanzas_y_Legal",
+        "title": "Shareholders Agreement Template",
+        "subtitle": "Borrador de Pacto de Socios para Inversores y Colaboradores Core",
+        "author": "Legal y Cumplimiento CERO",
+        "status": "APROBADO",
+        "version": "v1.0",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Cláusulas del Pacto de Socios",
+                "Establece las reglas de control y venta de acciones de CERO S.L. una vez constituida:\n• Derecho de Adquisición Preferente: Los fundadores tienen prioridad de compra ante la salida de algún colaborador.\n• Cláusula de Acompañamiento (Tag-Along): Protección de accionistas minoritarios ante ofertas de compra.\n• Bad Leaver: Si un colaborador clave abandona antes del vesting de 1 año, pierde su derecho a las acciones."
+            ]
+        ]
+    },
+    "DOC-030": {
+        "category": "04_Marketing_y_Contenido",
+        "title": "Content Strategy and Calendar",
+        "subtitle": "Estrategia de Contenido Semanal y Diario de Redes Sociales",
+        "author": "Medios y Crecimiento CERO",
+        "status": "APROBADO",
+        "version": "v1.0",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Estrategia Social Media",
+                "Producción de 1 vídeo largo semanal en YouTube (avance técnico, llamadas a desguaces, soldaduras) y 3-5 clips verticales en TikTok/Reels basados en 'hooks' técnicos y debate. Esto generará tracción de seguidores para poder negociar canjes."
+            ],
+            [
+                "2. Calendario Semanal Tipo",
+                "• Lunes: TikTok ergonomía/chasis.\n• Miércoles: Detrás de cámaras corto del taller.\n• Jueves: Debate abierto en X/LinkedIn (ej. amortiguadores coilovers vs normales).\n• Sábado: Vídeo de YouTube de 10-15 minutos.\n• Domingo: Asamblea de voz en Discord y votación de diseño."
+            ]
+        ]
+    },
+    "DOC-031": {
+        "category": "04_Marketing_y_Contenido",
+        "title": "Video Scripts Library",
+        "subtitle": "Librería de Guiones y Estructuras de Vídeo para YouTube",
+        "author": "Medios y Crecimiento CERO",
+        "status": "APROBADO",
+        "version": "v1.0",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Estructura del Vídeo de YouTube de Lanzamiento (Episodio 1)",
+                "• 0:00 - 1:00: Gancho. 'Voy a construir un coche de carreras real para calle desde 0€ y solo con internet. No tengo taller ni dinero. Os muestro cómo.'\n• 1:00 - 3:00: El problema de la industria cerrada. El coste prohibitivo de los karts y monoplazas.\n• 3:00 - 6:00: La solución CERO. Coche open-source, de combustión (motor Suzuki GSX-R).\n• 6:00 - 8:00: Llamadas de sourcing en directo a desguaces. Primeras negociaciones.\n• 8:00 - 10:00: Llamada a la acción. 'Si eres ingeniero, únete a buildcero.com'. Suscríbete."
+            ]
+        ]
+    },
+    "DOC-032": {
+        "category": "04_Marketing_y_Contenido",
+        "title": "Social Media Playbook",
+        "subtitle": "Manual de Publicación, Hashtags, Formatos y Respuestas",
+        "author": "Medios y Crecimiento CERO",
+        "status": "APROBADO",
+        "version": "v1.0",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Directrices de Publicación",
+                "• Estética: Fondo de vídeo limpio, luz natural, renders CAD en alta definición.\n• Tono: Crudo y técnico. Responder siempre en la sección de comentarios de forma educada pero argumentando con especificaciones (ej. explicar por qué usamos acero 4130 en vez de acero dulce).\n• Hashtags a utilizar: #CERO #buildinpublic #open-source #ingenieria #SuzukiGSXR #tubularchassis"
+            ]
+        ]
+    },
+    "DOC-033": {
+        "category": "04_Marketing_y_Contenido",
+        "title": "Merch and Crowdfunding Plan",
+        "subtitle": "Plan de Lanzamiento de Productos Físicos y Cuotas Comunitarias",
+        "author": "Medios y Crecimiento CERO",
+        "status": "APROBADO",
+        "version": "v1.0",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Fase 1 de Cero Gasto (Mes 1-3)",
+                "Queda prohibido gastar en stock de camisetas o contratar pasarelas de pago costosas. El enfoque es puramente de crecimiento y CAD virtual en Onshape."
+            ],
+            [
+                "2. Lanzamiento de Merchandising sin Stock (Mes 7+)",
+                "Lanzamiento de camisetas con el plano explotado del chasis mediante impresión bajo demanda (Print-on-Demand). Esto garantiza stock de 0€ y un margen del 40-50% por camiseta soldada en internet."
+            ],
+            [
+                "3. Tiers de Patreon (Mes 4+)",
+                "Patreon se activa en el Mes 4 para acumular el fondo de caja con el que compraremos el motor Suzuki GSX-R usado en el Mes 12."
+            ]
+        ]
+    },
+    "DOC-034": {
+        "category": "04_Marketing_y_Contenido",
+        "title": "Press and Media Kit",
+        "subtitle": "Dossier de Prensa y Plantillas de Comunicación con Periodistas",
+        "author": "Medios y Crecimiento CERO",
+        "status": "APROBADO",
+        "version": "v1.0",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Dossier de Prensa CERO",
+                "Dossier de 1 página con los datos clave: 'CERO: El primer monoplaza open-source de calle desarrollado de forma colaborativa por internet desde 0€'.\n• Fundador: Mario (Informático).\n• Motor: Suzuki GSX-R 600cc de moto (120hp).\n• Enlace de contacto: buildcero.com / prensa@buildcero.com.\n• Links a material de descarga en alta definición (renders del chasis tubular y fotos de taller)."
+            ]
+        ]
+    },
+    "DOC-040": {
+        "category": "05_Sourcing_y_Logistica",
+        "title": "Sourcing and Logistics Guide",
+        "subtitle": "Guía Práctica de Adquisición de Tren Motriz, Chasis y Componentes de Moto",
+        "author": "Alianzas y Sourcing CERO",
+        "status": "APROBADO",
+        "version": "v1.0",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Sourcing del Motor Suzuki GSX-R 600",
+                "• Dónde: Desguaces de moto especializados en España (ej: Motostión, Desguace Motocoche).\n• Comprobación en desguace: Girar el cigüeñal a mano en la tuerca del alternador. Si gira libremente, no está gripado.\n• Requisito obligatorio: Debe venir con su centralita ECU original y su mazo de cables intacto para evitar costes de electrónica prohibitivos."
+            ],
+            [
+                "2. Logística y Transporte Seguro",
+                "• Drenar el aceite del cárter (tornillo de 17mm) en el desguace antes de subir el motor de 70 kg al maletero.\n• Colocar el motor en una caja rígida de fruta con mantas para evitar derrames y que vuelque durante el transporte en coche."
+            ]
+        ]
+    },
+    "DOC-041": {
+        "category": "05_Sourcing_y_Logistica",
+        "title": "Supplier Contact List",
+        "subtitle": "Lista de Proveedores de Acero 4130, Mecanizados CNC y Componentes Viales",
+        "author": "Alianzas y Sourcing CERO",
+        "status": "APROBADO",
+        "version": "v1.0",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Base de Proveedores Estratégicos",
+                "• Proveedor de Tubos: Metalúrgicas locales suministradoras de tubos de acero 4130 cromoly con tolerancias de espesor certificadas.\n• Taller CNC: Talleres locales de corte por chorro de agua o fresado para las manguetas de suspensión (uprights) de aluminio.\n• Suministrador Vial: Tiendas de recambios homologados 'E' para la iluminación de calle y los retrovisores obligatorios de la ITV."
+            ]
+        ]
+    },
+    "DOC-042": {
+        "category": "05_Sourcing_y_Logistica",
+        "title": "Negotiation Scripts",
+        "subtitle": "Guiones Telefónicos y de Correo para Alianzas y Canjes",
+        "author": "Alianzas y Sourcing CERO",
+        "status": "APROBADO",
+        "version": "v1.0",
+        "date": "15.07.2026",
+        "sections": [
+            [
+                "1. Guion Telefónico para Desguaces",
+                "\"Hola, buenas. Quería saber si tenéis en stock algún motor usado de Suzuki GSX-R 600cc de los años 2004 a 2008. Estamos construyendo el primer coche open-source de calle desarrollado en abierto por internet (buildcero.com) y buscamos un partner de desguace. Ofrecemos el logotipo de vuestra marca grabado en el chasis físico del monoplaza y menciones dedicadas en todos nuestros vídeos semanales de montaje en YouTube ante entusiastas del motor. ¿Podríamos colaborar?\""
+            ]
+        ]
+    }
+}
